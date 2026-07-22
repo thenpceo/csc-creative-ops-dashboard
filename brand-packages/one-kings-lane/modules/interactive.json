@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "one-kings-lane.interactive",
+  "capability": "interactive",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "header": { "desktopHeight": 112, "compactHeight": 64, "utilityBarHeight": 36 },
+      "control": { "minimumHeight": 44, "defaultHeight": 48, "prominentHeight": 52 },
+      "focus": { "width": 2, "offset": 3, "colorRef": "color.brand.heritageBright" },
+      "grid": { "collectionColumns": { "expanded": 4, "wide": 3, "medium": 2, "compact": 2 }, "gapRef": "space.lg" }
+    },
+    "rules": [
+      { "id": "interactive.header-priority", "authority": "required", "lifecycle": "active", "confidence": "verified", "appliesTo": ["interactive"], "statement": "Keep brand identity, search, account, favorites, cart, and primary navigation visually ordered; promotional messaging is a separate removable layer.", "sourceIds": ["source.audit.home.desktop", "source.audit.home.mobile"] },
+      { "id": "interactive.mobile-disclosure", "authority": "required", "lifecycle": "active", "confidence": "verified", "appliesTo": ["interactive"], "statement": "On compact screens use a clear menu trigger, hierarchical category disclosure, persistent close affordance, and direct access to account and cart destinations.", "sourceIds": ["source.audit.mobile-navigation"] },
+      { "id": "interactive.states", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["interactive"], "statement": "Define default, hover, focus-visible, pressed, disabled, selected, loading, error, and success states without changing layout geometry.", "sourceIds": ["source.audit.product.desktop"] },
+      { "id": "interactive.no-obstruction", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["interactive"], "statement": "Support, consent, and promotional overlays must not cover product identity, price, options, or primary actions and must be dismissible by keyboard and touch.", "sourceIds": ["source.audit.product.desktop"] },
+      { "id": "interactive.responsive-art-direction", "authority": "required", "lifecycle": "active", "confidence": "verified", "appliesTo": ["interactive"], "statement": "Choose crops for each breakpoint and move copy out of imagery when the focal point, readability, or action hierarchy would be compromised.", "sourceIds": ["source.audit.home.desktop", "source.audit.home.mobile"] }
+    ],
+    "recipes": [
+      { "id": "interactive.global-header", "authority": "required", "appliesTo": ["interactive"], "inputs": ["officialLogo", "primaryCategories", "utilities", "optionalCurrentPromotion"], "composition": { "expanded": ["optional utility bar", "logo and utilities row", "category navigation"], "compact": ["menu", "centered wordmark", "search and cart"], "behavior": "Header condenses without hiding essential commerce actions." }, "ruleRefs": ["logo.official-artwork-only", "interactive.header-priority", "interactive.mobile-disclosure"] },
+      { "id": "interactive.collection-page", "authority": "required", "appliesTo": ["interactive", "commerce"], "inputs": ["breadcrumb", "title", "count", "filters", "sort", "products"], "composition": { "expanded": "Filter rail or drawer plus multi-column product grid.", "compact": "Filter and sort controls above a two-column grid.", "emptyState": "Explain the result and offer a clear way to remove filters." }, "ruleRefs": ["composition.collection-grid", "interactive.states", "accessibility.interaction"] },
+      { "id": "interactive.product-decision-panel", "authority": "required", "appliesTo": ["interactive", "commerce"], "inputs": ["name", "price", "availability", "options", "delivery", "primaryAction"], "composition": { "order": ["product identity", "price and promotion", "availability", "options", "delivery summary", "primary action", "secondary services"], "behavior": "Keep error messages adjacent to fields and preserve input after validation." }, "ruleRefs": ["composition.product-detail", "action.primary-button", "claims.runtime-truth"] }
+    ],
+    "evaluation": [
+      { "id": "interactive.keyboard", "question": "Can every control be reached, understood, and operated with a keyboard?" },
+      { "id": "interactive.compact", "question": "At compact width, are brand, navigation, content, and primary commerce actions intact without overlap?" },
+      { "id": "interactive.state-clarity", "question": "Are interaction, validation, loading, and selection states visible without relying on color alone?" }
+    ],
+    "mediaSelectors": ["source.audit.home.desktop", "source.audit.home.mobile", "source.audit.mobile-navigation", "source.audit.collection.desktop", "source.audit.product.desktop"]
+  }
+}

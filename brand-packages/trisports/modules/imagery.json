@@ -1,0 +1,241 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "trisports.imagery",
+  "capability": "imagery",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "environment": "open water, pool, road cycling, running routes, transition areas, training, and race preparation",
+      "camera": "discipline-specific action, transition detail, aerodynamic product views, and honest training coverage",
+      "lighting": "clear early-day endurance light with controlled product and water reflections",
+      "palette": "historical blue, orange, black, white, water, asphalt, and high-visibility race color",
+      "people": "real endurance athletes across experience levels using correct position, equipment, and transition behavior"
+    },
+    "rules": [
+      {
+        "id": "imagery.environment",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Use open water, pool, road cycling, running routes, transition areas, training, and race preparation.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "imagery.camera",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Favor discipline-specific action, transition detail, aerodynamic product views, and honest training coverage.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "imagery.light",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Use clear early-day endurance light with controlled product and water reflections.",
+        "sourceIds": [
+          "source.audit.home.desktop"
+        ]
+      },
+      {
+        "id": "imagery.people",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "When people appear, show real endurance athletes across experience levels using correct position, equipment, and transition behavior.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "imagery.product-lock",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Lock geometry, material, countable features, condition, fit, scale, and safety context across every image and crop.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "imagery.avoid",
+        "authority": "prohibited",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Avoid presenting the identity as currently standalone, invented race claims, wrong aerodynamic fit, single-discipline generic fitness, unsafe open-water context.",
+        "sourceIds": []
+      }
+    ],
+    "recipes": [
+      {
+        "id": "imagery.environment-wide",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "inputs": [
+          "realUseCase",
+          "environment",
+          "heroSubject",
+          "copySafeRegion"
+        ],
+        "structure": [
+          "real environment",
+          "one anchor",
+          "natural perspective",
+          "copy-safe region"
+        ],
+        "ruleRefs": [
+          "imagery.environment",
+          "imagery.camera",
+          "imagery.light"
+        ]
+      },
+      {
+        "id": "imagery.product-studio",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery",
+          "commerce"
+        ],
+        "inputs": [
+          "authorizedProduct",
+          "requiredAngle",
+          "background",
+          "scaleReference"
+        ],
+        "structure": [
+          "whole product",
+          "normal perspective",
+          "controlled light",
+          "honest contact"
+        ],
+        "ruleRefs": [
+          "imagery.product-lock",
+          "product.truth"
+        ]
+      },
+      {
+        "id": "imagery.product-context",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery",
+          "commerce"
+        ],
+        "inputs": [
+          "authorizedProduct",
+          "realUseCase",
+          "environment",
+          "scaleCues"
+        ],
+        "structure": [
+          "unchanged product",
+          "real use",
+          "believable scale",
+          "matched contact and light"
+        ],
+        "ruleRefs": [
+          "imagery.environment",
+          "imagery.product-lock"
+        ]
+      },
+      {
+        "id": "imagery.people-in-use",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery",
+          "marketing"
+        ],
+        "inputs": [
+          "approvedPerson",
+          "realTask",
+          "correctProductOrService",
+          "permission"
+        ],
+        "structure": [
+          "human context",
+          "real task",
+          "specific proof",
+          "natural behavior"
+        ],
+        "ruleRefs": [
+          "imagery.people",
+          "people.permission"
+        ]
+      },
+      {
+        "id": "imagery.detail-proof",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery",
+          "commerce"
+        ],
+        "inputs": [
+          "verifiedDetail",
+          "material",
+          "functionalContext"
+        ],
+        "structure": [
+          "oriented detail",
+          "material truth",
+          "functional context",
+          "scale cue"
+        ],
+        "ruleRefs": [
+          "imagery.product-lock",
+          "voice.specificity"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "imagery.credible",
+        "question": "Are environment, technique, weather, materials, product scale, and human behavior credible?"
+      },
+      {
+        "id": "imagery.distinct",
+        "question": "Does the image reflect this brand rather than category stock photography?"
+      },
+      {
+        "id": "imagery.truth",
+        "question": "Does every represented product or service preserve verified truth?"
+      }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "source.audit.home.desktop",
+      "source.site.home",
+      "marketing.historical.01",
+      "marketing.historical.02",
+      "marketing.historical.03",
+      "marketing.historical.04",
+      "marketing.historical.05",
+      "marketing.historical.06"
+    ]
+  }
+}

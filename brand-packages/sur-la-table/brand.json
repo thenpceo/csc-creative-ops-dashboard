@@ -1,0 +1,93 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/brand.schema.json",
+  "schemaVersion": "1.0.0",
+  "packageVersion": "1.0.0",
+  "brand": {
+    "id": "sur-la-table",
+    "name": "Sur La Table",
+    "description": "Culinary authority with black-and-white retail discipline, cranberry actions, and expressive seasonal food color.",
+    "proposition": "Quality cookware, tools, ingredients, and cooking experiences that make the kitchen more capable and enjoyable.",
+    "audiences": [
+      "Home cooks",
+      "Gift shoppers",
+      "Cooking-class participants",
+      "Customers comparing premium kitchen tools and cookware"
+    ],
+    "traits": [
+      "culinary",
+      "warm",
+      "expert",
+      "celebratory",
+      "tactile",
+      "inviting"
+    ],
+    "signature": "Make more of the kitchen",
+    "voiceSummary": "Appetizing culinary expertise with specific technique, material, occasion, and gifting language."
+  },
+  "files": {
+    "tokens": "tokens.json",
+    "rules": "rules.json",
+    "recipes": "recipes.json",
+    "media": "media.json",
+    "evaluation": "evaluation.json",
+    "humanGuide": "DESIGN.md"
+  },
+  "modules": [
+    {
+      "capability": "interactive",
+      "path": "modules/interactive.json"
+    },
+    {
+      "capability": "static",
+      "path": "modules/static.json"
+    },
+    {
+      "capability": "imagery",
+      "path": "modules/imagery.json"
+    },
+    {
+      "capability": "commerce",
+      "path": "modules/commerce.json"
+    },
+    {
+      "capability": "marketing",
+      "path": "modules/marketing.json"
+    },
+    {
+      "capability": "motion",
+      "path": "modules/motion.json"
+    },
+    {
+      "capability": "generative-image",
+      "path": "modules/generative-image.json"
+    },
+    {
+      "capability": "generative-video",
+      "path": "modules/generative-video.json"
+    },
+    {
+      "capability": "spatial",
+      "path": "modules/spatial.json"
+    },
+    {
+      "capability": "sequential",
+      "path": "modules/sequential.json"
+    }
+  ],
+  "provenance": {
+    "researchedAt": "2026-07-21",
+    "method": "First-party live or archived surface review, computed-style sampling, visible component inspection, and official or public asset capture.",
+    "evidenceStatus": "mixed",
+    "verifiedSurfaces": [
+      "current-homepage",
+      "first-party-linked-social-profiles"
+    ],
+    "sourceAudit": "../../research/portfolio-live-evidence.json",
+    "historicalStandaloneIdentity": false,
+    "notes": [
+      "Rendered live Salesforce Commerce homepage plus first-party CSS and current campaign font/color inspection.",
+      "Current offers, inventory, prices, availability, service scope, and campaign copy are runtime data.",
+      "The package is output-neutral; provider and renderer adapters belong outside it."
+    ]
+  }
+}

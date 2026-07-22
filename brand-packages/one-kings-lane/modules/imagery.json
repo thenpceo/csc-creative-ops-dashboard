@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "one-kings-lane.imagery",
+  "capability": "imagery",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "palette": ["warm white", "heritage green", "pale blue", "sage and moss", "natural wood", "aged brass", "raffia", "linen", "stone"],
+      "lighting": ["soft directional daylight", "open shade", "warm practical accents", "gentle window contrast", "controlled highlights"],
+      "lensIntent": { "room": "natural wide perspective without stretched edges", "product": "normal perspective preserving proportion", "detail": "close focus with material texture intact" },
+      "occupancy": { "roomPrimary": "unoccupied or lightly lived-in", "people": "secondary and contextual" }
+    },
+    "rules": [
+      { "id": "imagery.daylight-first", "authority": "preferred", "lifecycle": "active", "confidence": "verified", "appliesTo": ["imagery"], "statement": "Favor soft directional daylight with believable window falloff and restrained warm practical light; avoid harsh commercial flash or neon color casts.", "sourceIds": ["asset.hero.summer-escape", "asset.editorial.new-arrivals", "asset.editorial.made-in-usa"] },
+      { "id": "imagery.perspective-natural", "authority": "required", "lifecycle": "active", "confidence": "verified", "appliesTo": ["imagery"], "statement": "Keep vertical lines controlled and room proportions believable; wide views may feel spacious but must not visibly stretch furniture or architecture.", "sourceIds": ["asset.editorial.new-arrivals", "asset.editorial.design-services"] },
+      { "id": "imagery.styling-layered", "authority": "required", "lifecycle": "active", "confidence": "verified", "appliesTo": ["imagery"], "statement": "Build rooms through a considered mix of eras, patterns, art, books, lighting, textiles, and crafted objects, with a clear focal hierarchy.", "sourceIds": ["asset.hero.summer-escape", "asset.editorial.made-in-usa"] },
+      { "id": "imagery.no-digital-perfection", "authority": "prohibited", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["imagery"], "statement": "Avoid plastic materials, impossible reflections, over-sharpening, symmetry without life, excessive depth blur, and pristine scenes with no evidence of use.", "sourceIds": ["asset.editorial.new-arrivals"] },
+      { "id": "imagery.reserved-copy-space", "authority": "preferred", "lifecycle": "active", "confidence": "verified", "appliesTo": ["imagery", "static", "motion"], "statement": "When imagery will carry copy, protect a calm tonal region or architectural negative space rather than placing type across busy furnishings.", "sourceIds": ["asset.hero.summer-escape", "asset.editorial.design-services"] },
+      { "id": "imagery.contextual-people", "authority": "permitted", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["imagery"], "statement": "If people appear, direct candid domestic behavior, natural posture, timeless styling, and diverse age and appearance appropriate to the story; do not turn the home into a fashion set.", "sourceIds": ["source.site.design-services"] }
+    ],
+    "recipes": [
+      { "id": "imagery.wide-room", "authority": "preferred", "appliesTo": ["imagery", "static", "motion"], "inputs": ["roomPurpose", "heroFurnishing", "materialPalette", "copyPlacement", "timeOfDay"], "composition": { "framing": "Natural wide room view at standing or seated eye level.", "light": "Soft daylight from one readable direction, balanced by restrained practicals.", "styling": "Layered but edited; one visual anchor and a path for the eye.", "copySpace": "Reserve a calm wall, window-adjacent tone, or side field." }, "ruleRefs": ["imagery.daylight-first", "imagery.perspective-natural", "imagery.styling-layered", "imagery.reserved-copy-space"] },
+      { "id": "imagery.product-studio", "authority": "required", "appliesTo": ["imagery", "commerce", "static"], "inputs": ["verifiedProduct", "requiredAngle", "finishReference", "scaleReference"], "composition": { "framing": "Centered whole product with breathing room and consistent scale.", "background": "White or #F5F5F5.", "light": "Large soft source with restrained contact shadow.", "accuracy": "Preserve silhouette, proportions, materials, seams, hardware, color, and countable features." }, "ruleRefs": ["imagery.product-truth", "imagery.product-cutout"] },
+      { "id": "imagery.product-in-room", "authority": "preferred", "appliesTo": ["imagery", "commerce", "static", "motion"], "inputs": ["verifiedProduct", "roomContext", "scaleCues", "materialPalette"], "composition": { "role": "Product is the clear focal anchor within a believable styled room.", "scale": "Use architecture and familiar objects to communicate actual size.", "light": "Match product illumination, contact, and reflections to the room." }, "ruleRefs": ["imagery.product-truth", "imagery.lived-in-not-cluttered", "imagery.material-specificity"] },
+      { "id": "imagery.material-detail", "authority": "preferred", "appliesTo": ["imagery", "static", "motion", "sequential"], "inputs": ["verifiedMaterialOrProduct", "craftDetail", "lightDirection"], "composition": { "framing": "Close enough to reveal weave, grain, glaze, patina, joinery, or hardware while retaining orientation.", "light": "Raking soft light reveals texture without clipped highlights.", "focus": "Specific detail sharp; background falloff is subtle, not cinematic excess." }, "ruleRefs": ["imagery.material-specificity", "imagery.product-truth"] }
+    ],
+    "evaluation": [
+      { "id": "imagery.believability", "question": "Are architecture, scale, perspective, light, shadow, reflection, and contact physically coherent?" },
+      { "id": "imagery.material", "question": "Can a viewer identify real material character rather than generic smooth surfaces?" },
+      { "id": "imagery.brand-world", "question": "Does the scene feel collected, personal, editorial, and livable instead of generic luxury or sterile minimalism?" },
+      { "id": "imagery.product-accuracy", "question": "If a real product is present, does it match the verified reference in every material visual feature?" }
+    ],
+    "mediaSelectors": ["asset.hero.summer-escape", "asset.editorial.new-arrivals", "asset.editorial.design-services", "asset.editorial.made-in-usa", "asset.category.lounge-furniture", "asset.product.austin-lifestyle", "asset.product.austin-detail"]
+  }
+}

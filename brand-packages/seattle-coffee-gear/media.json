@@ -1,0 +1,513 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/media.schema.json",
+  "schemaVersion": "1.0.0",
+  "rightsPolicy": {
+    "default": "unverified-public-reference",
+    "productionUse": "Requires independent rights confirmation and brand authorization.",
+    "modelUpload": "Prohibited unless an authorized reviewer upgrades the asset record."
+  },
+  "items": [
+    {
+      "id": "asset.logo.primary",
+      "uri": "media/official/logo-primary.svg",
+      "kind": "image",
+      "roles": [
+        "logo",
+        "primary-identity",
+        "brand-end-frame"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "377cb4bb4dd9238712cef3308d9ea7026f39c2ff6581cd515b6039ea00985343",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://www.seattlecoffeegear.com/cdn/shop/files/SCG_LOGO_Primary_Red_Black.svg?v=1702922034&width=600",
+        "capturedAt": "2026-07-21",
+        "contentType": "image/svg+xml"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference",
+          "authorized-brand-work"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.site.home",
+      "uri": "https://www.seattlecoffeegear.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "current-or-canonical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.seattlecoffeegear.com/",
+        "reviewedAt": "2026-07-21",
+        "finalUrl": "https://www.seattlecoffeegear.com/",
+        "surfaceStatus": "current"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.site.evidence",
+      "uri": "https://www.seattlecoffeegear.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.seattlecoffeegear.com/",
+        "reviewedAt": "2026-07-21",
+        "note": "Rendered live Shopify homepage, computed styles, theme variables, and first-party CSS."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.home.desktop",
+      "uri": "media/official/homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "desktop-audit",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "active",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "77faa9df0040079f0277079fb8a44a626190d767408c3c1e3b2f04768b4172ab",
+      "source": {
+        "type": "live-capture",
+        "page": "https://www.seattlecoffeegear.com/",
+        "requestedPage": "https://www.seattlecoffeegear.com/",
+        "capturedAt": "2026-07-21",
+        "surfaceStatus": "current",
+        "note": "Rendered public homepage capture."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "marketing.current.01",
+      "uri": "media/marketing-reference/current-01-whole-bean-coffee-and-espresso.png",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "hero-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "c6406cfd3e675dfd0e08abccc0ce50a4d9550a86f673d11797e8c82a9eb5b8c5",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://www.seattlecoffeegear.com/cdn/shop/collections/70e126e8012bf1523a170ce14787d70e.png?v=1707731484&width=600",
+        "page": "https://www.seattlecoffeegear.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Whole Bean Coffee and Espresso",
+        "contentType": "image/png"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.02",
+      "uri": "media/marketing-reference/current-02-a-selection-of-tony-s-coffee-products-on-a-dark-.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "4da78d9ab032bbbbac1279458efcc42c7fcb33dc29720ebc03256a773871c9f3",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://www.seattlecoffeegear.com/cdn/shop/files/SubsNavBlock.jpg?crop=center&height=192&v=1762890026&width=256",
+        "page": "https://www.seattlecoffeegear.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "A selection of Tony's Coffee products on a dark gray background with portafilter and latte's.",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.03",
+      "uri": "media/marketing-reference/current-03-eureka-mignon-notte-espresso-grinder-open-box.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "e5db964ac38a603848f6cd0553afbbf268a0957c846550a20c3f62dd341e4d65",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/EUREKA_MIGNON_NOTTE_ESPRESSO_GRINDERnew_d4b60e2e-02c0-447f-93c4-f3b1c97f2809.jpg?v=1726268105&width=1024",
+        "page": "https://www.seattlecoffeegear.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Eureka Mignon Notte Espresso Grinder - Open Box",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.04",
+      "uri": "media/marketing-reference/current-04-rocket-espresso-r58-cinquantotto-espresso-machin.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "c7840c614b6481442bab04f98fc6ee441ad0ca831b8d0de967d3d49094f327d0",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/ROCKETESPRESSOR58CINQUANTOTTOESPRESSOMACHINEnew-2.jpg?v=1711077016&width=1024",
+        "page": "https://www.seattlecoffeegear.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Rocket Espresso R58 Cinquantotto Espresso Machine - Open Box",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.05",
+      "uri": "media/marketing-reference/current-05-rancilio-silvia-pid-espresso-machine-black-open-.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "49d554ad8df8470fc1e26962b31ac08853ed4ef58d5b2e876de6912331ea49ac",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/rancilio_rockypid_black_2018-2_2.jpg?v=1696573549&width=1024",
+        "page": "https://www.seattlecoffeegear.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Rancilio Silvia PID Espresso Machine - Black - Open Box",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.06",
+      "uri": "media/marketing-reference/current-06-eureka-mignon-specialita-espresso-grinder-polish.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "3167c7123813ff880fa8ea4227ab371f96a5000c0b8e5e0a3dc1aa6a532e8084",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/Eureka_Mignon_Specialita_Espresso_Grindernew-3.jpg?v=1757103574&width=1024",
+        "page": "https://www.seattlecoffeegear.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Eureka Mignon Specialita Espresso Grinder - Polished Chrome - Open Box",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.social.youtube.01",
+      "uri": "https://www.youtube.com/@SeattleCoffeeGear",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.youtube.com/@SeattleCoffeeGear",
+        "reviewedAt": "2026-07-21",
+        "label": "#1 COFFEE YOUTUBE CHANNEL 690,000+ subscribers fill their cup with our expert coffee content. View Channel"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.tiktok.02",
+      "uri": "https://www.tiktok.com/@seattlecoffeegear",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.tiktok.com/@seattlecoffeegear",
+        "reviewedAt": "2026-07-21",
+        "label": "tiktok.com"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.instagram.03",
+      "uri": "https://www.instagram.com/seattlecoffeegear",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.instagram.com/seattlecoffeegear",
+        "reviewedAt": "2026-07-21",
+        "label": "instagram.com"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.facebook.04",
+      "uri": "https://www.facebook.com/SeattleCoffeeGear",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.facebook.com/SeattleCoffeeGear",
+        "reviewedAt": "2026-07-21",
+        "label": "facebook.com"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.pinterest.05",
+      "uri": "https://www.pinterest.com/seattlecoffeegear/",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.pinterest.com/seattlecoffeegear/",
+        "reviewedAt": "2026-07-21",
+        "label": "pinterest.com"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.linkedin.06",
+      "uri": "https://linkedin.com/company/seattle-coffee-gear",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://linkedin.com/company/seattle-coffee-gear",
+        "reviewedAt": "2026-07-21",
+        "label": "linkedin.com"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.youtube.07",
+      "uri": "https://youtube.com/c/Seattlecoffeegearinfo",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://youtube.com/c/Seattlecoffeegearinfo",
+        "reviewedAt": "2026-07-21",
+        "label": "youtube.com"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.ad-library.meta-query",
+      "uri": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Espresso%20Machines&search_type=keyword_unordered",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "public-ad-library-query"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "public-ad-library-query",
+        "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Espresso%20Machines&search_type=keyword_unordered",
+        "reviewedAt": "2026-07-21",
+        "note": "Live query reference only; results are volatile and do not establish spend, targeting, performance, or account ownership."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    }
+  ]
+}

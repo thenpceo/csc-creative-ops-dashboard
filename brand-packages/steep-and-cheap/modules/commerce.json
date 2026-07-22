@@ -1,0 +1,234 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "steep-and-cheap.commerce",
+  "capability": "commerce",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "decisionCriteria": "activity, size, color, current price, verified discount, remaining inventory, brand, and shipping",
+      "productType": "discounted outdoor apparel, footwear, and equipment"
+    },
+    "rules": [
+      {
+        "id": "commerce.decision-facts",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "commerce"
+        ],
+        "statement": "Expose the facts needed for activity, size, color, current price, verified discount, remaining inventory, brand, and shipping before or adjacent to the primary action.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "commerce.current-data",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "commerce"
+        ],
+        "statement": "Price, discount, inventory, options, compatibility, delivery, location, service availability, reviews, and eligibility come from current authoritative data.",
+        "sourceIds": []
+      },
+      {
+        "id": "commerce.product-media",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "commerce"
+        ],
+        "statement": "Use authorized product media as the factual anchor. Generated lifestyle interpretation never replaces the primary truth image.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "commerce.badges",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "commerce"
+        ],
+        "statement": "Badges communicate one sourced state and must not overlap essential product detail or depend on color alone.",
+        "sourceIds": []
+      },
+      {
+        "id": "commerce.comparison",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "commerce"
+        ],
+        "statement": "Compare like with like using the same verified criteria and units. Expose unknown values instead of filling them in.",
+        "sourceIds": []
+      },
+      {
+        "id": "commerce.action",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "commerce"
+        ],
+        "statement": "The action label describes the real next step, such as selecting, confirming fit, finding a store, booking, consigning, or purchasing.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      }
+    ],
+    "recipes": [
+      {
+        "id": "commerce.product-card",
+        "authority": "preferred",
+        "appliesTo": [
+          "commerce",
+          "interactive"
+        ],
+        "inputs": [
+          "authorizedImage",
+          "productIdentity",
+          "decisionSummary",
+          "currentFacts",
+          "state"
+        ],
+        "structure": [
+          "image",
+          "identity",
+          "decision summary",
+          "current facts",
+          "state"
+        ],
+        "ruleRefs": [
+          "commerce.current-data",
+          "commerce.product-media"
+        ]
+      },
+      {
+        "id": "commerce.decision-panel",
+        "authority": "preferred",
+        "appliesTo": [
+          "commerce",
+          "interactive"
+        ],
+        "inputs": [
+          "identity",
+          "decisionFacts",
+          "options",
+          "currentFacts",
+          "action"
+        ],
+        "structure": [
+          "identity",
+          "decision facts",
+          "options",
+          "current facts",
+          "action"
+        ],
+        "ruleRefs": [
+          "commerce.decision-facts",
+          "commerce.action"
+        ]
+      },
+      {
+        "id": "commerce.comparison-table",
+        "authority": "preferred",
+        "appliesTo": [
+          "commerce",
+          "interactive",
+          "static"
+        ],
+        "inputs": [
+          "options",
+          "sharedCriteria",
+          "units",
+          "unknownStates"
+        ],
+        "structure": [
+          "shared question",
+          "options",
+          "criteria",
+          "differences",
+          "actions"
+        ],
+        "ruleRefs": [
+          "commerce.comparison",
+          "accessibility.non-color"
+        ]
+      },
+      {
+        "id": "commerce.assortment",
+        "authority": "permitted",
+        "appliesTo": [
+          "commerce",
+          "static"
+        ],
+        "inputs": [
+          "verifiedProducts",
+          "collectionIdea",
+          "currentFacts"
+        ],
+        "structure": [
+          "collection idea",
+          "two to four verified products",
+          "current facts",
+          "action"
+        ],
+        "ruleRefs": [
+          "product.truth",
+          "claims.runtime-truth"
+        ]
+      },
+      {
+        "id": "commerce.service-support",
+        "authority": "preferred",
+        "appliesTo": [
+          "commerce",
+          "interactive"
+        ],
+        "inputs": [
+          "service",
+          "scope",
+          "currentAvailability",
+          "action"
+        ],
+        "structure": [
+          "service",
+          "specific scope",
+          "availability",
+          "action"
+        ],
+        "ruleRefs": [
+          "commerce.current-data",
+          "voice.specificity"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "commerce.decide",
+        "question": "Can a customer evaluate activity, size, color, current price, verified discount, remaining inventory, brand, and shipping without hunting?"
+      },
+      {
+        "id": "commerce.current",
+        "question": "Are commerce and operational facts sourced, current, and explicitly unavailable when unknown?"
+      },
+      {
+        "id": "commerce.truth",
+        "question": "Do imagery, labels, options, and actions represent the same verified item or service?"
+      }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "source.audit.home.desktop",
+      "source.site.home"
+    ]
+  }
+}

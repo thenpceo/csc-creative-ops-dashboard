@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cscgeneration.local/brand-system/v1/evaluation.schema.json",
+  "title": "Brand evaluation",
+  "type": "object",
+  "required": ["schemaVersion", "gates", "dimensions", "decisionPolicy"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string" },
+    "gates": { "type": "array" },
+    "dimensions": { "type": "array" },
+    "decisionPolicy": { "type": "object" }
+  }
+}

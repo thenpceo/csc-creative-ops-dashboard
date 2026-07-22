@@ -1,0 +1,349 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/media.schema.json",
+  "schemaVersion": "1.0.0",
+  "rightsPolicy": {
+    "default": "unverified-public-reference",
+    "productionUse": "Requires independent rights confirmation and brand authorization.",
+    "modelUpload": "Prohibited unless an authorized reviewer upgrades the asset record."
+  },
+  "items": [
+    {
+      "id": "asset.logo.primary",
+      "uri": "media/official/logo-primary.svg",
+      "kind": "image",
+      "roles": [
+        "logo",
+        "primary-identity",
+        "brand-end-frame"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "a7b1595ccc8b39d36cebf00262f06f71c509c160bc405df8c453d4df22fa02a8",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://www.biketiresdirect.com/images/btd-logo.svg",
+        "capturedAt": "2026-07-21",
+        "contentType": "image/svg+xml"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference",
+          "authorized-brand-work"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.site.home",
+      "uri": "https://www.biketiresdirect.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "current-or-canonical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.biketiresdirect.com/",
+        "reviewedAt": "2026-07-21",
+        "finalUrl": "https://www.biketiresdirect.com/",
+        "surfaceStatus": "current"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.site.evidence",
+      "uri": "https://www.biketiresdirect.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.biketiresdirect.com/",
+        "reviewedAt": "2026-07-21",
+        "note": "Rendered live homepage audit and first-party CSS variables."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.home.desktop",
+      "uri": "media/official/homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "desktop-audit",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "active",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "8764ffd38b0bb1d9de4519878678a230d1ed75f287f487a807e7641036de84a8",
+      "source": {
+        "type": "live-capture",
+        "page": "https://www.biketiresdirect.com/",
+        "requestedPage": "https://www.biketiresdirect.com/",
+        "capturedAt": "2026-07-21",
+        "surfaceStatus": "current",
+        "note": "Rendered public homepage capture."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "marketing.current.01",
+      "uri": "media/marketing-reference/current-01-click-for-schwalbe-save-up-to-25-shop-tires.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "hero-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "c4f0540a043856712527b3abc752457a67859f8fe1d0e8a8dbe5603136860087",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://static.biketiresdirect.com/promoimages/image53613.jpg",
+        "page": "https://www.biketiresdirect.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Click for Schwalbe Save up to 25 Shop Tires",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.02",
+      "uri": "media/marketing-reference/current-02-click-for-groupset-glow-up-shop-now.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "2f786bd8ac35d3298bbf9c849ec7981094eea54063e57b9d048a7c7516a535e6",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://static.biketiresdirect.com/promoimages/image53614.jpg",
+        "page": "https://www.biketiresdirect.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Click for Groupset Glow-Up Shop Now",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.03",
+      "uri": "media/marketing-reference/current-03-click-for-secret-summer-apparel-sale-add-to-cart.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "ae64930f343f427f0af6aed135ab9bc36220d7dd556f0f6f227ba357ce2cc838",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://static.biketiresdirect.com/promoimages/image53621.jpg",
+        "page": "https://www.biketiresdirect.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Click for Secret Summer Apparel Sale Add to Cart for Discount Save Now",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.04",
+      "uri": "media/marketing-reference/current-04-click-for-born-for-breakaways-save-25-shop-helme.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "af9207acca45c3255fdb01f2c879b35f8c00c5cb034deb7b3d68aef20d33684a",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://static.biketiresdirect.com/promoimages/image53612.jpg",
+        "page": "https://www.biketiresdirect.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Click for Born for Breakaways Save 25 Shop Helmets",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.social.youtube.01",
+      "uri": "https://www.youtube.com/channel/UCNJY3VRHEnVZ3HIESTOywTQ?sub_confirmation=1",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.youtube.com/channel/UCNJY3VRHEnVZ3HIESTOywTQ?sub_confirmation=1",
+        "reviewedAt": "2026-07-21",
+        "label": "youtube.com"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.facebook.02",
+      "uri": "https://www.facebook.com/BikeTiresDirect/",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.facebook.com/BikeTiresDirect/",
+        "reviewedAt": "2026-07-21",
+        "label": "facebook.com"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.instagram.03",
+      "uri": "https://www.instagram.com/biketiresdirect/",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.instagram.com/biketiresdirect/",
+        "reviewedAt": "2026-07-21",
+        "label": "instagram.com"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.ad-library.meta-query",
+      "uri": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=BikeTiresDirect&search_type=keyword_unordered",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "public-ad-library-query"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "public-ad-library-query",
+        "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=BikeTiresDirect&search_type=keyword_unordered",
+        "reviewedAt": "2026-07-21",
+        "note": "Live query reference only; results are volatile and do not establish spend, targeting, performance, or account ownership."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    }
+  ]
+}

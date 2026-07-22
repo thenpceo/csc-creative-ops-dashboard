@@ -1,0 +1,435 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/media.schema.json",
+  "schemaVersion": "1.0.0",
+  "rightsPolicy": {
+    "default": "unverified-public-reference",
+    "productionUse": "Requires independent rights confirmation and brand authorization.",
+    "modelUpload": "Prohibited unless an authorized reviewer upgrades the asset record."
+  },
+  "items": [
+    {
+      "id": "asset.logo.primary",
+      "uri": "media/official/logo-primary.png",
+      "kind": "image",
+      "roles": [
+        "logo",
+        "primary-identity",
+        "brand-end-frame"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "c778dab64246fee9ee98b2be862844b22f57bbc73c433001f95ef73e2454aabc",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.backcountry.com/images/brand/bcs_logo.png",
+        "capturedAt": "2026-07-21",
+        "contentType": "image/png"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference",
+          "authorized-brand-work"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.site.home",
+      "uri": "https://www.backcountry.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "current-or-canonical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.backcountry.com/",
+        "reviewedAt": "2026-07-21",
+        "finalUrl": "https://www.backcountry.com/",
+        "surfaceStatus": "current"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.site.evidence",
+      "uri": "https://web.archive.org/web/20251215082556/https://www.backcountry.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "archived-first-party-page",
+        "url": "https://web.archive.org/web/20251215082556/https://www.backcountry.com/",
+        "reviewedAt": "2026-07-21",
+        "note": "Live site returned human verification in automated capture; tokens come from the latest available first-party homepage snapshot and its embedded Chakra theme."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.home.desktop",
+      "uri": "media/official/homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "desktop-audit",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "active",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "6ba38e079050714839a867f0a9e4974d2b4bfd621b8ddab5306cab890397f5d5",
+      "source": {
+        "type": "live-capture",
+        "page": "https://www.backcountry.com/",
+        "requestedPage": "https://www.backcountry.com/",
+        "capturedAt": "2026-07-21",
+        "surfaceStatus": "current",
+        "note": "Rendered public homepage capture."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "marketing.current.01",
+      "uri": "media/marketing-reference/current-01-women-s-apparel.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "hero-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "bf4abff05de4640442713015f08acfd13e8123c91d9786d086b5349cbf468cdb",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.backcountry.com/v3/assets/blt1e7d804dd7971a01/69a0d6597b66cedd39c66fac/Womens_apparel.jpg?width=450",
+        "page": "https://www.backcountry.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Women's Apparel",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.02",
+      "uri": "media/marketing-reference/current-02-men-s-apparel.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "2f6335fa169971eab37601265236de3f496fd40b423877279050fbd09ee97930",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.backcountry.com/v3/assets/blt8148c8701ca804fa/69a0d659b2b7de1104b4acba/mens_apparel.jpg?width=450",
+        "page": "https://www.backcountry.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Men's Apparel",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.03",
+      "uri": "media/marketing-reference/current-03-bike.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "a0a43b3439b279d6377c94da9114f6a30a3c4e70fffcca091f2dcbec0df83d50",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.backcountry.com/v3/assets/blt1cd2370dac27210c/69a0d659a47c7e88118e17bb/Bike.jpg?width=450",
+        "page": "https://www.backcountry.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Bike",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.04",
+      "uri": "media/marketing-reference/current-04-camp-hike.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "31be960c289cc46115511aa7246a7a46d2d066ebb9aa55340865f7d110b9ad13",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.backcountry.com/v3/assets/blte983f45a2fa7225d/69a0d659bc49c482e28a8d47/Camp_&_Hike.jpg?width=450",
+        "page": "https://www.backcountry.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Camp & Hike",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.05",
+      "uri": "media/marketing-reference/current-05-footwear.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "504a18b00f21e7b773bec7aeebd73013f1d38de4720315bfe383d1454b4ca4a6",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.backcountry.com/v3/assets/blt0fcb21b8bea21a11/69a0d659f41d2053d6d3c98c/Footwear.jpg?width=450",
+        "page": "https://www.backcountry.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Footwear",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.06",
+      "uri": "media/marketing-reference/current-06-travel.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "6770edfcee6a1b4f6f859e6a33bf66c3f732ae93d346e628059414bc012f6298",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.backcountry.com/v3/assets/blt8b5f48b11600c8b0/69a0d65947c5b09fc4c85903/Travel.jpg?width=450",
+        "page": "https://www.backcountry.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Travel",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.social.facebook.01",
+      "uri": "https://www.facebook.com/Backcountry",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.facebook.com/Backcountry",
+        "reviewedAt": "2026-07-21",
+        "label": "Like us on Facebook"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.instagram.02",
+      "uri": "https://www.instagram.com/backcountry",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.instagram.com/backcountry",
+        "reviewedAt": "2026-07-21",
+        "label": "Follow us on Instagram"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.youtube.03",
+      "uri": "https://www.youtube.com/@backcountry",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.youtube.com/@backcountry",
+        "reviewedAt": "2026-07-21",
+        "label": "Subscribe to us on Youtube"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.tiktok.04",
+      "uri": "https://www.tiktok.com/@backcountrycom",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.tiktok.com/@backcountrycom",
+        "reviewedAt": "2026-07-21",
+        "label": "footer.tiktok"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.ad-library.meta-query",
+      "uri": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Backcountry&search_type=keyword_unordered",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "public-ad-library-query"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "public-ad-library-query",
+        "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Backcountry&search_type=keyword_unordered",
+        "reviewedAt": "2026-07-21",
+        "note": "Live query reference only; results are volatile and do not establish spend, targeting, performance, or account ownership."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    }
+  ]
+}

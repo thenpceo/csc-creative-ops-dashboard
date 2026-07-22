@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cscgeneration.local/brand-system/v1/media.schema.json",
+  "title": "Brand media catalog",
+  "type": "object",
+  "required": ["schemaVersion", "items"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "uri", "kind", "roles", "lifecycle", "source", "rights"],
+        "properties": {
+          "id": { "type": "string" },
+          "uri": { "type": "string" },
+          "kind": { "type": "string" },
+          "roles": { "type": "array", "items": { "type": "string" } },
+          "lifecycle": { "enum": ["active", "experimental", "deprecated"] },
+          "source": { "type": "object" },
+          "rights": { "type": "object" }
+        }
+      }
+    }
+  }
+}

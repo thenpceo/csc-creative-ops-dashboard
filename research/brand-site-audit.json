@@ -1,0 +1,5383 @@
+[
+  {
+    "slug": "backcountry",
+    "name": "Backcountry",
+    "requestedUrl": "https://www.backcountry.com",
+    "capturedAt": "2026-07-20T21:00:52.529Z",
+    "status": 202,
+    "finalUrl": "https://www.backcountry.com/",
+    "title": "Human Verification",
+    "description": null,
+    "themeColor": null,
+    "logoCandidates": [],
+    "variables": {},
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Let's confirm you are human",
+        "color": "rgb(221, 107, 16)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "fontSize": "32px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(221, 107, 16)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "button",
+        "text": "Begin",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 153, 2)",
+        "fontFamily": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "2px",
+        "border": "1px solid rgb(255, 153, 2)",
+        "padding": "5px 30px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "Temporary error. Please try again.Before proceeding to your request, you need to solve a puzzle, and the puzzle requires Google Translate to",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Arial",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 21
+      },
+      {
+        "value": "rgb(221, 107, 16)",
+        "count": 2
+      },
+      {
+        "value": "rgb(255, 153, 2)",
+        "count": 2
+      },
+      {
+        "value": "rgb(204, 204, 204)",
+        "count": 1
+      },
+      {
+        "value": "rgb(204, 204, 204) rgb(0, 0, 0)",
+        "count": 1
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "count": 12
+      },
+      {
+        "value": "Arial",
+        "count": 1
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "16px",
+        "count": 12
+      },
+      {
+        "value": "32px",
+        "count": 1
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "400",
+        "count": 11
+      },
+      {
+        "value": "700",
+        "count": 2
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 11
+      },
+      {
+        "value": "2px",
+        "count": 1
+      },
+      {
+        "value": "4px",
+        "count": 1
+      }
+    ],
+    "shadows": [],
+    "screenshot": "screenshots/backcountry.png"
+  },
+  {
+    "slug": "competitive-cyclist",
+    "name": "Competitive Cyclist",
+    "requestedUrl": "https://www.competitivecyclist.com",
+    "capturedAt": "2026-07-20T21:00:55.998Z",
+    "status": 202,
+    "finalUrl": "https://www.competitivecyclist.com/",
+    "title": "Human Verification",
+    "description": null,
+    "themeColor": null,
+    "logoCandidates": [],
+    "variables": {},
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Let's confirm you are human",
+        "color": "rgb(221, 107, 16)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "fontSize": "32px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(221, 107, 16)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "button",
+        "text": "Begin",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 153, 2)",
+        "fontFamily": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "2px",
+        "border": "1px solid rgb(255, 153, 2)",
+        "padding": "5px 30px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "Temporary error. Please try again.Before proceeding to your request, you need to solve a puzzle, and the puzzle requires Google Translate to",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Arial",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 21
+      },
+      {
+        "value": "rgb(221, 107, 16)",
+        "count": 2
+      },
+      {
+        "value": "rgb(255, 153, 2)",
+        "count": 2
+      },
+      {
+        "value": "rgb(204, 204, 204)",
+        "count": 1
+      },
+      {
+        "value": "rgb(204, 204, 204) rgb(0, 0, 0)",
+        "count": 1
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "count": 12
+      },
+      {
+        "value": "Arial",
+        "count": 1
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "16px",
+        "count": 12
+      },
+      {
+        "value": "32px",
+        "count": 1
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "400",
+        "count": 11
+      },
+      {
+        "value": "700",
+        "count": 2
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 11
+      },
+      {
+        "value": "2px",
+        "count": 1
+      },
+      {
+        "value": "4px",
+        "count": 1
+      }
+    ],
+    "shadows": [],
+    "screenshot": "screenshots/competitive-cyclist.png"
+  },
+  {
+    "slug": "bike-tires-direct",
+    "name": "BikeTiresDirect",
+    "requestedUrl": "https://www.biketiresdirect.com",
+    "capturedAt": "2026-07-20T21:00:59.339Z",
+    "status": 200,
+    "finalUrl": "https://www.biketiresdirect.com/",
+    "title": "BikeTiresDirect - Great prices on bicycle tires, components, apparel",
+    "description": "Home to the world's best selection of bicycle tires, plus tons of other cycling gear. Explore our collection of complete bikes, components, apparel, accessories, computers and much more. BTD has been proudly serving cyclists of all disciplines since 2002.",
+    "themeColor": "#ffffff",
+    "logoCandidates": [
+      {
+        "alt": "Bike Tires Direct logo. Link to homepage.",
+        "src": "https://www.biketiresdirect.com/images/btd-logo.svg"
+      },
+      {
+        "alt": "Bike Tires Direct logo",
+        "src": "https://www.biketiresdirect.com/images/btd-footer-logo2.png"
+      }
+    ],
+    "variables": {
+      "--ltfont": "#ccc",
+      "--dkfont": "#3b464a",
+      "--redfont": "#d8202a",
+      "--whitefont": "#fff"
+    },
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "BikeTiresDirect.com Homepage",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "22px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Homepage promotional carousel",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Daily Special",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Main promotional banners",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Featured Products",
+        "color": "rgb(59, 70, 74)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(59, 70, 74)",
+        "padding": "0px 10px 0px 0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "LINKS",
+        "color": "rgb(239, 198, 45)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "15px",
+        "fontWeight": "800",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(239, 198, 45)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "CATEGORIES",
+        "color": "rgb(239, 198, 45)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "15px",
+        "fontWeight": "800",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(239, 198, 45)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "SUBSCRIBE",
+        "color": "rgb(239, 198, 45)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "15px",
+        "fontWeight": "800",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(239, 198, 45)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(59, 70, 74)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "100%",
+        "border": "1px solid rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(59, 70, 74)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "100%",
+        "border": "1px solid rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(59, 70, 74)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "100%",
+        "border": "1px solid rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(59, 70, 74)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "100%",
+        "border": "1px solid rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "SIGN UP FOR EMAILS",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(239, 198, 45)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "15px",
+        "fontWeight": "800",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "2px solid rgb(239, 198, 45)",
+        "padding": "4px 0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Live chat",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(245, 245, 245)",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "4px",
+        "border": "1px solid rgb(22, 49, 120)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "var ajaxCheckCode = '58khjvvq'; var nsecn=''; var cip='108.189.20.119'; var surn='213105'; var siteURL = 'https://www.biketiresdirect.com'; ",
+      "color": "rgb(59, 70, 74)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px none rgb(59, 70, 74)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgb(59, 70, 74)",
+        "count": 405
+      },
+      {
+        "value": "rgb(204, 204, 204)",
+        "count": 92
+      },
+      {
+        "value": "rgb(22, 49, 120)",
+        "count": 92
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 83
+      },
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 31
+      },
+      {
+        "value": "rgb(216, 32, 42)",
+        "count": 8
+      },
+      {
+        "value": "rgb(239, 198, 45)",
+        "count": 8
+      },
+      {
+        "value": "rgb(239, 239, 239)",
+        "count": 3
+      },
+      {
+        "value": "rgb(136, 136, 136)",
+        "count": 2
+      },
+      {
+        "value": "rgb(255, 211, 49)",
+        "count": 2
+      },
+      {
+        "value": "rgb(47, 63, 76)",
+        "count": 2
+      },
+      {
+        "value": "rgb(160, 160, 160) rgb(0, 0, 0) rgb(0, 0, 0)",
+        "count": 1
+      },
+      {
+        "value": "rgb(172, 172, 172)",
+        "count": 1
+      },
+      {
+        "value": "rgb(245, 245, 245)",
+        "count": 1
+      },
+      {
+        "value": "rgb(255, 255, 255) rgb(255, 255, 255) rgb(59, 70, 74)",
+        "count": 1
+      },
+      {
+        "value": "rgb(59, 70, 74) rgb(160, 160, 160) rgb(59, 70, 74) rgb(59, 70, 74)",
+        "count": 1
+      },
+      {
+        "value": "rgb(59, 70, 74) rgb(59, 70, 74) rgb(172, 172, 172)",
+        "count": 1
+      },
+      {
+        "value": "rgb(63, 21, 105)",
+        "count": 1
+      },
+      {
+        "value": "rgb(78, 96, 108)",
+        "count": 1
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "\"Open Sans\"",
+        "count": 337
+      },
+      {
+        "value": "Arial",
+        "count": 5
+      },
+      {
+        "value": "\"Helvetica Neue\", Helvetica, sans-serif",
+        "count": 2
+      },
+      {
+        "value": "oswald",
+        "count": 1
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "14px",
+        "count": 249
+      },
+      {
+        "value": "13px",
+        "count": 65
+      },
+      {
+        "value": "15px",
+        "count": 10
+      },
+      {
+        "value": "20px",
+        "count": 6
+      },
+      {
+        "value": "12.04px",
+        "count": 3
+      },
+      {
+        "value": "16px",
+        "count": 3
+      },
+      {
+        "value": "11px",
+        "count": 2
+      },
+      {
+        "value": "17px",
+        "count": 2
+      },
+      {
+        "value": "18px",
+        "count": 1
+      },
+      {
+        "value": "22px",
+        "count": 1
+      },
+      {
+        "value": "26px",
+        "count": 1
+      },
+      {
+        "value": "30px",
+        "count": 1
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "400",
+        "count": 263
+      },
+      {
+        "value": "600",
+        "count": 64
+      },
+      {
+        "value": "800",
+        "count": 12
+      },
+      {
+        "value": "300",
+        "count": 3
+      },
+      {
+        "value": "700",
+        "count": 3
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 304
+      },
+      {
+        "value": "20px",
+        "count": 20
+      },
+      {
+        "value": "15px",
+        "count": 8
+      },
+      {
+        "value": "5px",
+        "count": 8
+      },
+      {
+        "value": "100%",
+        "count": 4
+      },
+      {
+        "value": "4px",
+        "count": 1
+      }
+    ],
+    "shadows": [
+      {
+        "value": "rgba(0, 0, 0, 0.4) 0px 0px 5px 0px",
+        "count": 1
+      }
+    ],
+    "screenshot": "screenshots/bike-tires-direct.png"
+  },
+  {
+    "slug": "home-consignment-center",
+    "name": "Home Consignment Center",
+    "requestedUrl": "https://www.homeconsignmentcenter.com",
+    "capturedAt": "2026-07-20T21:01:02.572Z",
+    "status": 200,
+    "finalUrl": "https://thehomeconsignmentcenter.com/",
+    "title": "Buy & Sell Furniture on Consignment - Home Consignment Center",
+    "description": "Shop Upscale Consignment Furniture, Décor, Art, Jewelry & Designer Handbags at Home Consignment Center. We Buy your Quality Used Furniture & Jewelry.",
+    "themeColor": null,
+    "logoCandidates": [
+      {
+        "alt": null,
+        "src": "https://thehomeconsignmentcenter.com/wp-content/uploads/2023/08/hcc-30yr-stacked-30-white-rgb-2400px-w-144ppi-1024x490.png"
+      },
+      {
+        "alt": null,
+        "src": "https://thehomeconsignmentcenter.com/wp-content/uploads/2024/04/furniture_e.jpg.avif"
+      },
+      {
+        "alt": null,
+        "src": "https://thehomeconsignmentcenter.com/wp-content/uploads/2024/04/homepage_e-768x1024.jpg.avif"
+      }
+    ],
+    "variables": {
+      "--uael-as-border-color-focus": "#D1D5DB",
+      "--e-global-color-astglobalcolor4": "#233d58",
+      "--ast-comment-inputs-background": "#FAFAFA",
+      "--ast-global-color-subtle-background": "#a4928e",
+      "--e-global-color-astglobalcolor6": "#a4928e",
+      "--ast-global-color-secondary": "#233d58",
+      "--e-global-color-astglobalcolor8": "#fbf4e9",
+      "--ast-global-color-5": "#ffffff",
+      "--ast-global-color-8": "#fbf4e9",
+      "--ast-code-block-background": "#EEEEEE",
+      "--ast-global-color-6": "#a4928e",
+      "--ast-widget-bg-color": "#fafafa",
+      "--uael-as-font-size-base": "14px",
+      "--ast-global-color-2": "#000000",
+      "--swiper-theme-color": "#007aff",
+      "--e-global-color-astglobalcolor3": "#34312c",
+      "--ast-global-color-4": "#233d58",
+      "--ast-global-color-7": "#FBFCFF",
+      "--ast-global-color-primary": "#ffffff",
+      "--uael-as-text-color": "#333",
+      "--uael-as-secondary-color": "#5124B3",
+      "--e-global-color-astglobalcolor2": "#000000",
+      "--uael-as-border-radius": "4px",
+      "--ast-wc-container-head-bg-color": "#fbfbfb",
+      "--uael-as-font-size-medium": "16px",
+      "--ast-global-color-alternate-background": "#FBFCFF",
+      "--ast-blog-title-font-weight": "normal",
+      "--uael-as-primary-hover": "#005a87",
+      "--ast-global-color-0": "#ba232d",
+      "--uael-as-font-size-small": "12px",
+      "--ast-shadow-style-guide": "0px 0px 4px 0 #00000057",
+      "--uael-as-border-color": "#ddd",
+      "--uael-as-font-size-xsmall": "11px",
+      "--srfm-color-input-label": "#000000",
+      "--ast-search-border-color": "#e7e7e7",
+      "--ast-global-color-1": "#b12e5a",
+      "--e-global-color-astglobalcolor1": "#b12e5a",
+      "--ast-border-color": "#dddddd",
+      "--ast-global-color-3": "#34312c",
+      "--ast-gallery-block-color": "#000",
+      "--e-global-color-astglobalcolor7": "#FBFCFF",
+      "--e-global-color-astglobalcolor5": "#ffffff",
+      "--uael-as-primary-color": "#007cba",
+      "--e-global-color-astglobalcolor0": "#ba232d",
+      "--ast-post-nav-space": "0",
+      "--e-global-color-primary": "#000000",
+      "--e-global-typography-secondary-font-weight": "400",
+      "--e-global-color-49b922f": "#000000",
+      "--e-global-typography-primary-font-family": "\"Archivo\"",
+      "--e-global-typography-accent-font-weight": "500",
+      "--e-global-typography-primary-font-weight": "400",
+      "--e-global-color-6cb5be6": "#000000",
+      "--e-global-color-24b7467e": "#000000",
+      "--e-global-color-6485a075": "#EA3A1C",
+      "--e-global-typography-secondary-font-family": "\"Archivo\"",
+      "--e-global-typography-text-font-weight": "400",
+      "--e-global-color-text": "#222222",
+      "--e-global-color-accent": "#BA232D",
+      "--e-global-color-3ef41e2a": "#000000",
+      "--e-global-color-78a419f": "#FFFFFF",
+      "--e-global-color-57282e96": "#233D58",
+      "--e-global-typography-text-font-family": "\"Archivo\"",
+      "--e-global-color-secondary": "#111111",
+      "--e-global-color-85f1fd1": "#000000",
+      "--e-global-typography-accent-font-family": "\"Archivo\""
+    },
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "CONSIGNMENTS ACCEPTED 7 DAYS A WEEK",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "65px",
+        "fontWeight": "800",
+        "lineHeight": "91px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Welcome To Our Store!",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "46.8px",
+        "fontWeight": "700",
+        "lineHeight": "65px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Upscale Furniture & Jewelry Consignment",
+        "color": "rgb(251, 252, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "51px",
+        "fontWeight": "700",
+        "lineHeight": "66.3px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(251, 252, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Shopping at Home Consignment Center",
+        "color": "rgb(251, 252, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "45px",
+        "fontWeight": "700",
+        "lineHeight": "58.5px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(251, 252, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "The Allure of Consignment",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "51px",
+        "fontWeight": "700",
+        "lineHeight": "66.3px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Fine & Vintage Jewelry Selection",
+        "color": "rgb(251, 252, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "51px",
+        "fontWeight": "700",
+        "lineHeight": "66.3px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(251, 252, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Locations Throughout CA & TX",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "51px",
+        "fontWeight": "700",
+        "lineHeight": "66.3px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "About Home Consignment Center",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "51px",
+        "fontWeight": "700",
+        "lineHeight": "66.3px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Get the latest updates",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "56px",
+        "fontWeight": "700",
+        "lineHeight": "72.8px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Sign Up!",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "42px",
+        "fontWeight": "300",
+        "lineHeight": "54.6px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "a",
+        "text": "Find Your Store",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(186, 35, 45)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "600",
+        "lineHeight": "13px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(224, 32, 38)",
+        "padding": "18px 24px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "Consign now",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(224, 32, 38)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "600",
+        "lineHeight": "13px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(224, 32, 38)",
+        "padding": "18px 24px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "Find Nearest Store",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(224, 32, 38)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "600",
+        "lineHeight": "13px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(224, 32, 38)",
+        "padding": "18px 24px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "consigning with us",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(224, 32, 38)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "600",
+        "lineHeight": "13px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(224, 32, 38)",
+        "padding": "18px 24px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "what we sell",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(224, 32, 38)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "600",
+        "lineHeight": "13px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(224, 32, 38)",
+        "padding": "18px 24px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(52, 49, 44)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": "300",
+        "lineHeight": "33.4286px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50%",
+        "border": "0px none rgb(52, 49, 44)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(52, 49, 44)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": "300",
+        "lineHeight": "33.4286px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50%",
+        "border": "0px none rgb(52, 49, 44)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(52, 49, 44)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": "300",
+        "lineHeight": "33.4286px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50%",
+        "border": "0px none rgb(52, 49, 44)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(52, 49, 44)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": "300",
+        "lineHeight": "33.4286px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50%",
+        "border": "0px none rgb(52, 49, 44)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(52, 49, 44)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": "300",
+        "lineHeight": "33.4286px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50%",
+        "border": "0px none rgb(52, 49, 44)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(52, 49, 44)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": "300",
+        "lineHeight": "33.4286px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50%",
+        "border": "0px none rgb(52, 49, 44)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(52, 49, 44)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "Archivo, sans-serif",
+        "fontSize": "18px",
+        "fontWeight": "300",
+        "lineHeight": "33.4286px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50%",
+        "border": "0px none rgb(52, 49, 44)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "(function(){if(window.matchMedia('(max-width:921.99px)').matches){document.body.classList.add('ast-header-break-point');document.body.classL",
+      "color": "rgb(52, 49, 44)",
+      "backgroundColor": "rgb(35, 61, 88)",
+      "fontFamily": "Archivo, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "300",
+      "lineHeight": "33.4286px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px none rgb(52, 49, 44)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgb(52, 49, 44)",
+        "count": 732
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 400
+      },
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 27
+      },
+      {
+        "value": "rgb(186, 35, 45)",
+        "count": 20
+      },
+      {
+        "value": "rgb(238, 238, 238)",
+        "count": 15
+      },
+      {
+        "value": "rgb(224, 32, 38)",
+        "count": 10
+      },
+      {
+        "value": "rgb(34, 34, 34)",
+        "count": 9
+      },
+      {
+        "value": "rgb(170, 170, 170)",
+        "count": 8
+      },
+      {
+        "value": "rgb(104, 104, 104)",
+        "count": 6
+      },
+      {
+        "value": "rgb(251, 252, 255)",
+        "count": 6
+      },
+      {
+        "value": "rgb(255, 255, 255) rgb(52, 49, 44) rgb(52, 49, 44)",
+        "count": 4
+      },
+      {
+        "value": "rgb(186, 35, 45) rgb(52, 49, 44) rgb(52, 49, 44)",
+        "count": 3
+      },
+      {
+        "value": "rgb(234, 234, 234)",
+        "count": 3
+      },
+      {
+        "value": "rgb(250, 250, 250)",
+        "count": 3
+      },
+      {
+        "value": "rgb(187, 187, 187)",
+        "count": 2
+      },
+      {
+        "value": "rgb(35, 61, 88)",
+        "count": 1
+      },
+      {
+        "value": "rgba(2, 1, 1, 0)",
+        "count": 1
+      },
+      {
+        "value": "rgba(255, 255, 255, 0.14) rgb(52, 49, 44) rgb(52, 49, 44)",
+        "count": 1
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "Archivo, sans-serif",
+        "count": 607
+      },
+      {
+        "value": "\"Font Awesome 5 Free\"",
+        "count": 4
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "18px",
+        "count": 546
+      },
+      {
+        "value": "13px",
+        "count": 18
+      },
+      {
+        "value": "18.9px",
+        "count": 15
+      },
+      {
+        "value": "16px",
+        "count": 8
+      },
+      {
+        "value": "20px",
+        "count": 6
+      },
+      {
+        "value": "51px",
+        "count": 5
+      },
+      {
+        "value": "15px",
+        "count": 4
+      },
+      {
+        "value": "12.6px",
+        "count": 3
+      },
+      {
+        "value": "65px",
+        "count": 2
+      },
+      {
+        "value": "42px",
+        "count": 1
+      },
+      {
+        "value": "45px",
+        "count": 1
+      },
+      {
+        "value": "46.8px",
+        "count": 1
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "300",
+        "count": 523
+      },
+      {
+        "value": "700",
+        "count": 54
+      },
+      {
+        "value": "600",
+        "count": 27
+      },
+      {
+        "value": "900",
+        "count": 4
+      },
+      {
+        "value": "400",
+        "count": 2
+      },
+      {
+        "value": "800",
+        "count": 1
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 583
+      },
+      {
+        "value": "15px",
+        "count": 15
+      },
+      {
+        "value": "50%",
+        "count": 11
+      },
+      {
+        "value": "2px",
+        "count": 1
+      },
+      {
+        "value": "2px 0px 0px",
+        "count": 1
+      }
+    ],
+    "shadows": [
+      {
+        "value": "rgb(128, 128, 128) 0px 0px 5px 0px",
+        "count": 1
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.25) -10px 0px 10px 0px",
+        "count": 1
+      }
+    ],
+    "screenshot": "screenshots/home-consignment-center.png"
+  },
+  {
+    "slug": "home-designs",
+    "name": "Home Designs",
+    "requestedUrl": "https://www.cabinetryunlimited.com",
+    "capturedAt": "2026-07-20T21:01:07.397Z",
+    "status": 200,
+    "finalUrl": "https://www.cabinetryunlimited.com/",
+    "title": "Custom Cabinets & Countertops | Cabinetry Unlimited | Delmarva",
+    "description": "Get custom cabinetry & countertops tailored for your home or business. Visit us today for expert design & installation!",
+    "themeColor": null,
+    "logoCandidates": [
+      {
+        "alt": "Logo White",
+        "src": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/1751473490419_OwWtmA3MV-1920w.png"
+      }
+    ],
+    "variables": {
+      "--btn-hover-border-l-color": "rgba(0, 0, 0, 0)",
+      "--btn-border-color": "rgba(0, 0, 0, 0)",
+      "--btn-text-font-weight": "bold",
+      "--btn-border-b-color": "rgba(0, 0, 0, 0)",
+      "--color_2": "rgba(255, 255, 255, 1)",
+      "--color_3": "rgba(25, 25, 25, 1)",
+      "--btn-border-r-color": "rgba(0, 0, 0, 0)",
+      "--btn-bg-color": "rgba(228, 158, 10, 1)",
+      "--btn-icon-color": "rgb(247, 247, 247)",
+      "--btn-hover-border-b-color": "rgba(0, 0, 0, 0)",
+      "--btn-border-radius": "50px",
+      "--color_4": "rgba(90, 13, 13, 1)",
+      "--color_7": "rgba(241, 241, 241, 1)",
+      "--btn-text-font-size": "18px",
+      "--color_6": "rgba(228, 158, 10, 1)",
+      "--btn-border-l-color": "rgba(0, 0, 0, 0)",
+      "--btn-border-t-color": "rgba(0, 0, 0, 0)",
+      "--btn-border-br-radius": "50px",
+      "--btn-border-bl-radius": "50px",
+      "--btn-hover-text-color": "rgba(255, 255, 255, 1)",
+      "--btn-text-font-family": "Montserrat, \"Montserrat Fallback\"",
+      "--btn-hover-border-color": "rgba(0, 0, 0, 0)",
+      "--color_8": "rgba(228, 158, 10, 1)",
+      "--btn-text-color": "rgba(255, 255, 255, 1)",
+      "--btn-hover-border-r-color": "rgba(0, 0, 0, 0)",
+      "--color_5": "rgba(14, 104, 151, 1)",
+      "--color_1": "rgba(0, 0, 0, 1)",
+      "--btn-hover-border-t-color": "rgba(0, 0, 0, 0)",
+      "--btn-border-tl-radius": "50px",
+      "--btn-border-tr-radius": "50px",
+      "--btn-hover-text-font-weight": "bold"
+    },
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Trusted by Delmarva’s builders and homeowners for Cabinetry and Countertops - FOr half a century",
+        "color": "rgb(15, 15, 15)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Marcellus, \"Marcellus Fallback\"",
+        "fontSize": "50px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Crafting spaces that last a lifetime.",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Marcellus, \"Marcellus Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "45px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "⭑⭑⭑⭑⭑",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Marcellus, \"Marcellus Fallback\"",
+        "fontSize": "40px",
+        "fontWeight": "900",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "\"Amazing design... and scheduling and installation were equally impressive.\"",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Marcellus, \"Marcellus Fallback\"",
+        "fontSize": "36px",
+        "fontWeight": "900",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "✔ Request Consultation",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Marcellus, \"Marcellus Fallback\"",
+        "fontSize": "40px",
+        "fontWeight": "900",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h1",
+        "text": "Residential Cabinetry",
+        "color": "rgb(15, 15, 15)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Marcellus, \"Marcellus Fallback\"",
+        "fontSize": "50px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Cabinet Design",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Marcellus, \"Marcellus Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Kitchen Cabinets",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Marcellus, \"Marcellus Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Bathroom Cabinets",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Marcellus, \"Marcellus Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Countertops",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Marcellus, \"Marcellus Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h1",
+        "text": "Commercial Cabinetry",
+        "color": "rgb(15, 15, 15)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Marcellus, \"Marcellus Fallback\"",
+        "fontSize": "50px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "The Only Local Manufacturer",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Marcellus, \"Marcellus Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "a",
+        "text": "VISIT SHOWROOM",
+        "color": "rgb(70, 57, 57)",
+        "backgroundColor": "rgb(130, 27, 27)",
+        "fontFamily": "Mulish, \"Mulish Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "33px",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "Request Consultation ➔",
+        "color": "rgb(70, 57, 57)",
+        "backgroundColor": "rgb(228, 158, 10)",
+        "fontFamily": "Mulish, \"Mulish Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50px",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "(302) 436-8696",
+        "color": "rgb(70, 57, 57)",
+        "backgroundColor": "rgb(228, 158, 10)",
+        "fontFamily": "Mulish, \"Mulish Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50px",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "EXPLORE MORE",
+        "color": "rgb(70, 57, 57)",
+        "backgroundColor": "rgb(228, 158, 10)",
+        "fontFamily": "Mulish, \"Mulish Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50px",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "EXPLORE MORE",
+        "color": "rgb(70, 57, 57)",
+        "backgroundColor": "rgb(228, 158, 10)",
+        "fontFamily": "Mulish, \"Mulish Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50px",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "LEARN MORE",
+        "color": "rgb(70, 57, 57)",
+        "backgroundColor": "rgb(228, 158, 10)",
+        "fontFamily": "Mulish, \"Mulish Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50px",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "Request Consultation ➔",
+        "color": "rgb(70, 57, 57)",
+        "backgroundColor": "rgb(228, 158, 10)",
+        "fontFamily": "Mulish, \"Mulish Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50px",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "Call Now! (302) 436-8696",
+        "color": "rgb(70, 57, 57)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Mulish, \"Mulish Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50px",
+        "border": "1px solid rgb(228, 158, 10)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "Visit Showroom →",
+        "color": "rgb(70, 57, 57)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Mulish, \"Mulish Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50px",
+        "border": "1px solid rgb(228, 158, 10)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "(302) 436-8696",
+        "color": "rgb(70, 57, 57)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "Mulish, \"Mulish Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "22px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "6px",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "Residential Services Cabinet Design Kitchen Cabinets Bathroom Cabinets Countertops Commercial Casework Service Areas Selbyville Fenwick Isla",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(238, 238, 238)",
+      "fontFamily": "\"Source Sans Pro\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px solid rgb(51, 51, 51)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgb(51, 51, 51)",
+        "count": 793
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 494
+      },
+      {
+        "value": "rgb(228, 158, 10)",
+        "count": 115
+      },
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 85
+      },
+      {
+        "value": "rgb(153, 153, 153)",
+        "count": 49
+      },
+      {
+        "value": "rgb(160, 156, 156)",
+        "count": 45
+      },
+      {
+        "value": "rgb(70, 57, 57)",
+        "count": 41
+      },
+      {
+        "value": "rgb(90, 13, 13)",
+        "count": 29
+      },
+      {
+        "value": "rgb(247, 247, 247)",
+        "count": 13
+      },
+      {
+        "value": "rgb(0, 5, 3)",
+        "count": 10
+      },
+      {
+        "value": "rgb(241, 241, 241)",
+        "count": 10
+      },
+      {
+        "value": "rgb(102, 102, 102)",
+        "count": 6
+      },
+      {
+        "value": "rgb(25, 25, 25)",
+        "count": 5
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.39)",
+        "count": 4
+      },
+      {
+        "value": "rgb(15, 15, 15)",
+        "count": 3
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.33)",
+        "count": 2
+      },
+      {
+        "value": "rgb(130, 27, 27)",
+        "count": 1
+      },
+      {
+        "value": "rgb(201, 201, 201)",
+        "count": 1
+      },
+      {
+        "value": "rgb(245, 245, 245)",
+        "count": 1
+      },
+      {
+        "value": "rgb(4, 0, 0)",
+        "count": 1
+      },
+      {
+        "value": "rgba(255, 255, 255, 0.4)",
+        "count": 1
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "Mulish, \"Mulish Fallback\"",
+        "count": 694
+      },
+      {
+        "value": "Marcellus, \"Marcellus Fallback\"",
+        "count": 86
+      },
+      {
+        "value": "Montserrat",
+        "count": 10
+      },
+      {
+        "value": "Montserrat, \"Montserrat Fallback\"",
+        "count": 10
+      },
+      {
+        "value": "\"Source Sans Pro\"",
+        "count": 9
+      },
+      {
+        "value": "FontAwesome",
+        "count": 7
+      },
+      {
+        "value": "dm-social-icons",
+        "count": 3
+      },
+      {
+        "value": "dm-common-icons",
+        "count": 1
+      },
+      {
+        "value": "dm-font",
+        "count": 1
+      },
+      {
+        "value": "Helvetica, Arial",
+        "count": 1
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "18px",
+        "count": 534
+      },
+      {
+        "value": "16px",
+        "count": 185
+      },
+      {
+        "value": "40px",
+        "count": 24
+      },
+      {
+        "value": "50px",
+        "count": 16
+      },
+      {
+        "value": "14px",
+        "count": 14
+      },
+      {
+        "value": "22px",
+        "count": 14
+      },
+      {
+        "value": "12px",
+        "count": 10
+      },
+      {
+        "value": "30px",
+        "count": 8
+      },
+      {
+        "value": "26px",
+        "count": 5
+      },
+      {
+        "value": "36px",
+        "count": 5
+      },
+      {
+        "value": "19.3333px",
+        "count": 4
+      },
+      {
+        "value": "19px",
+        "count": 1
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "400",
+        "count": 657
+      },
+      {
+        "value": "700",
+        "count": 135
+      },
+      {
+        "value": "900",
+        "count": 30
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 791
+      },
+      {
+        "value": "50%",
+        "count": 15
+      },
+      {
+        "value": "50px",
+        "count": 8
+      },
+      {
+        "value": "12px",
+        "count": 4
+      },
+      {
+        "value": "15px",
+        "count": 1
+      },
+      {
+        "value": "25px",
+        "count": 1
+      },
+      {
+        "value": "33px",
+        "count": 1
+      },
+      {
+        "value": "6px",
+        "count": 1
+      }
+    ],
+    "shadows": [
+      {
+        "value": "rgba(0, 0, 0, 0.25) 0px 3px 11px 0px",
+        "count": 3
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.22) 0px 3px 11px 0px",
+        "count": 1
+      }
+    ],
+    "screenshot": "screenshots/home-designs.png"
+  },
+  {
+    "slug": "level-nine-sports",
+    "name": "Level Nine Sports",
+    "requestedUrl": "https://www.levelninesports.com",
+    "capturedAt": "2026-07-20T21:01:11.083Z",
+    "status": 202,
+    "finalUrl": "https://www.levelninesports.com/",
+    "title": "Human Verification",
+    "description": null,
+    "themeColor": null,
+    "logoCandidates": [],
+    "variables": {},
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Let's confirm you are human",
+        "color": "rgb(221, 107, 16)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "fontSize": "32px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(221, 107, 16)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "button",
+        "text": "Begin",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 153, 2)",
+        "fontFamily": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "2px",
+        "border": "1px solid rgb(255, 153, 2)",
+        "padding": "5px 30px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "Temporary error. Please try again.Before proceeding to your request, you need to solve a puzzle, and the puzzle requires Google Translate to",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Arial",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 21
+      },
+      {
+        "value": "rgb(221, 107, 16)",
+        "count": 2
+      },
+      {
+        "value": "rgb(255, 153, 2)",
+        "count": 2
+      },
+      {
+        "value": "rgb(204, 204, 204)",
+        "count": 1
+      },
+      {
+        "value": "rgb(204, 204, 204) rgb(0, 0, 0)",
+        "count": 1
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "count": 12
+      },
+      {
+        "value": "Arial",
+        "count": 1
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "16px",
+        "count": 12
+      },
+      {
+        "value": "32px",
+        "count": 1
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "400",
+        "count": 11
+      },
+      {
+        "value": "700",
+        "count": 2
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 11
+      },
+      {
+        "value": "2px",
+        "count": 1
+      },
+      {
+        "value": "4px",
+        "count": 1
+      }
+    ],
+    "shadows": [],
+    "screenshot": "screenshots/level-nine-sports.png"
+  },
+  {
+    "slug": "motosport",
+    "name": "MotoSport",
+    "requestedUrl": "https://www.motosport.com",
+    "capturedAt": "2026-07-20T21:01:14.172Z",
+    "status": 200,
+    "finalUrl": "https://www.motosport.com/",
+    "title": "Shop MotoSport - #1 for Dirt Bike, Motorcycle, ATV & UTV Parts, Gear & Accessories | MotoSport",
+    "description": "Shop MotoSport.com for all of the best deals, service and selection in aftermarket and OEM dirt bike and motorcycle parts, riding gear, tires, accessories and casual.",
+    "themeColor": null,
+    "logoCandidates": [
+      {
+        "alt": "CountryFlag",
+        "src": "https://gem-8unj.global-e.com/content/images/flags/us.png"
+      },
+      {
+        "alt": "Motosport home",
+        "src": "https://f-static.motosport.com/motographics/images/motosport.logo.svg"
+      },
+      {
+        "alt": "Troy Lee Designs",
+        "src": "https://f-static.motosport.com/motographics/images/logos/troy-lee-designs.black.200x100.png"
+      },
+      {
+        "alt": "Fox Racing",
+        "src": "https://f-static.motosport.com/motographics/images/logos/fox-racing.black.200x100.png"
+      },
+      {
+        "alt": "Alpinestars",
+        "src": "https://f-static.motosport.com/motographics/images/logos/alpinestars.black.200x100.png"
+      },
+      {
+        "alt": "Yoshimura",
+        "src": "https://f-static.motosport.com/motographics/images/logos/yoshimura.black.200x100.png"
+      },
+      {
+        "alt": "Acerbis",
+        "src": "https://f-static.motosport.com/motographics/images/logos/acerbis.black.200x100.png"
+      },
+      {
+        "alt": "Turner Performance Products",
+        "src": "https://f-static.motosport.com/motographics/images/logos/turner-performance-products.black.200x100.png"
+      }
+    ],
+    "variables": {
+      "--gle-font-family": "Poppins,Helvetica Neue,Arial,Helvetica,sans-serif"
+    },
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "MotoSport Home Page",
+        "color": "rgba(0, 0, 0, 0.87)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "35.9996px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgba(0, 0, 0, 0.87)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Summer Garage Sale",
+        "color": "rgba(0, 0, 0, 0.87)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "40px",
+        "fontWeight": "700",
+        "lineHeight": "40px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgba(0, 0, 0, 0.87)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Popular Brands",
+        "color": "rgba(0, 0, 0, 0.87)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgba(0, 0, 0, 0.87)",
+        "padding": "14px 0px 0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Fast Cash Week",
+        "color": "rgba(0, 0, 0, 0.87)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgba(0, 0, 0, 0.87)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h1",
+        "text": "Top Categories",
+        "color": "rgba(0, 0, 0, 0.87)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgba(0, 0, 0, 0.87)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Dirt",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(66, 55, 52)",
+        "fontFamily": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "17.92px",
+        "fontWeight": "700",
+        "lineHeight": "23.0397px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(255, 255, 255)",
+        "padding": "7px 21px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Street Bike",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(41, 49, 65)",
+        "fontFamily": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "17.92px",
+        "fontWeight": "700",
+        "lineHeight": "23.0397px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(255, 255, 255)",
+        "padding": "7px 21px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "ATV / UTV",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(39, 61, 50)",
+        "fontFamily": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "17.92px",
+        "fontWeight": "700",
+        "lineHeight": "23.0397px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(255, 255, 255)",
+        "padding": "7px 21px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Alpinestars Sale",
+        "color": "rgba(0, 0, 0, 0.87)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgba(0, 0, 0, 0.87)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Up To 10% Off Current Alpinestars",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "23.996px",
+        "fontWeight": "700",
+        "lineHeight": "23.996px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Hot Deals",
+        "color": "rgba(0, 0, 0, 0.87)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgba(0, 0, 0, 0.87)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Shoei VFX-EVO Pinnacle",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "button",
+        "text": "Contact Us",
+        "color": "rgba(0, 0, 0, 0.87)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "16.1px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "4px 4px 0px 0px",
+        "border": "0px none rgba(0, 0, 0, 0.87)",
+        "padding": "5px 10px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Live Chat",
+        "color": "rgba(0, 0, 0, 0.87)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "14px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "4px 4px 0px 0px",
+        "border": "0px solid rgba(0, 0, 0, 0.87)",
+        "padding": "0px 10px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "Cart",
+        "color": "rgba(0, 0, 0, 0.87)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "19.999px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "4px 4px 0px 0px",
+        "border": "0px none rgba(0, 0, 0, 0.87)",
+        "padding": "5px 10px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Search",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "16.8px",
+        "fontWeight": "400",
+        "lineHeight": "19.32px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "4px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "1px 6px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Select Your Ride",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 136, 204)",
+        "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "lineHeight": "19.2px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "4px",
+        "border": "0px none rgb(255, 255, 255)",
+        "padding": "10px 16px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Free shipping Free shipping over $79 on orders over $79 to Florida",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "4px 4px 0px 0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "1px 6px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Riding Style",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "18.4px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(51, 51, 51)",
+        "padding": "1px 6px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "Parts",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "19.999px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "OEM Parts",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "19.999px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "Tires",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "19.999px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "Maintenance",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "19.999px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "Riding Gear",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "19.999px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(51, 51, 51)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "Skip to content Skip to search Beat The Heat | Stay Cool With Vented Gear Shop Now MENU Account Cart CLOSE Riding Style Parts OEM Parts Tire",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "fontFamily": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "19.999px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px none rgba(0, 0, 0, 0.87)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgba(0, 0, 0, 0.87)",
+        "count": 1772
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 492
+      },
+      {
+        "value": "rgb(0, 107, 184)",
+        "count": 351
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.85)",
+        "count": 252
+      },
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 159
+      },
+      {
+        "value": "rgb(153, 153, 153)",
+        "count": 52
+      },
+      {
+        "value": "rgb(51, 51, 51)",
+        "count": 41
+      },
+      {
+        "value": "rgb(31, 31, 31)",
+        "count": 14
+      },
+      {
+        "value": "rgb(221, 221, 221)",
+        "count": 13
+      },
+      {
+        "value": "rgb(238, 238, 238)",
+        "count": 9
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.87) rgba(0, 0, 0, 0.87) rgb(238, 238, 238)",
+        "count": 9
+      },
+      {
+        "value": "rgb(65, 65, 65)",
+        "count": 5
+      },
+      {
+        "value": "rgb(178, 0, 0)",
+        "count": 4
+      },
+      {
+        "value": "rgb(35, 35, 35)",
+        "count": 4
+      },
+      {
+        "value": "rgb(65, 177, 249)",
+        "count": 3
+      },
+      {
+        "value": "rgb(102, 102, 102)",
+        "count": 2
+      },
+      {
+        "value": "rgb(206, 22, 15)",
+        "count": 2
+      },
+      {
+        "value": "rgb(5, 49, 107)",
+        "count": 2
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.3)",
+        "count": 2
+      },
+      {
+        "value": "rgb(0, 107, 184) rgb(0, 107, 184) rgb(221, 221, 221)",
+        "count": 1
+      },
+      {
+        "value": "rgb(0, 136, 204)",
+        "count": 1
+      },
+      {
+        "value": "rgb(0, 92, 165)",
+        "count": 1
+      },
+      {
+        "value": "rgb(117, 163, 224)",
+        "count": 1
+      },
+      {
+        "value": "rgb(13, 46, 131)",
+        "count": 1
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "Poppins, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "count": 1435
+      },
+      {
+        "value": "Saira, \"Helvetica Neue\", Arial, Helvetica, sans-serif",
+        "count": 92
+      },
+      {
+        "value": "\"Font Awesome 5 Pro\"",
+        "count": 15
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "14px",
+        "count": 1083
+      },
+      {
+        "value": "16px",
+        "count": 331
+      },
+      {
+        "value": "30px",
+        "count": 59
+      },
+      {
+        "value": "18px",
+        "count": 14
+      },
+      {
+        "value": "19.2px",
+        "count": 12
+      },
+      {
+        "value": "19px",
+        "count": 12
+      },
+      {
+        "value": "40px",
+        "count": 6
+      },
+      {
+        "value": "18.2px",
+        "count": 5
+      },
+      {
+        "value": "20px",
+        "count": 5
+      },
+      {
+        "value": "16.8px",
+        "count": 4
+      },
+      {
+        "value": "17.92px",
+        "count": 3
+      },
+      {
+        "value": "23.996px",
+        "count": 2
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "400",
+        "count": 1292
+      },
+      {
+        "value": "700",
+        "count": 230
+      },
+      {
+        "value": "900",
+        "count": 11
+      },
+      {
+        "value": "800",
+        "count": 8
+      },
+      {
+        "value": "600",
+        "count": 1
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 1473
+      },
+      {
+        "value": "4px",
+        "count": 59
+      },
+      {
+        "value": "4px 4px 0px 0px",
+        "count": 7
+      },
+      {
+        "value": "0px 4px 4px 0px",
+        "count": 1
+      },
+      {
+        "value": "4px 0px 0px 4px",
+        "count": 1
+      },
+      {
+        "value": "50%",
+        "count": 1
+      }
+    ],
+    "shadows": [
+      {
+        "value": "rgb(51, 51, 51) 0px 0px 0px 0px inset",
+        "count": 1
+      }
+    ],
+    "screenshot": "screenshots/motosport.png"
+  },
+  {
+    "slug": "one-kings-lane",
+    "name": "One Kings Lane",
+    "requestedUrl": "https://www.onekingslane.com",
+    "capturedAt": "2026-07-20T21:01:18.000Z",
+    "status": 200,
+    "finalUrl": "https://www.onekingslane.com/",
+    "title": "Luxury Home, Outdoor Furniture & Decor | One Kings Lane",
+    "description": "Shop luxury home décor & stylish, chic furniture at One Kings Lane. Browse our collection of modern furniture, bedding, art & more!",
+    "themeColor": null,
+    "logoCandidates": [
+      {
+        "alt": "One Kings Lane",
+        "src": "https://assets.bounceexchange.com/assets/uploads/clients/3212/creatives/759b1d2688b893aed518a28473abdb67.png"
+      }
+    ],
+    "variables": {
+      "--color-scroll-to-top-cta-color": "#52525b",
+      "--ltv-ai-heading-3-font-weight": "500",
+      "--tw-ring-shadow": "0 0 #0000",
+      "--ltv-ai-redeem-widget-text-color": "#323232",
+      "--ltv-ai-offer-background-color": "#3b5f58",
+      "--ltv-ai-bottom-navigation-hover-box-shadow": "none",
+      "--color-disabled-bg": "#999999",
+      "--ltv-ai-heading-1-font-family": "'sofia-pro'",
+      "--color-focus-background": "#323232",
+      "--font-headline": "\"freight-display-pro\"",
+      "--color-modal-border": "#eeeeee",
+      "--ltv-ai-heading-1-font-weight": "700",
+      "--color-bg-white": "#ffffff",
+      "--color-meganav-track-bg": "#F5F7F7",
+      "--color-light-gray-separator": "#d8d8d8",
+      "--ltv-ai-heading-5-font-size": "16px",
+      "--font-body": "\"proxima-nova\"",
+      "--ltv-ai-label-2-font-weight": "600",
+      "--font-alt-2": "\"brandon-grotesque\"",
+      "--ltv-ai-form-input-border-color": "#333",
+      "--color-backOrder": "#5176A3",
+      "--ltv-ai-secondary-button-border-color": "#323232",
+      "--ltv-ai-body-1-font-size": "14px",
+      "--ltv-ai-rewards-card-text-color": "#f9f9f9",
+      "--font-alt-1": "\"brandon-grotesque\"",
+      "--ltv-ai-pending-cancellation-color": "#bf2929",
+      "--color-cursor-bg": "#DDD",
+      "--ltv-ai-non-sale-price-text-color": "#a0a3a7",
+      "--color-backdrop-light": "rgba(255,255,255,0.8)",
+      "--ltv-ai-heading-6-font-size": "14px",
+      "--color-NavBorder": "#e4e4e7",
+      "--ltv-ai-body-2-font-weight": "400",
+      "--ltv-ai-list-card-item-background-color": "#f9f9f9",
+      "--color-bg-disabled-btn-border": "#999999",
+      "--ltv-ai-bottom-navigation-background-color": "#ffffff",
+      "--tw-ring-color": "rgba(59,130,246,0.5)",
+      "--ltv-ai-label-2-font-size": "12px",
+      "--font-size-md": "1.25rem",
+      "--color-colorFilter-inactive-border": "#999999",
+      "--tw-ring-offset-color": "#fff",
+      "--ltv-ai-rewards-activity-earned-color": "#338a33",
+      "--color-primary-btn": "#323232",
+      "--ltv-ai-data-card-background-color": "#f3f3f3",
+      "--ltv-ai-list-card-item-active-color": "#c7c7c7",
+      "--ltv-ai-label-1-font-family": "'sofia-pro'",
+      "--ltv-ai-redeem-widget-border-color": "#e7e7e7",
+      "--color-error-accent": "#fef2f2",
+      "--ltv-ai-list-card-item-text-color": "#323232",
+      "--ltv-ai-form-input-text-color": "#000000",
+      "--ltv-ai-data-card-text-color": "#5e5e61",
+      "--ltv-ai-promo-card-background-color": "#f3f3f3",
+      "--ltv-ai-heading-2-font-size": "48px",
+      "--color-input": "#999999",
+      "--ltv-ai-label-2-font-family": "'sofia-pro'",
+      "--color-red": "#c60000",
+      "--color-disabled-darker": "#999999",
+      "--ltv-ai-redeem-widget-background-color": "#f9f9f9",
+      "--ltv-ai-header-background-color": "#ffffff",
+      "--ltv-ai-button-background-color": "#3b5f58",
+      "--ltv-ai-bottom-navigation-hover-border-top-color": "#000000",
+      "--color-bg-disabled-btn-hover": "#999999",
+      "--font-size-xs": "0.875rem",
+      "--color-secondary-btn": "#eeeeee",
+      "--color-filter-background": "#f5f5f5",
+      "--color-text-black": "#323232",
+      "--ltv-ai-body-1-font-family": "'sofia-pro'",
+      "--color-colorFilter-active-border-hover": "#242424",
+      "--color-extend-bg": "#F5F7F7",
+      "--ltv-ai-heading-3-font-size": "24px",
+      "--color-text-white": "#ffffff",
+      "--ltv-ai-heading-3-font-family": "'sofia-pro'",
+      "--tw-ring-offset-shadow": "0 0 #0000",
+      "--ltv-ai-heading-2-font-weight": "500",
+      "--color-error-background": "#ffeeed",
+      "--ltv-ai-promo-card-content-background-color": "#ffffff",
+      "--color-NavItem": "#e7e6e8",
+      "--ltv-ai-layout-divider-color": "rgba(216, 216, 216, 0.6)",
+      "--color-secondary-btn-border": "#777777",
+      "--color-NavScrollbar": "#999999",
+      "--font-size-sm": "1rem",
+      "--ltv-ai-form-error-text-color": "#ca3b4c",
+      "--ltv-ai-heading-1-font-size": "62px",
+      "--ltv-ai-rewards-activity-redeemed-color": "#bf2929",
+      "--ltv-ai-promo-card-content-text-color": "#323232",
+      "--ltv-ai-heading-6-font-family": "'sofia-pro'",
+      "--color-accent-2": "#3b5f58",
+      "--color-colorFilter-active-border": "#000000",
+      "--ltv-ai-heading-6-font-weight": "500",
+      "--ltv-ai-form-input-background-color": "#ffffff",
+      "--font-size-2xl": "3rem",
+      "--ltv-ai-heading-4-font-family": "'sofia-pro'",
+      "--color-focus-border": "#cea058",
+      "--ltv-ai-form-input-focused-border-color": "#333",
+      "--color-bg-primary": "#27272a",
+      "--ltv-ai-heading-5-font-weight": "500",
+      "--font-size-3xs": "0.625rem",
+      "--color-primary-dark": "#ffffff",
+      "--ltv-ai-rewards-card-background-color": "#043730",
+      "--color-bg-secondary-btn-hover": "#999999",
+      "--ltv-ai-secondary-button-text-color": "#323232",
+      "--color-secondary": "#52525b",
+      "--color-bg-primary-btn-hover": "#000000",
+      "--ltv-ai-form-input-border-radius": "2px",
+      "--color-accent-2-darker": "#043730",
+      "--color-tooltip-border": "#BBBBBB",
+      "--font-size-2xs": "0.75rem",
+      "--ltv-ai-heading-2-font-family": "'sofia-pro'",
+      "--ltv-ai-secondary-button-text-transform": "uppercase",
+      "--ltv-ai-rewards-activity-time-color": "#969696",
+      "--ltv-ai-button-text-color": "#ffffff",
+      "--color-step-bg": "#cea058",
+      "--ltv-ai-form-input-label-background-color": "#ffffff",
+      "--ltv-ai-label-1-font-weight": "400",
+      "--font-size-xl": "2rem",
+      "--color-backdrop": "rgba(136,136,136,0.8)",
+      "--ltv-ai-header-border-color": "#e5e7eb",
+      "--ltv-ai-body-2-font-size": "12px",
+      "--font-size-3xl": "4rem",
+      "--color-error": "#991b1b",
+      "--color-bg-disabled-btn": "#d8d8d8",
+      "--ltv-ai-heading-4-font-weight": "500",
+      "--color-primary-darker": "#000000",
+      "--font-size-lg": "1.5rem",
+      "--ltv-ai-body-1-font-weight": "400",
+      "--tw-shadow": "0 0 #0000",
+      "--color-primary-btn-border": "#323232",
+      "--color-primary": "#323232",
+      "--ltv-ai-body-2-font-family": "'sofia-pro'",
+      "--color-black": "#000000",
+      "--color-NavScrollbarTrack": "#eeeeee",
+      "--ltv-ai-secondary-button-background-color": "none",
+      "--ltv-ai-button-disabled-background-color": "#777777",
+      "--ltv-ai-offer-text-color": "#f9f9f9",
+      "--ltv-ai-heading-5-font-family": "'sofia-pro'",
+      "--ltv-ai-section-heading-background-color": "#f5f7f7",
+      "--color-accent-1": "#cea058",
+      "--ltv-ai-header-text-color": "#000000",
+      "--color-bg-hover": "#eeeeee",
+      "--color-border-1": "#777777",
+      "--color-colorFilter-inactive-border-hover": "#eeeeee",
+      "--ltv-ai-label-1-font-size": "12px",
+      "--ltv-ai-heading-4-font-size": "20px"
+    },
+    "headings": [],
+    "controls": [
+      {
+        "tag": "button",
+        "text": "",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "sofia-pro",
+        "fontSize": "17.6px",
+        "fontWeight": "400",
+        "lineHeight": "20.24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "4.4px",
+        "border": "1px solid rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "sofia-pro",
+        "fontSize": "17.6px",
+        "fontWeight": "400",
+        "lineHeight": "20.24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "4.4px",
+        "border": "1px solid rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "sofia-pro",
+        "fontSize": "17.6px",
+        "fontWeight": "400",
+        "lineHeight": "20.24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "sofia-pro",
+        "fontSize": "17.6px",
+        "fontWeight": "400",
+        "lineHeight": "20.24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "sofia-pro",
+        "fontSize": "17.6px",
+        "fontWeight": "400",
+        "lineHeight": "20.24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Send",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(153, 153, 153)",
+        "fontFamily": "proxima-nova, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "700",
+        "lineHeight": "23.76px",
+        "letterSpacing": "2px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "1px solid rgb(153, 153, 153)",
+        "padding": "15.4px 17.6px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Accessibility",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "sofia-pro",
+        "fontSize": "17.6px",
+        "fontWeight": "400",
+        "lineHeight": "20.24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Helvetica, sans-serif",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "lineHeight": "0px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Get 20%* Off",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(92, 92, 92)",
+        "fontFamily": "proxima-nova, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "700",
+        "lineHeight": "12px",
+        "letterSpacing": "0.852px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "1px solid rgb(92, 92, 92)",
+        "padding": "15px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Continue without 20% Off",
+        "color": "rgb(50, 50, 50)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "700",
+        "lineHeight": "12px",
+        "letterSpacing": "0.852px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "1px solid rgb(92, 92, 92)",
+        "padding": "15px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Helvetica, sans-serif",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "lineHeight": "0px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "<img height=\"1\" width=\"1\" class=\"hidden\" alt=\"Facebook Pixel\" src=\"https://www.facebook.com/tr?id=283982441787275&amp;ev=PageView&amp;noscri",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "fontFamily": "sofia-pro",
+      "fontSize": "17.6px",
+      "fontWeight": "400",
+      "lineHeight": "20.24px",
+      "letterSpacing": "0.44px",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px solid rgb(229, 231, 235)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgb(229, 231, 235)",
+        "count": 431
+      },
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 413
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 38
+      },
+      {
+        "value": "rgb(50, 50, 50)",
+        "count": 15
+      },
+      {
+        "value": "rgb(161, 161, 161)",
+        "count": 8
+      },
+      {
+        "value": "rgb(207, 219, 223)",
+        "count": 8
+      },
+      {
+        "value": "rgb(62, 83, 91)",
+        "count": 8
+      },
+      {
+        "value": "rgb(85, 85, 85)",
+        "count": 6
+      },
+      {
+        "value": "rgb(92, 92, 92)",
+        "count": 5
+      },
+      {
+        "value": "rgb(153, 153, 153)",
+        "count": 2
+      },
+      {
+        "value": "rgb(245, 247, 247)",
+        "count": 2
+      },
+      {
+        "value": "rgb(255, 0, 0)",
+        "count": 2
+      },
+      {
+        "value": "rgb(0, 0, 0) rgb(0, 0, 0) rgb(153, 153, 153)",
+        "count": 1
+      },
+      {
+        "value": "rgb(119, 119, 119)",
+        "count": 1
+      },
+      {
+        "value": "rgb(228, 231, 235)",
+        "count": 1
+      },
+      {
+        "value": "rgb(245, 245, 245)",
+        "count": 1
+      },
+      {
+        "value": "rgb(51, 51, 51)",
+        "count": 1
+      },
+      {
+        "value": "rgb(6, 49, 43)",
+        "count": 1
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "sofia-pro",
+        "count": 324
+      },
+      {
+        "value": "sofia-pro, \"sans-serif, Arial, Helvetica\"",
+        "count": 72
+      },
+      {
+        "value": "Helvetica, sans-serif",
+        "count": 41
+      },
+      {
+        "value": "proxima-nova, sans-serif",
+        "count": 9
+      },
+      {
+        "value": "sofia-pro, sans-serif",
+        "count": 5
+      },
+      {
+        "value": "freight-display-pro",
+        "count": 3
+      },
+      {
+        "value": "NeutrafaceText-Book",
+        "count": 1
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "17.6px",
+        "count": 319
+      },
+      {
+        "value": "15.4px",
+        "count": 57
+      },
+      {
+        "value": "0px",
+        "count": 33
+      },
+      {
+        "value": "12px",
+        "count": 10
+      },
+      {
+        "value": "13.2px",
+        "count": 10
+      },
+      {
+        "value": "14px",
+        "count": 9
+      },
+      {
+        "value": "13px",
+        "count": 8
+      },
+      {
+        "value": "16px",
+        "count": 3
+      },
+      {
+        "value": "18px",
+        "count": 1
+      },
+      {
+        "value": "20.25px",
+        "count": 1
+      },
+      {
+        "value": "20px",
+        "count": 1
+      },
+      {
+        "value": "22px",
+        "count": 1
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "400",
+        "count": 438
+      },
+      {
+        "value": "900",
+        "count": 9
+      },
+      {
+        "value": "700",
+        "count": 4
+      },
+      {
+        "value": "600",
+        "count": 3
+      },
+      {
+        "value": "800",
+        "count": 1
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 453
+      },
+      {
+        "value": "4.4px",
+        "count": 2
+      }
+    ],
+    "shadows": [],
+    "screenshot": "screenshots/one-kings-lane.png"
+  },
+  {
+    "slug": "seattle-coffee-gear",
+    "name": "Seattle Coffee Gear",
+    "requestedUrl": "https://www.seattlecoffeegear.com",
+    "capturedAt": "2026-07-20T21:01:21.733Z",
+    "status": 200,
+    "finalUrl": "https://www.seattlecoffeegear.com/",
+    "title": "Espresso Machines | Coffee Beans | Reviews | Seattle Coffee Gear",
+    "description": "Welcome to Seattle Coffee Gear, where we have espresso machine reviews, tons of great espresso and coffee gear, and some great deals on the best espresso equipment!",
+    "themeColor": "#282828",
+    "logoCandidates": [
+      {
+        "alt": "Seattle Coffee Gear Logo",
+        "src": "https://www.seattlecoffeegear.com/cdn/shop/files/SCG_LOGO_Primary_Red_Black.svg?v=1702922034&width=600"
+      },
+      {
+        "alt": "A selection of Tony's Coffee products on a dark gray background with portafilter and latte's. ",
+        "src": "https://www.seattlecoffeegear.com/cdn/shop/files/SubsNavBlock.jpg?crop=center&height=192&v=1762890026&width=256"
+      },
+      {
+        "alt": "YouTube Logo",
+        "src": "https://www.seattlecoffeegear.com/cdn/shop/files/logo_youtube.png?v=1701211955&width=150"
+      }
+    ],
+    "variables": {
+      "--atlas-loading-skeleton-highlight-color": "rgba(0, 0, 0, 0.02)",
+      "--atlas-space-small": "12px",
+      "--sizes-gap-width": "8px",
+      "--atlas-popover-shadow": "0 20px 48px 0 rgba(55, 63, 71, 0.16), 0 12px 24px 0 rgba(55, 63, 71, 0.2), 0 0 12px 0 rgba(55, 63, 71, 0.08)",
+      "--atlas-input-border-radius-small": "8px",
+      "--atlas-faq-font-weight": "500",
+      "--atlas-favorites-font-weight": "undefined",
+      "--color-plain-button-text-light": "#282828",
+      "--type-font-header-style": "normal",
+      "--atlas-widget-background-color": "#FFFFFF",
+      "--color__border-selected-light-1": "#6a6aa2",
+      "--atlas-button-border-radius": "8px",
+      "--atlas-button-font-weight": "500",
+      "--color-component-button-primary-text-default-neutral-inverse-resting": "#0c0c14",
+      "--sizes-border-input-radius": "2px",
+      "--color-plain-button-border-light": "#f0f0f0",
+      "--atlas-shadow-medium": "0px 8px 16px 0px rgba(55, 63, 71, 0.2)",
+      "--tw-ring-color": "rgb(59 130 246 / .5)",
+      "--sizes-border-element-radius": "2px",
+      "--color-component-button-secondary-icon-default-neutral-inverse-resting": "#ffffff",
+      "--atlas-card-shadow": "0px 2px 8px 0px rgba(55, 63, 71, 0.08), 0px 1px 2px 0px rgba(55, 63, 71, 0.12)",
+      "--color__scg-yellow": "#edaf44",
+      "--atlas-button-border-radius-tiny": "8px",
+      "--atlas-drawer-inset-border-radius": "12px",
+      "--atlas-favorites-font-family": "undefined",
+      "--atlas-background-success": "#518b22",
+      "--atlas-space-32": "32px",
+      "--type-font-nav-family": "proxima-nova",
+      "--color__border-divider-light-1": "#f7f7fa",
+      "--atlas-space-mini": "8px",
+      "--atlas-favorites-icon-color": "undefined",
+      "--atlas-text-secondary": "#00000080",
+      "--color__border-selected-light-2": "#494976",
+      "--atlas-space-tiny": "4px",
+      "--color-tertiary-button-text-light": "#FAFAFA",
+      "--atlas-input-border-radius-normal": "8px",
+      "--color-component-button-primary-bg-default-neutral-inverse-resting": "#ffffff",
+      "--atlas-loading-skeleton-color": "rgba(0, 0, 0, 0.05)",
+      "--color-secondary-button-background-light": "#217A97",
+      "--atlas-font-family-mono": "ui-monospace, Menlo, Monaco, \"Cascadia Mono\", \"Roboto Mono\", \"Oxygen Mono\", \"Ubuntu Monospace\", \"Cantarell\", \"Source Code Pro\", \"Fira Mono\", \"Droid Sans Mono\", Verdana, monospace",
+      "--color-secondary-button-border-light": "#217A97",
+      "--color-neutral-button-border-light": "#e9d9db",
+      "--color__border-divider-light-2": "#c8c8dd",
+      "--atlas-focus-outline-color": "rgba(65, 161, 230, 0.2)",
+      "--atlas-toast-border-radius-redesign": "4px",
+      "--color__border-divider-dark-3": "#962134",
+      "--atlas-favorites-fill-color": "rgba(255,255,255,0)",
+      "--atlas-drawer-border-radius": "24px",
+      "--color__bg-overlay-light-2": "#e0e0e0",
+      "--color-primary-dark": "#2F2FC1",
+      "--color__link-light": "#D2324C",
+      "--atlas-button-border-radius-small": "8px",
+      "--color-primary-button-border-light": "#D2324C",
+      "--atlas-card-border-radius-small": "12px",
+      "--atlas-font-weight-heading": "800",
+      "--atlas-background-error": "#be2119",
+      "--atlas-font-size-display": "40px",
+      "--atlas-heading-text-primary": "#000000",
+      "--atlas-text-primary": "#000000",
+      "--color__border-selected-dark-1": "#58131e",
+      "--atlas-chat-bubble-background": "#f2f2f2",
+      "--type-font-base-size": "16px",
+      "--atlas-space-8": "8px",
+      "--type-font-header-weight": "400",
+      "--color__border-divider-dark-1": "#D2324C",
+      "--atlas-heading-text-secondary": "#00000080",
+      "--atlas-font-size-h1": "40px",
+      "--atlas-font-size-h3": "24px",
+      "--atlas-button-disabled-color": "grey",
+      "--atlas-card-border-radius-normal": "32px",
+      "--atlas-tabs-border-radius": "12px",
+      "--atlas-chat-bubble-text-primary": "#322e2f",
+      "--color-ui-colors-text-100": "#101820",
+      "--atlas-text-primary-inverse": "#FFFFFF",
+      "--color-neutral-button-text-light": "#282828",
+      "--atlas-message-border-radius": "16px",
+      "--atlas-chip-border-radius": "4px",
+      "--atlas-space-12": "12px",
+      "--color-component-button-primary-bg-default-neutral-inverse-hover": "#e5e5e9",
+      "--color-primary-button-background-dark": "#962134",
+      "--atlas-space-medium": "16px",
+      "--color-ui-colors-background-neutral-2": "#F0F5F7",
+      "--atlas-space-huge": "32px",
+      "--tw-ring-shadow": "0 0 #0000",
+      "--color-fill-brand-indigo": "#4a4af4",
+      "--atlas-widget-starting-radius": "8px",
+      "--atlas-input-background-disabled": "rgba(0, 0, 0, 0.05)",
+      "--color-component-button-secondary-text-default-neutral-inverse-resting": "#ffffff",
+      "--color__scg-green": "#218368",
+      "--type-font-nav-style": "normal",
+      "--type-font-nav-weight": "400",
+      "--atlas-font-size-h5": "16px",
+      "--atlas-faq-fill-color": "#000000",
+      "--atlas-button-primary": "#000000",
+      "--atlas-button-border-radius-normal": "8px",
+      "--color__bg-overlay-light-3": "#c2c2c2",
+      "--color-primary-button-text-light": "#FAFAFA",
+      "--tw-ring-offset-color": "#fff",
+      "--color__text-light": "#282828",
+      "--color__scg-red": "#D2324C",
+      "--atlas-space-large": "20px",
+      "--color__border-selected-dark-2": "#190509",
+      "--color-primary-button-background-light-transparent": "rgba(210, 50, 76, 0.5)",
+      "--atlas-space-enormous": "40px",
+      "--atlas-font-size-h2": "32px",
+      "--color-greyscale-black-60": "#6D6E71",
+      "--type-font-body-family": "proxima-nova",
+      "--atlas-favorites-font-color": "undefined",
+      "--atlas-toast-border-radius": "12px",
+      "--tw-shadow-colored": "0 0 #0000",
+      "--atlas-font-weight-heading-bold": "bolder",
+      "--color-primary-light": "#A8A9FC",
+      "--atlas-range-input-background": "rgba(0, 0, 0, 0.05)",
+      "--color-tertiary-button-background-light": "#4E535A",
+      "--type-font-header-family": "proxima-nova-condensed",
+      "--atlas-progress-bar-border-radius": "4px",
+      "--color__text-dark": "#c7c8ce",
+      "--color-component-button-primary-text-default-neutral-inverse-hover": "#313142",
+      "--atlas-select-panel-shadow": "0px 8px 16px 0px rgba(55, 63, 71, 0.2)",
+      "--tw-ring-offset-shadow": "0 0 #0000",
+      "--atlas-font-weight-bold": "bolder",
+      "--color-neutral-button-background-light": "#e9d9db",
+      "--atlas-primary-color": "#000000",
+      "--atlas-favorites-hub-icon-color": "#000000",
+      "--type-font-body-style": "normal",
+      "--atlas-button-text-disabled-color": "lightgrey",
+      "--atlas-faq-font-color": "#FFFFFF",
+      "--atlas-thumbnail-border-radius": "8px",
+      "--atlas-space-16": "16px",
+      "--color-secondary-button-text-light": "#FAFAFA",
+      "--atlas-range-input-thumb-background": "#FFFFFF",
+      "--atlas-background-content": "#FFFFFF",
+      "--atlas-space-20": "20px",
+      "--atlas-font-family": "proxima-nova",
+      "--atlas-font-size-tiny": "12px",
+      "--color__bg-body-light": "#ffffff",
+      "--atlas-space-jumbo": "24px",
+      "--atlas-space-24": "24px",
+      "--atlas-heading-font-family": "proxima-nova-condensed",
+      "--color-tertiary-button-border-light": "#4E535A",
+      "--sizes-border-button-radius": "5px",
+      "--color__bg-overlay-light-1": "#f0f0f0",
+      "--color__scg-blue": "#217a97",
+      "--atlas-font-size-large": "18px",
+      "--atlas-font-size-h4": "18px",
+      "--atlas-space-40": "40px",
+      "--atlas-font-weight-normal": "400",
+      "--atlas-background-main": "#FFFFFF",
+      "--color-plain-button-background-light": "#f0f0f0",
+      "--tw-shadow": "0 0 #0000",
+      "--atlas-font-size-normal": "16px",
+      "--color-component-overlay-bg": "rgba(25, 25, 37, 0.9)",
+      "--color__border-divider-light-3": "#9999bf",
+      "--atlas-font-size-small": "14px",
+      "--color__border-divider-dark-2": "#b82840",
+      "--atlas-space-4": "4px",
+      "--type-font-body-weight": "400",
+      "--color-primary-button-background-light": "#D2324C"
+    },
+    "headings": [
+      {
+        "tag": "h3",
+        "text": "SUBSCRIBE & SAVE",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova-condensed",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "0px 16px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Get started with a free consultation!",
+        "color": "rgb(250, 250, 250)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova-condensed",
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "lineHeight": "30px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h1",
+        "text": "10% OFF",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova-condensed",
+        "fontSize": "60px",
+        "fontWeight": "800",
+        "lineHeight": "54px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Superauto Machines",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova-condensed",
+        "fontSize": "36px",
+        "fontWeight": "700",
+        "lineHeight": "40px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Semi-Auto Machines",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova-condensed",
+        "fontSize": "36px",
+        "fontWeight": "700",
+        "lineHeight": "40px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Grinders",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova-condensed",
+        "fontSize": "36px",
+        "fontWeight": "700",
+        "lineHeight": "40px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Coffee",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova-condensed",
+        "fontSize": "36px",
+        "fontWeight": "700",
+        "lineHeight": "40px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "SCG Fan Favorites",
+        "color": "rgb(40, 40, 40)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "37.5px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Breville Barista Express Espresso Machine",
+        "color": "rgb(40, 40, 40)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "18px",
+        "fontWeight": "700",
+        "lineHeight": "22.5px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Diletta Bello+ Espresso Machine",
+        "color": "rgb(40, 40, 40)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "18px",
+        "fontWeight": "700",
+        "lineHeight": "22.5px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Diletta Bello Espresso Machine",
+        "color": "rgb(40, 40, 40)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "18px",
+        "fontWeight": "700",
+        "lineHeight": "22.5px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h3",
+        "text": "Rancilio Silvia PID Espresso Machine",
+        "color": "rgb(40, 40, 40)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "18px",
+        "fontWeight": "700",
+        "lineHeight": "22.5px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "div",
+        "text": "",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(0, 61, 104)",
+        "fontFamily": "Times",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50%",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Preferences",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "16.2px",
+        "fontWeight": "700",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "5px",
+        "border": "2px solid rgb(78, 83, 90)",
+        "padding": "12.15px 20.25px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Ok",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(78, 83, 90)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "16.2px",
+        "fontWeight": "700",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "5px",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "padding": "12.15px 20.25px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "✕",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "10.5px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "Skip to content",
+        "color": "rgb(40, 40, 40)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "5px",
+        "border": "0px solid rgb(247, 247, 250)",
+        "padding": "8px 16px",
+        "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px"
+      },
+      {
+        "tag": "a",
+        "text": "Learn More",
+        "color": "rgb(250, 250, 250)",
+        "backgroundColor": "rgb(210, 50, 76)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "29.25px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "5px",
+        "border": "1px solid rgb(150, 33, 52)",
+        "padding": "8px 24px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Shop Open Box Gear",
+        "color": "rgb(250, 250, 250)",
+        "backgroundColor": "rgb(78, 83, 90)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "29.25px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "5px",
+        "border": "1px solid rgb(250, 250, 250)",
+        "padding": "8px 24px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "color": "rgb(17, 24, 39)",
+        "backgroundColor": "rgb(243, 244, 246)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50%",
+        "border": "0px none rgb(17, 24, 39)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "color": "rgb(17, 24, 39)",
+        "backgroundColor": "rgb(243, 244, 246)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "50%",
+        "border": "0px none rgb(17, 24, 39)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "color": "rgb(40, 40, 40)",
+        "backgroundColor": "rgb(240, 240, 240)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "9999px",
+        "border": "1px solid rgb(240, 240, 240)",
+        "padding": "8px 12px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "color": "rgb(40, 40, 40)",
+        "backgroundColor": "rgb(240, 240, 240)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "9999px",
+        "border": "1px solid rgb(240, 240, 240)",
+        "padding": "8px 12px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "color": "rgb(40, 40, 40)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "proxima-nova",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "9999px",
+        "border": "1px solid rgb(229, 229, 229)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "This website uses cookies to ensure you get the best experience. Learn morePreferencesOk✕ Manage consent preferences Reject all Accept all W",
+      "color": "rgb(40, 40, 40)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "fontFamily": "proxima-nova",
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px solid rgb(247, 247, 250)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgb(247, 247, 250)",
+        "count": 1651
+      },
+      {
+        "value": "rgb(40, 40, 40)",
+        "count": 1460
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 200
+      },
+      {
+        "value": "rgb(250, 250, 250)",
+        "count": 122
+      },
+      {
+        "value": "rgb(210, 50, 76)",
+        "count": 69
+      },
+      {
+        "value": "rgb(229, 229, 229)",
+        "count": 46
+      },
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 38
+      },
+      {
+        "value": "rgb(14, 116, 144)",
+        "count": 37
+      },
+      {
+        "value": "rgb(237, 175, 68)",
+        "count": 30
+      },
+      {
+        "value": "rgb(17, 24, 39)",
+        "count": 25
+      },
+      {
+        "value": "rgb(240, 240, 240)",
+        "count": 24
+      },
+      {
+        "value": "rgb(33, 122, 151)",
+        "count": 24
+      },
+      {
+        "value": "rgb(229, 231, 235) rgb(247, 247, 250) rgb(247, 247, 250)",
+        "count": 16
+      },
+      {
+        "value": "rgb(238, 238, 242)",
+        "count": 16
+      },
+      {
+        "value": "rgb(82, 82, 91)",
+        "count": 16
+      },
+      {
+        "value": "rgb(243, 244, 246)",
+        "count": 15
+      },
+      {
+        "value": "rgb(39, 39, 42)",
+        "count": 12
+      },
+      {
+        "value": "rgb(224, 224, 224)",
+        "count": 7
+      },
+      {
+        "value": "rgba(39, 39, 42, 0.6)",
+        "count": 5
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.4)",
+        "count": 4
+      },
+      {
+        "value": "rgb(150, 33, 52)",
+        "count": 3
+      },
+      {
+        "value": "rgb(226, 232, 240)",
+        "count": 3
+      },
+      {
+        "value": "rgb(75, 85, 99)",
+        "count": 3
+      },
+      {
+        "value": "rgb(78, 83, 90)",
+        "count": 3
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "proxima-nova",
+        "count": 1694
+      },
+      {
+        "value": "proxima-nova, sans-serif",
+        "count": 70
+      },
+      {
+        "value": "proxima-nova-condensed",
+        "count": 33
+      },
+      {
+        "value": "Times",
+        "count": 5
+      },
+      {
+        "value": "\"proxima nova\", system-ui, Arial, sans-serif",
+        "count": 1
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "18px",
+        "count": 1529
+      },
+      {
+        "value": "14px",
+        "count": 105
+      },
+      {
+        "value": "16px",
+        "count": 92
+      },
+      {
+        "value": "36px",
+        "count": 18
+      },
+      {
+        "value": "17px",
+        "count": 17
+      },
+      {
+        "value": "30px",
+        "count": 10
+      },
+      {
+        "value": "12px",
+        "count": 7
+      },
+      {
+        "value": "24px",
+        "count": 7
+      },
+      {
+        "value": "60px",
+        "count": 5
+      },
+      {
+        "value": "96px",
+        "count": 5
+      },
+      {
+        "value": "20px",
+        "count": 3
+      },
+      {
+        "value": "16.2px",
+        "count": 2
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "400",
+        "count": 1507
+      },
+      {
+        "value": "700",
+        "count": 241
+      },
+      {
+        "value": "600",
+        "count": 28
+      },
+      {
+        "value": "800",
+        "count": 17
+      },
+      {
+        "value": "500",
+        "count": 10
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 1639
+      },
+      {
+        "value": "2px",
+        "count": 46
+      },
+      {
+        "value": "6px",
+        "count": 37
+      },
+      {
+        "value": "9999px",
+        "count": 37
+      },
+      {
+        "value": "5px",
+        "count": 16
+      },
+      {
+        "value": "0px 0px 5px",
+        "count": 6
+      },
+      {
+        "value": "4px",
+        "count": 6
+      },
+      {
+        "value": "3px",
+        "count": 5
+      },
+      {
+        "value": "8px",
+        "count": 4
+      },
+      {
+        "value": "0px 6px 6px",
+        "count": 3
+      },
+      {
+        "value": "50%",
+        "count": 3
+      },
+      {
+        "value": "6px 6px 0px 0px",
+        "count": 1
+      }
+    ],
+    "shadows": [
+      {
+        "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "count": 6
+      },
+      {
+        "value": "rgb(255, 255, 255) 0px 0px 0px 0px, rgb(78, 83, 90) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "count": 5
+      },
+      {
+        "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+        "count": 3
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.2) 0px 0px 18px 0px",
+        "count": 1
+      },
+      {
+        "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px",
+        "count": 1
+      }
+    ],
+    "screenshot": "screenshots/seattle-coffee-gear.png"
+  },
+  {
+    "slug": "steep-and-cheap",
+    "name": "Steep & Cheap",
+    "requestedUrl": "https://www.steepandcheap.com",
+    "capturedAt": "2026-07-20T21:01:28.203Z",
+    "status": 202,
+    "finalUrl": "https://www.steepandcheap.com/",
+    "title": "Human Verification",
+    "description": null,
+    "themeColor": null,
+    "logoCandidates": [],
+    "variables": {},
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Let's confirm you are human",
+        "color": "rgb(221, 107, 16)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "fontSize": "32px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(221, 107, 16)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "button",
+        "text": "Begin",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 153, 2)",
+        "fontFamily": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "2px",
+        "border": "1px solid rgb(255, 153, 2)",
+        "padding": "5px 30px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "Temporary error. Please try again.Before proceeding to your request, you need to solve a puzzle, and the puzzle requires Google Translate to",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Arial",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 21
+      },
+      {
+        "value": "rgb(221, 107, 16)",
+        "count": 2
+      },
+      {
+        "value": "rgb(255, 153, 2)",
+        "count": 2
+      },
+      {
+        "value": "rgb(204, 204, 204)",
+        "count": 1
+      },
+      {
+        "value": "rgb(204, 204, 204) rgb(0, 0, 0)",
+        "count": 1
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "count": 12
+      },
+      {
+        "value": "Arial",
+        "count": 1
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "16px",
+        "count": 12
+      },
+      {
+        "value": "32px",
+        "count": 1
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "400",
+        "count": 11
+      },
+      {
+        "value": "700",
+        "count": 2
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 11
+      },
+      {
+        "value": "2px",
+        "count": 1
+      },
+      {
+        "value": "4px",
+        "count": 1
+      }
+    ],
+    "shadows": [],
+    "screenshot": "screenshots/steep-and-cheap.png"
+  },
+  {
+    "slug": "sur-la-table",
+    "name": "Sur La Table",
+    "requestedUrl": "https://www.surlatable.com",
+    "capturedAt": "2026-07-20T21:01:31.156Z",
+    "status": 200,
+    "finalUrl": "https://www.surlatable.com/",
+    "title": "Sur La table | Cookware, Dinnerware, Cutlery & Bakeware",
+    "description": " Feel inspired to whip up culinary magic with Sur La Table's vast kitchenware selection. From unique gadgets to expert tips, spark your cooking creativity today.",
+    "themeColor": null,
+    "logoCandidates": [
+      {
+        "alt": "Sur La Table Logo",
+        "src": "https://www.surlatable.com/on/demandware.static/Sites-SLT-Site/-/default/dw84d9c268/images/SLT_Logo.png"
+      }
+    ],
+    "variables": {},
+    "headings": [],
+    "controls": [
+      {
+        "tag": "button",
+        "text": "Search Stores",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "17px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "LEARN MORE",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "900",
+        "lineHeight": "50px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px 30px",
+        "boxShadow": "rgb(0, 0, 0) 0px 0px 0px 1px inset"
+      },
+      {
+        "tag": "a",
+        "text": "In Stores Now See what’s happening in stores, from deals you won’t find anywhere else to hands-on demos and special events.",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "17px",
+        "letterSpacing": "1px",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "FIND A STORE",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "900",
+        "lineHeight": "50px",
+        "letterSpacing": "0.5px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px 30px",
+        "boxShadow": "rgb(0, 0, 0) 0px 0px 0px 1px inset"
+      },
+      {
+        "tag": "a",
+        "text": "SLT PERKS Earn rewards with every purchase, whether it’s a new pan or a hands-on cooking class.",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "17px",
+        "letterSpacing": "1px",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "a",
+        "text": "LEARN MORE",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "900",
+        "lineHeight": "50px",
+        "letterSpacing": "0.5px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px 30px",
+        "boxShadow": "rgb(0, 0, 0) 0px 0px 0px 1px inset"
+      },
+      {
+        "tag": "button",
+        "text": "SIGN UP",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(239, 239, 239)",
+        "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "lineHeight": "21px",
+        "letterSpacing": "0.28px",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "1px solid rgb(0, 0, 0)",
+        "padding": "2px 0px 0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Feedback",
+        "color": "rgb(2, 2, 2)",
+        "backgroundColor": "rgb(245, 245, 245)",
+        "fontFamily": "Arial, sans-serif, Tahoma",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "6px 6px 0px 0px",
+        "border": "0px none rgb(2, 2, 2)",
+        "padding": "0px 20px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Next",
+        "color": "rgb(147, 147, 147)",
+        "backgroundColor": "rgb(254, 254, 254)",
+        "fontFamily": "\"Open Sans\", Roboto, Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "4px",
+        "border": "0px none rgb(147, 147, 147)",
+        "padding": "6px 16px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "<iframe src=\"//www.googletagmanager.com/ns.html?id=GTM-5RV6QQ\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe> Skip to",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "17px",
+      "letterSpacing": "1px",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 4805
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 109
+      },
+      {
+        "value": "rgb(85, 85, 85)",
+        "count": 36
+      },
+      {
+        "value": "rgb(51, 51, 51)",
+        "count": 16
+      },
+      {
+        "value": "rgb(50, 60, 6)",
+        "count": 14
+      },
+      {
+        "value": "rgb(85, 85, 85) rgb(85, 85, 85) rgba(0, 0, 0, 0)",
+        "count": 10
+      },
+      {
+        "value": "rgb(184, 93, 10)",
+        "count": 8
+      },
+      {
+        "value": "rgb(119, 119, 119)",
+        "count": 2
+      },
+      {
+        "value": "rgb(183, 47, 59)",
+        "count": 2
+      },
+      {
+        "value": "rgb(80, 24, 5)",
+        "count": 2
+      },
+      {
+        "value": "rgb(187, 187, 187)",
+        "count": 1
+      },
+      {
+        "value": "rgb(238, 238, 238)",
+        "count": 1
+      },
+      {
+        "value": "rgb(68, 70, 68)",
+        "count": 1
+      },
+      {
+        "value": "rgba(216, 216, 216, 0.73) rgb(0, 0, 0)",
+        "count": 1
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "Lato, Helvetica, Arial, sans-serif",
+        "count": 2112
+      },
+      {
+        "value": "sourcesanspro",
+        "count": 257
+      },
+      {
+        "value": "\"TT Norms Pro\"",
+        "count": 111
+      },
+      {
+        "value": "\"Scotch Deck\"",
+        "count": 20
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "14px",
+        "count": 2229
+      },
+      {
+        "value": "16px",
+        "count": 97
+      },
+      {
+        "value": "18px",
+        "count": 64
+      },
+      {
+        "value": "20px",
+        "count": 51
+      },
+      {
+        "value": "40px",
+        "count": 37
+      },
+      {
+        "value": "24px",
+        "count": 9
+      },
+      {
+        "value": "35px",
+        "count": 5
+      },
+      {
+        "value": "13px",
+        "count": 4
+      },
+      {
+        "value": "22px",
+        "count": 2
+      },
+      {
+        "value": "75px",
+        "count": 2
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "400",
+        "count": 2398
+      },
+      {
+        "value": "700",
+        "count": 88
+      },
+      {
+        "value": "900",
+        "count": 8
+      },
+      {
+        "value": "500",
+        "count": 4
+      },
+      {
+        "value": "600",
+        "count": 1
+      },
+      {
+        "value": "800",
+        "count": 1
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 2500
+      }
+    ],
+    "shadows": [],
+    "screenshot": "screenshots/sur-la-table.png"
+  },
+  {
+    "slug": "western-bikeworks",
+    "name": "Western Bikeworks",
+    "requestedUrl": "https://www.westernbikeworks.com",
+    "capturedAt": "2026-07-20T21:01:34.756Z",
+    "status": 200,
+    "finalUrl": "https://www.biketiresdirect.com/?rdb=wbw&",
+    "title": "BikeTiresDirect - Great prices on bicycle tires, components, apparel",
+    "description": "Home to the world's best selection of bicycle tires, plus tons of other cycling gear. Explore our collection of complete bikes, components, apparel, accessories, computers and much more. BTD has been proudly serving cyclists of all disciplines since 2002.",
+    "themeColor": "#ffffff",
+    "logoCandidates": [
+      {
+        "alt": "Bike Tires Direct logo. Link to homepage.",
+        "src": "https://www.biketiresdirect.com/images/btd-logo.svg"
+      },
+      {
+        "alt": "Bike Tires Direct logo",
+        "src": "https://www.biketiresdirect.com/images/btd-footer-logo2.png"
+      }
+    ],
+    "variables": {
+      "--whitefont": "#fff",
+      "--ltfont": "#ccc",
+      "--dkfont": "#3b464a",
+      "--redfont": "#d8202a"
+    },
+    "headings": [
+      {
+        "tag": "h2",
+        "text": "Welcome to BikeTiresDirect!",
+        "color": "rgb(59, 70, 74)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(59, 70, 74)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h1",
+        "text": "BikeTiresDirect.com Homepage",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "22px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Homepage promotional carousel",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Daily Special",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Main promotional banners",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "Featured Products",
+        "color": "rgb(59, 70, 74)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(59, 70, 74)",
+        "padding": "0px 10px 0px 0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "LINKS",
+        "color": "rgb(239, 198, 45)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "15px",
+        "fontWeight": "800",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(239, 198, 45)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "CATEGORIES",
+        "color": "rgb(239, 198, 45)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "15px",
+        "fontWeight": "800",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(239, 198, 45)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "h2",
+        "text": "SUBSCRIBE",
+        "color": "rgb(239, 198, 45)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "15px",
+        "fontWeight": "800",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(239, 198, 45)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "button",
+        "text": "Learn More",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(216, 32, 42)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "15px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "3px",
+        "border": "0px none rgb(255, 255, 255)",
+        "padding": "2px 8px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 1px 3px 0px"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(59, 70, 74)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "100%",
+        "border": "1px solid rgb(0, 0, 0)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(59, 70, 74)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "100%",
+        "border": "1px solid rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(59, 70, 74)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "100%",
+        "border": "1px solid rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "span",
+        "text": "",
+        "color": "rgb(59, 70, 74)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "100%",
+        "border": "1px solid rgb(255, 255, 255)",
+        "padding": "0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "SIGN UP FOR EMAILS",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(239, 198, 45)",
+        "fontFamily": "\"Open Sans\"",
+        "fontSize": "15px",
+        "fontWeight": "800",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "2px solid rgb(239, 198, 45)",
+        "padding": "4px 0px",
+        "boxShadow": "none"
+      },
+      {
+        "tag": "button",
+        "text": "Live chat",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(245, 245, 245)",
+        "fontFamily": "Arial",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "4px",
+        "border": "1px solid rgb(22, 49, 120)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "var ajaxCheckCode = 'yc9tlug5'; var nsecn=''; var cip='108.189.20.119'; var surn='213105'; var siteURL = 'https://www.biketiresdirect.com'; ",
+      "color": "rgb(59, 70, 74)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px none rgb(59, 70, 74)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgb(59, 70, 74)",
+        "count": 422
+      },
+      {
+        "value": "rgb(22, 49, 120)",
+        "count": 94
+      },
+      {
+        "value": "rgb(204, 204, 204)",
+        "count": 92
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 88
+      },
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 32
+      },
+      {
+        "value": "rgb(216, 32, 42)",
+        "count": 10
+      },
+      {
+        "value": "rgb(239, 198, 45)",
+        "count": 8
+      },
+      {
+        "value": "rgb(239, 239, 239)",
+        "count": 3
+      },
+      {
+        "value": "rgb(136, 136, 136)",
+        "count": 2
+      },
+      {
+        "value": "rgb(255, 211, 49)",
+        "count": 2
+      },
+      {
+        "value": "rgb(47, 63, 76)",
+        "count": 2
+      },
+      {
+        "value": "rgb(160, 160, 160) rgb(0, 0, 0) rgb(0, 0, 0)",
+        "count": 1
+      },
+      {
+        "value": "rgb(172, 172, 172)",
+        "count": 1
+      },
+      {
+        "value": "rgb(245, 245, 245)",
+        "count": 1
+      },
+      {
+        "value": "rgb(255, 255, 255) rgb(255, 255, 255) rgb(59, 70, 74)",
+        "count": 1
+      },
+      {
+        "value": "rgb(59, 70, 74) rgb(160, 160, 160) rgb(59, 70, 74) rgb(59, 70, 74)",
+        "count": 1
+      },
+      {
+        "value": "rgb(59, 70, 74) rgb(59, 70, 74) rgb(172, 172, 172)",
+        "count": 1
+      },
+      {
+        "value": "rgb(63, 21, 105)",
+        "count": 1
+      },
+      {
+        "value": "rgb(68, 68, 68)",
+        "count": 1
+      },
+      {
+        "value": "rgb(78, 96, 108)",
+        "count": 1
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "\"Open Sans\"",
+        "count": 348
+      },
+      {
+        "value": "Arial",
+        "count": 5
+      },
+      {
+        "value": "\"Helvetica Neue\", Helvetica, sans-serif",
+        "count": 2
+      },
+      {
+        "value": "oswald",
+        "count": 1
+      },
+      {
+        "value": "verdana, sans-sarif",
+        "count": 1
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "14px",
+        "count": 258
+      },
+      {
+        "value": "13px",
+        "count": 65
+      },
+      {
+        "value": "15px",
+        "count": 11
+      },
+      {
+        "value": "20px",
+        "count": 8
+      },
+      {
+        "value": "12.04px",
+        "count": 3
+      },
+      {
+        "value": "16px",
+        "count": 3
+      },
+      {
+        "value": "11px",
+        "count": 2
+      },
+      {
+        "value": "17px",
+        "count": 2
+      },
+      {
+        "value": "18px",
+        "count": 1
+      },
+      {
+        "value": "22px",
+        "count": 1
+      },
+      {
+        "value": "26px",
+        "count": 1
+      },
+      {
+        "value": "30px",
+        "count": 1
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "400",
+        "count": 272
+      },
+      {
+        "value": "600",
+        "count": 66
+      },
+      {
+        "value": "800",
+        "count": 12
+      },
+      {
+        "value": "700",
+        "count": 4
+      },
+      {
+        "value": "300",
+        "count": 3
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 313
+      },
+      {
+        "value": "20px",
+        "count": 20
+      },
+      {
+        "value": "5px",
+        "count": 9
+      },
+      {
+        "value": "15px",
+        "count": 8
+      },
+      {
+        "value": "100%",
+        "count": 4
+      },
+      {
+        "value": "22px",
+        "count": 1
+      },
+      {
+        "value": "3px",
+        "count": 1
+      },
+      {
+        "value": "4px",
+        "count": 1
+      }
+    ],
+    "shadows": [
+      {
+        "value": "rgb(68, 68, 68) 1px 0px 5px 0px",
+        "count": 1
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.4) 0px 0px 5px 0px",
+        "count": 1
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.4) 0px 1px 3px 0px",
+        "count": 1
+      }
+    ],
+    "screenshot": "screenshots/western-bikeworks.png"
+  },
+  {
+    "slug": "trisports",
+    "name": "TriSports",
+    "requestedUrl": "https://www.trisports.com",
+    "capturedAt": "2026-07-20T21:01:38.186Z",
+    "status": 202,
+    "finalUrl": "https://www.competitivecyclist.com/rc/shop-all-triathlon",
+    "title": "Human Verification",
+    "description": null,
+    "themeColor": null,
+    "logoCandidates": [],
+    "variables": {},
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Let's confirm you are human",
+        "color": "rgb(221, 107, 16)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "fontSize": "32px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "border": "0px none rgb(221, 107, 16)",
+        "padding": "0px",
+        "boxShadow": "none"
+      }
+    ],
+    "controls": [
+      {
+        "tag": "button",
+        "text": "Begin",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 153, 2)",
+        "fontFamily": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "2px",
+        "border": "1px solid rgb(255, 153, 2)",
+        "padding": "5px 30px",
+        "boxShadow": "none"
+      }
+    ],
+    "body": {
+      "tag": "body",
+      "text": "Temporary error. Please try again.Before proceeding to your request, you need to solve a puzzle, and the puzzle requires Google Translate to",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "fontFamily": "Arial",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "padding": "0px",
+      "boxShadow": "none"
+    },
+    "palette": [
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 21
+      },
+      {
+        "value": "rgb(221, 107, 16)",
+        "count": 2
+      },
+      {
+        "value": "rgb(255, 153, 2)",
+        "count": 2
+      },
+      {
+        "value": "rgb(204, 204, 204)",
+        "count": 1
+      },
+      {
+        "value": "rgb(204, 204, 204) rgb(0, 0, 0)",
+        "count": 1
+      }
+    ],
+    "fontFamilies": [
+      {
+        "value": "\"Amazon Ember\", Helvetica, Arial, sans-serif",
+        "count": 12
+      },
+      {
+        "value": "Arial",
+        "count": 1
+      }
+    ],
+    "fontSizes": [
+      {
+        "value": "16px",
+        "count": 12
+      },
+      {
+        "value": "32px",
+        "count": 1
+      }
+    ],
+    "fontWeights": [
+      {
+        "value": "400",
+        "count": 11
+      },
+      {
+        "value": "700",
+        "count": 2
+      }
+    ],
+    "radii": [
+      {
+        "value": "0px",
+        "count": 11
+      },
+      {
+        "value": "2px",
+        "count": 1
+      },
+      {
+        "value": "4px",
+        "count": 1
+      }
+    ],
+    "shadows": [],
+    "screenshot": "screenshots/trisports.png"
+  }
+]

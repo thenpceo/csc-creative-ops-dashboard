@@ -1,0 +1,209 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "bike-tires-direct.generative-image",
+  "capability": "generative-image",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "promptOrder": [
+        "intent",
+        "subject",
+        "environment",
+        "composition",
+        "camera",
+        "lighting",
+        "materials",
+        "copy-safe region",
+        "locks",
+        "exclusions"
+      ],
+      "environment": "home workshop, bike room, local road, trail, commute, and clean product-studio contexts",
+      "camera": "functional product coverage, tread and component macro detail, and clear use-case imagery",
+      "lighting": "neutral honest studio light with natural outdoor context"
+    },
+    "rules": [
+      {
+        "id": "generative-image.intent-first",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "generative-image"
+        ],
+        "statement": "State the job intent and real use case before style, camera, or aesthetic descriptors.",
+        "sourceIds": []
+      },
+      {
+        "id": "generative-image.product-reference",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "generative-image"
+        ],
+        "statement": "Use an authorized reference and explicit lock list whenever a real product, service result, location, person, or branded object must remain identifiable.",
+        "sourceIds": []
+      },
+      {
+        "id": "generative-image.no-identity",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "generative-image"
+        ],
+        "statement": "Generate clean visual plates without logos, trademarks, prices, labels, interface, or legible text. Composite approved identity and copy afterward.",
+        "sourceIds": []
+      },
+      {
+        "id": "generative-image.physical-truth",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "generative-image"
+        ],
+        "statement": "Require coherent perspective, contact, gravity, shadows, reflections, scale, anatomy, materials, and environment behavior.",
+        "sourceIds": []
+      },
+      {
+        "id": "generative-image.exclusions",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "generative-image"
+        ],
+        "statement": "Exclude luxury editorial emptiness, hidden price, gold body text on white, invented compatibility, abstract navigation without category labels, fake text, invented logos, duplicated objects, warped geometry, and plastic materials.",
+        "sourceIds": []
+      }
+    ],
+    "recipes": [
+      {
+        "id": "generative-image.environment-wide",
+        "authority": "preferred",
+        "appliesTo": [
+          "generative-image"
+        ],
+        "inputs": [
+          "realUseCase",
+          "heroSubject",
+          "copySafeRegion",
+          "aspectRatio"
+        ],
+        "structure": [
+          "home workshop, bike room, local road, trail, commute, and clean product-studio contexts",
+          "functional product coverage, tread and component macro detail, and clear use-case imagery",
+          "neutral honest studio light with natural outdoor context",
+          "navy, red, gold, slate, white, rubber black, alloy, and restrained route color",
+          "one clear anchor",
+          "no words or logos"
+        ],
+        "ruleRefs": [
+          "generative-image.intent-first",
+          "imagery.environment"
+        ]
+      },
+      {
+        "id": "generative-image.product-studio",
+        "authority": "preferred",
+        "appliesTo": [
+          "generative-image",
+          "commerce"
+        ],
+        "inputs": [
+          "authorizedProductReference",
+          "requiredAngle",
+          "lockList",
+          "background"
+        ],
+        "structure": [
+          "exact product",
+          "geometry and material locks",
+          "normal perspective",
+          "large soft source",
+          "honest contact"
+        ],
+        "ruleRefs": [
+          "generative-image.product-reference",
+          "product.truth"
+        ]
+      },
+      {
+        "id": "generative-image.product-context",
+        "authority": "preferred",
+        "appliesTo": [
+          "generative-image",
+          "commerce"
+        ],
+        "inputs": [
+          "authorizedProductReference",
+          "realUseCase",
+          "environment",
+          "scaleCues",
+          "copySafeRegion"
+        ],
+        "structure": [
+          "unchanged product",
+          "home workshop, bike room, local road, trail, commute, and clean product-studio contexts",
+          "believable scale",
+          "matched contact and light"
+        ],
+        "ruleRefs": [
+          "generative-image.product-reference",
+          "generative-image.physical-truth"
+        ]
+      },
+      {
+        "id": "generative-image.people-in-use",
+        "authority": "preferred",
+        "appliesTo": [
+          "generative-image",
+          "marketing"
+        ],
+        "inputs": [
+          "castingBrief",
+          "realTask",
+          "approvedProduct",
+          "environment",
+          "permissions"
+        ],
+        "structure": [
+          "real riders and mechanics with approachable skill; the product decision remains primary",
+          "correct technique",
+          "natural expression",
+          "product and safety locks"
+        ],
+        "ruleRefs": [
+          "people.permission",
+          "imagery.people"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "gen-image.truth",
+        "question": "Does the plate preserve product, person, environment, and physical locks?"
+      },
+      {
+        "id": "gen-image.brand",
+        "question": "Does it express the brand-specific environment, camera, lighting, and people behavior?"
+      },
+      {
+        "id": "gen-image.clean",
+        "question": "Is it free of generated identity, fake text, and avoid-list failures?"
+      }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "source.audit.home.desktop",
+      "source.site.home",
+      "marketing.current.01",
+      "marketing.current.02",
+      "marketing.current.03",
+      "marketing.current.04"
+    ]
+  }
+}

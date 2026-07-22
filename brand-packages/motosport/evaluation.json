@@ -1,0 +1,127 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/evaluation.schema.json",
+  "schemaVersion": "1.0.0",
+  "gates": [
+    {
+      "id": "identity",
+      "appliesTo": [
+        "all"
+      ],
+      "ruleRefs": [
+        "logo.official-artwork-only"
+      ],
+      "failure": "reject",
+      "question": "Is official identity used without synthesis or distortion?"
+    },
+    {
+      "id": "product-truth",
+      "appliesTo": [
+        "all"
+      ],
+      "ruleRefs": [
+        "product.truth"
+      ],
+      "failure": "reject",
+      "question": "Are product, service, compatibility, condition, material, scale, and safety facts verified?"
+    },
+    {
+      "id": "claims",
+      "appliesTo": [
+        "all"
+      ],
+      "ruleRefs": [
+        "claims.runtime-truth"
+      ],
+      "failure": "reject",
+      "question": "Are every offer, price, date, availability, result, and urgency claim current and sourced?"
+    },
+    {
+      "id": "rights",
+      "appliesTo": [
+        "all"
+      ],
+      "ruleRefs": [
+        "rights.record",
+        "people.permission"
+      ],
+      "failure": "reject",
+      "question": "Are assets, people, music, locations, partners, and model-upload permissions cleared?"
+    },
+    {
+      "id": "readability",
+      "appliesTo": [
+        "all"
+      ],
+      "ruleRefs": [
+        "accessibility.contrast",
+        "typography.readability"
+      ],
+      "failure": "reject",
+      "question": "Is essential content readable in the destination and viewing conditions?"
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "visual-identity",
+      "weight": 0.2,
+      "question": "Does the work clearly belong to MotoSport without relying on the logo alone?",
+      "evidenceRefs": [
+        "asset.logo.primary",
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "imagery",
+      "weight": 0.18,
+      "question": "Does imagery reflect motocross track, dirt trail, garage, paddock, road, dunes, and working vehicle contexts, low action angles, clean mechanical product views, correct vehicle context, and detailed installation coverage, and hard directional action light balanced by clean neutral product and garage light?",
+      "evidenceRefs": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "decision-clarity",
+      "weight": 0.16,
+      "question": "Does the output make vehicle year, make, model, submodel, fitment, part type, discipline, safety, stock, and shipping easy to understand?",
+      "evidenceRefs": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "typography",
+      "weight": 0.13,
+      "question": "Are display, body, label, price, and specification roles clear and brand-specific?",
+      "evidenceRefs": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "composition",
+      "weight": 0.12,
+      "question": "Is hierarchy intentional, destination-aware, and centered on one primary idea and action?",
+      "evidenceRefs": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "voice",
+      "weight": 0.11,
+      "question": "Does the language sound fast, mechanical, confident, fitment-led, racing, serviceable and remain specific?",
+      "evidenceRefs": [
+        "source.site.home",
+        "source.site.evidence"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "weight": 0.1,
+      "question": "Are contrast, type, captions, controls, non-color cues, and reduced motion appropriate?",
+      "evidenceRefs": []
+    }
+  ],
+  "thresholds": {
+    "approve": 0.85,
+    "humanReview": 0.7,
+    "rejectBelow": 0.7,
+    "gateFailure": "reject"
+  }
+}

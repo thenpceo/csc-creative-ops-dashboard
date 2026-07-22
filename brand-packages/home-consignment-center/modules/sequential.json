@@ -1,0 +1,222 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "home-consignment-center.sequential",
+  "capability": "sequential",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "narrativeArc": [
+        "open on a distinctive find or room",
+        "show the local showroom context",
+        "prove condition, material, or story",
+        "explain buy or consign value",
+        "resolve with store or consignment action"
+      ],
+      "shotFields": [
+        "storyFunction",
+        "duration",
+        "visualIntent",
+        "composition",
+        "camera",
+        "action",
+        "lighting",
+        "copy",
+        "audioIntent",
+        "continuityLocks",
+        "assetSelectors",
+        "rights",
+        "evaluationRefs"
+      ]
+    },
+    "rules": [
+      {
+        "id": "sequential.function",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "sequential"
+        ],
+        "statement": "Every shot advances one named story function. Remove duplicate beauty shots that add no premise, proof, decision, emotion, or resolution.",
+        "sourceIds": []
+      },
+      {
+        "id": "sequential.arc",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "sequential"
+        ],
+        "statement": "Preferred arc: open on a distinctive find or room; show the local showroom context; prove condition, material, or story; explain buy or consign value; resolve with store or consignment action.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "sequential.continuity-ledger",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "sequential"
+        ],
+        "statement": "Before generating shots, lock product or service facts, environment, people, wardrobe, props, light, time, screen direction, offer, copy, audio, and rights.",
+        "sourceIds": []
+      },
+      {
+        "id": "sequential.copy-exact",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "sequential"
+        ],
+        "statement": "Storyboard copy is exact approved language with source and expiration when factual. Visual prompts do not generate the copy itself.",
+        "sourceIds": []
+      },
+      {
+        "id": "sequential.handoff",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "sequential"
+        ],
+        "statement": "Every shot exposes required assets, rights, continuity locks, duration, ratio, copy, audio intent, and evaluation references.",
+        "sourceIds": []
+      }
+    ],
+    "recipes": [
+      {
+        "id": "sequential.brand-story",
+        "authority": "preferred",
+        "appliesTo": [
+          "sequential",
+          "marketing"
+        ],
+        "inputs": [
+          "brief",
+          "verifiedFacts",
+          "approvedAssets",
+          "rights",
+          "duration",
+          "ratio"
+        ],
+        "structure": [
+          "open on a distinctive find or room",
+          "show the local showroom context",
+          "prove condition, material, or story",
+          "explain buy or consign value",
+          "resolve with store or consignment action"
+        ],
+        "ruleRefs": [
+          "sequential.function",
+          "sequential.arc",
+          "sequential.continuity-ledger"
+        ]
+      },
+      {
+        "id": "sequential.product-proof",
+        "authority": "preferred",
+        "appliesTo": [
+          "sequential",
+          "commerce"
+        ],
+        "inputs": [
+          "verifiedProduct",
+          "realUse",
+          "oneProof",
+          "currentFact",
+          "action"
+        ],
+        "structure": [
+          "need or use",
+          "product",
+          "proof detail",
+          "result",
+          "action"
+        ],
+        "ruleRefs": [
+          "product.truth",
+          "sequential.copy-exact"
+        ]
+      },
+      {
+        "id": "sequential.expert-guide",
+        "authority": "preferred",
+        "appliesTo": [
+          "sequential",
+          "marketing"
+        ],
+        "inputs": [
+          "approvedExpert",
+          "question",
+          "verifiedGuidance",
+          "example",
+          "action"
+        ],
+        "structure": [
+          "question",
+          "expert context",
+          "guidance",
+          "example",
+          "next step"
+        ],
+        "ruleRefs": [
+          "people.permission",
+          "sequential.function"
+        ]
+      },
+      {
+        "id": "sequential.variant-board",
+        "authority": "preferred",
+        "appliesTo": [
+          "sequential",
+          "marketing"
+        ],
+        "inputs": [
+          "parentBrief",
+          "baseShotList",
+          "namedVariantAxes",
+          "lockedFacts"
+        ],
+        "structure": [
+          "parent reference",
+          "variant shots",
+          "shared proof",
+          "variant resolve"
+        ],
+        "ruleRefs": [
+          "marketing.variants",
+          "sequential.handoff"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "sequential.arc",
+        "question": "Does every shot advance a clear brand-specific story function?"
+      },
+      {
+        "id": "sequential.continuity",
+        "question": "Are facts, people, product, environment, light, copy, and rights locked?"
+      },
+      {
+        "id": "sequential.production",
+        "question": "Can a downstream system execute every shot without guessing?"
+      }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "source.audit.home.desktop",
+      "source.site.home",
+      "marketing.current.01",
+      "marketing.current.02",
+      "marketing.current.03",
+      "marketing.current.04"
+    ]
+  }
+}

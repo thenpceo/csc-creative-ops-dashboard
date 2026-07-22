@@ -1,0 +1,236 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "one-kings-lane.marketing",
+  "capability": "marketing",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "objectives": ["awareness", "consideration", "conversion", "retention", "trade-community"],
+      "formats": {
+        "feedSquare": { "ratio": "1:1", "defaultSafeAreaPercent": 6 },
+        "feedPortrait": { "ratio": "4:5", "defaultSafeAreaPercent": 6 },
+        "verticalVideo": { "ratio": "9:16", "defaultSafeAreaPercent": 10 },
+        "landscapeVideo": { "ratio": "16:9", "defaultSafeAreaPercent": 6 },
+        "landscapeAd": { "ratio": "1.91:1", "defaultSafeAreaPercent": 6 },
+        "inspirationPin": { "ratio": "2:3", "defaultSafeAreaPercent": 7 },
+        "emailHero": { "ratio": "2:1", "defaultSafeAreaPercent": 7 }
+      },
+      "durationBandsSeconds": {
+        "microCommerce": [6, 10],
+        "shortCommerce": [10, 25],
+        "makerOrDesignerStory": [45, 96]
+      },
+      "creativeLayers": ["brand", "campaign", "product", "offer", "channel"]
+    },
+    "rules": [
+      {
+        "id": "marketing.brief-required",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": ["marketing"],
+        "statement": "Before generating an asset, supply objective, audience, proposition, product or collection, destination, format, required facts, rights status, call to action, and expiration conditions as explicit job inputs.",
+        "sourceIds": []
+      },
+      {
+        "id": "marketing.one-message-one-action",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "verified",
+        "appliesTo": ["marketing"],
+        "statement": "Each marketing asset has one primary message and no more than one primary action; secondary detail may support but never compete with the main idea.",
+        "sourceIds": ["source.audit.marketing.meta-active-ads", "source.audit.marketing.facebook-video-feed"]
+      },
+      {
+        "id": "marketing.brand-performance-layers",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "verified",
+        "appliesTo": ["marketing", "commerce"],
+        "statement": "Keep durable identity, campaign concept, verified product facts, current offer data, and channel adaptation as separable layers so a system can vary one layer without rewriting the others.",
+        "sourceIds": ["source.audit.marketing.meta-active-ads", "source.site.home"]
+      },
+      {
+        "id": "marketing.current-facts-runtime",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "verified",
+        "appliesTo": ["marketing", "commerce"],
+        "statement": "Prices, promotions, dates, inventory, delivery claims, eligibility, popularity, reviews, and urgency are current job data with an authoritative source and expiration time; never derive them from a captured ad or reference image.",
+        "sourceIds": ["source.ads.meta-active-query", "source.site.product"]
+      },
+      {
+        "id": "marketing.product-truth",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "verified",
+        "appliesTo": ["marketing", "commerce", "generative-image", "generative-video"],
+        "statement": "A marketed product must use authorized current product data and preserve its geometry, count, finish, scale, material, and availability; generated atmosphere cannot substitute for product truth.",
+        "sourceIds": ["asset.product.austin-lifestyle", "asset.product.austin-detail"]
+      },
+      {
+        "id": "marketing.ugc-rights-and-credit",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "verified",
+        "appliesTo": ["marketing"],
+        "statement": "Before using creator or customer content, record the original post, creator handle, permission or applicable rights grant, allowed channels, allowed edits, credit line, term, geography, and revocation status. A public post or hashtag alone is not production permission.",
+        "sourceIds": ["source.rights.ugc-site", "source.rights.ugc-blog"]
+      },
+      {
+        "id": "marketing.channel-native-brand-led",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "verified",
+        "appliesTo": ["marketing"],
+        "statement": "Adapt pacing, crop, caption density, and interaction cue to the destination while preserving One Kings Lane typography, editorial restraint, material-rich imagery, and warm expertise.",
+        "sourceIds": ["source.audit.marketing.pinterest-profile", "source.audit.marketing.youtube-channel", "source.audit.marketing.tiktok-profile"]
+      },
+      {
+        "id": "marketing.reference-age",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": ["marketing"],
+        "statement": "Every reference set carries a capture date and recency class. Historical channel examples may inform recurring brand behavior but cannot establish current campaign, cadence, format priority, or platform best practice.",
+        "sourceIds": ["source.social.tiktok", "source.social.youtube"]
+      },
+      {
+        "id": "marketing.ad-library-scope",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "verified",
+        "appliesTo": ["marketing"],
+        "statement": "Public advertising libraries are creative evidence only. Do not infer spend, targeting, return, conversion rate, account structure, or complete ad count; exclude false-positive advertisers from keyword queries.",
+        "sourceIds": ["source.ads.meta-help", "source.ads.meta-active-query"]
+      },
+      {
+        "id": "marketing.accessible-delivery",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": ["marketing", "motion"],
+        "statement": "Keep essential text inside destination safe areas, preserve readable contrast and hold time, provide captions or an equivalent transcript for spoken content, and ensure the message remains understandable without audio.",
+        "sourceIds": []
+      },
+      {
+        "id": "marketing.no-invented-engagement",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": ["marketing"],
+        "statement": "Never fabricate testimonials, creator attribution, follower counts, press coverage, contest results, reactions, ratings, or engagement signals.",
+        "sourceIds": ["source.social.linkedin"]
+      }
+    ],
+    "recipes": [
+      {
+        "id": "marketing.curated-collection-ad",
+        "authority": "preferred",
+        "appliesTo": ["marketing", "static", "motion"],
+        "inputs": ["objective", "audience", "approvedRoomOrProductMedia", "collectionProposition", "verifiedDestination", "action", "officialLogo", "format"],
+        "structure": ["room or hero product hook", "one specific collection idea", "optional product or craft proof", "single action", "restrained brand resolve"],
+        "adaptation": "Build separate 1:1, 4:5, 9:16, and landscape compositions from the same message hierarchy. Protect the focal furnishing and copy zone at each ratio.",
+        "ruleRefs": ["marketing.brief-required", "marketing.one-message-one-action", "marketing.brand-performance-layers", "static.editorial-ad"]
+      },
+      {
+        "id": "marketing.dynamic-product-card",
+        "authority": "preferred",
+        "appliesTo": ["marketing", "commerce", "static"],
+        "inputs": ["verifiedProductImage", "verifiedProductName", "currentPriceOrAction", "verifiedDestination", "format"],
+        "structure": ["clean product image", "short warm benefit line", "product identity", "current commerce fact or action"],
+        "constraint": "Keep generic campaign copy replaceable and never burn price, offer, rating, or availability into permanent media.",
+        "ruleRefs": ["marketing.current-facts-runtime", "marketing.product-truth", "static.product-feature"]
+      },
+      {
+        "id": "marketing.maker-designer-story",
+        "authority": "preferred",
+        "appliesTo": ["marketing", "motion", "sequential"],
+        "inputs": ["approvedPersonOrMaker", "verifiedStoryFacts", "craftOrDesignProof", "approvedEnvironmentMedia", "audioPlan", "captions", "action"],
+        "duration": "45–96 seconds for the full story, with independently edited short derivatives.",
+        "beats": ["human or craft hook", "who and why", "specific material or design proof", "result in a lived space", "single invitation"],
+        "ruleRefs": ["marketing.one-message-one-action", "marketing.accessible-delivery", "voice.warm-expertise"]
+      },
+      {
+        "id": "marketing.creator-room-feature",
+        "authority": "preferred",
+        "appliesTo": ["marketing", "motion", "static"],
+        "inputs": ["rightsClearedCreatorMedia", "creatorHandle", "featuredVerifiedProduct", "permissionRecord", "creditLine", "action"],
+        "structure": ["room-first hook", "creator context", "specific featured product", "credit", "optional action"],
+        "constraint": "Preserve the creator's authorship and disclosed editing limits; do not imply endorsement beyond the documented permission.",
+        "ruleRefs": ["marketing.ugc-rights-and-credit", "marketing.product-truth", "marketing.no-invented-engagement"]
+      },
+      {
+        "id": "marketing.vertical-style-note",
+        "authority": "preferred",
+        "appliesTo": ["marketing", "motion"],
+        "inputs": ["approvedVerticalMedia", "specificStyleIdea", "optionalProductFact", "captions", "action"],
+        "duration": "6–15 seconds",
+        "structure": ["immediate full-bleed visual", "one concise style observation", "one detail or product proof", "clean resolve"],
+        "adaptation": "Use high-contrast mobile-safe text and keep platform interface zones clear. Treat large white text cards observed in older references as historical execution, not a required template.",
+        "ruleRefs": ["marketing.channel-native-brand-led", "marketing.reference-age", "marketing.accessible-delivery"]
+      },
+      {
+        "id": "marketing.inspiration-pin",
+        "authority": "preferred",
+        "appliesTo": ["marketing", "static"],
+        "inputs": ["approvedRoomOrVignette", "specificDesignIdea", "verifiedDestination", "optionalOfficialLogo"],
+        "format": "2:3 portrait",
+        "structure": ["complete room or material-rich vignette", "short searchable design idea", "minimal identity", "destination"],
+        "constraint": "Inspiration comes before commerce metadata; avoid dense multi-product collages unless the idea is explicitly an assortment.",
+        "ruleRefs": ["marketing.one-message-one-action", "static.editorial-not-catalog-collage"]
+      },
+      {
+        "id": "marketing.trade-community-post",
+        "authority": "preferred",
+        "appliesTo": ["marketing", "static"],
+        "inputs": ["verifiedProgramOrEvent", "partnerOrParticipantPermissions", "proofMedia", "specificValue", "verifiedDestination", "action"],
+        "structure": ["specific professional or community premise", "participant or partner proof", "clear value", "single next step"],
+        "constraint": "State dates, eligibility, winner status, partner names, and press facts only from current approved records.",
+        "ruleRefs": ["marketing.current-facts-runtime", "marketing.no-invented-engagement", "voice.warm-expertise"]
+      },
+      {
+        "id": "marketing.email-or-site-campaign-hero",
+        "authority": "preferred",
+        "appliesTo": ["marketing", "static", "interactive"],
+        "inputs": ["approvedCampaignImage", "headline", "optionalSupportLine", "currentOfferOrValue", "action", "destination", "responsiveFormats"],
+        "structure": ["editorial image", "protected title group", "one factual value or offer", "one action"],
+        "adaptation": "Keep live text separate from imagery when possible, define alt text and mobile crop, and remove an expired offer without replacing the whole identity layer.",
+        "ruleRefs": ["marketing.brand-performance-layers", "marketing.current-facts-runtime", "composition.editorial-hero"]
+      },
+      {
+        "id": "marketing.variant-matrix",
+        "authority": "preferred",
+        "appliesTo": ["marketing"],
+        "inputs": ["approvedBaseBrief", "approvedHooks", "approvedVisuals", "approvedProofPoints", "approvedActions", "formats"],
+        "variationAxes": ["hook", "visual", "proof", "action", "format"],
+        "constraint": "Change one or two named axes per variant, retain a base identifier and lineage record, and never vary a locked product, rights, legal, or offer fact.",
+        "ruleRefs": ["marketing.brief-required", "marketing.brand-performance-layers", "marketing.current-facts-runtime"]
+      }
+    ],
+    "evaluation": [
+      { "id": "marketing.objective", "question": "Is the asset tied to one supplied objective and audience rather than generic engagement?" },
+      { "id": "marketing.message", "question": "Is one specific message clear in under two seconds at intended viewing size?" },
+      { "id": "marketing.brand", "question": "Does it feel editorial, collected, material-rich, warm, and recognizably One Kings Lane without relying on an oversized logo?" },
+      { "id": "marketing.truth", "question": "Are every product, offer, date, destination, attribution, and claim sourced and current?" },
+      { "id": "marketing.rights", "question": "Are source, permission, allowed use, edit limits, credit, and expiration documented for every external asset?" },
+      { "id": "marketing.channel", "question": "Was the hierarchy intentionally recomposed for the destination ratio, safe area, pacing, and sound-off state?" },
+      { "id": "marketing.lineage", "question": "Can the asset be traced to its brief, sources, variants, approvals, and expiration conditions?" }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "asset.logo.compact",
+      "asset.hero.summer-escape",
+      "asset.editorial.new-arrivals",
+      "source.audit.marketing.facebook-video-feed",
+      "source.audit.marketing.pinterest-profile",
+      "source.audit.marketing.youtube-channel",
+      "source.audit.marketing.tiktok-profile",
+      "source.audit.marketing.meta-active-ads",
+      "reference.pinterest.board-01",
+      "reference.tiktok.latest-01"
+    ]
+  }
+}

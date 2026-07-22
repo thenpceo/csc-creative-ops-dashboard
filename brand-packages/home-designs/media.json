@@ -1,0 +1,383 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/media.schema.json",
+  "schemaVersion": "1.0.0",
+  "rightsPolicy": {
+    "default": "unverified-public-reference",
+    "productionUse": "Requires independent rights confirmation and brand authorization.",
+    "modelUpload": "Prohibited unless an authorized reviewer upgrades the asset record."
+  },
+  "items": [
+    {
+      "id": "asset.logo.primary",
+      "uri": "media/official/logo-primary.png",
+      "kind": "image",
+      "roles": [
+        "logo",
+        "primary-identity",
+        "brand-end-frame"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "83ea538d6f6e69ffc149e491dd96f7753dfb67caa5ff9095445958b64d4e5b5b",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/1751473490419_OwWtmA3MV-1920w.png",
+        "capturedAt": "2026-07-21",
+        "contentType": "image/png"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference",
+          "authorized-brand-work"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.site.home",
+      "uri": "https://www.cabinetryunlimited.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "current-or-canonical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.cabinetryunlimited.com/",
+        "reviewedAt": "2026-07-21",
+        "finalUrl": "https://www.cabinetryunlimited.com/",
+        "surfaceStatus": "current"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.site.evidence",
+      "uri": "https://www.cscgeneration.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.cscgeneration.com/",
+        "reviewedAt": "2026-07-21",
+        "note": "CSC publishes a Home Designs logo without a consumer URL. The file combines that logo tile with the live Cabinetry Unlimited surface used by CSC's Home Designs hiring organization."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.home.desktop",
+      "uri": "media/official/homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "desktop-audit",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "active",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "79b442184cdfbd35d2799322f659fd497d21c245c77806ad460c7ada067941e8",
+      "source": {
+        "type": "live-capture",
+        "page": "https://www.cabinetryunlimited.com/",
+        "requestedPage": "https://cabinetryunlimited.com/",
+        "capturedAt": "2026-07-21",
+        "surfaceStatus": "current",
+        "note": "Rendered public homepage capture."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "marketing.current.01",
+      "uri": "media/marketing-reference/current-01-cabinetry-project-environment.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "hero-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "54733075b63e4a0d4dca2631674a230b1c327f7276babc67376ec0b15111de0f",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/IMG_1292-252b6b7c-1920w.jpg",
+        "page": "https://www.cabinetryunlimited.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Cabinetry project environment",
+        "contentType": "image/jpg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.02",
+      "uri": "media/marketing-reference/current-02-cabinetry-and-countertop-project.png",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "88639710183d72fc0fc79c09804b7ee57431f2024389454dffd9f47464872d6b",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/996710c8-4f6e-46b1-ae26-b8e87744597e-1920w.png",
+        "page": "https://www.cabinetryunlimited.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Cabinetry and countertop project",
+        "contentType": "image/png"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.03",
+      "uri": "media/marketing-reference/current-03-interior-cabinetry-reference.png",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "f9f048ab9f979876883acee5ce306f5c7211cfd67e2b8038dd5675cc13bc68e9",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/1751473463869_WwvSPUsuo-1920w.png",
+        "page": "https://www.cabinetryunlimited.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Interior cabinetry reference",
+        "contentType": "image/png"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.04",
+      "uri": "media/marketing-reference/current-04-manufacturing-facility.jpeg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "5090911c1f76b2f62dd694eede65468ca6abdedfc79fce27d348f9e118fdb3fb",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/manufacturing-facility-1920w.jpeg",
+        "page": "https://www.cabinetryunlimited.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Manufacturing facility",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.05",
+      "uri": "media/marketing-reference/current-05-operating-location-exterior.png",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "5652984adfc2bac8c2c2bd482b6875d73129577730d6f377e722bf988582c2b0",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/building-sign-7d868e23-1920w.png",
+        "page": "https://www.cabinetryunlimited.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Operating location exterior",
+        "contentType": "image/png"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.06",
+      "uri": "media/marketing-reference/current-06-service-and-project-reference.png",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "476c333a3c94b654c4308c699aac81ce31f94773aff43d27408444566573317b",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/83d59a16-e367-49a7-ba1c-4a0ad9e7466e-1920w.png",
+        "page": "https://www.cabinetryunlimited.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Service and project reference",
+        "contentType": "image/png"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.social.facebook.01",
+      "uri": "https://facebook.com/CabinetryUnlimited/",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://facebook.com/CabinetryUnlimited/",
+        "reviewedAt": "2026-07-21",
+        "label": "facebook"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.instagram.02",
+      "uri": "https://instagram.com/cabinetry_unlimited/",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://instagram.com/cabinetry_unlimited/",
+        "reviewedAt": "2026-07-21",
+        "label": "instagram"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.ad-library.meta-query",
+      "uri": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Custom%20Cabinets%20%26%20Countertops&search_type=keyword_unordered",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "public-ad-library-query"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "public-ad-library-query",
+        "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Custom%20Cabinets%20%26%20Countertops&search_type=keyword_unordered",
+        "reviewedAt": "2026-07-21",
+        "note": "Live query reference only; results are volatile and do not establish spend, targeting, performance, or account ownership."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    }
+  ]
+}

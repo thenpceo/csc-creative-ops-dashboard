@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "0.1.0",
+  "purpose": "Map a plain-language brand request to canonical brand context, production skills, provider adapters, and evaluation gates.",
+  "brandSource": "../../brand-packages/{brandId}/brand.json",
+  "routes": {
+    "static-product-graphic": {
+      "intentExamples": [
+        "Create a One Kings Lane image with this product in a winter garden and add a headline.",
+        "Make a paid-social graphic for this product in a living room at night."
+      ],
+      "capabilities": ["static", "imagery", "commerce", "generative-image", "marketing"],
+      "skills": ["design-html"],
+      "adapters": ["gpt-image/reference-edit", "deterministic-static-composition"],
+      "demoDefault": { "imageProvider": "gpt-image", "reason": "Use the built-in image workflow for demo stills and avoid external generation charges." },
+      "stages": [
+        { "id": "load-brand", "input": "brandId", "output": "validated brand package and selected capability modules" },
+        { "id": "authorize-product", "input": "user product image and intended use", "output": "rights-cleared reference slot or closed failure" },
+        { "id": "generate-clean-scene", "input": "reference image plus editable scene variables", "output": "clean product-environment image without copy or identity" },
+        { "id": "gate-product-truth", "input": "reference and generated scene", "output": "approved scene or regenerate decision" },
+        { "id": "compose-graphic", "input": "approved scene, verified copy, official logo, static and interactive design guidance", "output": "deterministic graphic composition" },
+        { "id": "evaluate-brand", "input": "composition and evaluation.json", "output": "scored output or revision list" }
+      ],
+      "hardGates": ["reference rights", "product identity", "verified claims", "official identity asset", "legible composition"]
+    },
+    "motion-product-explainer": {
+      "intentExamples": [
+        "Create a motion video explaining the benefits of this One Kings Lane product.",
+        "Animate this product scene and add on-brand benefit callouts."
+      ],
+      "capabilities": ["imagery", "commerce", "generative-video", "motion", "sequential", "marketing"],
+      "skills": ["hyperframes", "general-video"],
+      "adapters": ["fal/image-to-video", "hyperframes/designed-motion"],
+      "demoDefault": { "stillProvider": "gpt-image", "videoProvider": "fal-ai", "motionRenderer": "hyperframes" },
+      "stages": [
+        { "id": "load-brand", "input": "brandId", "output": "validated brand package and selected capability modules" },
+        { "id": "compile-story", "input": "product facts and communication goal", "output": "shots, continuity locks, verified copy, and timing" },
+        { "id": "generate-visual-plates", "input": "authorized start images and generative-video contracts", "output": "clean footage without text or identity" },
+        { "id": "gate-temporal-truth", "input": "start frames and sampled video frames", "output": "approved plates or regenerate decision" },
+        { "id": "compose-motion", "input": "approved plates, motion module, official identity, verified copy", "output": "deterministic editable motion composition" },
+        { "id": "render-and-check", "input": "motion source", "output": "checked MP4 and render evidence" },
+        { "id": "evaluate-brand", "input": "render and evaluation.json", "output": "scored output or revision list" }
+      ],
+      "hardGates": ["reference rights", "product continuity", "room geometry", "verified product benefits", "official identity asset", "readable timing", "final render check"]
+    }
+  }
+}

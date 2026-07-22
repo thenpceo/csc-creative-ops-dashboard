@@ -1,0 +1,269 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/rules.schema.json",
+  "schemaVersion": "1.0.0",
+  "rules": [
+    {
+      "id": "logo.official-artwork-only",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use only verified official identity artwork. Preserve proportions and internal spacing. Never redraw, synthesize, distort, outline, bevel, shadow, pattern-fill, or deform the mark.",
+      "sourceIds": [
+        "asset.logo.primary"
+      ]
+    },
+    {
+      "id": "logo.authorization",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Publicly observable identity artwork is reference evidence. Production use requires brand authorization and an approved source file.",
+      "sourceIds": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "color.primary-role",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use #BA232D as the primary brand or action anchor in the role documented here. Seasonal imagery does not redefine the durable palette.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "color.support-restraint",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use #233D58 and #A4928E as bounded supporting signals. Keep one dominant action color in a decision area.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "typography.role-separation",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Archivo carries both dramatic headlines and practical UI. Use very large, heavy headings over photography; shift to regular or light weights for supporting copy.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "typography.readability",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Do not use spaced uppercase or display styling for paragraphs, specifications, instructions, prices, or form content. Preserve readable size, line length, contrast, and hold time.",
+      "sourceIds": []
+    },
+    {
+      "id": "shape.character",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Primary CTAs and content bands are square-edged. Round only badges, location markers, and small utility controls.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "layout.character",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Alternate full-bleed showroom photography with centered content bands. Desktop headlines may occupy half the canvas; local-store and consignment tasks should remain immediately visible in the header and hero.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "depth.character",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Photography, dark overlays, and tonal section changes create depth. Avoid card stacks; use a subtle shadow only for floating store or form panels.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "action.one-primary",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use no more than one visually dominant action in a decision area. Secondary actions remain visibly subordinate and unambiguous.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "action.concrete-copy",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use short, concrete actions connected to location, condition, dimensions, material, uniqueness, price, pickup, and consignment process. Avoid generic prestige or engagement language.",
+      "sourceIds": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "voice.core",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Energetic local retail confidence with clear consignment guidance and no false permanence about one-of-a-kind inventory.",
+      "sourceIds": [
+        "source.site.home",
+        "source.site.evidence"
+      ]
+    },
+    {
+      "id": "voice.specificity",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Prefer specific language about location, condition, dimensions, material, uniqueness, price, pickup, and consignment process. Explain why the product, service, or story matters.",
+      "sourceIds": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "claims.runtime-truth",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Prices, offers, inventory, dates, delivery, eligibility, availability, ratings, popularity, results, and urgency are runtime facts with an authoritative source and expiration.",
+      "sourceIds": []
+    },
+    {
+      "id": "product.truth",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Represent consigned furniture, decor, art, rugs, lighting, and jewelry using current authorized data. Preserve countable features, dimensions, materials, finish, compatibility, condition, and safety context.",
+      "sourceIds": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "rights.record",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Every external asset record includes source, capture date, rights status, allowed uses, model-upload permission, redistribution permission, and required review.",
+      "sourceIds": []
+    },
+    {
+      "id": "people.permission",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "imagery",
+        "motion",
+        "marketing"
+      ],
+      "statement": "Require likeness, creator, location, and music permissions appropriate to the intended media, channels, term, geography, and edit scope.",
+      "sourceIds": []
+    },
+    {
+      "id": "accessibility.contrast",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Provide readable contrast for text, controls, captions, and information graphics. Do not place critical copy over uncontrolled image detail.",
+      "sourceIds": []
+    },
+    {
+      "id": "accessibility.non-color",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Do not rely on color alone for selection, errors, discounts, fitment, inventory, progress, or status.",
+      "sourceIds": []
+    },
+    {
+      "id": "accessibility.motion",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "interactive",
+        "motion"
+      ],
+      "statement": "Provide reduced-motion behavior and remove nonessential parallax, auto-travel, flashes, and looping while preserving message and hierarchy.",
+      "sourceIds": []
+    },
+    {
+      "id": "history.scope",
+      "authority": "permitted",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Historical references may explain durable visual behavior but cannot establish current offers, operations, inventory, or campaign direction.",
+      "sourceIds": [
+        "source.site.evidence"
+      ]
+    }
+  ]
+}

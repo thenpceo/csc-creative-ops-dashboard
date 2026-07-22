@@ -1,0 +1,68 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/brand.schema.json",
+  "schemaVersion": "1.0.0",
+  "packageVersion": "1.2.0",
+  "brand": {
+    "id": "one-kings-lane",
+    "name": "One Kings Lane",
+    "description": "A design-led home destination combining curated furnishings, editorial inspiration, vintage character, and expert design help.",
+    "proposition": "Products, expertise, and inspiration that help people live their own style.",
+    "audiences": [
+      "Design-conscious homeowners",
+      "Interior designers and trade professionals",
+      "Collectors and vintage shoppers",
+      "Premium home-commerce shoppers seeking guidance"
+    ],
+    "traits": ["cultivated", "personal", "optimistic", "expert", "timeless", "livable"],
+    "signature": "Live Your Style",
+    "voiceSummary": "Warm expertise with an editorial eye: specific, confident, helpful, and never aloof."
+  },
+  "files": {
+    "tokens": "tokens.json",
+    "rules": "rules.json",
+    "recipes": "recipes.json",
+    "media": "media.json",
+    "evaluation": "evaluation.json",
+    "humanGuide": "DESIGN.md"
+  },
+  "modules": [
+    { "capability": "interactive", "path": "modules/interactive.json" },
+    { "capability": "static", "path": "modules/static.json" },
+    { "capability": "imagery", "path": "modules/imagery.json" },
+    { "capability": "commerce", "path": "modules/commerce.json" },
+    { "capability": "marketing", "path": "modules/marketing.json" },
+    { "capability": "motion", "path": "modules/motion.json" },
+    { "capability": "generative-image", "path": "modules/generative-image.json" },
+    { "capability": "generative-video", "path": "modules/generative-video.json" },
+    { "capability": "spatial", "path": "modules/spatial.json" },
+    { "capability": "sequential", "path": "modules/sequential.json" }
+  ],
+  "provenance": {
+    "researchedAt": "2026-07-21",
+    "method": "Live desktop and mobile surface audit, computed-style sampling, official-site content review, official asset capture, public social-channel review, and public advertising-library review.",
+    "evidenceStatus": "mixed",
+    "verifiedSurfaces": [
+      "homepage",
+      "mobile navigation",
+      "furniture collection",
+      "product detail",
+      "design services",
+      "about",
+      "trade program",
+      "heritage collection",
+      "official Facebook video activity",
+      "official Pinterest profile",
+      "official TikTok profile",
+      "official YouTube channel",
+      "public Meta advertising library"
+    ],
+    "audit": "../../research/one-kings-lane/audit-2026-07-21/AUDIT.md",
+    "notes": [
+      "Permanent brand evidence is separated from current campaign content.",
+      "Current offers, inventory, prices, and campaign copy are external runtime data and are not encoded as brand constants.",
+      "Social and advertising observations are dated snapshots; channel cadence, performance, targeting, and spend are not inferred from public creative.",
+      "Private advertising-account data was not available and is not represented as audited evidence.",
+      "The package is output-neutral; provider and rendering adapters belong outside this directory."
+    ]
+  }
+}

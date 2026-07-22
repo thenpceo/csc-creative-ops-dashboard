@@ -1,0 +1,392 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/media.schema.json",
+  "schemaVersion": "1.0.0",
+  "rightsPolicy": {
+    "default": "unverified-public-reference",
+    "productionUse": "Requires independent rights confirmation and brand authorization.",
+    "modelUpload": "Prohibited unless an authorized reviewer upgrades the asset record."
+  },
+  "items": [
+    {
+      "id": "asset.logo.primary",
+      "uri": "media/official/logo-primary.svg",
+      "kind": "image",
+      "roles": [
+        "logo",
+        "primary-identity",
+        "brand-end-frame"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "a3e8dcda87a5605dd0a50de2056f7aef4dd57f81b91a694e402e056d2a36aaa1",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://web.archive.org/web/20260521164505im_/https://static.trisports.com/images/trisports_logo_flat.svg",
+        "capturedAt": "2026-07-21",
+        "contentType": "image/svg+xml"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference",
+          "authorized-brand-work"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.site.home",
+      "uri": "https://www.trisports.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "current-or-canonical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.trisports.com/",
+        "reviewedAt": "2026-07-21",
+        "finalUrl": "https://www.competitivecyclist.com/rc/shop-all-triathlon",
+        "surfaceStatus": "redirect-successor"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.site.evidence",
+      "uri": "https://web.archive.org/web/20260521164505/https://www.trisports.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "historical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "archived-first-party-page",
+        "url": "https://web.archive.org/web/20260521164505/https://www.trisports.com/",
+        "reviewedAt": "2026-07-21",
+        "note": "Current domain redirects to Competitive Cyclist. Values come from a May 2026 first-party archived homepage and its standalone CSS."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.home.desktop",
+      "uri": "media/official/homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "desktop-audit",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "active",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "fe077eb8bcdc8371ec272c0258d3ae451b4a99c10afc8facec906e687dc5a533",
+      "source": {
+        "type": "live-capture",
+        "page": "https://www.competitivecyclist.com/rc/shop-all-triathlon",
+        "requestedPage": "https://www.trisports.com/",
+        "capturedAt": "2026-07-21",
+        "surfaceStatus": "redirect-successor",
+        "note": "Rendered redirect or successor surface. This is operational evidence and not standalone identity evidence."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.historical-home.desktop",
+      "uri": "media/official/historical-homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "historical-brand-surface",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "deprecated",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "ab5733b616a4cdb3e39e6c2f65e6fd47df196db464dcfa68e8f4aa158cf51d37",
+      "source": {
+        "type": "archived-first-party-capture",
+        "page": "https://web.archive.org/web/20260521164505/https://www.trisports.com/",
+        "capturedAt": "2026-07-21",
+        "note": "Archive chrome may be visible; use the captured standalone storefront area as historical evidence only."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "marketing.historical.01",
+      "uri": "media/marketing-reference/historical-01-historical-mid-month-cycling-markdown-campaign.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "hero-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "df25fa9e911189b5848a9d881565d279c34d00195f894f00e823d193908f6a11",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20260220074004im_/https://www.trisports.com/promoimages/Image52944.jpg",
+        "page": "https://web.archive.org/web/20260521164505/https://www.trisports.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical mid-month cycling markdown campaign",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.02",
+      "uri": "media/marketing-reference/historical-02-historical-3d-and-adaptive-saddle-feature.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "76e200c833729420b858da74bfa47048bb546531851c3e3a7e9d901f1f6a2ab6",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20260217134140im_/https://www.trisports.com/promoimages/Image52956.jpg",
+        "page": "https://web.archive.org/web/20260521164505/https://www.trisports.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical 3D and adaptive saddle feature",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.03",
+      "uri": "media/marketing-reference/historical-03-historical-bicycle-maintenance-tools-feature.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "44eb0bf3d24bf9f0290ca0af056ef2cbad1dd30830e956c69d5f5a55598a0545",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20260220074004im_/https://www.trisports.com/promoimages/Image52960.jpg",
+        "page": "https://web.archive.org/web/20260521164505/https://www.trisports.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical bicycle maintenance tools feature",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.04",
+      "uri": "media/marketing-reference/historical-04-historical-sidi-cycling-shoe-launch.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "f0735b60acce826a88aa6be24094e3c1e31d911623f040573164016ccc91f778",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20260223101442im_/https://www.trisports.com/promoimages/Image52981.jpg",
+        "page": "https://web.archive.org/web/20260521164505/https://www.trisports.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Sidi cycling shoe launch",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.05",
+      "uri": "media/marketing-reference/historical-05-historical-schwalbe-premium-tire-sale.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "fcb4eee3c50c45640e8f3076ea9c433489a06c2911072da936d2743395cad219",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20260202171003im_/https://www.trisports.com/promoimages/Image52817.jpg",
+        "page": "https://web.archive.org/web/20260521164505/https://www.trisports.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Schwalbe premium tire sale",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.06",
+      "uri": "media/marketing-reference/historical-06-historical-castelli-cycling-apparel-sale.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "5360343b1c07fd0127ab10901f7df1667593495d99d7d5cbe7c976d2582d4947",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20260202171002im_/https://www.trisports.com/promoimages/Image52824.jpg",
+        "page": "https://web.archive.org/web/20260521164505/https://www.trisports.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Castelli cycling apparel sale",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.social.instagram.01",
+      "uri": "https://www.instagram.com/trisportscom",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "deprecated",
+      "source": {
+        "type": "historical-first-party-linked-social-profile",
+        "url": "https://www.instagram.com/trisportscom",
+        "reviewedAt": "2026-07-21",
+        "label": "Historical first-party Instagram link"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.facebook.02",
+      "uri": "https://www.facebook.com/trisports",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "deprecated",
+      "source": {
+        "type": "historical-first-party-linked-social-profile",
+        "url": "https://www.facebook.com/trisports",
+        "reviewedAt": "2026-07-21",
+        "label": "Historical first-party Facebook link"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    }
+  ]
+}

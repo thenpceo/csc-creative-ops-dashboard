@@ -1,0 +1,135 @@
+{
+  "capturedAt": "2026-07-20",
+  "declaredBrandCount": 13,
+  "basis": {
+    "cscHomepage": "https://www.cscgeneration.com/",
+    "cscProductionBundle": "https://www.cscgeneration.com/assets/index-Cb18k8f7.js",
+    "velotechAnnouncement": "https://www.linkedin.com/posts/csc-generation_were-stoked-to-welcome-velotech-inc-activity-7369465759531577347-CDX2",
+    "explanation": "CSC's production homepage bundle names 11 brands. CSC's public Velotech announcement identifies Western Bikeworks and TriSports alongside BikeTiresDirect, resolving the declared 13-brand count."
+  },
+  "caveats": [
+    "Western Bikeworks now redirects to BikeTiresDirect; its DESIGN.md preserves the last standalone first-party identity.",
+    "TriSports now redirects to Competitive Cyclist; its DESIGN.md preserves the last standalone first-party identity.",
+    "CSC's Home Designs logo has no public consumer URL; its DESIGN.md combines the CSC logo tile with the active Cabinetry Unlimited operating surface.",
+    "Coalatree is a recent Backcountry incubator acquisition but is not included in the exact 13-brand set resolved from CSC's homepage count and Velotech sites."
+  ],
+  "brands": [
+    {
+      "slug": "backcountry",
+      "name": "Backcountry",
+      "designFile": "backcountry/DESIGN.md",
+      "liveUrl": "https://www.backcountry.com/",
+      "evidenceUrl": "https://web.archive.org/web/20251215082556/https://www.backcountry.com/",
+      "evidenceNote": "Live site returned human verification in automated capture; tokens come from the latest available first-party homepage snapshot and its embedded Chakra theme.",
+      "confidence": "high"
+    },
+    {
+      "slug": "competitive-cyclist",
+      "name": "Competitive Cyclist",
+      "designFile": "competitive-cyclist/DESIGN.md",
+      "liveUrl": "https://www.competitivecyclist.com/",
+      "evidenceUrl": "https://web.archive.org/web/20250815055409/https://www.competitivecyclist.com/",
+      "evidenceNote": "Live site returned human verification; values are taken from the first-party archived homepage Chakra theme.",
+      "confidence": "high"
+    },
+    {
+      "slug": "bike-tires-direct",
+      "name": "BikeTiresDirect",
+      "designFile": "bike-tires-direct/DESIGN.md",
+      "liveUrl": "https://www.biketiresdirect.com/",
+      "evidenceUrl": "https://www.biketiresdirect.com/",
+      "evidenceNote": "Rendered live homepage audit and first-party CSS variables.",
+      "confidence": "high"
+    },
+    {
+      "slug": "home-consignment-center",
+      "name": "Home Consignment Center",
+      "designFile": "home-consignment-center/DESIGN.md",
+      "liveUrl": "https://thehomeconsignmentcenter.com/",
+      "evidenceUrl": "https://thehomeconsignmentcenter.com/",
+      "evidenceNote": "Rendered live homepage, computed styles, and exposed Elementor/Astra variables.",
+      "confidence": "high"
+    },
+    {
+      "slug": "home-designs",
+      "name": "Home Designs",
+      "designFile": "home-designs/DESIGN.md",
+      "liveUrl": "https://www.cabinetryunlimited.com/",
+      "evidenceUrl": "https://www.cscgeneration.com/",
+      "evidenceNote": "CSC publishes a Home Designs logo without a consumer URL. The file combines that logo tile with the live Cabinetry Unlimited surface used by CSC's Home Designs hiring organization.",
+      "confidence": "medium"
+    },
+    {
+      "slug": "level-nine-sports",
+      "name": "Level Nine Sports",
+      "designFile": "level-nine-sports/DESIGN.md",
+      "liveUrl": "https://www.levelninesports.com/",
+      "evidenceUrl": "https://web.archive.org/web/20250513141841/https://www.levelninesports.com/",
+      "evidenceNote": "Live site returned human verification; values come from the latest first-party archived Next.js homepage and CSS bundles.",
+      "confidence": "high"
+    },
+    {
+      "slug": "motosport",
+      "name": "MotoSport",
+      "designFile": "motosport/DESIGN.md",
+      "liveUrl": "https://www.motosport.com/",
+      "evidenceUrl": "https://www.motosport.com/",
+      "evidenceNote": "Rendered live homepage audit and computed first-party styles.",
+      "confidence": "high"
+    },
+    {
+      "slug": "one-kings-lane",
+      "name": "One Kings Lane",
+      "designFile": "one-kings-lane/DESIGN.md",
+      "liveUrl": "https://www.onekingslane.com/",
+      "evidenceUrl": "https://www.onekingslane.com/",
+      "evidenceNote": "Rendered live homepage plus first-party Next.js CSS variables and Typekit font definitions.",
+      "confidence": "high"
+    },
+    {
+      "slug": "seattle-coffee-gear",
+      "name": "Seattle Coffee Gear",
+      "designFile": "seattle-coffee-gear/DESIGN.md",
+      "liveUrl": "https://www.seattlecoffeegear.com/",
+      "evidenceUrl": "https://www.seattlecoffeegear.com/",
+      "evidenceNote": "Rendered live Shopify homepage, computed styles, theme variables, and first-party CSS.",
+      "confidence": "high"
+    },
+    {
+      "slug": "steep-and-cheap",
+      "name": "Steep & Cheap",
+      "designFile": "steep-and-cheap/DESIGN.md",
+      "liveUrl": "https://www.steepandcheap.com/",
+      "evidenceUrl": "https://web.archive.org/web/20250815023114/https://www.steepandcheap.com/",
+      "evidenceNote": "Live site returned human verification; values come from the first-party archived Chakra theme.",
+      "confidence": "high"
+    },
+    {
+      "slug": "sur-la-table",
+      "name": "Sur La Table",
+      "designFile": "sur-la-table/DESIGN.md",
+      "liveUrl": "https://www.surlatable.com/",
+      "evidenceUrl": "https://www.surlatable.com/",
+      "evidenceNote": "Rendered live Salesforce Commerce homepage plus first-party CSS and current campaign font/color inspection.",
+      "confidence": "high"
+    },
+    {
+      "slug": "western-bikeworks",
+      "name": "Western Bikeworks",
+      "designFile": "western-bikeworks/DESIGN.md",
+      "liveUrl": "https://www.westernbikeworks.com/",
+      "evidenceUrl": "https://web.archive.org/web/20250815000000/https://www.westernbikeworks.com/",
+      "evidenceNote": "Current domain redirects to BikeTiresDirect. Values come from the last first-party standalone homepage/CSS before consolidation.",
+      "confidence": "high-historical"
+    },
+    {
+      "slug": "trisports",
+      "name": "TriSports",
+      "designFile": "trisports/DESIGN.md",
+      "liveUrl": "https://www.trisports.com/",
+      "evidenceUrl": "https://web.archive.org/web/20260521164505/https://www.trisports.com/",
+      "evidenceNote": "Current domain redirects to Competitive Cyclist. Values come from a May 2026 first-party archived homepage and its standalone CSS.",
+      "confidence": "high-historical"
+    }
+  ]
+}

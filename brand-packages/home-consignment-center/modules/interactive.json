@@ -1,0 +1,188 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "home-consignment-center.interactive",
+  "capability": "interactive",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "primaryDecision": "location, condition, dimensions, material, uniqueness, price, pickup, and consignment process",
+      "responsiveColumns": {
+        "expanded": 12,
+        "medium": 8,
+        "compact": 4
+      }
+    },
+    "rules": [
+      {
+        "id": "interactive.navigation",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "verified",
+        "appliesTo": [
+          "interactive"
+        ],
+        "statement": "Expose categories and decisions supporting location, condition, dimensions, material, uniqueness, price, pickup, and consignment process. Do not hide the primary path behind icon-only navigation.",
+        "sourceIds": [
+          "source.audit.home.desktop"
+        ]
+      },
+      {
+        "id": "interactive.decision-order",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "interactive"
+        ],
+        "statement": "Order content from identity and context through location, condition, dimensions, material, uniqueness, price, pickup, and consignment process, current facts, and then the primary action.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "interactive.state-feedback",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "interactive"
+        ],
+        "statement": "Give focus, hover, selected, loading, success, error, unavailable, and disabled states explicit visual and semantic treatment.",
+        "sourceIds": []
+      },
+      {
+        "id": "interactive.overlays",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "interactive"
+        ],
+        "statement": "Consent, support, promotion, and chat overlays must not cover identity, price, fitment, options, form errors, or the primary action.",
+        "sourceIds": []
+      }
+    ],
+    "recipes": [
+      {
+        "id": "interactive.collection",
+        "authority": "preferred",
+        "appliesTo": [
+          "interactive"
+        ],
+        "inputs": [
+          "category",
+          "filters",
+          "sort",
+          "verifiedProducts"
+        ],
+        "structure": [
+          "context",
+          "title",
+          "filter and sort",
+          "product grid",
+          "support"
+        ],
+        "ruleRefs": [
+          "interactive.navigation",
+          "product.truth"
+        ]
+      },
+      {
+        "id": "interactive.product-detail",
+        "authority": "preferred",
+        "appliesTo": [
+          "interactive",
+          "commerce"
+        ],
+        "inputs": [
+          "gallery",
+          "identity",
+          "decisionFacts",
+          "currentFacts",
+          "action"
+        ],
+        "structure": [
+          "gallery",
+          "identity",
+          "decision facts",
+          "current facts",
+          "action",
+          "extended proof"
+        ],
+        "ruleRefs": [
+          "interactive.decision-order",
+          "claims.runtime-truth"
+        ]
+      },
+      {
+        "id": "interactive.guide",
+        "authority": "preferred",
+        "appliesTo": [
+          "interactive"
+        ],
+        "inputs": [
+          "question",
+          "steps",
+          "recommendation",
+          "supportAction"
+        ],
+        "structure": [
+          "question",
+          "bounded steps",
+          "recommendation rationale",
+          "next action"
+        ],
+        "ruleRefs": [
+          "interactive.state-feedback",
+          "voice.specificity"
+        ]
+      },
+      {
+        "id": "interactive.service-entry",
+        "authority": "preferred",
+        "appliesTo": [
+          "interactive"
+        ],
+        "inputs": [
+          "service",
+          "scope",
+          "proof",
+          "availability",
+          "action"
+        ],
+        "structure": [
+          "service value",
+          "scope",
+          "proof",
+          "current availability",
+          "action"
+        ],
+        "ruleRefs": [
+          "claims.runtime-truth",
+          "voice.specificity"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "interactive.path",
+        "question": "Can a user identify the primary category, decision, and next action without guessing?"
+      },
+      {
+        "id": "interactive.states",
+        "question": "Are interaction, loading, error, unavailable, and success states explicit and accessible?"
+      },
+      {
+        "id": "interactive.compact",
+        "question": "Does compact layout preserve decision order and touch targets?"
+      }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "source.audit.home.desktop",
+      "source.site.home"
+    ]
+  }
+}

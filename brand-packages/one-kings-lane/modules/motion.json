@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "one-kings-lane.motion",
+  "capability": "motion",
+  "version": "1.0.0",
+  "evidenceStatus": "inferred",
+  "extends": {
+    "tokens": {
+      "durationMs": { "micro": 160, "short": 240, "standard": 360, "feature": 600, "holdMinimum": 1200 },
+      "easing": { "standard": [0.2, 0, 0, 1], "enter": [0.16, 1, 0.3, 1], "exit": [0.4, 0, 1, 1] },
+      "distance": { "micro": 8, "standard": 24, "feature": 48 },
+      "tempo": "measured, confident, observational",
+      "staggerMs": { "minimum": 100, "maximum": 180 },
+      "mediaBehavior": { "preferred": "full-bleed image or video background", "imageDriftScale": [1.04, 1], "overlay": "solid or translucent heritage field when copy needs contrast" },
+      "transitionFamilies": ["direct cut", "editorial crossfade", "square mask reveal", "measured directional slide"]
+    },
+    "rules": [
+      { "id": "motion.support-hierarchy", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["motion"], "statement": "Motion reveals hierarchy and material detail; it does not decorate every element or compete with the room and product.", "sourceIds": ["source.audit.home.desktop"] },
+      { "id": "motion.measured", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["motion"], "statement": "Use smooth, deliberate fades, small rises, masks, and camera-like drifts with complete readable holds between transitions.", "sourceIds": ["asset.hero.summer-escape", "asset.editorial.new-arrivals"] },
+      { "id": "motion.no-gimmicks", "authority": "prohibited", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["motion"], "statement": "Avoid bounce, elastic overshoot, glitch, strobe, rapid spin, aggressive zoom, liquid type, or logo distortion.", "sourceIds": ["asset.logo.primary"] },
+      { "id": "motion.type-stays-crisp", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["motion"], "statement": "Render typography and logos as crisp composited layers; do not ask synthesized footage to draw words or identity marks.", "sourceIds": ["asset.logo.primary", "source.audit.design-services.desktop"] },
+      { "id": "motion.reduced-motion", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["motion", "interactive"], "statement": "Provide a reduced-motion treatment that removes parallax, scale travel, looping, and nonessential camera movement while preserving content order and state meaning.", "sourceIds": [] },
+      { "id": "motion.depth-is-subtle", "authority": "preferred", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["motion", "spatial"], "statement": "Use depth, material simulation, light movement, and spatial transitions sparingly to heighten craft or dimensionality, never as a technology demonstration.", "sourceIds": ["asset.product.austin-detail"] }
+    ],
+    "recipes": [
+      { "id": "motion.editorial-title", "authority": "preferred", "appliesTo": ["motion"], "inputs": ["eyebrow", "title", "support", "background"], "composition": { "sequence": ["background settles", "eyebrow fades", "title reveals by line or quiet mask", "support and action follow"], "timing": "Stagger hierarchy by 100 to 180 milliseconds; preserve a full reading hold.", "movement": "Opacity plus no more than 24 pixels of travel." }, "ruleRefs": ["composition.title-card", "motion.measured", "motion.type-stays-crisp"] },
+      { "id": "motion.full-bleed-feature", "authority": "preferred", "appliesTo": ["motion", "sequential"], "inputs": ["approvedBackgroundMedia", "eyebrow", "title", "support", "action", "officialLogo"], "composition": { "background": "Crop approved image or video to full bleed. Use a restrained 104-to-100 percent drift only when it reinforces depth.", "sequence": ["background settles", "copy field fades or slides no more than 48 pixels", "eyebrow enters", "title enters by line", "support and action enter", "official logo resolves as a separate crisp layer"], "stagger": "100 to 180 milliseconds from highest to lowest hierarchy.", "easing": "Use the brand enter curve for arrivals, standard curve for drift, and exit curve only when leaving the frame.", "transitions": "Prefer cut, editorial crossfade, square mask, or measured slide. Match direction and visual mass across the edit.", "hold": "Maintain a readable hold of at least 1.2 seconds.", "reducedMotion": "Remove drift and travel; preserve ordered opacity changes and the final hold." }, "ruleRefs": ["motion.measured", "motion.type-stays-crisp", "motion.reduced-motion", "composition.brand-end-frame"] },
+      { "id": "motion.product-feature", "authority": "preferred", "appliesTo": ["motion", "commerce"], "inputs": ["verifiedProductVisuals", "featureStatements", "currentAction"], "composition": { "sequence": ["whole product", "measured push toward detail", "feature label", "return to context", "action"], "layers": "Keep product source visually authoritative; annotations and typography remain separate composited layers." }, "ruleRefs": ["imagery.product-truth", "motion.support-hierarchy", "claims.runtime-truth"] },
+      { "id": "motion.room-collage", "authority": "permitted", "appliesTo": ["motion", "static"], "inputs": ["approvedRoomImages", "materialDetails", "shortStory"], "composition": { "transitions": "Use square crops, masks, measured slides, and editorial crossfades.", "depth": "Optional shallow parallax or restrained dimensional planes.", "constraint": "No more than three simultaneous visual layers." }, "ruleRefs": ["shape.square-by-default", "motion.depth-is-subtle", "imagery.material-specificity"] },
+      { "id": "motion.brand-resolve", "authority": "required", "appliesTo": ["motion", "sequential"], "inputs": ["officialLogo", "invitation", "optionalAction"], "composition": { "enter": "Logo and invitation fade or reveal cleanly on an uncluttered field.", "hold": "At least 1.2 seconds and longer when copy requires it.", "exit": "Cut or gentle fade; no logo transformation." }, "ruleRefs": ["composition.brand-end-frame", "logo.no-effects", "motion.measured"] }
+    ],
+    "evaluation": [
+      { "id": "motion.readability", "question": "Can each text layer be read comfortably at normal playback speed?" },
+      { "id": "motion.restraint", "question": "Does every movement clarify hierarchy, product, material, or spatial relationship?" },
+      { "id": "motion.reduction", "question": "Does the reduced-motion alternative preserve meaning and task completion?" },
+      { "id": "motion.continuity", "question": "Are scale, direction, lighting, and object identity coherent across the full sequence?" }
+    ],
+    "mediaSelectors": ["asset.logo.primary", "asset.hero.summer-escape", "asset.editorial.new-arrivals", "asset.editorial.made-in-usa", "asset.product.austin-lifestyle", "asset.product.austin-detail", "example.motion.product-feature"]
+  }
+}

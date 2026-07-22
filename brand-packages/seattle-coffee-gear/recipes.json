@@ -1,0 +1,311 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/recipes.schema.json",
+  "schemaVersion": "1.0.0",
+  "recipes": [
+    {
+      "id": "hero.editorial",
+      "authority": "preferred",
+      "appliesTo": [
+        "interactive",
+        "static",
+        "motion"
+      ],
+      "inputs": [
+        "approvedEnvironmentOrProductMedia",
+        "headline",
+        "optionalSupport",
+        "action"
+      ],
+      "structure": [
+        "image story",
+        "specific headline",
+        "one proof point",
+        "one action"
+      ],
+      "ruleRefs": [
+        "layout.character",
+        "voice.core",
+        "action.one-primary",
+        "accessibility.contrast"
+      ]
+    },
+    {
+      "id": "hero.product",
+      "authority": "preferred",
+      "appliesTo": [
+        "interactive",
+        "static",
+        "commerce"
+      ],
+      "inputs": [
+        "verifiedProduct",
+        "decisionContext",
+        "currentCommerceFacts",
+        "action"
+      ],
+      "structure": [
+        "verified product",
+        "decision context",
+        "current facts",
+        "action"
+      ],
+      "ruleRefs": [
+        "product.truth",
+        "claims.runtime-truth",
+        "action.one-primary"
+      ]
+    },
+    {
+      "id": "feature.expert-proof",
+      "authority": "preferred",
+      "appliesTo": [
+        "interactive",
+        "static",
+        "motion",
+        "marketing"
+      ],
+      "inputs": [
+        "verifiedExpertOrService",
+        "specificQuestion",
+        "evidence",
+        "nextStep"
+      ],
+      "structure": [
+        "real question",
+        "specific expertise",
+        "proof",
+        "next step"
+      ],
+      "ruleRefs": [
+        "voice.specificity",
+        "people.permission"
+      ]
+    },
+    {
+      "id": "feature.material-detail",
+      "authority": "preferred",
+      "appliesTo": [
+        "imagery",
+        "static",
+        "motion"
+      ],
+      "inputs": [
+        "verifiedProduct",
+        "specificMaterialOrFeature",
+        "macroMedia",
+        "explanation"
+      ],
+      "structure": [
+        "material detail",
+        "what it is",
+        "why it matters",
+        "product context"
+      ],
+      "ruleRefs": [
+        "product.truth",
+        "voice.specificity"
+      ]
+    },
+    {
+      "id": "feature.environment",
+      "authority": "preferred",
+      "appliesTo": [
+        "imagery",
+        "motion",
+        "marketing"
+      ],
+      "inputs": [
+        "approvedEnvironment",
+        "productOrService",
+        "realUseCase",
+        "action"
+      ],
+      "structure": [
+        "real place",
+        "real use",
+        "specific proof",
+        "action"
+      ],
+      "ruleRefs": [
+        "product.truth",
+        "voice.core"
+      ]
+    },
+    {
+      "id": "comparison.decision",
+      "authority": "preferred",
+      "appliesTo": [
+        "interactive",
+        "static",
+        "commerce"
+      ],
+      "inputs": [
+        "verifiedOptions",
+        "decisionCriteria",
+        "currentFacts"
+      ],
+      "structure": [
+        "decision question",
+        "comparable options",
+        "shared criteria",
+        "differences",
+        "action"
+      ],
+      "ruleRefs": [
+        "product.truth",
+        "claims.runtime-truth",
+        "accessibility.non-color"
+      ]
+    },
+    {
+      "id": "guide.educational",
+      "authority": "preferred",
+      "appliesTo": [
+        "interactive",
+        "static",
+        "sequential",
+        "marketing"
+      ],
+      "inputs": [
+        "audienceQuestion",
+        "verifiedSteps",
+        "productOrServiceContext",
+        "nextStep"
+      ],
+      "structure": [
+        "question",
+        "ordered guidance",
+        "proof or example",
+        "next step"
+      ],
+      "ruleRefs": [
+        "voice.core",
+        "voice.specificity"
+      ]
+    },
+    {
+      "id": "promo.current",
+      "authority": "permitted",
+      "appliesTo": [
+        "interactive",
+        "static",
+        "marketing"
+      ],
+      "inputs": [
+        "currentOffer",
+        "offerSource",
+        "expiration",
+        "verifiedProducts",
+        "action"
+      ],
+      "structure": [
+        "offer",
+        "scope",
+        "verified products",
+        "terms",
+        "action"
+      ],
+      "ruleRefs": [
+        "claims.runtime-truth",
+        "product.truth",
+        "action.one-primary"
+      ]
+    },
+    {
+      "id": "testimonial.permissioned",
+      "authority": "permitted",
+      "appliesTo": [
+        "interactive",
+        "static",
+        "motion",
+        "marketing"
+      ],
+      "inputs": [
+        "verifiedQuote",
+        "speaker",
+        "permission",
+        "context"
+      ],
+      "structure": [
+        "short quote",
+        "attribution",
+        "relevant context"
+      ],
+      "ruleRefs": [
+        "people.permission",
+        "rights.record"
+      ]
+    },
+    {
+      "id": "title.brand",
+      "authority": "preferred",
+      "appliesTo": [
+        "static",
+        "motion",
+        "sequential"
+      ],
+      "inputs": [
+        "title",
+        "optionalKicker",
+        "approvedBackground"
+      ],
+      "structure": [
+        "optional kicker",
+        "title",
+        "readable hold"
+      ],
+      "ruleRefs": [
+        "typography.role-separation",
+        "color.primary-role",
+        "accessibility.contrast"
+      ]
+    },
+    {
+      "id": "end-frame.action",
+      "authority": "preferred",
+      "appliesTo": [
+        "static",
+        "motion",
+        "sequential",
+        "marketing"
+      ],
+      "inputs": [
+        "officialIdentity",
+        "singleAction",
+        "verifiedDestination"
+      ],
+      "structure": [
+        "identity",
+        "single action",
+        "destination when required"
+      ],
+      "ruleRefs": [
+        "logo.official-artwork-only",
+        "action.one-primary",
+        "action.concrete-copy"
+      ]
+    },
+    {
+      "id": "co-brand.partner",
+      "authority": "permitted",
+      "appliesTo": [
+        "all"
+      ],
+      "inputs": [
+        "approvedBrandAssets",
+        "approvedPartnerAssets",
+        "relationship",
+        "clearSpaceRules"
+      ],
+      "structure": [
+        "neutral relationship field",
+        "preserved identities",
+        "explicit relationship"
+      ],
+      "ruleRefs": [
+        "logo.official-artwork-only",
+        "rights.record"
+      ]
+    }
+  ]
+}

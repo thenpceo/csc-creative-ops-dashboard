@@ -1,0 +1,26 @@
+{
+  "name": "creative-ops-dashboard",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync:brands": "node scripts/sync-brand-data.mjs",
+    "sync:mcp": "node scripts/sync-mcp-data.mjs",
+    "dev": "vite",
+    "build": "npm run sync:brands && npm run sync:mcp && vite build && node scripts/prepare-sites-build.mjs",
+    "build:vercel": "vite build",
+    "preview": "vite preview",
+    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "test:mcp": "npm run sync:mcp && node --test tests/mcp-server.test.mjs",
+    "test": "npm run test:sites && npm run test:mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "@vitejs/plugin-react": "5.0.4",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "vite": "6.4.2",
+    "zod": "^4.4.3"
+  }
+}

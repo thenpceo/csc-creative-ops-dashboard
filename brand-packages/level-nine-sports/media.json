@@ -1,0 +1,306 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/media.schema.json",
+  "schemaVersion": "1.0.0",
+  "rightsPolicy": {
+    "default": "unverified-public-reference",
+    "productionUse": "Requires independent rights confirmation and brand authorization.",
+    "modelUpload": "Prohibited unless an authorized reviewer upgrades the asset record."
+  },
+  "items": [
+    {
+      "id": "asset.logo.primary",
+      "uri": "media/official/logo-primary.png",
+      "kind": "image",
+      "roles": [
+        "logo",
+        "compact-identity",
+        "historical-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "50818ed3dc73ded942580104e2e983263d5535b7281a90cff4890c70de9a9c82",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://web.archive.org/web/20241106033729im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/icon-192x192.png",
+        "capturedAt": "2026-07-21",
+        "contentType": "image/png;charset=UTF-8"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference",
+          "authorized-brand-work"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.site.home",
+      "uri": "https://www.levelninesports.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "current-or-canonical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.levelninesports.com/",
+        "reviewedAt": "2026-07-21",
+        "finalUrl": "https://www.backcountry.com/campaign/backcountry-outlet",
+        "surfaceStatus": "redirect-successor"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.site.evidence",
+      "uri": "https://web.archive.org/web/20250513141841/https://www.levelninesports.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "historical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "archived-first-party-page",
+        "url": "https://web.archive.org/web/20250513141841/https://www.levelninesports.com/",
+        "reviewedAt": "2026-07-21",
+        "note": "As of July 21, 2026, the live domain redirects to Backcountry Outlet. Standalone Level Nine values come from the latest first-party archived Next.js homepage and CSS bundles and must be treated as historical identity evidence."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.home.desktop",
+      "uri": "media/official/homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "desktop-audit",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "active",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "36d1d4485d0fec05de081a508afe525cbe8c1555c6799e25467319bbd6650509",
+      "source": {
+        "type": "live-capture",
+        "page": "https://www.backcountry.com/campaign/backcountry-outlet",
+        "requestedPage": "https://www.levelninesports.com/",
+        "capturedAt": "2026-07-21",
+        "surfaceStatus": "redirect-successor",
+        "note": "Rendered redirect or successor surface. This is operational evidence and not standalone identity evidence."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "marketing.historical.01",
+      "uri": "media/marketing-reference/historical-01-historical-level-nine-seasonal-hero.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "hero-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "6a8cb53501dd14d61d9b1a2ab065ce3e30ac1eedea13c32dc9189743db858691",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20241106033639im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/home-hero/dbf1_hero_desktop.jpg",
+        "page": "https://web.archive.org/web/20250513141841/https://www.levelninesports.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Level Nine seasonal hero",
+        "contentType": "image/jpeg;charset=UTF-8"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.02",
+      "uri": "media/marketing-reference/historical-02-historical-level-nine-new-arrivals-hero.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "28904ca35d4de1d6d16202febf7b19dbd1acb146aa196429e0ea7d7e7601d1e2",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20241106033739im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/home-hero/october24_2025_newarrivals_hero_desktop.jpg",
+        "page": "https://web.archive.org/web/20250513141841/https://www.levelninesports.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Level Nine new arrivals hero",
+        "contentType": "image/jpeg;charset=UTF-8"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.03",
+      "uri": "media/marketing-reference/historical-03-historical-level-nine-bike-campaign.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "8ec40ebee31785f3212a3d1fb668631f8a588ed73770beb3966de7291428e9c3",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20241106033651im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/home-hero/rockshox_hero_desktop.jpg",
+        "page": "https://web.archive.org/web/20250513141841/https://www.levelninesports.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Level Nine bike campaign",
+        "contentType": "image/jpeg;charset=UTF-8"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.04",
+      "uri": "media/marketing-reference/historical-04-historical-level-nine-accessories-category.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "0b81101ae3d2933df28aff6c6d42ea92342375795a69bdf0f891633f287a72f0",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20241106033655im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/home-page/cat-home-cyber-acc.jpg",
+        "page": "https://web.archive.org/web/20250513141841/https://www.levelninesports.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Level Nine accessories category",
+        "contentType": "image/jpeg;charset=UTF-8"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.05",
+      "uri": "media/marketing-reference/historical-05-historical-level-nine-outerwear-category.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "2eeae4bfdfa7341ca4cf31b15f978fa145fc90e60378735bf1cf9fc8c3285429",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20241106033640im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/home-page/cat-home-cyber-jacket.jpg",
+        "page": "https://web.archive.org/web/20250513141841/https://www.levelninesports.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Level Nine outerwear category",
+        "contentType": "image/jpeg;charset=UTF-8"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.06",
+      "uri": "media/marketing-reference/historical-06-historical-level-nine-summer-rentals-campaign.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "b160634570b897def31d07e1ef8feb17eaae2ff33a23fc0e4160c726e5cbc621",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20240715125603im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/home-page/home-summer-rentals-block-large.jpg",
+        "page": "https://web.archive.org/web/20250513141841/https://www.levelninesports.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Level Nine summer rentals campaign",
+        "contentType": "image/jpeg;charset=UTF-8"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    }
+  ]
+}

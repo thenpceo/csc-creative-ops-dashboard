@@ -1,0 +1,331 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/media.schema.json",
+  "schemaVersion": "1.0.0",
+  "rightsPolicy": {
+    "default": "unverified-public-reference",
+    "productionUse": "Requires independent rights confirmation and brand authorization.",
+    "modelUpload": "Prohibited unless an authorized reviewer upgrades the asset record."
+  },
+  "items": [
+    {
+      "id": "asset.logo.primary",
+      "uri": "media/official/logo-primary.svg",
+      "kind": "image",
+      "roles": [
+        "logo",
+        "primary-identity",
+        "brand-end-frame"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "0acd7835003a0a534ee4bdb9abdc4bd10caca265dff3f307e9ec6955e63e3e98",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://f-static.motosport.com/motographics/images/motosport.logo.svg",
+        "capturedAt": "2026-07-21",
+        "contentType": "image/svg+xml"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference",
+          "authorized-brand-work"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.site.home",
+      "uri": "https://www.motosport.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "current-or-canonical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.motosport.com/",
+        "reviewedAt": "2026-07-21",
+        "finalUrl": "https://www.motosport.com/",
+        "surfaceStatus": "current"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.site.evidence",
+      "uri": "https://www.motosport.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.motosport.com/",
+        "reviewedAt": "2026-07-21",
+        "note": "Rendered live homepage audit and computed first-party styles."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.home.desktop",
+      "uri": "media/official/homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "desktop-audit",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "active",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "9d56e91da57f61f36473139e0bce1e60c74b251c84ba6dd11fd8514e7ae85dd7",
+      "source": {
+        "type": "live-capture",
+        "page": "https://www.motosport.com/",
+        "requestedPage": "https://www.motosport.com/",
+        "capturedAt": "2026-07-21",
+        "surfaceStatus": "current",
+        "note": "Rendered public homepage capture."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "marketing.current.01",
+      "uri": "media/marketing-reference/current-01-summer-garage-campaign-hero.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "hero-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "476bb0c685d63e4df19f8bbf1ba4990bfedc44dd5393ad675f3443aac0a1b066",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://f-static.motosport.com/motographics/images/home/all_storefront/2026/260707_SummerGarage/SummerGarage_hero1_desktop.jpg",
+        "page": "https://www.motosport.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Summer Garage campaign hero",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.02",
+      "uri": "media/marketing-reference/current-02-o-neal-riding-gear-campaign.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "66d58aeaa73752613c2cb9f5769b1d5b74a9117030a45d826c2bec992334868a",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://f-static.motosport.com/motographics/images/home/all_storefront/2026/260101_homepageupdates/NewGear_27Oneal_desktop.jpg",
+        "page": "https://www.motosport.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "O'Neal riding gear campaign",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.03",
+      "uri": "media/marketing-reference/current-03-fox-racing-gear-campaign.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "b6610fa8a4fcc7e3c303a360b6e92b40b968b1e1d9a9cebcd2f72f76624d7e46",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://f-static.motosport.com/motographics/images/home/all_storefront/2026/260101_homepageupdates/NewGear_26Fox1_desktop.jpg",
+        "page": "https://www.motosport.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Fox Racing gear campaign",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.04",
+      "uri": "media/marketing-reference/current-04-alpinestars-gear-campaign.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "ae88ed369fa978dcb5257996b7408cee218caa7e10e0e3516cc1e9841eef0f31",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://f-static.motosport.com/motographics/images/home/all_storefront/2026/260101_homepageupdates/NewGear_AStarsL_desktop.jpg",
+        "page": "https://www.motosport.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Alpinestars gear campaign",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.05",
+      "uri": "media/marketing-reference/current-05-troy-lee-designs-gear-campaign.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "52b0cfb3129ca79cd49ff92add3ca59c256fe64d664734d05dd2c1302819d423",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://f-static.motosport.com/motographics/images/home/all_storefront/2026/260101_homepageupdates/NewGear_TLDL_desktop.jpg",
+        "page": "https://www.motosport.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Troy Lee Designs gear campaign",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.06",
+      "uri": "media/marketing-reference/current-06-rdrco-riding-gear-campaign.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "bc93315bab8351b1f8c68152aa9f019b69f4825cad877ff0d2fee4e8dd324961",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://f-static.motosport.com/motographics/images/home/all_storefront/2026/260101_homepageupdates/NewGear_26RDRCO_desktop.jpg",
+        "page": "https://www.motosport.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "RDRCO riding gear campaign",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.ad-library.meta-query",
+      "uri": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Shop%20MotoSport&search_type=keyword_unordered",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "public-ad-library-query"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "public-ad-library-query",
+        "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Shop%20MotoSport&search_type=keyword_unordered",
+        "reviewedAt": "2026-07-21",
+        "note": "Live query reference only; results are volatile and do not establish spend, targeting, performance, or account ownership."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    }
+  ]
+}

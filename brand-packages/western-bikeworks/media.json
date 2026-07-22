@@ -1,0 +1,388 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/media.schema.json",
+  "schemaVersion": "1.0.0",
+  "rightsPolicy": {
+    "default": "unverified-public-reference",
+    "productionUse": "Requires independent rights confirmation and brand authorization.",
+    "modelUpload": "Prohibited unless an authorized reviewer upgrades the asset record."
+  },
+  "items": [
+    {
+      "id": "asset.logo.primary",
+      "uri": "media/official/logo-primary.svg",
+      "kind": "image",
+      "roles": [
+        "logo",
+        "primary-identity",
+        "brand-end-frame"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "3e5bbfaed918f41cd40828990234500cccb021cfed56b1c23876422eaf6f3217",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://web.archive.org/web/20250814005626im_/https://www.westernbikeworks.com/images/wbw-logo-white.svg",
+        "capturedAt": "2026-07-21",
+        "contentType": "image/svg+xml"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference",
+          "authorized-brand-work"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.site.home",
+      "uri": "https://www.westernbikeworks.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "current-or-canonical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.westernbikeworks.com/",
+        "reviewedAt": "2026-07-21",
+        "finalUrl": "https://www.biketiresdirect.com/?rdb=wbw&",
+        "surfaceStatus": "redirect-successor"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.site.evidence",
+      "uri": "https://web.archive.org/web/20250815000000/https://www.westernbikeworks.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "historical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "archived-first-party-page",
+        "url": "https://web.archive.org/web/20250815000000/https://www.westernbikeworks.com/",
+        "reviewedAt": "2026-07-21",
+        "note": "Current domain redirects to BikeTiresDirect. Values come from the last first-party standalone homepage/CSS before consolidation."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.home.desktop",
+      "uri": "media/official/homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "desktop-audit",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "active",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "5ce765cc7448c4d725307e6807fa061744e562dad1c6c9e7786a1194a23851f9",
+      "source": {
+        "type": "live-capture",
+        "page": "https://www.biketiresdirect.com/?rdb=wbw&",
+        "requestedPage": "https://www.westernbikeworks.com/",
+        "capturedAt": "2026-07-21",
+        "surfaceStatus": "redirect-successor",
+        "note": "Rendered redirect or successor surface. This is operational evidence and not standalone identity evidence."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.historical-home.desktop",
+      "uri": "media/official/historical-homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "historical-brand-surface",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "deprecated",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "4e721e2f7320410a9ddaa6ff4c47c5cc6d5ed82c59f83e23eccfc45188b71a65",
+      "source": {
+        "type": "archived-first-party-capture",
+        "page": "https://web.archive.org/web/20250815000000/https://www.westernbikeworks.com/",
+        "capturedAt": "2026-07-21",
+        "note": "Archive chrome may be visible; use the captured standalone storefront area as historical evidence only."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "marketing.historical.01",
+      "uri": "media/marketing-reference/historical-01-historical-western-bikeworks-bicycle-sale-banner.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "hero-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "554c88bb698be69feefb738cbd0773453fbad077e97a6996ae095b692c4b98ae",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20250814005626im_/https://www.westernbikeworks.com/promoimages/Image50871.jpg",
+        "page": "https://web.archive.org/web/20250815000000/https://www.westernbikeworks.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Western Bikeworks bicycle sale banner",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.02",
+      "uri": "media/marketing-reference/historical-02-historical-western-bikeworks-mountain-bike-tire-.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "15202ad9ff28e877dd330a7bc360e219cc5de40b8885cbda7f9f095ca2478020",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20250814005626im_/https://www.westernbikeworks.com/promoimages/Image50870.jpg",
+        "page": "https://web.archive.org/web/20250815000000/https://www.westernbikeworks.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Western Bikeworks mountain-bike tire campaign",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.03",
+      "uri": "media/marketing-reference/historical-03-historical-western-bikeworks-apparel-promotion.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "de0bbf62907255b5561bd025e89c8e7c361d499cf786b4d9965ad3a1f595badb",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20250814005626im_/https://www.westernbikeworks.com/promoimages/Image50872.jpg",
+        "page": "https://web.archive.org/web/20250815000000/https://www.westernbikeworks.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Western Bikeworks apparel promotion",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.04",
+      "uri": "media/marketing-reference/historical-04-historical-western-bikeworks-wheel-systems-campa.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "e25a8e347b661b7dc487cba4b719eb3206f04c8d73d3e403ff9c3d0b65a2ed06",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20250814005626im_/https://www.westernbikeworks.com/promoimages/image50873.jpg",
+        "page": "https://web.archive.org/web/20250815000000/https://www.westernbikeworks.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Western Bikeworks wheel systems campaign",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.historical.05",
+      "uri": "media/marketing-reference/historical-05-historical-western-bikeworks-electronics-campaig.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "deprecated",
+      "checksumSha256": "b5291e9c30ba72fb265603a9ff97da9d99fee3d8a4516ddc4f2afaa10a7ad9bd",
+      "source": {
+        "type": "archived-first-party-asset",
+        "url": "https://web.archive.org/web/20250814005626im_/https://www.westernbikeworks.com/promoimages/image50874.jpg",
+        "page": "https://web.archive.org/web/20250815000000/https://www.westernbikeworks.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Historical Western Bikeworks electronics campaign",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.social.youtube.01",
+      "uri": "https://www.youtube.com/westernbikeworks",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "deprecated",
+      "source": {
+        "type": "historical-first-party-linked-social-profile",
+        "url": "https://www.youtube.com/westernbikeworks",
+        "reviewedAt": "2026-07-21",
+        "label": "Historical first-party YouTube link"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.instagram.02",
+      "uri": "https://www.instagram.com/westernbikeworks",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "deprecated",
+      "source": {
+        "type": "historical-first-party-linked-social-profile",
+        "url": "https://www.instagram.com/westernbikeworks",
+        "reviewedAt": "2026-07-21",
+        "label": "Historical first-party Instagram link"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.facebook.03",
+      "uri": "https://www.facebook.com/pages/Western-Bikeworks/157762564281790",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "deprecated",
+      "source": {
+        "type": "historical-first-party-linked-social-profile",
+        "url": "https://www.facebook.com/pages/Western-Bikeworks/157762564281790",
+        "reviewedAt": "2026-07-21",
+        "label": "Historical first-party Facebook link"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    }
+  ]
+}

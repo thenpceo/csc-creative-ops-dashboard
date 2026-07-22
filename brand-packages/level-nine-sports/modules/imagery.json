@@ -1,0 +1,241 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "level-nine-sports.imagery",
+  "capability": "imagery",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "environment": "real mountain, resort, trail, camp, workshop, and family outdoor settings",
+      "camera": "clear equipment-led action, approachable human scale, product studio, and fitting or service detail",
+      "lighting": "bright natural outdoor light and neutral retail or workshop light",
+      "palette": "black, white, energetic green, snow, sky, wood, trail earth, and equipment color",
+      "people": "mixed-skill participants, families, staff, and technicians using correct equipment naturally"
+    },
+    "rules": [
+      {
+        "id": "imagery.environment",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Use real mountain, resort, trail, camp, workshop, and family outdoor settings.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "imagery.camera",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Favor clear equipment-led action, approachable human scale, product studio, and fitting or service detail.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "imagery.light",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Use bright natural outdoor light and neutral retail or workshop light.",
+        "sourceIds": [
+          "source.audit.home.desktop"
+        ]
+      },
+      {
+        "id": "imagery.people",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "When people appear, show mixed-skill participants, families, staff, and technicians using correct equipment naturally.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "imagery.product-lock",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Lock geometry, material, countable features, condition, fit, scale, and safety context across every image and crop.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "imagery.avoid",
+        "authority": "prohibited",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Avoid elite-only intimidation, invented fit claims, unsafe equipment setup, generic extreme-sports montage, discount clutter that obscures the product.",
+        "sourceIds": []
+      }
+    ],
+    "recipes": [
+      {
+        "id": "imagery.environment-wide",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "inputs": [
+          "realUseCase",
+          "environment",
+          "heroSubject",
+          "copySafeRegion"
+        ],
+        "structure": [
+          "real environment",
+          "one anchor",
+          "natural perspective",
+          "copy-safe region"
+        ],
+        "ruleRefs": [
+          "imagery.environment",
+          "imagery.camera",
+          "imagery.light"
+        ]
+      },
+      {
+        "id": "imagery.product-studio",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery",
+          "commerce"
+        ],
+        "inputs": [
+          "authorizedProduct",
+          "requiredAngle",
+          "background",
+          "scaleReference"
+        ],
+        "structure": [
+          "whole product",
+          "normal perspective",
+          "controlled light",
+          "honest contact"
+        ],
+        "ruleRefs": [
+          "imagery.product-lock",
+          "product.truth"
+        ]
+      },
+      {
+        "id": "imagery.product-context",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery",
+          "commerce"
+        ],
+        "inputs": [
+          "authorizedProduct",
+          "realUseCase",
+          "environment",
+          "scaleCues"
+        ],
+        "structure": [
+          "unchanged product",
+          "real use",
+          "believable scale",
+          "matched contact and light"
+        ],
+        "ruleRefs": [
+          "imagery.environment",
+          "imagery.product-lock"
+        ]
+      },
+      {
+        "id": "imagery.people-in-use",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery",
+          "marketing"
+        ],
+        "inputs": [
+          "approvedPerson",
+          "realTask",
+          "correctProductOrService",
+          "permission"
+        ],
+        "structure": [
+          "human context",
+          "real task",
+          "specific proof",
+          "natural behavior"
+        ],
+        "ruleRefs": [
+          "imagery.people",
+          "people.permission"
+        ]
+      },
+      {
+        "id": "imagery.detail-proof",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery",
+          "commerce"
+        ],
+        "inputs": [
+          "verifiedDetail",
+          "material",
+          "functionalContext"
+        ],
+        "structure": [
+          "oriented detail",
+          "material truth",
+          "functional context",
+          "scale cue"
+        ],
+        "ruleRefs": [
+          "imagery.product-lock",
+          "voice.specificity"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "imagery.credible",
+        "question": "Are environment, technique, weather, materials, product scale, and human behavior credible?"
+      },
+      {
+        "id": "imagery.distinct",
+        "question": "Does the image reflect this brand rather than category stock photography?"
+      },
+      {
+        "id": "imagery.truth",
+        "question": "Does every represented product or service preserve verified truth?"
+      }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "source.audit.home.desktop",
+      "source.site.home",
+      "marketing.historical.01",
+      "marketing.historical.02",
+      "marketing.historical.03",
+      "marketing.historical.04",
+      "marketing.historical.05",
+      "marketing.historical.06"
+    ]
+  }
+}

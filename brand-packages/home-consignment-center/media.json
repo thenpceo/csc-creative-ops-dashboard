@@ -1,0 +1,271 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/media.schema.json",
+  "schemaVersion": "1.0.0",
+  "rightsPolicy": {
+    "default": "unverified-public-reference",
+    "productionUse": "Requires independent rights confirmation and brand authorization.",
+    "modelUpload": "Prohibited unless an authorized reviewer upgrades the asset record."
+  },
+  "items": [
+    {
+      "id": "asset.logo.primary",
+      "uri": "media/official/logo-primary.png",
+      "kind": "image",
+      "roles": [
+        "logo",
+        "primary-identity",
+        "brand-end-frame"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "2b58cb24a11d0935dcb7af2e14aeff01654da3b39414cb10ea212d21e7b10af6",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://thehomeconsignmentcenter.com/wp-content/uploads/2023/08/hcc-30yr-stacked-30-white-rgb-2400px-w-144ppi-1024x490.png",
+        "capturedAt": "2026-07-21",
+        "contentType": "image/png"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference",
+          "authorized-brand-work"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.site.home",
+      "uri": "https://thehomeconsignmentcenter.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "current-or-canonical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://thehomeconsignmentcenter.com/",
+        "reviewedAt": "2026-07-21",
+        "finalUrl": "https://thehomeconsignmentcenter.com/",
+        "surfaceStatus": "current"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.site.evidence",
+      "uri": "https://thehomeconsignmentcenter.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://thehomeconsignmentcenter.com/",
+        "reviewedAt": "2026-07-21",
+        "note": "Rendered live homepage, computed styles, and exposed Elementor/Astra variables."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.home.desktop",
+      "uri": "media/official/homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "desktop-audit",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "active",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "71dce8f76db9855a34863f6fb2a9ed9c46fbaa7578b63e82c7a13a8daf8cad90",
+      "source": {
+        "type": "live-capture",
+        "page": "https://thehomeconsignmentcenter.com/",
+        "requestedPage": "https://www.thehomeconsignmentcenter.com/",
+        "capturedAt": "2026-07-21",
+        "surfaceStatus": "current",
+        "note": "Rendered public homepage capture."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "marketing.current.01",
+      "uri": "media/marketing-reference/current-01-current-first-party-marketing-image.avif",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "hero-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "62bdee1a0766927ee2dfa2f8490f393e6a95525f3d318c01842c0dbdd6275488",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://thehomeconsignmentcenter.com/wp-content/uploads/2024/04/homepage_e.jpg.avif",
+        "page": "https://thehomeconsignmentcenter.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Current first-party marketing image",
+        "contentType": "image/avif"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.02",
+      "uri": "media/marketing-reference/current-02-current-first-party-marketing-image.avif",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "2fca3dbb12c225c13db60297a323a53fcbae262dc8538df394d3462bc053b3a5",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://thehomeconsignmentcenter.com/wp-content/uploads/2024/04/furniture_e.jpg.avif",
+        "page": "https://thehomeconsignmentcenter.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Current first-party marketing image",
+        "contentType": "image/avif"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.03",
+      "uri": "media/marketing-reference/current-03-current-first-party-marketing-image.png",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "ecf4f47498950ff756c11d4b7d699807aeaf14b306911f7146d1d5399204e97b",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://thehomeconsignmentcenter.com/wp-content/uploads/2023/08/hcc-30yr-stacked-30-white-rgb-2400px-w-144ppi-2048x980.png",
+        "page": "https://thehomeconsignmentcenter.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Current first-party marketing image",
+        "contentType": "image/png"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.04",
+      "uri": "media/marketing-reference/current-04-current-first-party-marketing-image.png",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "ecf4f47498950ff756c11d4b7d699807aeaf14b306911f7146d1d5399204e97b",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://thehomeconsignmentcenter.com/wp-content/uploads/2023/08/hcc-30yr-stacked-30-white-rgb-2400px-w-144ppi-2048x980.png",
+        "page": "https://thehomeconsignmentcenter.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Current first-party marketing image",
+        "contentType": "image/png"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.ad-library.meta-query",
+      "uri": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Buy%20%26%20Sell%20Furniture%20on%20Consignment&search_type=keyword_unordered",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "public-ad-library-query"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "public-ad-library-query",
+        "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Buy%20%26%20Sell%20Furniture%20on%20Consignment&search_type=keyword_unordered",
+        "reviewedAt": "2026-07-21",
+        "note": "Live query reference only; results are volatile and do not establish spend, targeting, performance, or account ownership."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    }
+  ]
+}

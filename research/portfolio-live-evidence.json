@@ -1,0 +1,1099 @@
+{
+  "schemaVersion": "1.0.0",
+  "capturedAt": "2026-07-21",
+  "method": "Rendered first-party homepage inspection in the in-app browser, DOM-linked source extraction, and explicit redirect verification.",
+  "limitations": [
+    "Public social profiles and ad libraries are volatile and may require authentication or regional consent.",
+    "A profile link or ad-library query does not establish performance, spend, targeting, ownership of every visible post, or current campaign priority.",
+    "Downloaded first-party media is reference evidence only until rights are independently confirmed."
+  ],
+  "brands": {
+    "backcountry": {
+      "requestedUrl": "https://www.backcountry.com/",
+      "finalUrl": "https://www.backcountry.com/",
+      "title": "Backcountry - Outdoor Gear & Clothing for Ski, Snowboard, Camp, & More",
+      "capturedAt": "2026-07-21",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "screenshot": "research/backcountry/audit-2026-07-21/01-home-desktop.png",
+      "historicalScreenshot": null,
+      "surfaceStatus": "current",
+      "observations": [
+        "Wide black-and-white commerce shell with a serif wordmark and activity-first navigation.",
+        "Editorial outdoor photography supplies nearly all emotional color; promotional rust is used as a bounded campaign band.",
+        "Expert Help and Summit Club+ are persistent service and loyalty proof points."
+      ],
+      "logoUrl": "https://content.backcountry.com/images/brand/bcs_logo.png",
+      "logoVariant": "primary-lockup",
+      "social": [
+        {
+          "url": "https://www.facebook.com/Backcountry",
+          "label": "Like us on Facebook"
+        },
+        {
+          "url": "https://www.instagram.com/backcountry",
+          "label": "Follow us on Instagram"
+        },
+        {
+          "url": "https://www.youtube.com/@backcountry",
+          "label": "Subscribe to us on Youtube"
+        },
+        {
+          "url": "https://www.tiktok.com/@backcountrycom",
+          "label": "footer.tiktok"
+        }
+      ],
+      "marketingImages": [
+        {
+          "id": "marketing.current.01",
+          "url": "https://content.backcountry.com/v3/assets/blt1e7d804dd7971a01/69a0d6597b66cedd39c66fac/Womens_apparel.jpg?width=450",
+          "alt": "Women's Apparel",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "hero-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.02",
+          "url": "https://content.backcountry.com/v3/assets/blt8148c8701ca804fa/69a0d659b2b7de1104b4acba/mens_apparel.jpg?width=450",
+          "alt": "Men's Apparel",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.03",
+          "url": "https://content.backcountry.com/v3/assets/blt1cd2370dac27210c/69a0d659a47c7e88118e17bb/Bike.jpg?width=450",
+          "alt": "Bike",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.04",
+          "url": "https://content.backcountry.com/v3/assets/blte983f45a2fa7225d/69a0d659bc49c482e28a8d47/Camp_&_Hike.jpg?width=450",
+          "alt": "Camp & Hike",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.05",
+          "url": "https://content.backcountry.com/v3/assets/blt0fcb21b8bea21a11/69a0d659f41d2053d6d3c98c/Footwear.jpg?width=450",
+          "alt": "Footwear",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.06",
+          "url": "https://content.backcountry.com/v3/assets/blt8b5f48b11600c8b0/69a0d65947c5b09fc4c85903/Travel.jpg?width=450",
+          "alt": "Travel",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        }
+      ],
+      "metaAdLibraryQuery": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Backcountry&search_type=keyword_unordered"
+    },
+    "competitive-cyclist": {
+      "requestedUrl": "https://www.competitivecyclist.com/",
+      "finalUrl": "https://www.competitivecyclist.com/",
+      "title": "Competitive Cyclist - Road, Gravel & Mountain Bikes",
+      "capturedAt": "2026-07-21",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "screenshot": "research/competitive-cyclist/audit-2026-07-21/01-home-desktop.png",
+      "historicalScreenshot": null,
+      "surfaceStatus": "current",
+      "observations": [
+        "Dense specialist navigation is paired with a restrained white shell and red promotional bands.",
+        "The current Ride Like a Pro campaign uses oversized typographic composition, cycling photography, black, white, and fluorescent yellow.",
+        "Category language is pursuit- and component-specific rather than general sporting-goods language."
+      ],
+      "logoUrl": "https://content.competitivecyclist.com/images/brand/competitivecyclist_logo.png",
+      "logoVariant": "primary-lockup",
+      "social": [
+        {
+          "url": "https://www.facebook.com/Competitive.Cyclist",
+          "label": "Like us on Facebook"
+        },
+        {
+          "url": "https://www.youtube.com/@competitivecyclist",
+          "label": "Subscribe to us on Youtube"
+        },
+        {
+          "url": "https://www.instagram.com/competitivecyclist",
+          "label": "Follow us on Instagram"
+        },
+        {
+          "url": "https://www.tiktok.com/@competitivecyclist",
+          "label": "footer.tiktok"
+        }
+      ],
+      "marketingImages": [
+        {
+          "id": "marketing.current.01",
+          "url": "https://content.competitivecyclist.com/v3/assets/bltbb35d31e421ab4ba/69bb2c353a4db29a16cabb82/CC_Shop_by_Pursuit_-_Road_Biking.jpg?width=450",
+          "alt": "Road Biking",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "hero-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.02",
+          "url": "https://content.competitivecyclist.com/v3/assets/blt31d3b88ecbf9ed82/69bb2c3531f53c505169bdda/CC_Shop_by_Pursuit_-_MTB.jpg?width=450",
+          "alt": "Mountain Biking",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.03",
+          "url": "https://content.competitivecyclist.com/v3/assets/bltcdddee43d8cb9226/69bb2c352a26b824c271b8e6/CC_Shop_by_Pursuit_-_Gravel.jpg?width=450",
+          "alt": "Gravel Biking",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.04",
+          "url": "https://content.competitivecyclist.com/v3/assets/blt9ceb13c76e53352b/69bb2c35daccab65060b9ca8/CC_Shop_by_Pursuit_-_Triathlon.jpg?width=450",
+          "alt": "Triathlon",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.05",
+          "url": "https://content.competitivecyclist.com/v3/assets/bltf598842b17d8e4ba/69bb2c346b74d37a683c74d6/CC_Shop_by_Pursuit_-_Sale.jpg?width=450",
+          "alt": "Sale",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.06",
+          "url": "https://content.competitivecyclist.com/v3/assets/blt5aad194c5cb8c3b9/6a4d320eefd45e3809f6bc1c/1x1_card.jpg?width=450",
+          "alt": "Cervelo Soloist",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        }
+      ],
+      "metaAdLibraryQuery": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Competitive%20Cyclist&search_type=keyword_unordered"
+    },
+    "bike-tires-direct": {
+      "requestedUrl": "https://www.biketiresdirect.com/",
+      "finalUrl": "https://www.biketiresdirect.com/",
+      "title": "BikeTiresDirect - Great prices on bicycle tires, components, apparel",
+      "capturedAt": "2026-07-21",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "screenshot": "research/bike-tires-direct/audit-2026-07-21/01-home-desktop.png",
+      "historicalScreenshot": null,
+      "surfaceStatus": "current",
+      "observations": [
+        "The current storefront is intentionally dense: utility header, left category rail, central promotion, and daily-special commerce block.",
+        "Navy, red, white, and gold organize service information, promotions, and direct-response actions.",
+        "Marketing graphics combine embedded offer typography with real cycling products and race-oriented photography."
+      ],
+      "logoUrl": "https://www.biketiresdirect.com/images/btd-logo.svg",
+      "logoVariant": "primary-lockup",
+      "social": [
+        {
+          "url": "https://www.youtube.com/channel/UCNJY3VRHEnVZ3HIESTOywTQ?sub_confirmation=1",
+          "label": "youtube.com"
+        },
+        {
+          "url": "https://www.facebook.com/BikeTiresDirect/",
+          "label": "facebook.com"
+        },
+        {
+          "url": "https://www.instagram.com/biketiresdirect/",
+          "label": "instagram.com"
+        }
+      ],
+      "marketingImages": [
+        {
+          "id": "marketing.current.01",
+          "url": "https://static.biketiresdirect.com/promoimages/image53613.jpg",
+          "alt": "Click for Schwalbe Save up to 25 Shop Tires",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "hero-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.02",
+          "url": "https://static.biketiresdirect.com/promoimages/image53614.jpg",
+          "alt": "Click for Groupset Glow-Up Shop Now",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.03",
+          "url": "https://static.biketiresdirect.com/promoimages/image53621.jpg",
+          "alt": "Click for Secret Summer Apparel Sale Add to Cart for Discount Save Now",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.04",
+          "url": "https://static.biketiresdirect.com/promoimages/image53612.jpg",
+          "alt": "Click for Born for Breakaways Save 25 Shop Helmets",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        }
+      ],
+      "metaAdLibraryQuery": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=BikeTiresDirect&search_type=keyword_unordered"
+    },
+    "home-consignment-center": {
+      "requestedUrl": "https://www.thehomeconsignmentcenter.com/",
+      "finalUrl": "https://thehomeconsignmentcenter.com/",
+      "title": "Buy & Sell Furniture on Consignment - Home Consignment Center",
+      "capturedAt": "2026-07-21",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "screenshot": "research/home-consignment-center/audit-2026-07-21/01-home-desktop.png",
+      "historicalScreenshot": null,
+      "surfaceStatus": "current",
+      "observations": [
+        "Full-width showroom imagery carries the brand while the navigation and identity sit in a light overlay.",
+        "Red store-finding and consignment actions are the strongest persistent graphic signal.",
+        "The current value proposition combines treasure hunting, local showroom discovery, and frictionless consignment."
+      ],
+      "logoUrl": null,
+      "logoVariant": "primary-lockup",
+      "social": [],
+      "marketingImages": [
+        {
+          "id": "marketing.current.01",
+          "url": "https://thehomeconsignmentcenter.com/wp-content/uploads/2024/04/homepage_e.jpg.avif",
+          "alt": "Current first-party marketing image",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "hero-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.02",
+          "url": "https://thehomeconsignmentcenter.com/wp-content/uploads/2024/04/furniture_e.jpg.avif",
+          "alt": "Current first-party marketing image",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.03",
+          "url": "https://thehomeconsignmentcenter.com/wp-content/uploads/2023/08/hcc-30yr-stacked-30-white-rgb-2400px-w-144ppi-2048x980.png",
+          "alt": "Current first-party marketing image",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.04",
+          "url": "https://thehomeconsignmentcenter.com/wp-content/uploads/2023/08/hcc-30yr-stacked-30-white-rgb-2400px-w-144ppi-2048x980.png",
+          "alt": "Current first-party marketing image",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        }
+      ],
+      "metaAdLibraryQuery": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Buy%20%26%20Sell%20Furniture%20on%20Consignment&search_type=keyword_unordered"
+    },
+    "home-designs": {
+      "requestedUrl": "https://cabinetryunlimited.com/",
+      "finalUrl": "https://www.cabinetryunlimited.com/",
+      "title": "Custom Cabinets & Countertops | Cabinetry Unlimited | Delmarva",
+      "capturedAt": "2026-07-21",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "screenshot": "research/home-designs/audit-2026-07-21/01-home-desktop.png",
+      "historicalScreenshot": null,
+      "surfaceStatus": "current",
+      "observations": [
+        "The CSC Home Designs evidence resolves to a service-led Cabinetry Unlimited operating surface rather than a general ecommerce store.",
+        "Maroon, warm gold, white, and large cabinetry photography create a craft and consultation-led system.",
+        "Primary marketing actions should lead to consultation, showroom, project proof, or service-area confirmation."
+      ],
+      "logoUrl": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/1751473490419_OwWtmA3MV-1920w.png",
+      "logoVariant": "primary-lockup",
+      "social": [
+        {
+          "url": "https://facebook.com/CabinetryUnlimited/",
+          "label": "facebook"
+        },
+        {
+          "url": "https://instagram.com/cabinetry_unlimited/",
+          "label": "instagram"
+        }
+      ],
+      "marketingImages": [
+        {
+          "id": "marketing.current.01",
+          "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/IMG_1292-252b6b7c-1920w.jpg",
+          "alt": "Cabinetry project environment",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "hero-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.02",
+          "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/996710c8-4f6e-46b1-ae26-b8e87744597e-1920w.png",
+          "alt": "Cabinetry and countertop project",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.03",
+          "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/1751473463869_WwvSPUsuo-1920w.png",
+          "alt": "Interior cabinetry reference",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.04",
+          "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/manufacturing-facility-1920w.jpeg",
+          "alt": "Manufacturing facility",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.05",
+          "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/building-sign-7d868e23-1920w.png",
+          "alt": "Operating location exterior",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.06",
+          "url": "https://lirp.cdn-website.com/9319fdb5/dms3rep/multi/opt/83d59a16-e367-49a7-ba1c-4a0ad9e7466e-1920w.png",
+          "alt": "Service and project reference",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        }
+      ],
+      "metaAdLibraryQuery": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Custom%20Cabinets%20%26%20Countertops&search_type=keyword_unordered"
+    },
+    "level-nine-sports": {
+      "requestedUrl": "https://www.levelninesports.com/",
+      "finalUrl": "https://www.backcountry.com/campaign/backcountry-outlet",
+      "title": "Backcountry Outlet | Backcountry",
+      "capturedAt": "2026-07-21",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "screenshot": "research/level-nine-sports/audit-2026-07-21/01-home-desktop.png",
+      "historicalScreenshot": null,
+      "surfaceStatus": "redirect-successor",
+      "observations": [
+        "The Level Nine Sports domain currently redirects to Backcountry Outlet.",
+        "The redirect is current operational evidence, not permission to treat Backcountry Outlet creative as Level Nine identity material.",
+        "Use archived first-party Level Nine material only as historical reference and never imply a current standalone storefront."
+      ],
+      "logoUrl": "https://web.archive.org/web/20241106033729im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/icon-192x192.png",
+      "logoVariant": "compact-icon",
+      "social": [],
+      "marketingImages": [
+        {
+          "id": "marketing.historical.01",
+          "url": "https://web.archive.org/web/20241106033639im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/home-hero/dbf1_hero_desktop.jpg",
+          "alt": "Historical Level Nine seasonal hero",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "hero-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.02",
+          "url": "https://web.archive.org/web/20241106033739im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/home-hero/october24_2025_newarrivals_hero_desktop.jpg",
+          "alt": "Historical Level Nine new arrivals hero",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.03",
+          "url": "https://web.archive.org/web/20241106033651im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/home-hero/rockshox_hero_desktop.jpg",
+          "alt": "Historical Level Nine bike campaign",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.04",
+          "url": "https://web.archive.org/web/20241106033655im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/home-page/cat-home-cyber-acc.jpg",
+          "alt": "Historical Level Nine accessories category",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.05",
+          "url": "https://web.archive.org/web/20241106033640im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/home-page/cat-home-cyber-jacket.jpg",
+          "alt": "Historical Level Nine outerwear category",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.06",
+          "url": "https://web.archive.org/web/20240715125603im_/https://levelninesports.bloomreach.io/delivery/resources/content/gallery/channel-templates/level-nine/assets/home-page/home-summer-rentals-block-large.jpg",
+          "alt": "Historical Level Nine summer rentals campaign",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        }
+      ],
+      "metaAdLibraryQuery": null
+    },
+    "motosport": {
+      "requestedUrl": "https://www.motosport.com/",
+      "finalUrl": "https://www.motosport.com/",
+      "title": "Shop MotoSport - #1 for Dirt Bike, Motorcycle, ATV & UTV Parts, Gear & Accessories | MotoSport",
+      "capturedAt": "2026-07-21",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "screenshot": "research/motosport/audit-2026-07-21/01-home-desktop.png",
+      "historicalScreenshot": null,
+      "surfaceStatus": "current",
+      "observations": [
+        "MotoSport uses a dense powersports commerce shell with a large red wordmark, blue fitment action, and black category navigation.",
+        "Current campaign art is high-energy and typographic, with rider cutouts, motion photography, and embedded sale lettering.",
+        "Vehicle selection, OEM compatibility, riding discipline, and safety context must remain more prominent than generic lifestyle messaging."
+      ],
+      "logoUrl": "https://f-static.motosport.com/motographics/images/motosport.logo.svg",
+      "logoVariant": "primary-lockup",
+      "social": [],
+      "marketingImages": [
+        {
+          "id": "marketing.current.01",
+          "url": "https://f-static.motosport.com/motographics/images/home/all_storefront/2026/260707_SummerGarage/SummerGarage_hero1_desktop.jpg",
+          "alt": "Summer Garage campaign hero",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "hero-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.02",
+          "url": "https://f-static.motosport.com/motographics/images/home/all_storefront/2026/260101_homepageupdates/NewGear_27Oneal_desktop.jpg",
+          "alt": "O'Neal riding gear campaign",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.03",
+          "url": "https://f-static.motosport.com/motographics/images/home/all_storefront/2026/260101_homepageupdates/NewGear_26Fox1_desktop.jpg",
+          "alt": "Fox Racing gear campaign",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.04",
+          "url": "https://f-static.motosport.com/motographics/images/home/all_storefront/2026/260101_homepageupdates/NewGear_AStarsL_desktop.jpg",
+          "alt": "Alpinestars gear campaign",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.05",
+          "url": "https://f-static.motosport.com/motographics/images/home/all_storefront/2026/260101_homepageupdates/NewGear_TLDL_desktop.jpg",
+          "alt": "Troy Lee Designs gear campaign",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.06",
+          "url": "https://f-static.motosport.com/motographics/images/home/all_storefront/2026/260101_homepageupdates/NewGear_26RDRCO_desktop.jpg",
+          "alt": "RDRCO riding gear campaign",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        }
+      ],
+      "metaAdLibraryQuery": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Shop%20MotoSport&search_type=keyword_unordered"
+    },
+    "seattle-coffee-gear": {
+      "requestedUrl": "https://www.seattlecoffeegear.com/",
+      "finalUrl": "https://www.seattlecoffeegear.com/",
+      "title": "Espresso Machines | Coffee Beans | Reviews | Seattle Coffee Gear",
+      "capturedAt": "2026-07-21",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "screenshot": "research/seattle-coffee-gear/audit-2026-07-21/01-home-desktop.png",
+      "historicalScreenshot": null,
+      "surfaceStatus": "current",
+      "observations": [
+        "A bright white commerce shell, red identity, and product-first merchandising make the system technical but approachable.",
+        "Machine studio imagery, expert review content, and coffee education are equal parts of the current brand expression.",
+        "Marketing should connect equipment proof to a credible brewing outcome rather than luxury language alone."
+      ],
+      "logoUrl": "https://www.seattlecoffeegear.com/cdn/shop/files/SCG_LOGO_Primary_Red_Black.svg?v=1702922034&width=600",
+      "logoVariant": "primary-lockup",
+      "social": [
+        {
+          "url": "https://www.youtube.com/@SeattleCoffeeGear",
+          "label": "#1 COFFEE YOUTUBE CHANNEL 690,000+ subscribers fill their cup with our expert coffee content. View Channel"
+        },
+        {
+          "url": "https://www.tiktok.com/@seattlecoffeegear",
+          "label": "tiktok.com"
+        },
+        {
+          "url": "https://www.instagram.com/seattlecoffeegear",
+          "label": "instagram.com"
+        },
+        {
+          "url": "https://www.facebook.com/SeattleCoffeeGear",
+          "label": "facebook.com"
+        },
+        {
+          "url": "https://www.pinterest.com/seattlecoffeegear/",
+          "label": "pinterest.com"
+        },
+        {
+          "url": "https://linkedin.com/company/seattle-coffee-gear",
+          "label": "linkedin.com"
+        },
+        {
+          "url": "https://youtube.com/c/Seattlecoffeegearinfo",
+          "label": "youtube.com"
+        }
+      ],
+      "marketingImages": [
+        {
+          "id": "marketing.current.01",
+          "url": "https://www.seattlecoffeegear.com/cdn/shop/collections/70e126e8012bf1523a170ce14787d70e.png?v=1707731484&width=600",
+          "alt": "Whole Bean Coffee and Espresso",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "hero-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.02",
+          "url": "https://www.seattlecoffeegear.com/cdn/shop/files/SubsNavBlock.jpg?crop=center&height=192&v=1762890026&width=256",
+          "alt": "A selection of Tony's Coffee products on a dark gray background with portafilter and latte's.",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.03",
+          "url": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/EUREKA_MIGNON_NOTTE_ESPRESSO_GRINDERnew_d4b60e2e-02c0-447f-93c4-f3b1c97f2809.jpg?v=1726268105&width=1024",
+          "alt": "Eureka Mignon Notte Espresso Grinder - Open Box",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.04",
+          "url": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/ROCKETESPRESSOR58CINQUANTOTTOESPRESSOMACHINEnew-2.jpg?v=1711077016&width=1024",
+          "alt": "Rocket Espresso R58 Cinquantotto Espresso Machine - Open Box",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.05",
+          "url": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/rancilio_rockypid_black_2018-2_2.jpg?v=1696573549&width=1024",
+          "alt": "Rancilio Silvia PID Espresso Machine - Black - Open Box",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.06",
+          "url": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/Eureka_Mignon_Specialita_Espresso_Grindernew-3.jpg?v=1757103574&width=1024",
+          "alt": "Eureka Mignon Specialita Espresso Grinder - Polished Chrome - Open Box",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        }
+      ],
+      "metaAdLibraryQuery": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Espresso%20Machines&search_type=keyword_unordered"
+    },
+    "steep-and-cheap": {
+      "requestedUrl": "https://www.steepandcheap.com/",
+      "finalUrl": "https://www.steepandcheap.com/",
+      "title": "Steep & Cheap - Outdoor Clothing & Gear",
+      "capturedAt": "2026-07-21",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "screenshot": "research/steep-and-cheap/audit-2026-07-21/01-home-desktop.png",
+      "historicalScreenshot": null,
+      "surfaceStatus": "current",
+      "observations": [
+        "The current brand is explicitly powered by Backcountry but maintains its own narrow wordmark and green deal signal.",
+        "Campaign imagery is playful, collage-like, youthful, and offer-forward, with orange bands and irregular white photo frames.",
+        "Discount messaging is central, but products and activities must remain identifiable and the offer must remain a removable runtime layer."
+      ],
+      "logoUrl": "https://content.steepandcheap.com/images/brand/steepcheap_logo.png",
+      "logoVariant": "primary-lockup",
+      "social": [
+        {
+          "url": "https://www.facebook.com/SteepAndCheap",
+          "label": "Like us on Facebook"
+        },
+        {
+          "url": "https://www.instagram.com/steepcheap",
+          "label": "Follow us on Instagram"
+        }
+      ],
+      "marketingImages": [
+        {
+          "id": "marketing.current.01",
+          "url": "https://content.steepandcheap.com/v3/assets/blt09fffca19cc7d396/6a44445fbf037c4a28fa6b25/SC26_0032_BB_SB_Men_s_Activewear.jpg?width=450",
+          "alt": "Up to 60% off men’s activewear.",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "hero-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.02",
+          "url": "https://content.steepandcheap.com/v3/assets/bltd54be8f20527ca28/6a44445d4946d34e9923befd/SC26_0032_BB_Women_s_activewear.jpg?width=450",
+          "alt": "Up to 60% off women’s activewear.",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.03",
+          "url": "https://content.steepandcheap.com/v3/assets/bltbb3c306f51fce475/6a44445fcbeedd0321d752a0/SC26_0032_BB_Hike_Shoes.jpg?width=450",
+          "alt": "Up to 60% off Bike apparel.",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.04",
+          "url": "https://content.steepandcheap.com/v3/assets/blt76c387eec282a46c/69cdb5f6267d5e666679f20c/BB_Ski_Clearance_SC26_0020.jpg?width=450",
+          "alt": "Up to 75% off winter clearance",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.05",
+          "url": "https://content.steepandcheap.com/v3/assets/blt38d70372f6112c22/6a44445f27fb02b18e29ecf6/SC26_0044_BS_Columbia.jpg?width=450",
+          "alt": "Shop Columbia up to 60% off",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.06",
+          "url": "https://content.steepandcheap.com/v3/assets/blt6444a70de9f979d5/6a444474a8ab286a16014ad9/SC26_0044_BS_Pat.jpg?width=450",
+          "alt": "Shop Patagonia up to 50% off",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        }
+      ],
+      "metaAdLibraryQuery": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Steep%20%26%20Cheap&search_type=keyword_unordered"
+    },
+    "sur-la-table": {
+      "requestedUrl": "https://www.surlatable.com/",
+      "finalUrl": "https://www.surlatable.com/",
+      "title": "Sur La table | Cookware, Dinnerware, Cutlery & Bakeware",
+      "capturedAt": "2026-07-21",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "screenshot": "research/sur-la-table/audit-2026-07-21/01-home-desktop.png",
+      "historicalScreenshot": null,
+      "surfaceStatus": "current",
+      "observations": [
+        "The current homepage combines a handwritten identity with editorial serif headlines and restrained sans-serif commerce labels.",
+        "Chef-led storytelling, colorful kitchen environments, classes, and product merchandising form one connected brand world.",
+        "Warm culinary photography and ingredient color should lead; sales UI remains clean, white, and secondary."
+      ],
+      "logoUrl": "https://www.surlatable.com/on/demandware.static/Sites-SLT-Site/-/default/dwb56ef7dd/images/SLT_Logo.png",
+      "logoVariant": "primary-lockup",
+      "social": [
+        {
+          "url": "https://www.facebook.com/SurLaTable",
+          "label": "facebook.com"
+        },
+        {
+          "url": "https://www.instagram.com/surlatable",
+          "label": "instagram.com"
+        },
+        {
+          "url": "https://www.pinterest.com/surlatable",
+          "label": "pinterest.com"
+        }
+      ],
+      "marketingImages": [
+        {
+          "id": "marketing.current.01",
+          "url": "https://images.getfastr.com/2b/af/2e2660e34730a91ea3228e608f4c.png?im=UnsharpMask;Resize,width=2560",
+          "alt": "rectangle",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "hero-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.02",
+          "url": "https://images.getfastr.com/1c/83/19f211084e13809bcf3315a9b381.jpg?im=UnsharpMask;Resize,width=2560",
+          "alt": "rectangle",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.03",
+          "url": "https://images.getfastr.com/ba/ff/ab99b77d4d66a1fd009e38322c76.jpg?im=UnsharpMask;Resize,width=2560",
+          "alt": "rectangle",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.04",
+          "url": "https://images.getfastr.com/64/78/966293c94adc9fa732757da2f01e.png?im=UnsharpMask;Resize,width=2560",
+          "alt": "rectangle",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.05",
+          "url": "https://images.getfastr.com/4d/e0/1df82e504e54877fcdd3e6513372.png?im=UnsharpMask;Resize,width=2560",
+          "alt": "rectangle",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.current.06",
+          "url": "https://images.getfastr.com/47/9f/21e1016e4debace33d26c1638959.png?im=UnsharpMask;Resize,width=2560",
+          "alt": "rectangle",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        }
+      ],
+      "metaAdLibraryQuery": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Sur%20La%20table&search_type=keyword_unordered"
+    },
+    "western-bikeworks": {
+      "requestedUrl": "https://www.westernbikeworks.com/",
+      "finalUrl": "https://www.biketiresdirect.com/?rdb=wbw&",
+      "title": "BikeTiresDirect - Great prices on bicycle tires, components, apparel",
+      "capturedAt": "2026-07-21",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "screenshot": "research/western-bikeworks/audit-2026-07-21/01-home-desktop.png",
+      "historicalScreenshot": "research/western-bikeworks/audit-2026-07-21/02-historical-home-desktop.png",
+      "surfaceStatus": "redirect-successor",
+      "observations": [
+        "The Western Bikeworks domain currently redirects to BikeTiresDirect and displays a migration notice.",
+        "The migration notice is current operational evidence, not Western Bikeworks visual identity material.",
+        "Preserve the standalone Western Bikeworks system as historical reference only and never imply active independent operations."
+      ],
+      "logoUrl": "https://web.archive.org/web/20250814005626im_/https://www.westernbikeworks.com/images/wbw-logo-white.svg",
+      "logoVariant": "primary-lockup",
+      "social": [
+        {
+          "url": "https://www.youtube.com/westernbikeworks",
+          "label": "Historical first-party YouTube link"
+        },
+        {
+          "url": "https://www.instagram.com/westernbikeworks",
+          "label": "Historical first-party Instagram link"
+        },
+        {
+          "url": "https://www.facebook.com/pages/Western-Bikeworks/157762564281790",
+          "label": "Historical first-party Facebook link"
+        }
+      ],
+      "marketingImages": [
+        {
+          "id": "marketing.historical.01",
+          "url": "https://web.archive.org/web/20250814005626im_/https://www.westernbikeworks.com/promoimages/Image50871.jpg",
+          "alt": "Historical Western Bikeworks bicycle sale banner",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "hero-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.02",
+          "url": "https://web.archive.org/web/20250814005626im_/https://www.westernbikeworks.com/promoimages/Image50870.jpg",
+          "alt": "Historical Western Bikeworks mountain-bike tire campaign",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.03",
+          "url": "https://web.archive.org/web/20250814005626im_/https://www.westernbikeworks.com/promoimages/Image50872.jpg",
+          "alt": "Historical Western Bikeworks apparel promotion",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.04",
+          "url": "https://web.archive.org/web/20250814005626im_/https://www.westernbikeworks.com/promoimages/image50873.jpg",
+          "alt": "Historical Western Bikeworks wheel systems campaign",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.05",
+          "url": "https://web.archive.org/web/20250814005626im_/https://www.westernbikeworks.com/promoimages/image50874.jpg",
+          "alt": "Historical Western Bikeworks electronics campaign",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        }
+      ],
+      "metaAdLibraryQuery": null
+    },
+    "trisports": {
+      "requestedUrl": "https://www.trisports.com/",
+      "finalUrl": "https://www.competitivecyclist.com/rc/shop-all-triathlon",
+      "title": "Shop All Triathlon Bikes & Apparel | Competitive Cyclist",
+      "capturedAt": "2026-07-21",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "screenshot": "research/trisports/audit-2026-07-21/01-home-desktop.png",
+      "historicalScreenshot": "research/trisports/audit-2026-07-21/02-historical-home-desktop.png",
+      "surfaceStatus": "redirect-successor",
+      "observations": [
+        "The TriSports domain currently redirects to a Competitive Cyclist triathlon collection.",
+        "The successor collection confirms triathlon category continuity but does not establish current TriSports identity rules.",
+        "Preserve the standalone TriSports system as historical reference only and never imply active independent operations."
+      ],
+      "logoUrl": "https://web.archive.org/web/20260521164505im_/https://static.trisports.com/images/trisports_logo_flat.svg",
+      "logoVariant": "primary-lockup",
+      "social": [
+        {
+          "url": "https://www.instagram.com/trisportscom",
+          "label": "Historical first-party Instagram link"
+        },
+        {
+          "url": "https://www.facebook.com/trisports",
+          "label": "Historical first-party Facebook link"
+        }
+      ],
+      "marketingImages": [
+        {
+          "id": "marketing.historical.01",
+          "url": "https://web.archive.org/web/20260220074004im_/https://www.trisports.com/promoimages/Image52944.jpg",
+          "alt": "Historical mid-month cycling markdown campaign",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "hero-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.02",
+          "url": "https://web.archive.org/web/20260217134140im_/https://www.trisports.com/promoimages/Image52956.jpg",
+          "alt": "Historical 3D and adaptive saddle feature",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.03",
+          "url": "https://web.archive.org/web/20260220074004im_/https://www.trisports.com/promoimages/Image52960.jpg",
+          "alt": "Historical bicycle maintenance tools feature",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.04",
+          "url": "https://web.archive.org/web/20260223101442im_/https://www.trisports.com/promoimages/Image52981.jpg",
+          "alt": "Historical Sidi cycling shoe launch",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.05",
+          "url": "https://web.archive.org/web/20260202171003im_/https://www.trisports.com/promoimages/Image52817.jpg",
+          "alt": "Historical Schwalbe premium tire sale",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        },
+        {
+          "id": "marketing.historical.06",
+          "url": "https://web.archive.org/web/20260202171002im_/https://www.trisports.com/promoimages/Image52824.jpg",
+          "alt": "Historical Castelli cycling apparel sale",
+          "roles": [
+            "marketing-reference",
+            "image-direction",
+            "campaign-reference"
+          ]
+        }
+      ],
+      "metaAdLibraryQuery": null
+    }
+  }
+}

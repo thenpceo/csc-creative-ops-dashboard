@@ -1,0 +1,269 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/rules.schema.json",
+  "schemaVersion": "1.0.0",
+  "rules": [
+    {
+      "id": "logo.official-artwork-only",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use only verified official identity artwork. Preserve proportions and internal spacing. Never redraw, synthesize, distort, outline, bevel, shadow, pattern-fill, or deform the mark.",
+      "sourceIds": [
+        "asset.logo.primary"
+      ]
+    },
+    {
+      "id": "logo.authorization",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Publicly observable identity artwork is reference evidence. Production use requires brand authorization and an approved source file.",
+      "sourceIds": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "color.primary-role",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use #5A0D0D as the primary brand or action anchor in the role documented here. Seasonal imagery does not redefine the durable palette.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "color.support-restraint",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use #E49E0A and #0E6897 as bounded supporting signals. Keep one dominant action color in a decision area.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "typography.role-separation",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Marcellus provides the established craft voice. Mulish handles explanatory text and forms; Montserrat may appear in compact uppercase labels and buttons.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "typography.readability",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Do not use spaced uppercase or display styling for paragraphs, specifications, instructions, prices, or form content. Preserve readable size, line length, contrast, and hold time.",
+      "sourceIds": []
+    },
+    {
+      "id": "shape.character",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Structural bands and image frames can remain square; consultation buttons use the observed pill treatment. Avoid applying pills to every navigation item or card.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "layout.character",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use wide architectural hero imagery, centered proof points, and service cards that move from residential inspiration to consultation. Give photography breathing room and keep phone/showroom actions persistent but unobtrusive.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "depth.character",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use image overlays and light gray section changes. Service cards may have a restrained shadow or border, but the system should feel constructed and material rather than floaty.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "action.one-primary",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use no more than one visually dominant action in a decision area. Secondary actions remain visibly subordinate and unambiguous.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "action.concrete-copy",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use short, concrete actions connected to project scope, room needs, materials, finish, storage, budget range, service area, and consultation. Avoid generic prestige or engagement language.",
+      "sourceIds": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "voice.core",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Calm craft expertise. Explain scope, material, process, and next steps in plain language.",
+      "sourceIds": [
+        "source.site.home",
+        "source.site.evidence"
+      ]
+    },
+    {
+      "id": "voice.specificity",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Prefer specific language about project scope, room needs, materials, finish, storage, budget range, service area, and consultation. Explain why the product, service, or story matters.",
+      "sourceIds": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "claims.runtime-truth",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Prices, offers, inventory, dates, delivery, eligibility, availability, ratings, popularity, results, and urgency are runtime facts with an authoritative source and expiration.",
+      "sourceIds": []
+    },
+    {
+      "id": "product.truth",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Represent residential design, cabinetry, millwork, hardware, and installation services using current authorized data. Preserve countable features, dimensions, materials, finish, compatibility, condition, and safety context.",
+      "sourceIds": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "rights.record",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Every external asset record includes source, capture date, rights status, allowed uses, model-upload permission, redistribution permission, and required review.",
+      "sourceIds": []
+    },
+    {
+      "id": "people.permission",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "imagery",
+        "motion",
+        "marketing"
+      ],
+      "statement": "Require likeness, creator, location, and music permissions appropriate to the intended media, channels, term, geography, and edit scope.",
+      "sourceIds": []
+    },
+    {
+      "id": "accessibility.contrast",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Provide readable contrast for text, controls, captions, and information graphics. Do not place critical copy over uncontrolled image detail.",
+      "sourceIds": []
+    },
+    {
+      "id": "accessibility.non-color",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Do not rely on color alone for selection, errors, discounts, fitment, inventory, progress, or status.",
+      "sourceIds": []
+    },
+    {
+      "id": "accessibility.motion",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "interactive",
+        "motion"
+      ],
+      "statement": "Provide reduced-motion behavior and remove nonessential parallax, auto-travel, flashes, and looping while preserving message and hierarchy.",
+      "sourceIds": []
+    },
+    {
+      "id": "history.scope",
+      "authority": "permitted",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Historical references may explain durable visual behavior but cannot establish current offers, operations, inventory, or campaign direction.",
+      "sourceIds": [
+        "source.site.evidence"
+      ]
+    }
+  ]
+}

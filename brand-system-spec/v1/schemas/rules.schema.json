@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cscgeneration.local/brand-system/v1/rules.schema.json",
+  "title": "Brand rules",
+  "type": "object",
+  "required": ["schemaVersion", "rules"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string" },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "authority", "lifecycle", "confidence", "appliesTo", "statement", "sourceIds"],
+        "properties": {
+          "id": { "type": "string" },
+          "authority": { "enum": ["required", "preferred", "permitted", "prohibited", "reference-only"] },
+          "lifecycle": { "enum": ["active", "experimental", "deprecated"] },
+          "confidence": { "enum": ["verified", "inferred", "unknown"] },
+          "appliesTo": { "type": "array", "items": { "type": "string" } },
+          "statement": { "type": "string" },
+          "sourceIds": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

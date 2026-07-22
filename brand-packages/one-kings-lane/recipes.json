@@ -1,0 +1,127 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/recipes.schema.json",
+  "schemaVersion": "1.0.0",
+  "recipes": [
+    {
+      "id": "composition.editorial-hero",
+      "authority": "preferred",
+      "appliesTo": ["interactive", "static", "motion"],
+      "inputs": ["campaignOrStory", "editorialImage", "headline", "supportingCopy", "primaryAction"],
+      "composition": {
+        "structure": ["wide immersive room image", "one restrained copy group", "one primary action"],
+        "alignment": "Place copy in natural negative space or on an adjacent solid field.",
+        "density": "low",
+        "responsive": "Preserve the room's focal point; move copy below the image when contrast or cropping becomes unreliable."
+      },
+      "ruleRefs": ["identity.editorial-commerce-balance", "layout.room-first-storytelling", "accessibility.semantic-text", "accessibility.contrast"]
+    },
+    {
+      "id": "composition.category-landing",
+      "authority": "preferred",
+      "appliesTo": ["interactive", "static"],
+      "inputs": ["categoryTitle", "categoryImages", "categoryLabels"],
+      "composition": {
+        "structure": ["uppercase tracked heading", "even image grid", "short category labels"],
+        "imageTreatment": "Consistent crop family with restrained neutral spacing.",
+        "density": "medium"
+      },
+      "ruleRefs": ["type.uppercase-with-purpose", "layout.generous-whitespace", "shape.square-by-default"]
+    },
+    {
+      "id": "composition.collection-grid",
+      "authority": "required",
+      "appliesTo": ["interactive", "commerce"],
+      "inputs": ["collectionTitle", "filters", "sort", "products"],
+      "composition": {
+        "structure": ["breadcrumb", "collection heading", "utility row", "repeatable product grid"],
+        "productImage": "Square, consistent scale, pale-neutral ground.",
+        "metadataOrder": ["badge", "brand or availability", "product name", "price", "comparison price if present"]
+      },
+      "ruleRefs": ["imagery.product-cutout", "color.red-is-transactional", "claims.runtime-truth"]
+    },
+    {
+      "id": "component.product-card",
+      "authority": "required",
+      "appliesTo": ["interactive", "commerce", "static"],
+      "inputs": ["verifiedProductImage", "productName", "price", "availability", "badges"],
+      "composition": {
+        "structure": ["square image", "optional top badge", "left-aligned metadata"],
+        "corners": "square",
+        "emphasis": "Image first, name second, price third; sale price may use sale red."
+      },
+      "ruleRefs": ["imagery.product-truth", "imagery.product-cutout", "shape.square-by-default", "claims.runtime-truth"]
+    },
+    {
+      "id": "composition.product-detail",
+      "authority": "required",
+      "appliesTo": ["interactive", "commerce"],
+      "inputs": ["verifiedProductGallery", "productName", "price", "variants", "availability", "shipping", "description", "primaryAction"],
+      "composition": {
+        "desktop": "Large gallery beside a narrower decision column.",
+        "mobile": "Gallery, identity, price, options, and action in decision order.",
+        "primaryAction": "Full-width heritage-green rectangular control.",
+        "support": "Specifications and delivery detail follow the decision block."
+      },
+      "ruleRefs": ["action.primary-button", "imagery.product-truth", "claims.runtime-truth", "accessibility.interaction"]
+    },
+    {
+      "id": "composition.editorial-split",
+      "authority": "preferred",
+      "appliesTo": ["interactive", "static", "motion"],
+      "inputs": ["editorialImage", "eyebrow", "headline", "body", "action"],
+      "composition": {
+        "structure": ["image half", "solid heritage field half"],
+        "copy": "Editorial serif headline over inverse text with a compact interface action.",
+        "responsive": "Stack image above copy; retain generous internal padding."
+      },
+      "ruleRefs": ["color.heritage-green-anchor", "type.editorial-for-stories", "action.secondary-link", "layout.generous-whitespace"]
+    },
+    {
+      "id": "composition.promotion-banner",
+      "authority": "permitted",
+      "appliesTo": ["interactive", "static", "motion"],
+      "inputs": ["currentOffer", "eligibility", "deadline", "action", "optionalCampaignArt"],
+      "composition": {
+        "structure": ["short offer line", "required qualifier", "single action"],
+        "style": "Use a campaign color only when supplied; otherwise use heritage green or a calm neutral.",
+        "dataPolicy": "Never infer or preserve an expired offer."
+      },
+      "ruleRefs": ["claims.runtime-truth", "campaign.separate-from-core", "color.red-is-transactional", "accessibility.semantic-text"]
+    },
+    {
+      "id": "composition.title-card",
+      "authority": "preferred",
+      "appliesTo": ["static", "motion", "sequential"],
+      "inputs": ["eyebrow", "title", "optionalSubtitle", "optionalImage"],
+      "composition": {
+        "structure": ["small interface eyebrow", "editorial serif title", "optional restrained support"],
+        "background": "White, warm neutral, heritage green, or quiet room image with protected contrast.",
+        "alignment": "Left aligned by default; centered only for formal end frames."
+      },
+      "ruleRefs": ["type.editorial-for-stories", "type.uppercase-with-purpose", "accessibility.contrast"]
+    },
+    {
+      "id": "composition.brand-end-frame",
+      "authority": "required",
+      "appliesTo": ["static", "motion", "generative-video", "sequential"],
+      "inputs": ["officialLogo", "shortInvitation", "optionalAction"],
+      "composition": {
+        "structure": ["official logo", "one short invitation", "optional action"],
+        "background": "Uncluttered heritage green, white, or quiet neutral.",
+        "duration": "For time-based media, hold long enough to read without rush."
+      },
+      "ruleRefs": ["logo.official-artwork-only", "logo.clear-space", "voice.warm-expertise"]
+    },
+    {
+      "id": "composition.room-to-detail-story",
+      "authority": "preferred",
+      "appliesTo": ["motion", "generative-video", "sequential"],
+      "inputs": ["roomContext", "heroProduct", "materialDetails", "brandInvitation"],
+      "composition": {
+        "sequence": ["establish the room", "reveal a designed vignette", "show material or craft detail", "return to the product in context", "resolve with invitation"],
+        "rhythm": "Measured and observational, with one idea per beat."
+      },
+      "ruleRefs": ["layout.room-first-storytelling", "imagery.material-specificity", "imagery.product-truth", "identity.editorial-commerce-balance"]
+    }
+  ]
+}

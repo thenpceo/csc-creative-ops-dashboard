@@ -1,0 +1,27 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/evaluation.schema.json",
+  "schemaVersion": "1.0.0",
+  "gates": [
+    { "id": "gate.official-logo", "pass": "Every depicted logo uses authorized supplied artwork without distortion or synthesis.", "onFail": "reject" },
+    { "id": "gate.product-truth", "pass": "Real products match verified catalog geometry, color, material, and current facts.", "onFail": "reject" },
+    { "id": "gate.rights", "pass": "Every used asset and model input is permitted by its rights record.", "onFail": "reject" },
+    { "id": "gate.offer-truth", "pass": "Prices, discounts, dates, inventory, and delivery claims are current and sourced.", "onFail": "reject" },
+    { "id": "gate.readability", "pass": "Essential content is legible, contrast-safe, and available outside baked image text.", "onFail": "reject" },
+    { "id": "gate.accessibility", "pass": "The output meets the accessibility requirements applicable to its medium.", "onFail": "human-review" }
+  ],
+  "dimensions": [
+    { "id": "visual-identity", "weight": 0.2, "question": "Does the work clearly belong to One Kings Lane without relying on a logo alone?" },
+    { "id": "imagery", "weight": 0.2, "question": "Are rooms, products, materials, lighting, and crops consistent with the brand's collected and livable visual world?" },
+    { "id": "editorial-commerce-balance", "weight": 0.15, "question": "Does inspiration lead naturally to a clear product, service, or next action?" },
+    { "id": "typography", "weight": 0.15, "question": "Are editorial, interface, and reading roles separated and used with the correct hierarchy?" },
+    { "id": "composition", "weight": 0.12, "question": "Is the layout spacious, square-edged, ordered, and focused on one primary idea?" },
+    { "id": "voice", "weight": 0.08, "question": "Is the language warm, specific, expert, and respectful of personal style?" },
+    { "id": "accessibility", "weight": 0.1, "question": "Can the intended audience perceive, understand, and operate the result in its delivery context?" }
+  ],
+  "decisionPolicy": {
+    "approved": { "minimumWeightedScore": 0.85, "condition": "All reject gates pass." },
+    "humanReview": { "minimumWeightedScore": 0.7, "maximumWeightedScoreExclusive": 0.85, "condition": "No reject gate fails." },
+    "rejected": { "maximumWeightedScoreExclusive": 0.7, "condition": "Any reject gate failure also rejects regardless of score." },
+    "scoring": "Score each dimension from 0 to 1, multiply by weight, and sum. Record evidence and uncertainty, not just a number."
+  }
+}

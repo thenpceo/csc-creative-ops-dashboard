@@ -1,0 +1,12 @@
+{
+  "name": "one-kings-lane-fal-adapter",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@fal-ai/client": "^1.6.2"
+  },
+  "scripts": {
+    "generate": "node generate-one-kings-lane.mjs"
+  }
+}
+

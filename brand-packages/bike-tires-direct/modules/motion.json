@@ -1,0 +1,197 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "bike-tires-direct.motion",
+  "capability": "motion",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "pacing": "compact deal and comparison pacing, quick product rotations, specification callouts, and clear holds",
+      "durationsMs": {
+        "micro": 160,
+        "short": 240,
+        "standard": 360,
+        "feature": 600
+      }
+    },
+    "rules": [
+      {
+        "id": "motion.character",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "motion"
+        ],
+        "statement": "Use compact deal and comparison pacing, quick product rotations, specification callouts, and clear holds.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "motion.one-idea-per-beat",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "motion"
+        ],
+        "statement": "Each beat has one readable movement idea and enough hold time for its message and proof.",
+        "sourceIds": []
+      },
+      {
+        "id": "motion.identity-controlled",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "motion"
+        ],
+        "statement": "Composite identity and essential typography as controlled crisp layers. Never generate, morph, stretch, or simulate the logo.",
+        "sourceIds": [
+          "asset.logo.primary"
+        ]
+      },
+      {
+        "id": "motion.product-continuity",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "motion"
+        ],
+        "statement": "Lock product geometry, material, count, scale, fit, condition, and left-right orientation across every beat.",
+        "sourceIds": []
+      },
+      {
+        "id": "motion.noise-restraint",
+        "authority": "prohibited",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "motion"
+        ],
+        "statement": "Avoid gratuitous bounce, glitch, strobe, liquid type, rubbery products, spinning logos, and transitions that obscure decisions.",
+        "sourceIds": []
+      }
+    ],
+    "recipes": [
+      {
+        "id": "motion.product-reveal",
+        "authority": "preferred",
+        "appliesTo": [
+          "motion"
+        ],
+        "inputs": [
+          "verifiedProduct",
+          "environmentOrStudio",
+          "oneProof",
+          "action"
+        ],
+        "structure": [
+          "establish",
+          "reveal",
+          "proof",
+          "resolve"
+        ],
+        "ruleRefs": [
+          "motion.character",
+          "motion.product-continuity"
+        ]
+      },
+      {
+        "id": "motion.expert-explainer",
+        "authority": "preferred",
+        "appliesTo": [
+          "motion",
+          "marketing"
+        ],
+        "inputs": [
+          "approvedExpert",
+          "question",
+          "threeOrFewerPoints",
+          "captions",
+          "action"
+        ],
+        "structure": [
+          "question",
+          "context",
+          "proof points",
+          "next step"
+        ],
+        "ruleRefs": [
+          "people.permission",
+          "motion.one-idea-per-beat"
+        ]
+      },
+      {
+        "id": "motion.title-system",
+        "authority": "preferred",
+        "appliesTo": [
+          "motion"
+        ],
+        "inputs": [
+          "title",
+          "kicker",
+          "approvedMedia"
+        ],
+        "structure": [
+          "media settles",
+          "kicker",
+          "title",
+          "hold"
+        ],
+        "ruleRefs": [
+          "typography.role-separation",
+          "motion.identity-controlled"
+        ]
+      },
+      {
+        "id": "motion.end-frame",
+        "authority": "preferred",
+        "appliesTo": [
+          "motion",
+          "marketing"
+        ],
+        "inputs": [
+          "officialIdentity",
+          "action",
+          "destination"
+        ],
+        "structure": [
+          "visual settles",
+          "identity appears",
+          "action holds"
+        ],
+        "ruleRefs": [
+          "logo.official-artwork-only",
+          "motion.identity-controlled"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "motion.readable",
+        "question": "Can every message, proof point, and action be read at intended speed and size?"
+      },
+      {
+        "id": "motion.character",
+        "question": "Does movement express this brand rather than a generic preset?"
+      },
+      {
+        "id": "motion.reduce",
+        "question": "Does reduced motion preserve meaning and hierarchy?"
+      }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "source.audit.home.desktop",
+      "source.site.home",
+      "marketing.current.01",
+      "marketing.current.02",
+      "marketing.current.03",
+      "marketing.current.04"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cscgeneration.local/brand-system/v1/tokens.schema.json",
+  "title": "Semantic design tokens",
+  "type": "object",
+  "required": ["schemaVersion", "color", "typography", "space", "size", "shape", "border", "layout"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string" },
+    "color": { "type": "object" },
+    "typography": { "type": "object" },
+    "space": { "type": "object" },
+    "size": { "type": "object" },
+    "shape": { "type": "object" },
+    "border": { "type": "object" },
+    "layout": { "type": "object" }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "one-kings-lane.static",
+  "capability": "static",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "formats": { "square": "1:1", "portrait": "4:5", "story": "9:16", "landscape": "1.91:1", "printCard": "3.5:2" },
+      "safeArea": { "digitalPercent": 6, "printTrimInches": 0.125, "printSafeInches": 0.1875 }
+    },
+    "rules": [
+      { "id": "static.one-idea", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["static"], "statement": "Each asset communicates one primary visual idea, one message hierarchy, and no more than one primary action.", "sourceIds": ["source.audit.home.desktop"] },
+      { "id": "static.editorial-not-catalog-collage", "authority": "preferred", "lifecycle": "active", "confidence": "verified", "appliesTo": ["static"], "statement": "Use a single strong room or product composition rather than a crowded product collage unless the format is explicitly a shoppable assortment.", "sourceIds": ["asset.hero.summer-escape", "asset.editorial.new-arrivals"] },
+      { "id": "static.print-production-external", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["static"], "statement": "Treat bleed, trim, color profile, stock, finishing, legal copy, and output resolution as job inputs validated by the production destination.", "sourceIds": [] },
+      { "id": "static.logo-restraint", "authority": "preferred", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["static"], "statement": "Use one official logo instance at a deliberate scale; avoid watermark repetition or oversized logo-as-decoration treatments.", "sourceIds": ["asset.logo.primary"] }
+    ],
+    "recipes": [
+      { "id": "static.editorial-ad", "authority": "preferred", "appliesTo": ["static"], "inputs": ["approvedImage", "headline", "optionalBody", "action", "officialLogo"], "composition": { "layers": ["room-led image", "protected copy group", "small official logo", "single action"], "copyLimit": "One headline, up to two short support lines, one action.", "adaptation": "Recompose at each aspect ratio; do not merely center-crop." }, "ruleRefs": ["composition.editorial-hero", "static.one-idea", "accessibility.contrast"] },
+      { "id": "static.product-feature", "authority": "preferred", "appliesTo": ["static", "commerce"], "inputs": ["verifiedProductImage", "productName", "specificFeature", "currentPriceOrAction", "officialLogo"], "composition": { "layers": ["large product or context image", "specific feature statement", "compact commerce detail", "logo"], "background": "White, light neutral, or quiet room context." }, "ruleRefs": ["imagery.product-truth", "claims.runtime-truth", "static.one-idea"] },
+      { "id": "static.business-card", "authority": "permitted", "appliesTo": ["static"], "inputs": ["officialLogo", "personName", "role", "verifiedContactDetails", "productionSpecs"], "composition": { "front": "Centered official logo on white or heritage green.", "back": "Left-aligned name and contact block with generous margins.", "type": "Interface sans for identity and details; editorial serif is optional only for a short brand line.", "shape": "Square printed corners unless the job specification requires otherwise." }, "ruleRefs": ["logo.official-artwork-only", "color.heritage-green-anchor", "shape.square-by-default"] },
+      { "id": "static.shoppable-assortment", "authority": "permitted", "appliesTo": ["static", "commerce"], "inputs": ["verifiedProducts", "collectionTitle", "currentOfferOrAction"], "composition": { "grid": "Two to four products with matched scale and ample separation.", "hierarchy": ["collection title", "product imagery", "short labels", "offer or action"], "constraint": "Do not imply a set or scale relationship unless sourced." }, "ruleRefs": ["imagery.product-cutout", "imagery.product-truth", "claims.runtime-truth"] }
+    ],
+    "evaluation": [
+      { "id": "static.glance", "question": "Is the main idea clear in under two seconds at intended viewing size?" },
+      { "id": "static.recompose", "question": "Was each aspect ratio intentionally recomposed with protected text and focal areas?" },
+      { "id": "static.production", "question": "Are destination-specific resolution, bleed, legal, and export requirements supplied and verified?" }
+    ],
+    "mediaSelectors": ["asset.logo.primary", "asset.logo.compact", "asset.hero.summer-escape", "asset.editorial.new-arrivals", "asset.editorial.made-in-usa", "asset.product.austin-lifestyle"]
+  }
+}

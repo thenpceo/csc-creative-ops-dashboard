@@ -1,0 +1,93 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/brand.schema.json",
+  "schemaVersion": "1.0.0",
+  "packageVersion": "1.0.0",
+  "brand": {
+    "id": "backcountry",
+    "name": "Backcountry",
+    "description": "Editorial outdoor commerce with expert credibility and cinematic expedition imagery.",
+    "proposition": "Expert-selected gear, owned-brand equipment, and human Gearhead guidance for people who actively spend time outdoors.",
+    "audiences": [
+      "Committed outdoor participants",
+      "Newer customers who need expert gear guidance",
+      "Multi-activity households",
+      "Customers shopping technical apparel and equipment"
+    ],
+    "traits": [
+      "capable",
+      "expert",
+      "adventurous",
+      "direct",
+      "field-tested",
+      "welcoming"
+    ],
+    "signature": "Gearhead expertise",
+    "voiceSummary": "Practical outdoor expertise with firsthand specificity. Confident and encouraging, never macho or vague."
+  },
+  "files": {
+    "tokens": "tokens.json",
+    "rules": "rules.json",
+    "recipes": "recipes.json",
+    "media": "media.json",
+    "evaluation": "evaluation.json",
+    "humanGuide": "DESIGN.md"
+  },
+  "modules": [
+    {
+      "capability": "interactive",
+      "path": "modules/interactive.json"
+    },
+    {
+      "capability": "static",
+      "path": "modules/static.json"
+    },
+    {
+      "capability": "imagery",
+      "path": "modules/imagery.json"
+    },
+    {
+      "capability": "commerce",
+      "path": "modules/commerce.json"
+    },
+    {
+      "capability": "marketing",
+      "path": "modules/marketing.json"
+    },
+    {
+      "capability": "motion",
+      "path": "modules/motion.json"
+    },
+    {
+      "capability": "generative-image",
+      "path": "modules/generative-image.json"
+    },
+    {
+      "capability": "generative-video",
+      "path": "modules/generative-video.json"
+    },
+    {
+      "capability": "spatial",
+      "path": "modules/spatial.json"
+    },
+    {
+      "capability": "sequential",
+      "path": "modules/sequential.json"
+    }
+  ],
+  "provenance": {
+    "researchedAt": "2026-07-21",
+    "method": "First-party live or archived surface review, computed-style sampling, visible component inspection, and official or public asset capture.",
+    "evidenceStatus": "mixed",
+    "verifiedSurfaces": [
+      "current-homepage",
+      "first-party-linked-social-profiles"
+    ],
+    "sourceAudit": "../../research/portfolio-live-evidence.json",
+    "historicalStandaloneIdentity": false,
+    "notes": [
+      "Live site returned human verification in automated capture; tokens come from the latest available first-party homepage snapshot and its embedded Chakra theme.",
+      "Current offers, inventory, prices, availability, service scope, and campaign copy are runtime data.",
+      "The package is output-neutral; provider and renderer adapters belong outside it."
+    ]
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/media.schema.json",
+  "schemaVersion": "1.0.0",
+  "rightsPolicy": {
+    "default": "unverified-public-reference",
+    "productionUse": "Requires independent rights confirmation and brand authorization.",
+    "modelUpload": "Prohibited unless an authorized reviewer upgrades the asset record."
+  },
+  "items": [
+    {
+      "id": "asset.logo.primary",
+      "uri": "media/official/logo-primary.png",
+      "kind": "image",
+      "roles": [
+        "logo",
+        "primary-identity",
+        "brand-end-frame"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "17d436e3cec312b559a4d23332a3cb0fae617d260ca56b52f14731bba6651cfa",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.competitivecyclist.com/images/brand/competitivecyclist_logo.png",
+        "capturedAt": "2026-07-21",
+        "contentType": "image/png"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference",
+          "authorized-brand-work"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.site.home",
+      "uri": "https://www.competitivecyclist.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "current-or-canonical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.competitivecyclist.com/",
+        "reviewedAt": "2026-07-21",
+        "finalUrl": "https://www.competitivecyclist.com/",
+        "surfaceStatus": "current"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.site.evidence",
+      "uri": "https://web.archive.org/web/20250815055409/https://www.competitivecyclist.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "archived-first-party-page",
+        "url": "https://web.archive.org/web/20250815055409/https://www.competitivecyclist.com/",
+        "reviewedAt": "2026-07-21",
+        "note": "Live site returned human verification; values are taken from the first-party archived homepage Chakra theme."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.home.desktop",
+      "uri": "media/official/homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "desktop-audit",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "active",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "cb51d257114b81c6a0cbcbe64298ef9a25f5a273a1d2b65d02e52aaffcc3914b",
+      "source": {
+        "type": "live-capture",
+        "page": "https://www.competitivecyclist.com/",
+        "requestedPage": "https://www.competitivecyclist.com/",
+        "capturedAt": "2026-07-21",
+        "surfaceStatus": "current",
+        "note": "Rendered public homepage capture."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "marketing.current.01",
+      "uri": "media/marketing-reference/current-01-road-biking.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "hero-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "d6213dac63d534fa3a36c56b0be3c998fad6f4e32fb7168808b77b85ee93c016",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.competitivecyclist.com/v3/assets/bltbb35d31e421ab4ba/69bb2c353a4db29a16cabb82/CC_Shop_by_Pursuit_-_Road_Biking.jpg?width=450",
+        "page": "https://www.competitivecyclist.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Road Biking",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.02",
+      "uri": "media/marketing-reference/current-02-mountain-biking.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "70d29161bee60f9b223e923380901f48c5b5bae2997c90b3b97f2366543d6e52",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.competitivecyclist.com/v3/assets/blt31d3b88ecbf9ed82/69bb2c3531f53c505169bdda/CC_Shop_by_Pursuit_-_MTB.jpg?width=450",
+        "page": "https://www.competitivecyclist.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Mountain Biking",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.03",
+      "uri": "media/marketing-reference/current-03-gravel-biking.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "e4f269498807580a198d1223e09cae1b3d09129433d9a488e3f202e9aac5e06b",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.competitivecyclist.com/v3/assets/bltcdddee43d8cb9226/69bb2c352a26b824c271b8e6/CC_Shop_by_Pursuit_-_Gravel.jpg?width=450",
+        "page": "https://www.competitivecyclist.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Gravel Biking",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.04",
+      "uri": "media/marketing-reference/current-04-triathlon.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "f81084fb5864445b2846a2f0b42eeb95f0cb52353bc27ead9fe9ae9f2b5f6d69",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.competitivecyclist.com/v3/assets/blt9ceb13c76e53352b/69bb2c35daccab65060b9ca8/CC_Shop_by_Pursuit_-_Triathlon.jpg?width=450",
+        "page": "https://www.competitivecyclist.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Triathlon",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.05",
+      "uri": "media/marketing-reference/current-05-sale.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "ac3468ebc8997536ca73f04a425bf5b931a9e8c2774d5175fa4e7b15c7642601",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.competitivecyclist.com/v3/assets/bltf598842b17d8e4ba/69bb2c346b74d37a683c74d6/CC_Shop_by_Pursuit_-_Sale.jpg?width=450",
+        "page": "https://www.competitivecyclist.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Sale",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.06",
+      "uri": "media/marketing-reference/current-06-cervelo-soloist.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "3d4b73580f7a1c649b0de84b1066817af006049595900a2223edcc4a53249191",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.competitivecyclist.com/v3/assets/blt5aad194c5cb8c3b9/6a4d320eefd45e3809f6bc1c/1x1_card.jpg?width=450",
+        "page": "https://www.competitivecyclist.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Cervelo Soloist",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.social.facebook.01",
+      "uri": "https://www.facebook.com/Competitive.Cyclist",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.facebook.com/Competitive.Cyclist",
+        "reviewedAt": "2026-07-21",
+        "label": "Like us on Facebook"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.youtube.02",
+      "uri": "https://www.youtube.com/@competitivecyclist",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.youtube.com/@competitivecyclist",
+        "reviewedAt": "2026-07-21",
+        "label": "Subscribe to us on Youtube"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.instagram.03",
+      "uri": "https://www.instagram.com/competitivecyclist",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.instagram.com/competitivecyclist",
+        "reviewedAt": "2026-07-21",
+        "label": "Follow us on Instagram"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.tiktok.04",
+      "uri": "https://www.tiktok.com/@competitivecyclist",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.tiktok.com/@competitivecyclist",
+        "reviewedAt": "2026-07-21",
+        "label": "footer.tiktok"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.ad-library.meta-query",
+      "uri": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Competitive%20Cyclist&search_type=keyword_unordered",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "public-ad-library-query"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "public-ad-library-query",
+        "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Competitive%20Cyclist&search_type=keyword_unordered",
+        "reviewedAt": "2026-07-21",
+        "note": "Live query reference only; results are volatile and do not establish spend, targeting, performance, or account ownership."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    }
+  ]
+}

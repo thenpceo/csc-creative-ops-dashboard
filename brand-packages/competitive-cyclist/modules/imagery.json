@@ -1,0 +1,241 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "competitive-cyclist.imagery",
+  "capability": "imagery",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "environment": "credible road, gravel, trail, workshop, and race-preparation settings",
+      "camera": "clean side profiles, engineered three-quarter product views, high-speed action, and exact component macro detail",
+      "lighting": "crisp controlled light for equipment with directional outdoor light for riding",
+      "palette": "black, white, asphalt, carbon, metal, disciplined red, and terrain-specific natural color",
+      "people": "experienced riders in correct kit and position, showing effort and technique rather than lifestyle posing"
+    },
+    "rules": [
+      {
+        "id": "imagery.environment",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Use credible road, gravel, trail, workshop, and race-preparation settings.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "imagery.camera",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Favor clean side profiles, engineered three-quarter product views, high-speed action, and exact component macro detail.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "imagery.light",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Use crisp controlled light for equipment with directional outdoor light for riding.",
+        "sourceIds": [
+          "source.audit.home.desktop"
+        ]
+      },
+      {
+        "id": "imagery.people",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "When people appear, show experienced riders in correct kit and position, showing effort and technique rather than lifestyle posing.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "imagery.product-lock",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Lock geometry, material, countable features, condition, fit, scale, and safety context across every image and crop.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "imagery.avoid",
+        "authority": "prohibited",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "statement": "Avoid generic fitness motivation, casual cruiser styling, invented specifications, wrong component compatibility, decorative speed effects that hide the bicycle.",
+        "sourceIds": []
+      }
+    ],
+    "recipes": [
+      {
+        "id": "imagery.environment-wide",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery"
+        ],
+        "inputs": [
+          "realUseCase",
+          "environment",
+          "heroSubject",
+          "copySafeRegion"
+        ],
+        "structure": [
+          "real environment",
+          "one anchor",
+          "natural perspective",
+          "copy-safe region"
+        ],
+        "ruleRefs": [
+          "imagery.environment",
+          "imagery.camera",
+          "imagery.light"
+        ]
+      },
+      {
+        "id": "imagery.product-studio",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery",
+          "commerce"
+        ],
+        "inputs": [
+          "authorizedProduct",
+          "requiredAngle",
+          "background",
+          "scaleReference"
+        ],
+        "structure": [
+          "whole product",
+          "normal perspective",
+          "controlled light",
+          "honest contact"
+        ],
+        "ruleRefs": [
+          "imagery.product-lock",
+          "product.truth"
+        ]
+      },
+      {
+        "id": "imagery.product-context",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery",
+          "commerce"
+        ],
+        "inputs": [
+          "authorizedProduct",
+          "realUseCase",
+          "environment",
+          "scaleCues"
+        ],
+        "structure": [
+          "unchanged product",
+          "real use",
+          "believable scale",
+          "matched contact and light"
+        ],
+        "ruleRefs": [
+          "imagery.environment",
+          "imagery.product-lock"
+        ]
+      },
+      {
+        "id": "imagery.people-in-use",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery",
+          "marketing"
+        ],
+        "inputs": [
+          "approvedPerson",
+          "realTask",
+          "correctProductOrService",
+          "permission"
+        ],
+        "structure": [
+          "human context",
+          "real task",
+          "specific proof",
+          "natural behavior"
+        ],
+        "ruleRefs": [
+          "imagery.people",
+          "people.permission"
+        ]
+      },
+      {
+        "id": "imagery.detail-proof",
+        "authority": "preferred",
+        "appliesTo": [
+          "imagery",
+          "commerce"
+        ],
+        "inputs": [
+          "verifiedDetail",
+          "material",
+          "functionalContext"
+        ],
+        "structure": [
+          "oriented detail",
+          "material truth",
+          "functional context",
+          "scale cue"
+        ],
+        "ruleRefs": [
+          "imagery.product-lock",
+          "voice.specificity"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "imagery.credible",
+        "question": "Are environment, technique, weather, materials, product scale, and human behavior credible?"
+      },
+      {
+        "id": "imagery.distinct",
+        "question": "Does the image reflect this brand rather than category stock photography?"
+      },
+      {
+        "id": "imagery.truth",
+        "question": "Does every represented product or service preserve verified truth?"
+      }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "source.audit.home.desktop",
+      "source.site.home",
+      "marketing.current.01",
+      "marketing.current.02",
+      "marketing.current.03",
+      "marketing.current.04",
+      "marketing.current.05",
+      "marketing.current.06"
+    ]
+  }
+}

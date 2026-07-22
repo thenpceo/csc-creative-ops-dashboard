@@ -1,0 +1,203 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "western-bikeworks.generative-video",
+  "capability": "generative-video",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "promptOrder": [
+        "story function",
+        "stable subject",
+        "environment",
+        "single action",
+        "single-axis camera",
+        "lighting",
+        "duration",
+        "aspect ratio",
+        "continuity locks",
+        "exclusions"
+      ],
+      "pacing": "steady route movement, service steps, rain and road texture, and compact product or value beats"
+    },
+    "rules": [
+      {
+        "id": "generative-video.one-action",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "generative-video"
+        ],
+        "statement": "Use one stable subject, one subtle environmental or human action, and one camera move on one axis per shot.",
+        "sourceIds": []
+      },
+      {
+        "id": "generative-video.continuity",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "generative-video"
+        ],
+        "statement": "Lock subject identity, product geometry, materials, environment, weather, light direction, wardrobe, props, screen direction, and time across connected shots.",
+        "sourceIds": []
+      },
+      {
+        "id": "generative-video.clean-plates",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "generative-video"
+        ],
+        "statement": "Generate clean visual plates. Composite verified copy, captions, prices, interface, and official identity afterward.",
+        "sourceIds": []
+      },
+      {
+        "id": "generative-video.camera-restraint",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "generative-video"
+        ],
+        "statement": "Camera movement follows functional riding context, clear product imagery, weather detail, and approachable service coverage. Reject frantic multi-axis moves.",
+        "sourceIds": []
+      },
+      {
+        "id": "generative-video.exclusions",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "generative-video"
+        ],
+        "statement": "Reject morphing products, warping architecture, sliding objects, drifting features, rubbery materials, anatomy errors, fake text, invented identity, flicker, and continuity breaks.",
+        "sourceIds": []
+      }
+    ],
+    "recipes": [
+      {
+        "id": "generative-video.environment-reveal",
+        "authority": "preferred",
+        "appliesTo": [
+          "generative-video"
+        ],
+        "inputs": [
+          "stableEnvironment",
+          "heroSubject",
+          "singleAction",
+          "cameraAxis",
+          "duration"
+        ],
+        "structure": [
+          "stable world",
+          "single action",
+          "one-axis reveal",
+          "clean hold"
+        ],
+        "ruleRefs": [
+          "generative-video.one-action",
+          "generative-video.continuity"
+        ]
+      },
+      {
+        "id": "generative-video.product-in-use",
+        "authority": "preferred",
+        "appliesTo": [
+          "generative-video",
+          "commerce"
+        ],
+        "inputs": [
+          "authorizedProduct",
+          "correctUse",
+          "approvedPersonOrHands",
+          "environment",
+          "locks"
+        ],
+        "structure": [
+          "product context",
+          "correct use",
+          "proof detail",
+          "stable result"
+        ],
+        "ruleRefs": [
+          "generative-video.continuity",
+          "product.truth"
+        ]
+      },
+      {
+        "id": "generative-video.material-study",
+        "authority": "preferred",
+        "appliesTo": [
+          "generative-video"
+        ],
+        "inputs": [
+          "verifiedMaterial",
+          "functionalDetail",
+          "subtleAction",
+          "cameraAxis"
+        ],
+        "structure": [
+          "oriented detail",
+          "material action",
+          "functional proof",
+          "clean settle"
+        ],
+        "ruleRefs": [
+          "generative-video.one-action",
+          "generative-video.exclusions"
+        ]
+      },
+      {
+        "id": "generative-video.resolve-plate",
+        "authority": "preferred",
+        "appliesTo": [
+          "generative-video",
+          "marketing"
+        ],
+        "inputs": [
+          "cleanBrandEnvironment",
+          "copySafeRegion",
+          "duration"
+        ],
+        "structure": [
+          "stable environment",
+          "protected negative space",
+          "controlled settle",
+          "clean hold"
+        ],
+        "ruleRefs": [
+          "generative-video.clean-plates",
+          "accessibility.contrast"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "gen-video.continuity",
+        "question": "Are subject, product, environment, light, and screen direction stable?"
+      },
+      {
+        "id": "gen-video.camera",
+        "question": "Is camera movement singular, intentional, and readable?"
+      },
+      {
+        "id": "gen-video.clean",
+        "question": "Is the plate free of identity, text, morphing, drift, and avoid-list failures?"
+      }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "source.audit.home.desktop",
+      "source.site.home",
+      "marketing.historical.01",
+      "marketing.historical.02",
+      "marketing.historical.03",
+      "marketing.historical.04",
+      "marketing.historical.05"
+    ]
+  }
+}

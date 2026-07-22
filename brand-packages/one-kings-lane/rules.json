@@ -1,0 +1,294 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/rules.schema.json",
+  "schemaVersion": "1.0.0",
+  "rules": [
+    {
+      "id": "identity.live-your-style",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Express personal style rather than prescribing a single correct taste; the system should feel curated, enabling, and individual.",
+      "sourceIds": ["source.site.about", "source.site.design-services"]
+    },
+    {
+      "id": "identity.editorial-commerce-balance",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["interactive", "static", "motion", "sequential"],
+      "statement": "Pair editorial inspiration with a clear commercial or service action; neither glossy mood nor transactional UI should dominate the whole experience.",
+      "sourceIds": ["source.audit.home.desktop", "source.audit.collection.desktop"]
+    },
+    {
+      "id": "identity.cultivated-not-aloof",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": ["all"],
+      "statement": "Present expertise with warmth and accessibility. Avoid snobbery, gatekeeping, or language that makes good design sound unattainable.",
+      "sourceIds": ["source.site.about", "source.site.design-services"]
+    },
+    {
+      "id": "logo.official-artwork-only",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Use supplied official wordmark or compact elephant artwork. Preserve proportions, orientation, and internal spacing; never redraw or synthesize the mark.",
+      "sourceIds": ["asset.logo.primary", "asset.logo.compact"]
+    },
+    {
+      "id": "logo.clear-space",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": ["all"],
+      "statement": "Maintain clear space around the logo equal to at least the compact elephant mark's height and keep it visually separate from promotions and photography.",
+      "sourceIds": ["source.audit.home.desktop"]
+    },
+    {
+      "id": "logo.no-effects",
+      "authority": "prohibited",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": ["all"],
+      "statement": "Do not stretch, rotate, outline, bevel, shadow, pattern-fill, animate by distortion, or place the logo on visually noisy detail.",
+      "sourceIds": ["asset.logo.primary"]
+    },
+    {
+      "id": "color.heritage-green-anchor",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Use heritage green as the signature anchor for primary actions, major brand fields, or key headings; support it with white, warm neutrals, and natural material colors.",
+      "sourceIds": ["source.audit.home.desktop", "source.audit.product.desktop", "source.audit.design-services.desktop"]
+    },
+    {
+      "id": "color.red-is-transactional",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["interactive", "static", "motion", "commerce"],
+      "statement": "Reserve sale red for discounts, markdowns, and time-sensitive transaction states; do not use it as a general decorative accent.",
+      "sourceIds": ["source.audit.collection.desktop"]
+    },
+    {
+      "id": "color.powder-is-supporting",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Use powder blue sparingly for badges, calm secondary fields, and selected campaign support. It must not replace heritage green as the enduring brand anchor.",
+      "sourceIds": ["source.audit.collection.desktop", "source.audit.home.mobile"]
+    },
+    {
+      "id": "type.editorial-for-stories",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Use the editorial serif for emotionally led display lines, room stories, and inspiration. Do not use it for dense controls, prices, specifications, or navigation.",
+      "sourceIds": ["source.audit.design-services.desktop"]
+    },
+    {
+      "id": "type.interface-for-actions",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Use the interface sans for navigation, headings, labels, product names, actions, and compact informational text.",
+      "sourceIds": ["source.audit.home.desktop", "source.audit.collection.desktop", "source.audit.product.desktop"]
+    },
+    {
+      "id": "type.reading-for-body",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Use the reading sans for paragraphs and extended product or service copy, with comfortable line height and restrained tracking.",
+      "sourceIds": ["source.audit.product.desktop"]
+    },
+    {
+      "id": "type.uppercase-with-purpose",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Limit uppercase and wide tracking to navigation, compact labels, action text, and selected section headings; never set paragraphs or long headlines in uppercase.",
+      "sourceIds": ["source.audit.collection.desktop", "source.audit.product.desktop"]
+    },
+    {
+      "id": "shape.square-by-default",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["interactive", "static", "motion"],
+      "statement": "Use square or nearly square controls, cards, image frames, and panels. Rounded containers are exceptional, not a default visual language.",
+      "sourceIds": ["source.audit.collection.desktop", "source.audit.product.desktop"]
+    },
+    {
+      "id": "action.primary-button",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["interactive", "static", "motion", "commerce"],
+      "statement": "Primary actions use a solid heritage-green rectangular field, white uppercase interface text, generous horizontal padding, and no visible corner radius.",
+      "sourceIds": ["source.audit.product.desktop"]
+    },
+    {
+      "id": "action.secondary-link",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["interactive", "static", "motion"],
+      "statement": "Editorial secondary actions may be text-led uppercase links with measured tracking and a simple underline or directional cue.",
+      "sourceIds": ["source.audit.design-services.desktop"]
+    },
+    {
+      "id": "layout.generous-whitespace",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Use generous outer margins and section separation so imagery, products, and typography can breathe; avoid dense dashboard-like packing.",
+      "sourceIds": ["source.audit.home.desktop", "source.audit.collection.desktop"]
+    },
+    {
+      "id": "layout.room-first-storytelling",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["interactive", "static", "motion", "generative-image", "generative-video", "sequential"],
+      "statement": "Lead emotional stories with a composed room or outdoor setting, then move into product, material, and service detail.",
+      "sourceIds": ["asset.hero.summer-escape", "asset.editorial.new-arrivals", "asset.editorial.made-in-usa"]
+    },
+    {
+      "id": "imagery.lived-in-not-cluttered",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["imagery", "static", "motion", "generative-image", "generative-video", "sequential"],
+      "statement": "Rooms should feel layered, intentional, and livable: collected objects, tactile materials, natural light, and believable negative space without sterile minimalism or visual clutter.",
+      "sourceIds": ["asset.hero.summer-escape", "asset.editorial.new-arrivals", "asset.editorial.made-in-usa"]
+    },
+    {
+      "id": "imagery.material-specificity",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["imagery", "static", "motion", "generative-image", "generative-video", "sequential"],
+      "statement": "Show specific material character such as linen, velvet, aged wood, lacquer, brass, raffia, stone, ceramic, and woven fibers; avoid vague glossy luxury surfaces.",
+      "sourceIds": ["source.site.home", "source.site.heritage", "asset.product.austin-detail"]
+    },
+    {
+      "id": "imagery.product-truth",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["commerce", "imagery", "static", "motion", "generative-image", "generative-video"],
+      "statement": "When depicting a real product, preserve its geometry, materials, scale, finish, color, and functional details. Generated interpretation must be labeled and cannot substitute for a verified catalog image.",
+      "sourceIds": ["source.audit.product.desktop", "asset.product.austin-lifestyle", "asset.product.austin-detail"]
+    },
+    {
+      "id": "imagery.product-cutout",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["commerce", "imagery", "interactive", "static"],
+      "statement": "Catalog cutouts use a centered straight-on or three-quarter view on white or very light neutral gray, with consistent scale and soft natural grounding.",
+      "sourceIds": ["source.audit.collection.desktop"]
+    },
+    {
+      "id": "imagery.people-secondary",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": ["imagery", "static", "motion", "generative-image", "generative-video", "sequential"],
+      "statement": "Use people sparingly and contextually to demonstrate living, hosting, consultation, or scale. The room and design story remain primary; avoid fashion-campaign posing.",
+      "sourceIds": ["source.audit.home.desktop", "source.audit.design-services.desktop"]
+    },
+    {
+      "id": "voice.warm-expertise",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Write with warm expertise: concrete design language, confident guidance, short inviting actions, and respect for the customer's own taste.",
+      "sourceIds": ["source.site.about", "source.site.design-services"]
+    },
+    {
+      "id": "voice.no-generic-luxury",
+      "authority": "prohibited",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": ["all"],
+      "statement": "Avoid empty prestige phrases such as 'unparalleled luxury,' 'elevate your lifestyle,' or 'timeless elegance' without a specific product, material, provenance, or design idea.",
+      "sourceIds": ["source.site.about", "source.blog.history"]
+    },
+    {
+      "id": "claims.runtime-truth",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Prices, offers, inventory, shipping promises, product specifications, and promotion deadlines must come from a current authoritative data source at generation time.",
+      "sourceIds": ["source.site.product", "source.site.furniture"]
+    },
+    {
+      "id": "campaign.separate-from-core",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Treat seasonal palettes, campaign slogans, discount codes, and offer art as replaceable inputs. They may inform a current execution but must never mutate core brand rules or tokens.",
+      "sourceIds": ["asset.campaign.seasonal-sale", "asset.hero.summer-escape"]
+    },
+    {
+      "id": "accessibility.semantic-text",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": ["interactive", "static", "motion"],
+      "statement": "Critical headlines, offers, product data, and actions must remain selectable or otherwise semantically available; text embedded in imagery requires an equivalent accessible text layer.",
+      "sourceIds": ["source.audit.home.mobile"]
+    },
+    {
+      "id": "accessibility.contrast",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": ["interactive", "static", "motion"],
+      "statement": "Meet WCAG 2.2 AA contrast for essential text and controls, adding a quiet solid field or tonal overlay when photography cannot provide dependable contrast.",
+      "sourceIds": ["source.audit.home.desktop", "source.audit.collection.desktop"]
+    },
+    {
+      "id": "accessibility.interaction",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": ["interactive"],
+      "statement": "All interactive elements require visible focus, keyboard operation, meaningful labels, non-color state cues, and touch targets of at least 44 by 44 pixels.",
+      "sourceIds": ["source.audit.home.mobile", "source.audit.mobile-navigation"]
+    },
+    {
+      "id": "rights.authorized-assets-only",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Use assets only for purposes permitted by their rights record. Public-site references in this package are evidence, not proof of production reuse or model-upload permission.",
+      "sourceIds": ["source.site.home"]
+    },
+    {
+      "id": "system.output-neutral",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": ["all"],
+      "statement": "Interpret brand semantics independently of any specific renderer, model provider, framework, agent, or authoring application; adapters translate these rules downstream.",
+      "sourceIds": []
+    }
+  ]
+}

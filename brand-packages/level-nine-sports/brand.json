@@ -1,0 +1,92 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/brand.schema.json",
+  "schemaVersion": "1.0.0",
+  "packageVersion": "1.0.0",
+  "brand": {
+    "id": "level-nine-sports",
+    "name": "Level Nine Sports",
+    "description": "Accessible outdoor performance retail with electric blue utility, warm campaign accents, and Poppins typography.",
+    "proposition": "Approachable outdoor gear and expertise with strong value across skiing, snowboarding, biking, camping, and seasonal activities.",
+    "audiences": [
+      "Value-aware outdoor participants",
+      "Families buying seasonal equipment",
+      "Ski and snowboard customers",
+      "Newer participants who need fit and setup help"
+    ],
+    "traits": [
+      "energetic",
+      "approachable",
+      "practical",
+      "value-led",
+      "outdoorsy",
+      "helpful"
+    ],
+    "signature": "Get outside for less",
+    "voiceSummary": "Friendly shop-floor expertise with direct value language and activity-specific help."
+  },
+  "files": {
+    "tokens": "tokens.json",
+    "rules": "rules.json",
+    "recipes": "recipes.json",
+    "media": "media.json",
+    "evaluation": "evaluation.json",
+    "humanGuide": "DESIGN.md"
+  },
+  "modules": [
+    {
+      "capability": "interactive",
+      "path": "modules/interactive.json"
+    },
+    {
+      "capability": "static",
+      "path": "modules/static.json"
+    },
+    {
+      "capability": "imagery",
+      "path": "modules/imagery.json"
+    },
+    {
+      "capability": "commerce",
+      "path": "modules/commerce.json"
+    },
+    {
+      "capability": "marketing",
+      "path": "modules/marketing.json"
+    },
+    {
+      "capability": "motion",
+      "path": "modules/motion.json"
+    },
+    {
+      "capability": "generative-image",
+      "path": "modules/generative-image.json"
+    },
+    {
+      "capability": "generative-video",
+      "path": "modules/generative-video.json"
+    },
+    {
+      "capability": "spatial",
+      "path": "modules/spatial.json"
+    },
+    {
+      "capability": "sequential",
+      "path": "modules/sequential.json"
+    }
+  ],
+  "provenance": {
+    "researchedAt": "2026-07-21",
+    "method": "First-party live or archived surface review, computed-style sampling, visible component inspection, and official or public asset capture.",
+    "evidenceStatus": "mixed",
+    "verifiedSurfaces": [
+      "current-redirect"
+    ],
+    "sourceAudit": "../../research/portfolio-live-evidence.json",
+    "historicalStandaloneIdentity": true,
+    "notes": [
+      "As of July 21, 2026, the live domain redirects to Backcountry Outlet. Standalone Level Nine values come from the latest first-party archived Next.js homepage and CSS bundles and must be treated as historical identity evidence.",
+      "Current offers, inventory, prices, availability, service scope, and campaign copy are runtime data.",
+      "The package is output-neutral; provider and renderer adapters belong outside it."
+    ]
+  }
+}

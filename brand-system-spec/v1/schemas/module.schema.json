@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cscgeneration.local/brand-system/v1/module.schema.json",
+  "title": "Optional brand capability module",
+  "type": "object",
+  "required": ["schemaVersion", "id", "capability", "version", "evidenceStatus", "extends"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string" },
+    "id": { "type": "string" },
+    "capability": { "type": "string" },
+    "version": { "type": "string" },
+    "evidenceStatus": { "enum": ["verified", "mixed", "inferred"] },
+    "extends": {
+      "type": "object",
+      "required": ["tokens", "rules", "recipes", "evaluation", "mediaSelectors"],
+      "properties": {
+        "tokens": { "type": "object" },
+        "rules": { "type": "array" },
+        "recipes": { "type": "array" },
+        "evaluation": { "type": "array" },
+        "mediaSelectors": { "type": "array" }
+      }
+    }
+  }
+}

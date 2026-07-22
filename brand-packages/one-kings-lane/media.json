@@ -1,0 +1,631 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/media.schema.json",
+  "schemaVersion": "1.0.0",
+  "rightsPolicy": {
+    "default": "unverified-public-reference",
+    "productionUse": "Requires independent rights confirmation and brand authorization.",
+    "modelUpload": "Prohibited unless the asset's rights record is upgraded by an authorized reviewer."
+  },
+  "items": [
+    {
+      "id": "asset.logo.primary",
+      "uri": "media/official/logo-primary.webp",
+      "kind": "image",
+      "roles": ["logo", "wordmark", "brand-end-frame"],
+      "lifecycle": "active",
+      "dimensions": { "width": 3915, "height": 1400 },
+      "checksumSha256": "567074d672e964631ccfd67db3707059dbe8e831308a545736c66749fb666e66",
+      "source": { "type": "official-site-asset", "url": "https://okl-cdn.cscshopfront.com/ssr-api/logos/current_logo.webp", "capturedAt": "2026-07-21" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-storyboard-reference", "authorized-brand-work"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "asset.logo.compact",
+      "uri": "media/official/logo-compact.webp",
+      "kind": "image",
+      "roles": ["logo", "elephant-mark", "compact-identity"],
+      "lifecycle": "active",
+      "dimensions": { "width": 1175, "height": 1068 },
+      "checksumSha256": "c201923e4eacb3e3f152c6375060c3c832ae0beaede22220a35820be94fbb98b",
+      "source": { "type": "official-site-asset", "url": "https://okl-cdn.cscshopfront.com/ssr-api/logos/logo_mini.webp", "capturedAt": "2026-07-21" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-storyboard-reference", "authorized-brand-work"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "asset.hero.summer-escape",
+      "uri": "media/official/summer-escape-hero.webp",
+      "kind": "image",
+      "roles": ["editorial-room", "campaign-hero", "lighting-reference", "palette-reference"],
+      "lifecycle": "active",
+      "dimensions": { "width": 2880, "height": 1450 },
+      "checksumSha256": "2150a0ab2067a25c023fb8b262760c4c835e9160af019684f5fe7aa795b1a98c",
+      "source": { "type": "official-site-asset", "url": "https://i.shgcdn.com/962b8492-8457-4f72-aa7c-17f8fa6d5d0e/-/format/auto/-/quality/normal/", "capturedAt": "2026-07-21", "campaignStatus": "seasonal" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "asset.editorial.new-arrivals",
+      "uri": "media/official/new-arrivals-editorial.webp",
+      "kind": "image",
+      "roles": ["editorial-room", "composition-reference", "material-reference"],
+      "lifecycle": "active",
+      "dimensions": { "width": 2880, "height": 1200 },
+      "checksumSha256": "a46a6f0ba9f52573efd36a0942019088461dd9ffd7cd5847fb74199cf37179a6",
+      "source": { "type": "official-site-asset", "url": "https://i.shgcdn.com/bc252858-b7f1-4f48-8e2a-265dd0511b33/-/format/auto/-/quality/normal/", "capturedAt": "2026-07-21" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "asset.editorial.design-services",
+      "uri": "media/official/design-services-banner.webp",
+      "kind": "image",
+      "roles": ["design-service", "editorial-room", "split-layout-reference"],
+      "lifecycle": "active",
+      "dimensions": { "width": 2880, "height": 806 },
+      "checksumSha256": "6c9036cadb9933d52387dbf3dc8a7f8891f3c10e18e4422f140ee11a9ca51608",
+      "source": { "type": "official-site-asset", "url": "https://i.shgcdn.com/65556e76-82b4-4a08-9970-1607eea5ff4e/-/format/auto/-/quality/normal/", "capturedAt": "2026-07-21" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "asset.editorial.made-in-usa",
+      "uri": "media/official/made-in-usa-room.webp",
+      "kind": "image",
+      "roles": ["editorial-room", "craft-story", "composition-reference"],
+      "lifecycle": "active",
+      "dimensions": { "width": 2880, "height": 1264 },
+      "checksumSha256": "bb0665d1ebdc356294f8cbeec96bd4b5f9819d30fb374f91eb32a49dc355b153",
+      "source": { "type": "official-site-asset", "url": "https://i.shgcdn.com/3d394470-cce4-46e5-9720-b5f00a2662d2/-/format/auto/-/quality/normal/", "capturedAt": "2026-07-21" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "asset.campaign.seasonal-sale",
+      "uri": "media/official/seasonal-sale-banner.webp",
+      "kind": "image",
+      "roles": ["seasonal-campaign", "offer-art", "reference-only"],
+      "lifecycle": "active",
+      "dimensions": { "width": 2880, "height": 718 },
+      "checksumSha256": "20d6a420461e7bb42cbaaf320debc5892045c4a64d839f45f071027a5ae22448",
+      "source": { "type": "official-site-asset", "url": "https://i.shgcdn.com/4659d286-b677-459b-8d63-e0625b18fa3e/-/format/auto/-/quality/normal/", "capturedAt": "2026-07-21", "campaignStatus": "seasonal-and-expirable" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "asset.category.lounge-furniture",
+      "uri": "media/official/lounge-furniture-category.png",
+      "kind": "image",
+      "roles": ["category-tile", "room-detail", "crop-reference"],
+      "lifecycle": "active",
+      "dimensions": { "width": 698, "height": 862 },
+      "checksumSha256": "f80ed1aaedf6111c030b0d9c277abaafe6db68f76ca4408bccaa84ebf8fef0b4",
+      "source": { "type": "official-site-asset", "url": "https://i.shgcdn.com/bd9bdc61-2386-40ee-a8ea-5d27c87f8d50/", "capturedAt": "2026-07-21" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "asset.product.austin-lifestyle",
+      "uri": "media/official/austin-fountain-lifestyle.jpg",
+      "kind": "image",
+      "roles": ["verified-product", "product-in-context", "scale-reference"],
+      "lifecycle": "active",
+      "dimensions": { "width": 500, "height": 500 },
+      "checksumSha256": "2f651270653160f9d53d33d5482ea35ce215cefe0ec81416395ad9c68a6771ca",
+      "source": { "type": "official-product-asset", "url": "https://assets.onekingslane.com/m/565e768151ccf49d/Product_Square-Product_615976524360_Image_002.jpg", "capturedAt": "2026-07-21", "productPage": "https://www.onekingslane.com/p--austin-fountain-alpine-P111136147?sku=111136147" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "asset.product.austin-detail",
+      "uri": "media/official/austin-fountain-detail.jpg",
+      "kind": "image",
+      "roles": ["verified-product", "material-detail", "product-reference"],
+      "lifecycle": "active",
+      "dimensions": { "width": 500, "height": 500 },
+      "checksumSha256": "a4872c11bffd62c2b461ba5f35e78807a82f3e6a0763a904ec8ff0dc56347e86",
+      "source": { "type": "official-product-asset", "url": "https://assets.onekingslane.com/m/5db1a52e8d9a1950/Product_Square-Product_615976524360_Image_2.jpg", "capturedAt": "2026-07-21", "productPage": "https://www.onekingslane.com/p--austin-fountain-alpine-P111136147?sku=111136147" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "source.site.home",
+      "uri": "https://www.onekingslane.com/",
+      "kind": "document",
+      "roles": ["source-evidence", "current-brand-surface"],
+      "lifecycle": "active",
+      "source": { "type": "official-page", "url": "https://www.onekingslane.com/", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.site.about",
+      "uri": "https://www.onekingslane.com/about-us",
+      "kind": "document",
+      "roles": ["source-evidence", "brand-positioning", "voice"],
+      "lifecycle": "active",
+      "source": { "type": "official-page", "url": "https://www.onekingslane.com/about-us", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.site.design-services",
+      "uri": "https://www.onekingslane.com/design-services?hpp=banner",
+      "kind": "document",
+      "roles": ["source-evidence", "service-positioning", "voice"],
+      "lifecycle": "active",
+      "source": { "type": "official-page", "url": "https://www.onekingslane.com/design-services?hpp=banner", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.site.trade",
+      "uri": "https://www.onekingslane.com/to-the-trade",
+      "kind": "document",
+      "roles": ["source-evidence", "trade-program"],
+      "lifecycle": "active",
+      "source": { "type": "official-page", "url": "https://www.onekingslane.com/to-the-trade", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.site.heritage",
+      "uri": "https://www.onekingslane.com/c-20251005-heritage-approved",
+      "kind": "document",
+      "roles": ["source-evidence", "heritage", "product-curation"],
+      "lifecycle": "active",
+      "source": { "type": "official-page", "url": "https://www.onekingslane.com/c-20251005-heritage-approved", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.site.furniture",
+      "uri": "https://www.onekingslane.com/c-119587-furniture?nType=1",
+      "kind": "document",
+      "roles": ["source-evidence", "collection", "commerce"],
+      "lifecycle": "active",
+      "source": { "type": "official-page", "url": "https://www.onekingslane.com/c-119587-furniture?nType=1", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.site.product",
+      "uri": "https://www.onekingslane.com/p--austin-fountain-alpine-P111136147?sku=111136147",
+      "kind": "document",
+      "roles": ["source-evidence", "product-detail", "commerce"],
+      "lifecycle": "active",
+      "source": { "type": "official-page", "url": "https://www.onekingslane.com/p--austin-fountain-alpine-P111136147?sku=111136147", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.blog.history",
+      "uri": "https://blog.onekingslane.com/the-history-of-one-kings-lane/",
+      "kind": "document",
+      "roles": ["source-evidence", "brand-history"],
+      "lifecycle": "active",
+      "source": { "type": "official-blog", "url": "https://blog.onekingslane.com/the-history-of-one-kings-lane/", "reviewedAt": "2026-07-21", "note": "Historical context; not used as evidence of current offers or operations." },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.audit.home.desktop",
+      "uri": "../../research/one-kings-lane/audit-2026-07-21/01-home-desktop.png",
+      "kind": "image",
+      "roles": ["source-evidence", "desktop-audit"],
+      "lifecycle": "active",
+      "source": { "type": "live-capture", "page": "https://www.onekingslane.com/", "capturedAt": "2026-07-21" },
+      "rights": { "status": "analysis-only", "allowedUses": ["analysis", "internal-review"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.audit.collection.desktop",
+      "uri": "../../research/one-kings-lane/audit-2026-07-21/02-collection-desktop.png",
+      "kind": "image",
+      "roles": ["source-evidence", "desktop-audit", "commerce"],
+      "lifecycle": "active",
+      "source": { "type": "live-capture", "page": "https://www.onekingslane.com/c-119587-furniture?nType=1", "capturedAt": "2026-07-21" },
+      "rights": { "status": "analysis-only", "allowedUses": ["analysis", "internal-review"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.audit.product.desktop",
+      "uri": "../../research/one-kings-lane/audit-2026-07-21/03-product-desktop.png",
+      "kind": "image",
+      "roles": ["source-evidence", "desktop-audit", "commerce"],
+      "lifecycle": "active",
+      "source": { "type": "live-capture", "page": "https://www.onekingslane.com/p--austin-fountain-alpine-P111136147?sku=111136147", "capturedAt": "2026-07-21", "note": "Persistent support overlay partly obscures the decision column." },
+      "rights": { "status": "analysis-only", "allowedUses": ["analysis", "internal-review"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.audit.home.mobile",
+      "uri": "../../research/one-kings-lane/audit-2026-07-21/04-home-mobile.png",
+      "kind": "image",
+      "roles": ["source-evidence", "mobile-audit"],
+      "lifecycle": "active",
+      "source": { "type": "live-capture", "page": "https://www.onekingslane.com/", "capturedAt": "2026-07-21" },
+      "rights": { "status": "analysis-only", "allowedUses": ["analysis", "internal-review"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.audit.mobile-navigation",
+      "uri": "../../research/one-kings-lane/audit-2026-07-21/05-mobile-navigation.png",
+      "kind": "image",
+      "roles": ["source-evidence", "mobile-audit", "navigation"],
+      "lifecycle": "active",
+      "source": { "type": "live-capture", "page": "https://www.onekingslane.com/", "capturedAt": "2026-07-21" },
+      "rights": { "status": "analysis-only", "allowedUses": ["analysis", "internal-review"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.audit.design-services.desktop",
+      "uri": "../../research/one-kings-lane/audit-2026-07-21/06-design-services-desktop.png",
+      "kind": "image",
+      "roles": ["source-evidence", "desktop-audit", "service"],
+      "lifecycle": "active",
+      "source": { "type": "live-capture", "page": "https://www.onekingslane.com/design-services?hpp=banner", "capturedAt": "2026-07-21" },
+      "rights": { "status": "analysis-only", "allowedUses": ["analysis", "internal-review"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.social.facebook",
+      "uri": "https://www.facebook.com/OneKingsLane/",
+      "kind": "document",
+      "roles": ["official-social-profile", "marketing-source", "facebook"],
+      "lifecycle": "active",
+      "source": { "type": "official-linked-social-profile", "url": "https://www.facebook.com/OneKingsLane/", "verifiedFrom": "https://www.onekingslane.com/", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.social.instagram",
+      "uri": "https://www.instagram.com/onekingslane/",
+      "kind": "document",
+      "roles": ["official-social-profile", "marketing-source", "instagram"],
+      "lifecycle": "active",
+      "source": { "type": "official-linked-social-profile", "url": "https://www.instagram.com/onekingslane/", "verifiedFrom": "https://www.onekingslane.com/", "reviewedAt": "2026-07-21", "note": "Profile URL verified from the official site; direct public content review was blocked by the platform in this audit." },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.social.pinterest",
+      "uri": "https://www.pinterest.com/onekingslane/",
+      "kind": "document",
+      "roles": ["official-social-profile", "marketing-source", "pinterest", "inspiration"],
+      "lifecycle": "active",
+      "source": { "type": "official-linked-social-profile", "url": "https://www.pinterest.com/onekingslane/", "verifiedFrom": "https://www.onekingslane.com/", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.social.tiktok",
+      "uri": "https://www.tiktok.com/@onekingslane",
+      "kind": "document",
+      "roles": ["official-social-profile", "marketing-source", "tiktok", "historical-reference"],
+      "lifecycle": "active",
+      "source": { "type": "official-linked-social-profile", "url": "https://www.tiktok.com/@onekingslane", "verifiedFrom": "https://www.onekingslane.com/", "reviewedAt": "2026-07-21", "recencyClass": "historical-profile-content" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.social.youtube",
+      "uri": "https://www.youtube.com/channel/UCt3uR2lQGK3EjY6U0gntfCw",
+      "kind": "document",
+      "roles": ["official-social-profile", "marketing-source", "youtube", "historical-reference"],
+      "lifecycle": "active",
+      "source": { "type": "official-linked-social-profile", "url": "https://www.youtube.com/channel/UCt3uR2lQGK3EjY6U0gntfCw", "verifiedFrom": "https://www.onekingslane.com/", "reviewedAt": "2026-07-21", "recencyClass": "low-volume-archive" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.social.linkedin",
+      "uri": "https://www.linkedin.com/company/one-kings-lane",
+      "kind": "document",
+      "roles": ["official-social-profile", "marketing-source", "linkedin", "trade-community"],
+      "lifecycle": "active",
+      "source": { "type": "official-company-profile", "url": "https://www.linkedin.com/company/one-kings-lane", "reviewedAt": "2026-07-21", "note": "Public search results were reviewed; the direct profile introduced an authentication wall." },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.social.blog",
+      "uri": "https://blog.onekingslane.com/",
+      "kind": "document",
+      "roles": ["official-blog", "editorial-source", "marketing-source"],
+      "lifecycle": "active",
+      "source": { "type": "official-blog", "url": "https://blog.onekingslane.com/", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.rights.ugc-blog",
+      "uri": "https://blog.onekingslane.com/terms-conditions/",
+      "kind": "document",
+      "roles": ["rights-source", "ugc", "marketing-governance"],
+      "lifecycle": "active",
+      "source": { "type": "official-rights-page", "url": "https://blog.onekingslane.com/terms-conditions/", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.rights.ugc-site",
+      "uri": "https://www.onekingslane.com/ugc-terms",
+      "kind": "document",
+      "roles": ["rights-source", "ugc", "marketing-governance"],
+      "lifecycle": "active",
+      "source": { "type": "official-rights-page", "url": "https://www.onekingslane.com/ugc-terms", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.social.facebook-current-feed",
+      "uri": "https://www.google.com/storepages?c=us&q=onekingslane.com&v=19",
+      "kind": "document",
+      "roles": ["public-social-feed", "facebook", "current-video-reference"],
+      "lifecycle": "active",
+      "source": { "type": "public-platform-aggregation", "url": "https://www.google.com/storepages?c=us&q=onekingslane.com&v=19", "reviewedAt": "2026-07-21", "note": "Displayed recent videos attributed to the official One Kings Lane Facebook profile." },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.ads.meta-active-query",
+      "uri": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=One%20Kings%20Lane&search_type=keyword_unordered",
+      "kind": "document",
+      "roles": ["public-ad-library", "active-ad-creative", "meta"],
+      "lifecycle": "active",
+      "source": { "type": "public-ad-library-query", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=One%20Kings%20Lane&search_type=keyword_unordered", "reviewedAt": "2026-07-21", "note": "Keyword results include unrelated advertisers; only cards explicitly attributed to One Kings Lane were analyzed." },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.ads.meta-help",
+      "uri": "https://www.facebook.com/help/259468828226154",
+      "kind": "document",
+      "roles": ["public-ad-library", "scope-source", "meta"],
+      "lifecycle": "active",
+      "source": { "type": "platform-documentation", "url": "https://www.facebook.com/help/259468828226154", "reviewedAt": "2026-07-21" },
+      "rights": { "status": "public-reference", "allowedUses": ["analysis", "citation"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.audit.marketing.facebook-video-feed",
+      "uri": "../../research/one-kings-lane/marketing-audit-2026-07-21/01-current-facebook-video-feed.png",
+      "kind": "image",
+      "roles": ["source-evidence", "marketing-audit", "facebook", "current-video-reference"],
+      "lifecycle": "active",
+      "source": { "type": "live-capture", "page": "https://www.google.com/storepages?c=us&q=onekingslane.com&v=19", "capturedAt": "2026-07-21" },
+      "rights": { "status": "analysis-only", "allowedUses": ["analysis", "internal-review"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.audit.marketing.pinterest-profile",
+      "uri": "../../research/one-kings-lane/marketing-audit-2026-07-21/02-pinterest-profile.png",
+      "kind": "image",
+      "roles": ["source-evidence", "marketing-audit", "pinterest", "profile-board-reference"],
+      "lifecycle": "active",
+      "source": { "type": "live-capture", "page": "https://www.pinterest.com/onekingslane/", "capturedAt": "2026-07-21" },
+      "rights": { "status": "analysis-only", "allowedUses": ["analysis", "internal-review"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.audit.marketing.youtube-channel",
+      "uri": "../../research/one-kings-lane/marketing-audit-2026-07-21/03-youtube-channel.jpg",
+      "kind": "image",
+      "roles": ["source-evidence", "marketing-audit", "youtube", "historical-reference"],
+      "lifecycle": "active",
+      "source": { "type": "live-capture", "page": "https://www.youtube.com/channel/UCt3uR2lQGK3EjY6U0gntfCw", "capturedAt": "2026-07-21", "recencyClass": "low-volume-archive" },
+      "rights": { "status": "analysis-only", "allowedUses": ["analysis", "internal-review"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.audit.marketing.tiktok-profile",
+      "uri": "../../research/one-kings-lane/marketing-audit-2026-07-21/04-tiktok-profile.jpg",
+      "kind": "image",
+      "roles": ["source-evidence", "marketing-audit", "tiktok", "historical-reference"],
+      "lifecycle": "active",
+      "source": { "type": "live-capture", "page": "https://www.tiktok.com/@onekingslane", "capturedAt": "2026-07-21", "recencyClass": "historical-profile-content" },
+      "rights": { "status": "analysis-only", "allowedUses": ["analysis", "internal-review"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "source.audit.marketing.meta-active-ads",
+      "uri": "../../research/one-kings-lane/marketing-audit-2026-07-21/05-meta-active-ads.jpg",
+      "kind": "image",
+      "roles": ["source-evidence", "marketing-audit", "meta", "active-ad-creative"],
+      "lifecycle": "active",
+      "source": { "type": "live-capture", "page": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=One%20Kings%20Lane&search_type=keyword_unordered", "capturedAt": "2026-07-21", "note": "The capture contains both official One Kings Lane cards and a keyword false positive; attribution must be checked card by card." },
+      "rights": { "status": "analysis-only", "allowedUses": ["analysis", "internal-review"], "modelUploadAllowed": false, "redistributionAllowed": false }
+    },
+    {
+      "id": "reference.pinterest.board-01",
+      "uri": "media/marketing-reference/pinterest-board-01.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "pinterest", "blue-white-room", "profile-board-cover"],
+      "lifecycle": "active",
+      "dimensions": { "width": 236, "height": 311 },
+      "checksumSha256": "bd8d8a59de5f003f7357593f9d320c5a274e2017f6472fdba2555bbf641a3515",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.pinterest.com/onekingslane/", "capturedAt": "2026-07-21", "recencyClass": "profile-board-reference" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "reference.pinterest.board-02",
+      "uri": "media/marketing-reference/pinterest-board-02.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "pinterest", "blue-white-room", "profile-board-cover"],
+      "lifecycle": "active",
+      "dimensions": { "width": 236, "height": 291 },
+      "checksumSha256": "603cbb60895cfed1530bd083240277bdd11f7a2303137cffa79ae49f3c77a986",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.pinterest.com/onekingslane/", "capturedAt": "2026-07-21", "recencyClass": "profile-board-reference" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "reference.pinterest.board-03",
+      "uri": "media/marketing-reference/pinterest-board-03.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "pinterest", "wicker-vignette", "profile-board-cover"],
+      "lifecycle": "active",
+      "dimensions": { "width": 236, "height": 236 },
+      "checksumSha256": "de672e5b37f2cfd708b05e4b212d692f8185efb10930ec3b1e5ccdd4e4601254",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.pinterest.com/onekingslane/", "capturedAt": "2026-07-21", "recencyClass": "profile-board-reference" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "reference.pinterest.board-04",
+      "uri": "media/marketing-reference/pinterest-board-04.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "pinterest", "styled-shelves", "profile-board-cover"],
+      "lifecycle": "active",
+      "dimensions": { "width": 236, "height": 295 },
+      "checksumSha256": "4a29be87a4770b91a0ab913b3945ff94094634fc2fdb1d7a48dcaff33fa5e12a",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.pinterest.com/onekingslane/", "capturedAt": "2026-07-21", "recencyClass": "profile-board-reference" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "reference.pinterest.board-05",
+      "uri": "media/marketing-reference/pinterest-board-05.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "pinterest", "neutral-bedroom", "profile-board-cover"],
+      "lifecycle": "active",
+      "dimensions": { "width": 236, "height": 295 },
+      "checksumSha256": "e14d61319eb856e44fe49e6bcb1e83f8995a7597c30ab6053f6dd96a04e1635e",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.pinterest.com/onekingslane/", "capturedAt": "2026-07-21", "recencyClass": "profile-board-reference" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "reference.pinterest.board-06",
+      "uri": "media/marketing-reference/pinterest-board-06.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "pinterest", "blue-floral-bathroom", "profile-board-cover"],
+      "lifecycle": "active",
+      "dimensions": { "width": 236, "height": 293 },
+      "checksumSha256": "c60e7c9fe27513c65f5f6846dc63129393c6138fcc521a988792e73c802ddc49",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.pinterest.com/onekingslane/", "capturedAt": "2026-07-21", "recencyClass": "profile-board-reference" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "reference.tiktok.latest-01",
+      "uri": "media/marketing-reference/tiktok-latest-01.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "tiktok", "vertical-cover", "historical-reference", "room-visual"],
+      "lifecycle": "active",
+      "dimensions": { "width": 1080, "height": 1920 },
+      "checksumSha256": "8b2255f13824d2894d468aaa57356455808f3a3fa6804a1c44e5a455c7f7e86f",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.tiktok.com/@onekingslane", "capturedAt": "2026-07-21", "recencyClass": "historical-profile-content" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "reference.tiktok.latest-02",
+      "uri": "media/marketing-reference/tiktok-latest-02.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "tiktok", "vertical-cover", "historical-reference", "holiday"],
+      "lifecycle": "active",
+      "dimensions": { "width": 1080, "height": 1920 },
+      "checksumSha256": "4ada5dd065fc9291fe265c4d2595bff745cfa96316e96df39f130d2395af7657",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.tiktok.com/@onekingslane", "capturedAt": "2026-07-21", "recencyClass": "historical-profile-content" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "reference.tiktok.latest-03",
+      "uri": "media/marketing-reference/tiktok-latest-03.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "tiktok", "vertical-cover", "historical-reference", "architectural"],
+      "lifecycle": "active",
+      "dimensions": { "width": 1080, "height": 1920 },
+      "checksumSha256": "1b8ef92e4bc4c368f013d4c7c7060f1dc746fdd57f3d30c43563ee35f22fa607",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.tiktok.com/@onekingslane", "capturedAt": "2026-07-21", "recencyClass": "historical-profile-content" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "reference.tiktok.latest-04",
+      "uri": "media/marketing-reference/tiktok-latest-04.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "tiktok", "vertical-cover", "historical-reference", "storage"],
+      "lifecycle": "active",
+      "dimensions": { "width": 1080, "height": 1920 },
+      "checksumSha256": "d1dcdf275fe87af7b18efaea65d051678718fef08f3752ac74e5703073361903",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.tiktok.com/@onekingslane", "capturedAt": "2026-07-21", "recencyClass": "historical-profile-content" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "reference.tiktok.latest-05",
+      "uri": "media/marketing-reference/tiktok-latest-05.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "tiktok", "vertical-cover", "historical-reference", "seasonal-sale"],
+      "lifecycle": "active",
+      "dimensions": { "width": 1080, "height": 1920 },
+      "checksumSha256": "04bb59f03e0f969797a524b14a08254259d855c10e04a487a39c5504f6f926d6",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.tiktok.com/@onekingslane", "capturedAt": "2026-07-21", "recencyClass": "historical-profile-content" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "reference.tiktok.latest-06",
+      "uri": "media/marketing-reference/tiktok-latest-06.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "tiktok", "vertical-cover", "historical-reference", "room-feature"],
+      "lifecycle": "active",
+      "dimensions": { "width": 406, "height": 580 },
+      "checksumSha256": "d838fb8f3dea3e2cf70ec4b79c57a3717cac9097d0f2e7b38ee1f36b8fa403ec",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.tiktok.com/@onekingslane", "capturedAt": "2026-07-21", "recencyClass": "historical-profile-content" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "reference.tiktok.latest-07",
+      "uri": "media/marketing-reference/tiktok-latest-07.jpg",
+      "kind": "image",
+      "roles": ["marketing-reference", "tiktok", "vertical-cover", "historical-reference", "style-message"],
+      "lifecycle": "active",
+      "dimensions": { "width": 1080, "height": 1920 },
+      "checksumSha256": "c06b6b5d67a62f2fde312ed03dc9ba443e978bdebdb2a24fb39e1ced064ea994",
+      "source": { "type": "official-social-profile-asset", "url": "https://www.tiktok.com/@onekingslane", "capturedAt": "2026-07-21", "recencyClass": "historical-profile-content" },
+      "rights": { "status": "unverified-public-reference", "allowedUses": ["analysis", "internal-marketing-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true }
+    },
+    {
+      "id": "example.generated.fountain-winter-garden",
+      "uri": "media/generated-example/austin-fountain-winter-garden-demo.png",
+      "kind": "image",
+      "roles": ["generated-example", "internal-demo", "product-in-context", "reference-transformation"],
+      "lifecycle": "experimental",
+      "dimensions": { "width": 1536, "height": 1024 },
+      "checksumSha256": "e2013e9776ed767410570ac4c27079e417be7b1079189d36c3825a25e6a9d057",
+      "source": { "type": "generated-internal-demo", "generatedAt": "2026-07-22", "inputIds": ["asset.product.austin-lifestyle", "asset.product.austin-detail"], "note": "Task-specific internal demonstration; not a catalog image or product-truth source." },
+      "rights": { "status": "generated-internal-demo", "allowedUses": ["analysis", "internal-demo", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true },
+      "annotations": { "recipeId": "gen-image.product-in-room", "editableVariables": { "environment": "formal winter garden", "timeOfDay": "blue hour", "weather": "light snow", "camera": "natural 55mm eye-level view", "copySide": "upper left" }, "fidelityStatus": "human-review-required" }
+    },
+    {
+      "id": "example.generated.environment-room-clean",
+      "uri": "media/generated-example/environment-room-clean-demo.png",
+      "kind": "image",
+      "roles": ["generated-example", "internal-demo", "editorial-room", "clean-visual-plate"],
+      "lifecycle": "experimental",
+      "dimensions": { "width": 1893, "height": 831 },
+      "checksumSha256": "80cb66cc0504e0eb630d6745f00dd61a551a0cd8d045401e711b558b6ef0df0c",
+      "source": { "type": "generated-internal-demo", "generatedAt": "2026-07-22", "inputIds": ["asset.editorial.made-in-usa"], "note": "Task-specific clean environmental derivative with campaign typography removed; not a catalog image or production-approved asset." },
+      "rights": { "status": "generated-internal-demo", "allowedUses": ["analysis", "internal-demo", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true },
+      "annotations": { "recipeId": "gen-image.clean-environment-plate", "composition": ["room-primary", "no-baked-copy", "wide-editorial-crop"], "fidelityStatus": "human-review-required" }
+    },
+    {
+      "id": "example.generated.fabric-texture-macro",
+      "uri": "media/generated-example/fabric-texture-macro-demo.png",
+      "kind": "image",
+      "roles": ["generated-example", "internal-demo", "material-detail", "textile-reference", "macro-photography"],
+      "lifecycle": "experimental",
+      "dimensions": { "width": 1536, "height": 1024 },
+      "checksumSha256": "98ce3c53f7a7e9a7facc04d25020a948248fdbdb9ed1e8a9f0a9fa3998d0af6f",
+      "source": { "type": "generated-internal-demo", "generatedAt": "2026-07-22", "inputIds": [], "note": "Task-specific material photography concept; not a swatch, specification, or production-approved textile reference." },
+      "rights": { "status": "generated-internal-demo", "allowedUses": ["analysis", "internal-demo", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true },
+      "annotations": { "recipeId": "gen-image.material-macro", "camera": ["100mm-macro", "f4", "shallow-controlled-depth"], "lighting": ["warm-raking-side-light", "natural-micro-shadow"], "composition": ["single-material", "central-focal-plane", "crop-flexible"], "fidelityStatus": "human-review-required" }
+    },
+    {
+      "id": "example.generated.chair-studio-commerce",
+      "uri": "media/generated-example/chair-studio-commerce-demo.png",
+      "kind": "image",
+      "roles": ["generated-example", "internal-demo", "commerce-concept", "studio-product", "chair"],
+      "lifecycle": "experimental",
+      "dimensions": { "width": 1122, "height": 1402 },
+      "checksumSha256": "21a57f2aa37bb088217508e13e2128081ad7b09c37702370890429566c2a2215",
+      "source": { "type": "generated-internal-demo", "generatedAt": "2026-07-22", "inputIds": [], "note": "Task-specific studio product concept; it does not represent a verified One Kings Lane catalog item, SKU, price, or inventory state." },
+      "rights": { "status": "generated-internal-demo", "allowedUses": ["analysis", "internal-demo", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true },
+      "annotations": { "recipeId": "gen-image.studio-commerce", "camera": ["85mm", "f8", "three-quarter-front"], "lighting": ["large-diffused-softbox", "neutral-fill", "grounded-contact-shadow"], "composition": ["single-product", "full-silhouette", "warm-ivory-seamless"], "fidelityStatus": "concept-only-human-review-required" }
+    },
+    {
+      "id": "example.generated.people-secondary-room",
+      "uri": "media/generated-example/people-secondary-room-demo.png",
+      "kind": "image",
+      "roles": ["generated-example", "internal-demo", "people-secondary", "editorial-room"],
+      "lifecycle": "experimental",
+      "dimensions": { "width": 1894, "height": 830 },
+      "checksumSha256": "ad59c75e7462a676a14b8a1e1ba841e71209663cc87ac5ba23cf6d39e0e4a459",
+      "source": { "type": "generated-internal-demo", "generatedAt": "2026-07-22", "inputIds": [], "note": "Task-specific internal demonstration of contextual casting; not production-approved likeness or catalog media." },
+      "rights": { "status": "generated-internal-demo", "allowedUses": ["analysis", "internal-demo", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true },
+      "annotations": { "recipeId": "gen-image.people-in-room", "composition": ["room-primary", "single-person-back-third", "candid-domestic-action"], "fidelityStatus": "human-review-required" }
+    },
+    {
+      "id": "example.motion.product-feature",
+      "uri": "media/generated-example/product-feature-motion-demo.mp4",
+      "kind": "video",
+      "roles": ["motion-example", "internal-demo", "full-bleed-feature", "product-feature"],
+      "lifecycle": "experimental",
+      "dimensions": { "width": 1920, "height": 1080 },
+      "durationSeconds": 5,
+      "frameRate": 30,
+      "checksumSha256": "b7b92725e11003446da55700fa0493b826e1db94378a8924c8bfc93781191fbd",
+      "source": { "type": "designed-motion-render", "generatedAt": "2026-07-22", "inputIds": ["example.video.fountain-winter-garden", "asset.logo.primary"], "note": "Internal designed-motion demonstration using the generated fountain clip as its full-bleed live background; editable source lives in the consuming adapter project." },
+      "rights": { "status": "generated-internal-demo", "allowedUses": ["analysis", "internal-demo", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true },
+      "annotations": { "recipeId": "motion.full-bleed-feature", "composition": ["full-bleed-background", "crisp-logo-layer", "editorial-copy-field"], "fidelityStatus": "human-review-required" }
+    },
+    {
+      "id": "example.video.fountain-winter-garden",
+      "uri": "media/generated-example/generative-video-demo.mp4",
+      "kind": "video",
+      "roles": ["generated-video-example", "internal-demo", "product-in-context", "clean-visual-plate"],
+      "lifecycle": "experimental",
+      "dimensions": { "width": 1764, "height": 1176 },
+      "durationSeconds": 5.041667,
+      "frameRate": 24,
+      "checksumSha256": "3d9e2d5f1113001caab588869ade4887ab5372050ccc7fbb7bc95fed9565c541",
+      "source": { "type": "generated-video-internal-demo", "generatedAt": "2026-07-22", "inputIds": ["example.generated.fountain-winter-garden"], "note": "Task-specific internal visual-plate demonstration; not approved catalog media." },
+      "rights": { "status": "generated-internal-demo", "allowedUses": ["analysis", "internal-demo", "internal-storyboard-reference"], "modelUploadAllowed": false, "redistributionAllowed": false, "reviewRequired": true },
+      "annotations": { "recipeId": "gen-video.product-in-context", "motion": ["subtle-water", "slow-push-in", "stable-geometry"], "continuityReview": "early-middle-late sampled frames passed internal visual review", "fidelityStatus": "human-review-required" }
+    }
+  ]
+}

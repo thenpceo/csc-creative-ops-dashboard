@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "one-kings-lane.spatial",
+  "capability": "spatial",
+  "version": "1.0.0",
+  "evidenceStatus": "inferred",
+  "extends": {
+    "tokens": {
+      "rendering": { "tone": "natural editorial", "contrast": "moderate", "saturation": "restrained", "highlightRolloff": "soft" },
+      "camera": { "fieldOfViewDegrees": [35, 55], "eyeHeightMeters": [1.2, 1.65], "verticals": "controlled" },
+      "light": { "key": "large directional daylight source", "fill": "soft environmental bounce", "practicals": "warm and restrained" },
+      "depth": { "foreground": "optional framing element", "midground": "hero furnishing", "background": "room context" }
+    },
+    "rules": [
+      { "id": "spatial.brand-before-technique", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["spatial", "motion"], "statement": "Use dimensional rendering to reveal material, scale, light, or product function; reject effects whose main message is the rendering technique itself.", "sourceIds": ["asset.product.austin-detail"] },
+      { "id": "spatial.material-physicality", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["spatial"], "statement": "Represent roughness, reflectance, translucency, weave, grain, glaze, and patina in physically plausible ranges appropriate to the named material.", "sourceIds": ["asset.product.austin-detail", "asset.editorial.new-arrivals"] },
+      { "id": "spatial.camera-human", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["spatial"], "statement": "Favor human-scale eye-level cameras, controlled perspective, and gentle travel; avoid impossible fly-throughs, excessive lens distortion, or continuous orbiting.", "sourceIds": ["asset.editorial.new-arrivals"] },
+      { "id": "spatial.effects-restrained", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["spatial", "motion"], "statement": "Keep grain, bloom, refraction, displacement, particles, depth blur, and light modulation subtle enough that type and products remain precise.", "sourceIds": ["source.audit.design-services.desktop"] },
+      { "id": "spatial.identity-composited", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["spatial", "motion"], "statement": "Keep logo and typography on controlled planar or composited layers unless an authorized physical sign is the actual subject.", "sourceIds": ["asset.logo.primary"] }
+    ],
+    "recipes": [
+      { "id": "spatial.product-turntable", "authority": "permitted", "appliesTo": ["spatial", "motion", "commerce"], "inputs": ["verifiedProductModel", "materialReferences", "approvedAngles", "background"], "composition": { "camera": "Stationary human-scale camera with a slow partial product rotation or stepped approved views.", "light": "Large soft key and controlled fill reveal shape and surface.", "background": "White, very light neutral, or quiet heritage field.", "constraint": "Geometry and materials must be validated against the product record." }, "ruleRefs": ["imagery.product-truth", "spatial.material-physicality", "spatial.camera-human"] },
+      { "id": "spatial.room-tableau", "authority": "preferred", "appliesTo": ["spatial", "motion"], "inputs": ["roomGeometry", "heroProduct", "supportingObjects", "materialPalette", "copySafeRegion"], "composition": { "layers": ["optional foreground frame", "hero furnishing in midground", "architectural context", "copy-safe planar region"], "movement": "Slow lateral or push-in movement on one axis.", "effects": "Optional subtle daylight shift or material highlight travel." }, "ruleRefs": ["imagery.wide-room", "spatial.brand-before-technique", "spatial.effects-restrained"] },
+      { "id": "spatial.material-transition", "authority": "permitted", "appliesTo": ["spatial", "motion", "sequential"], "inputs": ["materialA", "materialB", "productOrRoomContext"], "composition": { "transition": "Use a physical seam, lighting wipe, crop boundary, or measured mask to compare materials.", "constraint": "Do not liquefy, explode, or morph a real product; the transition explains a material story rather than replacing geometry." }, "ruleRefs": ["imagery.material-specificity", "spatial.effects-restrained", "motion.no-gimmicks"] }
+    ],
+    "evaluation": [
+      { "id": "spatial.material", "question": "Do materials respond to light in a plausible and specifically recognizable way?" },
+      { "id": "spatial.scale", "question": "Does the camera communicate human-scale rooms and truthful product proportions?" },
+      { "id": "spatial.restraint", "question": "Would removing an effect reduce understanding of material, scale, hierarchy, or story? If not, remove it." },
+      { "id": "spatial.performance", "question": "Does the destination meet its frame-rate, loading, fallback, and reduced-motion requirements?" }
+    ],
+    "mediaSelectors": ["asset.product.austin-lifestyle", "asset.product.austin-detail", "asset.editorial.new-arrivals", "asset.editorial.made-in-usa"]
+  }
+}

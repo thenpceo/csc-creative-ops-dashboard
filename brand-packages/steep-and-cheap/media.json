@@ -1,0 +1,383 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/media.schema.json",
+  "schemaVersion": "1.0.0",
+  "rightsPolicy": {
+    "default": "unverified-public-reference",
+    "productionUse": "Requires independent rights confirmation and brand authorization.",
+    "modelUpload": "Prohibited unless an authorized reviewer upgrades the asset record."
+  },
+  "items": [
+    {
+      "id": "asset.logo.primary",
+      "uri": "media/official/logo-primary.png",
+      "kind": "image",
+      "roles": [
+        "logo",
+        "primary-identity",
+        "brand-end-frame"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "033c4ec8baf94fe9c7c8ab0e335ca04986a11c31ea0fdf555ce4bfcc7c45e752",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.steepandcheap.com/images/brand/steepcheap_logo.png",
+        "capturedAt": "2026-07-21",
+        "contentType": "image/png"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference",
+          "authorized-brand-work"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.site.home",
+      "uri": "https://www.steepandcheap.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "current-or-canonical-brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "official-page",
+        "url": "https://www.steepandcheap.com/",
+        "reviewedAt": "2026-07-21",
+        "finalUrl": "https://www.steepandcheap.com/",
+        "surfaceStatus": "current"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.site.evidence",
+      "uri": "https://web.archive.org/web/20250815023114/https://www.steepandcheap.com/",
+      "kind": "document",
+      "roles": [
+        "source-evidence",
+        "brand-surface"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "archived-first-party-page",
+        "url": "https://web.archive.org/web/20250815023114/https://www.steepandcheap.com/",
+        "reviewedAt": "2026-07-21",
+        "note": "Live site returned human verification; values come from the first-party archived Chakra theme."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.audit.home.desktop",
+      "uri": "media/official/homepage-audit.png",
+      "kind": "image",
+      "roles": [
+        "source-evidence",
+        "desktop-audit",
+        "layout-reference",
+        "typography-reference",
+        "color-reference"
+      ],
+      "lifecycle": "active",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      },
+      "checksumSha256": "d83a5b186fe899661249d74eafcfb286e525ae9eb48fa8e8fce0aef0a6e6e7e5",
+      "source": {
+        "type": "live-capture",
+        "page": "https://www.steepandcheap.com/",
+        "requestedPage": "https://www.steepandcheap.com/",
+        "capturedAt": "2026-07-21",
+        "surfaceStatus": "current",
+        "note": "Rendered public homepage capture."
+      },
+      "rights": {
+        "status": "analysis-only",
+        "allowedUses": [
+          "analysis",
+          "internal-review"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "marketing.current.01",
+      "uri": "media/marketing-reference/current-01-up-to-60-off-men-s-activewear.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "hero-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "aa4e4c596ebda6124493508a68f094804ecdbdbd55c484d165b058b5e95058b2",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.steepandcheap.com/v3/assets/blt09fffca19cc7d396/6a44445fbf037c4a28fa6b25/SC26_0032_BB_SB_Men_s_Activewear.jpg?width=450",
+        "page": "https://www.steepandcheap.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Up to 60% off men’s activewear.",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.02",
+      "uri": "media/marketing-reference/current-02-up-to-60-off-women-s-activewear.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "18334e487ad7c89aa1cab1d5ecf3fdebe6698cda719c3f72d5266d200907bfaf",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.steepandcheap.com/v3/assets/bltd54be8f20527ca28/6a44445d4946d34e9923befd/SC26_0032_BB_Women_s_activewear.jpg?width=450",
+        "page": "https://www.steepandcheap.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Up to 60% off women’s activewear.",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.03",
+      "uri": "media/marketing-reference/current-03-up-to-60-off-bike-apparel.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "8f25301feef04abb2dc0f1ad845e4489afa9a95c1aec9feabfd92ef6857482ef",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.steepandcheap.com/v3/assets/bltbb3c306f51fce475/6a44445fcbeedd0321d752a0/SC26_0032_BB_Hike_Shoes.jpg?width=450",
+        "page": "https://www.steepandcheap.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Up to 60% off Bike apparel.",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.04",
+      "uri": "media/marketing-reference/current-04-up-to-75-off-winter-clearance.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "64348e71028f2a1229656ac8cba80c9e11cf1284444a2c01dd1692a6ab306ca1",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.steepandcheap.com/v3/assets/blt76c387eec282a46c/69cdb5f6267d5e666679f20c/BB_Ski_Clearance_SC26_0020.jpg?width=450",
+        "page": "https://www.steepandcheap.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Up to 75% off winter clearance",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.05",
+      "uri": "media/marketing-reference/current-05-shop-columbia-up-to-60-off.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "5405c441ac45a421daaebf8318844c53c2de4833777f343a211ea57193cf1d1e",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.steepandcheap.com/v3/assets/blt38d70372f6112c22/6a44445f27fb02b18e29ecf6/SC26_0044_BS_Columbia.jpg?width=450",
+        "page": "https://www.steepandcheap.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Shop Columbia up to 60% off",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "marketing.current.06",
+      "uri": "media/marketing-reference/current-06-shop-patagonia-up-to-50-off.jpg",
+      "kind": "image",
+      "roles": [
+        "marketing-reference",
+        "image-direction",
+        "campaign-reference"
+      ],
+      "lifecycle": "active",
+      "checksumSha256": "56f5bd60119423cf5112933b9ffef25cc4a72a1e1a9b9aa4b9e08a986df3aa57",
+      "source": {
+        "type": "official-site-asset",
+        "url": "https://content.steepandcheap.com/v3/assets/blt6444a70de9f979d5/6a444474a8ab286a16014ad9/SC26_0044_BS_Pat.jpg?width=450",
+        "page": "https://www.steepandcheap.com/",
+        "capturedAt": "2026-07-21",
+        "alt": "Shop Patagonia up to 50% off",
+        "contentType": "image/jpeg"
+      },
+      "rights": {
+        "status": "unverified-public-reference",
+        "allowedUses": [
+          "analysis",
+          "internal-storyboard-reference"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false,
+        "reviewRequired": true
+      }
+    },
+    {
+      "id": "source.social.facebook.01",
+      "uri": "https://www.facebook.com/SteepAndCheap",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.facebook.com/SteepAndCheap",
+        "reviewedAt": "2026-07-21",
+        "label": "Like us on Facebook"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.social.instagram.02",
+      "uri": "https://www.instagram.com/steepcheap",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "social-profile",
+        "public-reference"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "first-party-linked-social-profile",
+        "url": "https://www.instagram.com/steepcheap",
+        "reviewedAt": "2026-07-21",
+        "label": "Follow us on Instagram"
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    },
+    {
+      "id": "source.ad-library.meta-query",
+      "uri": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Steep%20%26%20Cheap&search_type=keyword_unordered",
+      "kind": "document",
+      "roles": [
+        "marketing-source",
+        "public-ad-library-query"
+      ],
+      "lifecycle": "active",
+      "source": {
+        "type": "public-ad-library-query",
+        "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=Steep%20%26%20Cheap&search_type=keyword_unordered",
+        "reviewedAt": "2026-07-21",
+        "note": "Live query reference only; results are volatile and do not establish spend, targeting, performance, or account ownership."
+      },
+      "rights": {
+        "status": "public-reference",
+        "allowedUses": [
+          "analysis",
+          "citation"
+        ],
+        "modelUploadAllowed": false,
+        "redistributionAllowed": false
+      }
+    }
+  ]
+}

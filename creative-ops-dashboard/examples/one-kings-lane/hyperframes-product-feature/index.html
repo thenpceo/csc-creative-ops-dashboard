@@ -1,0 +1,92 @@
+<!doctype html>
+<html
+  lang="en"
+  data-composition-variables='[
+    {"id":"eyebrow","type":"string","label":"Eyebrow","default":"THE GARDEN EDIT"},
+    {"id":"title","type":"string","label":"Title","default":"A quiet kind of presence."},
+    {"id":"productName","type":"string","label":"Product name","default":"The Austin Fountain"},
+    {"id":"support","type":"string","label":"Support copy","default":"Sculptural stone, moving water, and a garden settling into evening."},
+    {"id":"action","type":"string","label":"Action","default":"DISCOVER OUTDOOR LIVING"}
+  ]'
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #06312B; }
+      body { font-family: Arial, sans-serif; color: #FFFFFF; }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #06312B; }
+      .hero-video { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; background: #06312B; }
+      .scene { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; overflow: hidden; }
+      .copy-field { position: absolute; top: 0; left: 0; width: 780px; height: 1080px; padding: 90px 88px 84px; background: rgba(6,49,43,.94); display: flex; flex-direction: column; justify-content: space-between; }
+      .copy-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 34px; }
+      .logo { width: 310px; height: 110px; object-fit: contain; object-position: left center; filter: brightness(0) invert(1); }
+      .frame-id { font-size: 18px; line-height: 1; letter-spacing: .14em; font-weight: 700; color: #C6D0DC; padding-top: 11px; }
+      .copy-main { display: flex; flex-direction: column; align-items: flex-start; gap: 26px; }
+      .eyebrow { font-size: 21px; line-height: 1.2; letter-spacing: .15em; font-weight: 800; }
+      .rule { width: 138px; height: 3px; background: #C6D0DC; transform-origin: left center; }
+      .title { max-width: 600px; font-family: Georgia, 'Times New Roman', serif; font-size: 104px; line-height: .94; letter-spacing: -.045em; font-weight: 400; }
+      .product-name { font-family: Georgia, 'Times New Roman', serif; font-size: 37px; line-height: 1.1; font-weight: 400; color: #FFFFFF; }
+      .support { max-width: 555px; font-size: 27px; line-height: 1.45; font-weight: 400; color: #E0E9E6; }
+      .action { min-height: 68px; padding: 0 28px; border: 3px solid #FFFFFF; display: inline-flex; align-items: center; font-size: 18px; line-height: 1; letter-spacing: .13em; font-weight: 800; }
+      .copy-bottom { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+      .material-note { font-size: 17px; line-height: 1.3; letter-spacing: .1em; color: #C6D0DC; }
+      .timing { font-variant-numeric: tabular-nums; font-size: 18px; letter-spacing: .1em; color: #C6D0DC; }
+      .image-caption { position: absolute; right: 72px; bottom: 68px; width: 380px; padding-top: 18px; border-top: 3px solid rgba(255,255,255,.78); display: flex; justify-content: space-between; gap: 28px; color: #FFFFFF; font-size: 18px; line-height: 1.35; letter-spacing: .08em; text-shadow: 0 2px 16px rgba(0,0,0,.5); }
+      .image-caption b { font-size: 21px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="5" data-width="1920" data-height="1080">
+      <video id="fountain-plate" class="clip hero-video" src="assets/generative-video-demo.mp4" data-start="0" data-duration="5" data-track-index="0" muted playsinline preload="auto"></video>
+      <section id="scene" class="scene clip" data-start="0" data-duration="5" data-track-index="1">
+        <aside class="copy-field">
+          <div class="copy-top">
+            <img class="logo" src="assets/logo-primary.webp" alt="One Kings Lane" />
+            <span class="frame-id">01 / 01</span>
+          </div>
+          <div class="copy-main">
+            <span class="eyebrow" id="eyebrow"></span>
+            <span class="rule"></span>
+            <h1 class="title" id="title"></h1>
+            <h2 class="product-name" id="productName"></h2>
+            <p class="support" id="support"></p>
+            <span class="action" id="action"></span>
+          </div>
+          <div class="copy-bottom">
+            <span class="material-note">STONE · WATER · WINTER LIGHT</span>
+            <span class="timing">00:05</span>
+          </div>
+        </aside>
+        <div class="image-caption">
+          <b>LIVE YOUR STYLE</b>
+          <span>Quiet material presence, observed slowly.</span>
+        </div>
+      </section>
+    </div>
+    <script>
+      const variables = window.__hyperframes.getVariables();
+      for (const id of ["eyebrow", "title", "productName", "support", "action"]) {
+        document.getElementById(id).textContent = variables[id];
+      }
+
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      tl.fromTo(".copy-field", { x: -64, opacity: 0 }, { x: 0, opacity: 1, duration: .78, ease: "power3.out" }, .2);
+      tl.fromTo(".logo", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .52, ease: "power2.out" }, .48);
+      tl.fromTo(".frame-id", { opacity: 0 }, { opacity: 1, duration: .42, ease: "sine.out" }, .61);
+      tl.fromTo(".eyebrow", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: .44, ease: "power2.out" }, .78);
+      tl.fromTo(".rule", { scaleX: 0 }, { scaleX: 1, duration: .64, ease: "circ.out" }, .88);
+      tl.fromTo(".title", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: .9, ease: "expo.out" }, .98);
+      tl.fromTo(".product-name", { opacity: 0, x: -18 }, { opacity: 1, x: 0, duration: .58, ease: "power3.out" }, 1.2);
+      tl.fromTo(".support", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: .66, ease: "power1.out" }, 1.36);
+      tl.fromTo(".action", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: .48, ease: "power4.out" }, 1.58);
+      tl.fromTo(".copy-bottom", { opacity: 0 }, { opacity: 1, duration: .48, ease: "sine.out" }, 1.82);
+      tl.fromTo(".image-caption", { opacity: 0, x: 22 }, { opacity: 1, x: 0, duration: .62, ease: "power2.out" }, 2.05);
+      window.__timelines.main = tl;
+    </script>
+  </body>
+</html>

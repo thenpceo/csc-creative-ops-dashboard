@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "one-kings-lane.commerce",
+  "capability": "commerce",
+  "version": "1.0.0",
+  "evidenceStatus": "verified",
+  "extends": {
+    "tokens": {
+      "productImageRatio": "1:1",
+      "badge": { "height": 28, "paddingInline": 10, "radiusRef": "shape.radius.subtle", "backgroundRef": "color.brand.powder" },
+      "price": { "defaultColorRef": "color.text.primary", "saleColorRef": "color.brand.sale" }
+    },
+    "rules": [
+      { "id": "commerce.image-dominance", "authority": "required", "lifecycle": "active", "confidence": "verified", "appliesTo": ["commerce"], "statement": "Make the verified product image the dominant card element and keep badges from covering meaningful product detail.", "sourceIds": ["source.audit.collection.desktop"] },
+      { "id": "commerce.price-hierarchy", "authority": "required", "lifecycle": "active", "confidence": "verified", "appliesTo": ["commerce"], "statement": "Present current price clearly; use sale red only for a verified markdown and keep comparison-price treatment subordinate and readable.", "sourceIds": ["source.audit.collection.desktop"] },
+      { "id": "commerce.badges-are-factual", "authority": "required", "lifecycle": "active", "confidence": "verified", "appliesTo": ["commerce"], "statement": "Only display badges such as Best Seller, Exclusive, New, or Ready to Ship when provided by current product data.", "sourceIds": ["source.audit.collection.desktop"] },
+      { "id": "commerce.scarcity-not-invented", "authority": "prohibited", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["commerce"], "statement": "Never invent stock scarcity, popularity, countdowns, reviews, delivery speed, provenance, or trade eligibility.", "sourceIds": ["source.site.furniture", "source.site.product"] },
+      { "id": "commerce.service-layer", "authority": "preferred", "lifecycle": "active", "confidence": "verified", "appliesTo": ["commerce"], "statement": "Where relevant, connect product discovery to design expertise or trade support without interrupting the immediate shopping task.", "sourceIds": ["source.site.design-services", "source.site.trade"] }
+    ],
+    "recipes": [
+      { "id": "commerce.product-card", "authority": "required", "appliesTo": ["commerce", "interactive"], "inputs": ["verifiedImage", "verifiedName", "currentPrice", "optionalComparisonPrice", "currentBadges", "availability"], "composition": { "order": ["image", "badge", "availability or brand", "name", "price"], "imageScale": "Consistent within a row or comparison set.", "sale": "Current price in sale red; comparison price uses neutral text and strike only when semantically conveyed." }, "ruleRefs": ["component.product-card", "commerce.price-hierarchy", "commerce.badges-are-factual"] },
+      { "id": "commerce.product-gallery", "authority": "required", "appliesTo": ["commerce", "interactive"], "inputs": ["verifiedViews", "detailViews", "contextViews", "altText"], "composition": { "lead": "Most informative product view.", "sequence": ["whole product", "alternate angle", "material detail", "scale or room context"], "interaction": "Thumbnail, swipe, zoom, and keyboard controls expose the same ordered set." }, "ruleRefs": ["imagery.product-truth", "accessibility.interaction"] },
+      { "id": "commerce.promotion-state", "authority": "permitted", "appliesTo": ["commerce", "interactive", "static"], "inputs": ["verifiedOffer", "eligibility", "expiration", "legalQualifier"], "composition": { "placement": "Near the price or decision area without outranking product identity.", "copy": "State benefit first, then concise qualifier and accessible details." }, "ruleRefs": ["composition.promotion-banner", "claims.runtime-truth", "color.red-is-transactional"] }
+    ],
+    "evaluation": [
+      { "id": "commerce.truth", "question": "Can every price, badge, offer, availability, delivery, and product claim be traced to current data?" },
+      { "id": "commerce.decision", "question": "Can a shopper identify the product, current price, options, delivery implications, and next action without ambiguity?" },
+      { "id": "commerce.comparison", "question": "Do repeated products use consistent crops, scale, metadata order, and sale semantics?" }
+    ],
+    "mediaSelectors": ["source.audit.collection.desktop", "source.audit.product.desktop", "asset.product.austin-lifestyle", "asset.product.austin-detail"]
+  }
+}

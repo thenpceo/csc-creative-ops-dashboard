@@ -1,0 +1,369 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "level-nine-sports.marketing",
+  "capability": "marketing",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "objectives": [
+        "awareness",
+        "consideration",
+        "conversion",
+        "retention",
+        "community"
+      ],
+      "formats": {
+        "square": "1:1",
+        "portrait": "4:5",
+        "vertical": "9:16",
+        "landscape": "16:9",
+        "pin": "2:3",
+        "emailHero": "2:1"
+      },
+      "families": [
+        "season kickoff",
+        "package or setup guide",
+        "value gear edit",
+        "family outdoor story",
+        "service feature"
+      ]
+    },
+    "rules": [
+      {
+        "id": "marketing.brief",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "marketing"
+        ],
+        "statement": "Supply objective, audience, proposition, product or service, destination, format, required facts, rights, action, and expiration before generation.",
+        "sourceIds": []
+      },
+      {
+        "id": "marketing.one-message",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "marketing"
+        ],
+        "statement": "Use one primary message and one primary action. Supporting proof clarifies rather than competes.",
+        "sourceIds": [
+          "source.audit.home.desktop"
+        ]
+      },
+      {
+        "id": "marketing.layers",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "marketing"
+        ],
+        "statement": "Keep durable identity, campaign concept, verified product or service, current offer, and channel adaptation as separable layers.",
+        "sourceIds": []
+      },
+      {
+        "id": "marketing.current-facts",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "marketing"
+        ],
+        "statement": "Source and expire offers, prices, dates, inventory, eligibility, locations, results, popularity, and urgency at runtime.",
+        "sourceIds": []
+      },
+      {
+        "id": "marketing.channel-adaptation",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "marketing"
+        ],
+        "statement": "Adapt crop, pacing, caption density, safe areas, and interaction cues to the destination while preserving identity, voice, and truth.",
+        "sourceIds": []
+      },
+      {
+        "id": "marketing.rights",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "marketing"
+        ],
+        "statement": "Record origin, creator, permission, allowed edits and channels, credit, term, geography, music, talent, property, and revocation state.",
+        "sourceIds": []
+      },
+      {
+        "id": "marketing.variants",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "marketing"
+        ],
+        "statement": "Name hook, visual, proof, action, and format axes. Change one or two axes per variant while locking rights, product truth, offer truth, and destination.",
+        "sourceIds": []
+      },
+      {
+        "id": "marketing.no-performance-inference",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "marketing"
+        ],
+        "statement": "Reference creative does not establish spend, targeting, return, conversion, audience response, or channel priority.",
+        "sourceIds": []
+      }
+    ],
+    "recipes": [
+      {
+        "id": "marketing.brand-story",
+        "authority": "preferred",
+        "appliesTo": [
+          "marketing",
+          "motion",
+          "static"
+        ],
+        "inputs": [
+          "brief",
+          "approvedMedia",
+          "specificBrandProof",
+          "action"
+        ],
+        "structure": [
+          "distinctive world",
+          "specific premise",
+          "proof",
+          "single invitation"
+        ],
+        "ruleRefs": [
+          "marketing.brief",
+          "voice.core"
+        ]
+      },
+      {
+        "id": "marketing.product-proof",
+        "authority": "preferred",
+        "appliesTo": [
+          "marketing",
+          "commerce"
+        ],
+        "inputs": [
+          "verifiedProduct",
+          "realUse",
+          "specificProof",
+          "currentFact",
+          "action"
+        ],
+        "structure": [
+          "product or use hook",
+          "specific proof",
+          "current fact",
+          "action"
+        ],
+        "ruleRefs": [
+          "marketing.current-facts",
+          "product.truth"
+        ]
+      },
+      {
+        "id": "marketing.expert-story",
+        "authority": "preferred",
+        "appliesTo": [
+          "marketing",
+          "motion",
+          "sequential"
+        ],
+        "inputs": [
+          "approvedExpert",
+          "verifiedQuestion",
+          "evidence",
+          "captions",
+          "action"
+        ],
+        "structure": [
+          "question",
+          "expert context",
+          "specific evidence",
+          "useful next step"
+        ],
+        "ruleRefs": [
+          "people.permission",
+          "marketing.rights"
+        ]
+      },
+      {
+        "id": "marketing.guide",
+        "authority": "preferred",
+        "appliesTo": [
+          "marketing",
+          "static",
+          "motion"
+        ],
+        "inputs": [
+          "audienceQuestion",
+          "verifiedGuidance",
+          "productOrService",
+          "action"
+        ],
+        "structure": [
+          "question",
+          "three or fewer points",
+          "example",
+          "action"
+        ],
+        "ruleRefs": [
+          "voice.specificity",
+          "marketing.one-message"
+        ]
+      },
+      {
+        "id": "marketing.vertical-short",
+        "authority": "preferred",
+        "appliesTo": [
+          "marketing",
+          "motion"
+        ],
+        "inputs": [
+          "verticalMedia",
+          "hook",
+          "proof",
+          "captions",
+          "action"
+        ],
+        "structure": [
+          "immediate visual",
+          "one concise idea",
+          "proof detail",
+          "clean resolve"
+        ],
+        "ruleRefs": [
+          "marketing.channel-adaptation",
+          "accessibility.contrast"
+        ]
+      },
+      {
+        "id": "marketing.current-promotion",
+        "authority": "permitted",
+        "appliesTo": [
+          "marketing",
+          "static",
+          "motion"
+        ],
+        "inputs": [
+          "currentOffer",
+          "source",
+          "expiration",
+          "scope",
+          "action"
+        ],
+        "structure": [
+          "verified offer",
+          "scope",
+          "context",
+          "terms",
+          "action"
+        ],
+        "ruleRefs": [
+          "marketing.current-facts",
+          "marketing.layers"
+        ]
+      },
+      {
+        "id": "marketing.email-site-hero",
+        "authority": "preferred",
+        "appliesTo": [
+          "marketing",
+          "interactive",
+          "static"
+        ],
+        "inputs": [
+          "campaignMedia",
+          "headline",
+          "proofOrOffer",
+          "action",
+          "mobileCrop"
+        ],
+        "structure": [
+          "editorial media",
+          "protected title",
+          "proof or current offer",
+          "one action"
+        ],
+        "ruleRefs": [
+          "marketing.layers",
+          "action.one-primary"
+        ]
+      },
+      {
+        "id": "marketing.variant-matrix",
+        "authority": "preferred",
+        "appliesTo": [
+          "marketing"
+        ],
+        "inputs": [
+          "baseBrief",
+          "approvedHooks",
+          "approvedVisuals",
+          "approvedProof",
+          "approvedActions",
+          "formats"
+        ],
+        "structure": [
+          "parent brief",
+          "named variable axes",
+          "variant lineage",
+          "approval and expiration"
+        ],
+        "ruleRefs": [
+          "marketing.variants",
+          "marketing.brief"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "marketing.objective",
+        "question": "Is the asset tied to one supplied objective and audience?"
+      },
+      {
+        "id": "marketing.message",
+        "question": "Is one specific message clear immediately at intended size?"
+      },
+      {
+        "id": "marketing.brand",
+        "question": "Does it express energetic, approachable, practical, value-led, outdoorsy, helpful without relying on the logo alone?"
+      },
+      {
+        "id": "marketing.truth",
+        "question": "Are product, service, offer, date, destination, attribution, and claim facts sourced and current?"
+      },
+      {
+        "id": "marketing.rights",
+        "question": "Are media, people, music, creator, and location rights documented?"
+      },
+      {
+        "id": "marketing.lineage",
+        "question": "Can the output be traced to its brief, sources, variants, approvals, and expiration?"
+      }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "source.audit.home.desktop",
+      "source.site.home",
+      "marketing.historical.01",
+      "marketing.historical.02",
+      "marketing.historical.03",
+      "marketing.historical.04",
+      "marketing.historical.05",
+      "marketing.historical.06"
+    ]
+  }
+}

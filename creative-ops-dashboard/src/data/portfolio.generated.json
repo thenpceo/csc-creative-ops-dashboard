@@ -1,0 +1,2351 @@
+{
+  "generatedAt": "2026-07-22T23:41:00.274Z",
+  "brands": [
+    {
+      "slug": "one-kings-lane",
+      "name": "One Kings Lane",
+      "description": "A design-led home destination combining curated furnishings, editorial inspiration, vintage character, and expert design help.",
+      "proposition": "Products, expertise, and inspiration that help people live their own style.",
+      "signature": "Live Your Style",
+      "voiceSummary": "Warm expertise with an editorial eye: specific, confident, helpful, and never aloof.",
+      "audiences": [
+        "Design-conscious homeowners",
+        "Interior designers and trade professionals",
+        "Collectors and vintage shoppers",
+        "Premium home-commerce shoppers seeking guidance"
+      ],
+      "traits": [
+        "cultivated",
+        "personal",
+        "optimistic",
+        "expert",
+        "timeless",
+        "livable"
+      ],
+      "category": "Home",
+      "status": "Active",
+      "logo": "/brands/one-kings-lane/logo.webp",
+      "homepage": null,
+      "hero": "/brands/one-kings-lane/hero.webp",
+      "feature": "/brands/one-kings-lane/feature.jpg",
+      "detailAssets": {
+        "austin-fountain-detail": "/brands/one-kings-lane/austin-fountain-detail.jpg",
+        "austin-fountain-lifestyle": "/brands/one-kings-lane/austin-fountain-lifestyle.jpg",
+        "design-services-banner": "/brands/one-kings-lane/design-services-banner.webp",
+        "logo-compact": "/brands/one-kings-lane/logo-compact.webp",
+        "logo-primary": "/brands/one-kings-lane/logo-primary.webp",
+        "lounge-furniture-category": "/brands/one-kings-lane/lounge-furniture-category.png",
+        "made-in-usa-room": "/brands/one-kings-lane/made-in-usa-room.webp",
+        "new-arrivals-editorial": "/brands/one-kings-lane/new-arrivals-editorial.webp",
+        "seasonal-sale-banner": "/brands/one-kings-lane/seasonal-sale-banner.webp",
+        "summer-escape-hero": "/brands/one-kings-lane/summer-escape-hero.webp",
+        "social-reference-1": "/brands/one-kings-lane/social-reference-1.jpg",
+        "social-reference-2": "/brands/one-kings-lane/social-reference-2.jpg",
+        "social-reference-3": "/brands/one-kings-lane/social-reference-3.jpg",
+        "social-reference-4": "/brands/one-kings-lane/social-reference-4.jpg",
+        "social-reference-5": "/brands/one-kings-lane/social-reference-5.jpg",
+        "social-reference-6": "/brands/one-kings-lane/social-reference-6.jpg",
+        "social-reference-7": "/brands/one-kings-lane/social-reference-7.jpg",
+        "social-reference-8": "/brands/one-kings-lane/social-reference-8.jpg",
+        "austin-fountain-winter-garden-demo": "/brands/one-kings-lane/austin-fountain-winter-garden-demo.png",
+        "chair-studio-commerce-demo": "/brands/one-kings-lane/chair-studio-commerce-demo.png",
+        "environment-room-clean-demo": "/brands/one-kings-lane/environment-room-clean-demo.png",
+        "fabric-texture-macro-demo": "/brands/one-kings-lane/fabric-texture-macro-demo.png",
+        "generative-video-demo": "/brands/one-kings-lane/generative-video-demo.mp4",
+        "people-secondary-room-demo": "/brands/one-kings-lane/people-secondary-room-demo.png",
+        "product-feature-motion-demo": "/brands/one-kings-lane/product-feature-motion-demo.mp4"
+      },
+      "colors": [
+        {
+          "name": "brand.heritageDeep",
+          "value": "#06312B",
+          "confidence": "verified"
+        },
+        {
+          "name": "brand.heritage",
+          "value": "#3B5F58",
+          "confidence": "verified"
+        },
+        {
+          "name": "brand.heritageBright",
+          "value": "#1E5F53",
+          "confidence": "verified"
+        },
+        {
+          "name": "brand.powder",
+          "value": "#C6D0DC",
+          "confidence": "verified"
+        },
+        {
+          "name": "brand.sale",
+          "value": "#CA3B4C",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "families": {
+          "editorial": {
+            "value": "Chronicle Display",
+            "fallback": "Georgia, 'Times New Roman', serif",
+            "confidence": "verified"
+          },
+          "interface": {
+            "value": "Sofia Pro",
+            "fallback": "Avenir, Montserrat, Arial, sans-serif",
+            "confidence": "verified"
+          },
+          "reading": {
+            "value": "Lato",
+            "fallback": "Arial, sans-serif",
+            "confidence": "verified"
+          }
+        },
+        "roles": {
+          "display": {
+            "family": "editorial",
+            "size": {
+              "desktop": 48,
+              "tablet": 40,
+              "mobile": 34
+            },
+            "lineHeight": 1.08,
+            "weight": 400,
+            "letterSpacingEm": 0,
+            "case": "sentence"
+          },
+          "editorialHeading": {
+            "family": "editorial",
+            "size": {
+              "desktop": 30,
+              "mobile": 26
+            },
+            "lineHeight": 1.15,
+            "weight": 400,
+            "letterSpacingEm": 0,
+            "case": "sentence"
+          },
+          "sectionHeading": {
+            "family": "interface",
+            "size": {
+              "desktop": 30,
+              "mobile": 25
+            },
+            "lineHeight": 1.2,
+            "weight": 400,
+            "letterSpacingEm": 0.1,
+            "case": "uppercase"
+          },
+          "productTitle": {
+            "family": "interface",
+            "size": {
+              "desktop": 20,
+              "mobile": 18
+            },
+            "lineHeight": 1.3,
+            "weight": 800,
+            "letterSpacingEm": 0,
+            "case": "title"
+          },
+          "subheading": {
+            "family": "interface",
+            "size": {
+              "desktop": 20,
+              "mobile": 18
+            },
+            "lineHeight": 1.3,
+            "weight": 600,
+            "letterSpacingEm": 0,
+            "case": "title"
+          },
+          "body": {
+            "family": "reading",
+            "size": {
+              "desktop": 16,
+              "mobile": 16
+            },
+            "lineHeight": 1.55,
+            "weight": 400,
+            "letterSpacingEm": 0.025,
+            "case": "sentence"
+          },
+          "bodySmall": {
+            "family": "reading",
+            "size": {
+              "desktop": 14,
+              "mobile": 14
+            },
+            "lineHeight": 1.5,
+            "weight": 400,
+            "letterSpacingEm": 0.02,
+            "case": "sentence"
+          },
+          "navigation": {
+            "family": "interface",
+            "size": {
+              "desktop": 14,
+              "mobile": 14
+            },
+            "lineHeight": 1.2,
+            "weight": 500,
+            "letterSpacingEm": 0.02,
+            "case": "title"
+          },
+          "action": {
+            "family": "interface",
+            "size": {
+              "desktop": 12,
+              "mobile": 12
+            },
+            "lineHeight": 1.15,
+            "weight": 800,
+            "letterSpacingEm": 0.145,
+            "case": "uppercase"
+          },
+          "label": {
+            "family": "interface",
+            "size": {
+              "desktop": 12,
+              "mobile": 12
+            },
+            "lineHeight": 1.2,
+            "weight": 800,
+            "letterSpacingEm": 0.08,
+            "case": "uppercase"
+          }
+        },
+        "licensing": "Chronicle Display, Sofia Pro, and Lato were observed on the live site. Consumers must supply legally licensed font files or use the documented fallbacks."
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "usage": "default controls, cards, panels, and media"
+          },
+          "subtle": {
+            "value": 2,
+            "unit": "px",
+            "usage": "small status chips only"
+          },
+          "circle": {
+            "value": 9999,
+            "unit": "px",
+            "usage": "icon controls and avatars only"
+          }
+        }
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "gutter": {
+          "desktop": 32,
+          "tablet": 24,
+          "mobile": 16
+        },
+        "columns": {
+          "desktop": 12,
+          "tablet": 8,
+          "mobile": 4
+        },
+        "breakpoints": {
+          "compact": 0,
+          "medium": 768,
+          "wide": 1024,
+          "expanded": 1280
+        },
+        "imageRatios": {
+          "editorialWide": "2:1",
+          "campaignWide": "144:73",
+          "productSquare": "1:1",
+          "categoryPortrait": "0.81:1"
+        }
+      },
+      "counts": {
+        "rules": 32,
+        "recipes": 10,
+        "modules": 10,
+        "sources": 61,
+        "assets": 30
+      },
+      "packagePath": "brand-packages/one-kings-lane"
+    },
+    {
+      "slug": "backcountry",
+      "name": "Backcountry",
+      "description": "Editorial outdoor commerce with expert credibility and cinematic expedition imagery.",
+      "proposition": "Expert-selected gear, owned-brand equipment, and human Gearhead guidance for people who actively spend time outdoors.",
+      "signature": "Gearhead expertise",
+      "voiceSummary": "Practical outdoor expertise with firsthand specificity. Confident and encouraging, never macho or vague.",
+      "audiences": [
+        "Committed outdoor participants",
+        "Newer customers who need expert gear guidance",
+        "Multi-activity households",
+        "Customers shopping technical apparel and equipment"
+      ],
+      "traits": [
+        "capable",
+        "expert",
+        "adventurous",
+        "direct",
+        "field-tested",
+        "welcoming"
+      ],
+      "category": "Outdoor",
+      "status": "Not Active",
+      "logo": "/brands/backcountry/logo.png",
+      "homepage": "/brands/backcountry/homepage.png",
+      "hero": "/brands/backcountry/hero.jpg",
+      "feature": "/brands/backcountry/feature.jpg",
+      "detailAssets": {},
+      "colors": [
+        {
+          "name": "primary",
+          "value": "#36827F",
+          "confidence": "verified"
+        },
+        {
+          "name": "primary.hover",
+          "value": "#132E2C",
+          "confidence": "verified"
+        },
+        {
+          "name": "secondary",
+          "value": "#AA4026",
+          "confidence": "verified"
+        },
+        {
+          "name": "accent",
+          "value": "#DDC9A3",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.primary",
+          "value": "#FFFFFF",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "headline.display": {
+          "fontFamily": "Tiempos Headline, Georgia, serif",
+          "fontSize": "48px",
+          "fontWeight": 500,
+          "lineHeight": 1.05,
+          "letterSpacing": "-0.02em",
+          "confidence": "verified"
+        },
+        "headline.lg": {
+          "fontFamily": "Tiempos Headline, Georgia, serif",
+          "fontSize": "36px",
+          "fontWeight": 500,
+          "lineHeight": 1.1,
+          "letterSpacing": "-0.01em",
+          "confidence": "verified"
+        },
+        "headline.md": {
+          "fontFamily": "Flama, Helvetica, Arial, sans-serif",
+          "fontSize": "28px",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.lg": {
+          "fontFamily": "Flama, Helvetica, Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.md": {
+          "fontFamily": "Flama, Helvetica, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "label.sm": {
+          "fontFamily": "Flama, Helvetica, Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": 600,
+          "lineHeight": 1.25,
+          "letterSpacing": "0.05em",
+          "confidence": "verified"
+        }
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "sm": {
+            "value": 2,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "md": {
+            "value": 4,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "lg": {
+            "value": 8,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "full": {
+            "value": 9999,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          }
+        },
+        "defaultRadiusRef": "shape.radius.md"
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "columns": {
+          "expanded": 12,
+          "medium": 8,
+          "compact": 4
+        },
+        "gutters": {
+          "expanded": 24,
+          "medium": 20,
+          "compact": 16,
+          "unit": "px"
+        }
+      },
+      "counts": {
+        "rules": 21,
+        "recipes": 12,
+        "modules": 10,
+        "sources": 15,
+        "assets": 8
+      },
+      "packagePath": "brand-packages/backcountry"
+    },
+    {
+      "slug": "bike-tires-direct",
+      "name": "BikeTiresDirect",
+      "description": "Dense enthusiast cycling retail with navy utility chrome, red promotions, and gold deal accents.",
+      "proposition": "Broad cycling selection, visible value, and practical product detail for riders who want to compare and buy efficiently.",
+      "signature": "Selection and value made visible",
+      "voiceSummary": "Straightforward cycling retail language with concrete pricing, compatibility, and availability context.",
+      "audiences": [
+        "Everyday and enthusiast cyclists",
+        "Value-conscious component shoppers",
+        "Riders maintaining multiple bicycles",
+        "Customers who prefer dense product comparison"
+      ],
+      "traits": [
+        "practical",
+        "dense",
+        "trustworthy",
+        "deal-aware",
+        "enthusiast",
+        "efficient"
+      ],
+      "category": "Cycling",
+      "status": "Not Active",
+      "logo": "/brands/bike-tires-direct/logo.svg",
+      "homepage": "/brands/bike-tires-direct/homepage.png",
+      "hero": "/brands/bike-tires-direct/hero.jpg",
+      "feature": "/brands/bike-tires-direct/feature.jpg",
+      "detailAssets": {},
+      "colors": [
+        {
+          "name": "primary",
+          "value": "#163178",
+          "confidence": "verified"
+        },
+        {
+          "name": "secondary",
+          "value": "#D8202A",
+          "confidence": "verified"
+        },
+        {
+          "name": "accent",
+          "value": "#EFC62D",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.primary",
+          "value": "#FFFFFF",
+          "confidence": "verified"
+        },
+        {
+          "name": "surface.muted",
+          "value": "#EFEFEF",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "headline.display": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "32px",
+          "fontWeight": 700,
+          "lineHeight": 1.1,
+          "letterSpacing": "-0.01em",
+          "confidence": "verified"
+        },
+        "headline.lg": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "headline.md": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": 600,
+          "lineHeight": 1.25,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.lg": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.45,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.md": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "lineHeight": 1.45,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "label.sm": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": 700,
+          "lineHeight": 1.2,
+          "letterSpacing": "0.03em",
+          "confidence": "verified"
+        }
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "sm": {
+            "value": 3,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "md": {
+            "value": 5,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "lg": {
+            "value": 15,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "full": {
+            "value": 9999,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          }
+        },
+        "defaultRadiusRef": "shape.radius.md"
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "columns": {
+          "expanded": 12,
+          "medium": 8,
+          "compact": 4
+        },
+        "gutters": {
+          "expanded": 24,
+          "medium": 20,
+          "compact": 16,
+          "unit": "px"
+        }
+      },
+      "counts": {
+        "rules": 21,
+        "recipes": 12,
+        "modules": 10,
+        "sources": 12,
+        "assets": 6
+      },
+      "packagePath": "brand-packages/bike-tires-direct"
+    },
+    {
+      "slug": "competitive-cyclist",
+      "name": "Competitive Cyclist",
+      "description": "High-performance cycling commerce with race-day precision and a disciplined red signal color.",
+      "proposition": "Enthusiast-grade bikes, components, apparel, and technical guidance for riders optimizing real performance.",
+      "signature": "Race-day precision",
+      "voiceSummary": "Informed rider-to-rider expertise. Specific about discipline, geometry, compatibility, and performance without empty hype.",
+      "audiences": [
+        "Experienced road, gravel, and mountain riders",
+        "Riders comparing high-value technical equipment",
+        "Competitive and performance-focused cyclists",
+        "Customers building or upgrading bicycles"
+      ],
+      "traits": [
+        "precise",
+        "technical",
+        "fast",
+        "disciplined",
+        "informed",
+        "performance-led"
+      ],
+      "category": "Cycling",
+      "status": "Not Active",
+      "logo": "/brands/competitive-cyclist/logo.png",
+      "homepage": "/brands/competitive-cyclist/homepage.png",
+      "hero": "/brands/competitive-cyclist/hero.jpg",
+      "feature": "/brands/competitive-cyclist/feature.jpg",
+      "detailAssets": {},
+      "colors": [
+        {
+          "name": "primary",
+          "value": "#CC0000",
+          "confidence": "verified"
+        },
+        {
+          "name": "primary.hover",
+          "value": "#B40400",
+          "confidence": "verified"
+        },
+        {
+          "name": "secondary",
+          "value": "#333333",
+          "confidence": "verified"
+        },
+        {
+          "name": "accent",
+          "value": "#D74009",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.primary",
+          "value": "#FFFFFF",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "headline.display": {
+          "fontFamily": "proxima-nova, Helvetica, Arial, sans-serif",
+          "fontSize": "40px",
+          "fontWeight": 700,
+          "lineHeight": 1.05,
+          "letterSpacing": "-0.02em",
+          "confidence": "verified"
+        },
+        "headline.lg": {
+          "fontFamily": "proxima-nova, Helvetica, Arial, sans-serif",
+          "fontSize": "36px",
+          "fontWeight": 700,
+          "lineHeight": 1.1,
+          "letterSpacing": "-0.01em",
+          "confidence": "verified"
+        },
+        "headline.md": {
+          "fontFamily": "proxima-nova, Helvetica, Arial, sans-serif",
+          "fontSize": "28px",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.lg": {
+          "fontFamily": "proxima-nova, Helvetica, Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.md": {
+          "fontFamily": "proxima-nova, Helvetica, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "label.sm": {
+          "fontFamily": "proxima-nova, Helvetica, Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": 600,
+          "lineHeight": 1.25,
+          "letterSpacing": "0.06em",
+          "confidence": "verified"
+        }
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "sm": {
+            "value": 2,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "md": {
+            "value": 4,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "lg": {
+            "value": 8,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "full": {
+            "value": 9999,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          }
+        },
+        "defaultRadiusRef": "shape.radius.md"
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "columns": {
+          "expanded": 12,
+          "medium": 8,
+          "compact": 4
+        },
+        "gutters": {
+          "expanded": 24,
+          "medium": 20,
+          "compact": 16,
+          "unit": "px"
+        }
+      },
+      "counts": {
+        "rules": 21,
+        "recipes": 12,
+        "modules": 10,
+        "sources": 15,
+        "assets": 8
+      },
+      "packagePath": "brand-packages/competitive-cyclist"
+    },
+    {
+      "slug": "home-consignment-center",
+      "name": "Home Consignment Center",
+      "description": "Bold upscale consignment retail combining gallery-scale imagery, navy depth, and decisive red actions.",
+      "proposition": "A local destination for discovering and consigning distinctive furniture, decor, art, and jewelry with constantly changing inventory.",
+      "signature": "Find it. Love it. Give it a new home.",
+      "voiceSummary": "Energetic local retail confidence with clear consignment guidance and no false permanence about one-of-a-kind inventory.",
+      "audiences": [
+        "Homeowners seeking distinctive furnishings",
+        "Sellers consigning quality home goods or jewelry",
+        "Local design shoppers",
+        "Value-conscious premium and vintage shoppers"
+      ],
+      "traits": [
+        "bold",
+        "upscale",
+        "local",
+        "approachable",
+        "discovery-led",
+        "trustworthy"
+      ],
+      "category": "Home",
+      "status": "Not Active",
+      "logo": "/brands/home-consignment-center/logo.png",
+      "homepage": "/brands/home-consignment-center/homepage.png",
+      "hero": "/brands/home-consignment-center/hero.avif",
+      "feature": "/brands/home-consignment-center/feature.avif",
+      "detailAssets": {},
+      "colors": [
+        {
+          "name": "primary",
+          "value": "#BA232D",
+          "confidence": "verified"
+        },
+        {
+          "name": "secondary",
+          "value": "#233D58",
+          "confidence": "verified"
+        },
+        {
+          "name": "accent",
+          "value": "#A4928E",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.primary",
+          "value": "#FFFFFF",
+          "confidence": "verified"
+        },
+        {
+          "name": "surface.muted",
+          "value": "#FBF4E9",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "headline.display": {
+          "fontFamily": "Archivo, Helvetica, Arial, sans-serif",
+          "fontSize": "64px",
+          "fontWeight": 800,
+          "lineHeight": 1.05,
+          "letterSpacing": "-0.02em",
+          "confidence": "verified"
+        },
+        "headline.lg": {
+          "fontFamily": "Archivo, Helvetica, Arial, sans-serif",
+          "fontSize": "48px",
+          "fontWeight": 700,
+          "lineHeight": 1.1,
+          "letterSpacing": "-0.01em",
+          "confidence": "verified"
+        },
+        "headline.md": {
+          "fontFamily": "Archivo, Helvetica, Arial, sans-serif",
+          "fontSize": "32px",
+          "fontWeight": 700,
+          "lineHeight": 1.2,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.lg": {
+          "fontFamily": "Archivo, Helvetica, Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 300,
+          "lineHeight": 1.6,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.md": {
+          "fontFamily": "Archivo, Helvetica, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "label.sm": {
+          "fontFamily": "Archivo, Helvetica, Arial, sans-serif",
+          "fontSize": "13px",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "letterSpacing": "0.04em",
+          "confidence": "verified"
+        }
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "sm": {
+            "value": 2,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "md": {
+            "value": 4,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "lg": {
+            "value": 15,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "full": {
+            "value": 9999,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          }
+        },
+        "defaultRadiusRef": "shape.radius.md"
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "columns": {
+          "expanded": 12,
+          "medium": 8,
+          "compact": 4
+        },
+        "gutters": {
+          "expanded": 24,
+          "medium": 20,
+          "compact": 16,
+          "unit": "px"
+        }
+      },
+      "counts": {
+        "rules": 21,
+        "recipes": 12,
+        "modules": 10,
+        "sources": 9,
+        "assets": 6
+      },
+      "packagePath": "brand-packages/home-consignment-center"
+    },
+    {
+      "slug": "home-designs",
+      "name": "Home Designs",
+      "description": "Residential design services grounded in architectural imagery, heritage serif headlines, maroon, and gold.",
+      "proposition": "Local residential design and cabinetry expertise that turns material choices and practical needs into enduring finished rooms.",
+      "signature": "Designed for how the home is lived",
+      "voiceSummary": "Calm craft expertise. Explain scope, material, process, and next steps in plain language.",
+      "audiences": [
+        "Homeowners planning kitchens and built-ins",
+        "Renovation clients",
+        "Residential builders and remodelers",
+        "Customers seeking consultation-led material decisions"
+      ],
+      "traits": [
+        "established",
+        "craft-led",
+        "consultative",
+        "local",
+        "material",
+        "reassuring"
+      ],
+      "category": "Home",
+      "status": "Not Active",
+      "logo": "/brands/home-designs/logo.png",
+      "homepage": "/brands/home-designs/homepage.png",
+      "hero": "/brands/home-designs/hero.jpg",
+      "feature": "/brands/home-designs/feature.png",
+      "detailAssets": {},
+      "colors": [
+        {
+          "name": "primary",
+          "value": "#5A0D0D",
+          "confidence": "verified"
+        },
+        {
+          "name": "secondary",
+          "value": "#E49E0A",
+          "confidence": "verified"
+        },
+        {
+          "name": "accent",
+          "value": "#0E6897",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.primary",
+          "value": "#FFFFFF",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.secondary",
+          "value": "#191919",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "headline.display": {
+          "fontFamily": "Marcellus, Georgia, serif",
+          "fontSize": "50px",
+          "fontWeight": 700,
+          "lineHeight": 1.1,
+          "letterSpacing": "-0.01em",
+          "confidence": "verified"
+        },
+        "headline.lg": {
+          "fontFamily": "Marcellus, Georgia, serif",
+          "fontSize": "40px",
+          "fontWeight": 700,
+          "lineHeight": 1.15,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "headline.md": {
+          "fontFamily": "Marcellus, Georgia, serif",
+          "fontSize": "30px",
+          "fontWeight": 700,
+          "lineHeight": 1.2,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.lg": {
+          "fontFamily": "Mulish, Helvetica, Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.md": {
+          "fontFamily": "Mulish, Helvetica, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "label.sm": {
+          "fontFamily": "Montserrat, Helvetica, Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": 700,
+          "lineHeight": 1.2,
+          "letterSpacing": "0.06em",
+          "confidence": "verified"
+        }
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "sm": {
+            "value": 6,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "md": {
+            "value": 12,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "lg": {
+            "value": 25,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "full": {
+            "value": 9999,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          }
+        },
+        "defaultRadiusRef": "shape.radius.md"
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "columns": {
+          "expanded": 12,
+          "medium": 8,
+          "compact": 4
+        },
+        "gutters": {
+          "expanded": 24,
+          "medium": 20,
+          "compact": 16,
+          "unit": "px"
+        }
+      },
+      "counts": {
+        "rules": 21,
+        "recipes": 12,
+        "modules": 10,
+        "sources": 13,
+        "assets": 8
+      },
+      "packagePath": "brand-packages/home-designs"
+    },
+    {
+      "slug": "level-nine-sports",
+      "name": "Level Nine Sports",
+      "description": "Accessible outdoor performance retail with electric blue utility, warm campaign accents, and Poppins typography.",
+      "proposition": "Approachable outdoor gear and expertise with strong value across skiing, snowboarding, biking, camping, and seasonal activities.",
+      "signature": "Get outside for less",
+      "voiceSummary": "Friendly shop-floor expertise with direct value language and activity-specific help.",
+      "audiences": [
+        "Value-aware outdoor participants",
+        "Families buying seasonal equipment",
+        "Ski and snowboard customers",
+        "Newer participants who need fit and setup help"
+      ],
+      "traits": [
+        "energetic",
+        "approachable",
+        "practical",
+        "value-led",
+        "outdoorsy",
+        "helpful"
+      ],
+      "category": "Outdoor",
+      "status": "Not Active",
+      "logo": "/brands/level-nine-sports/logo.png",
+      "homepage": "/brands/level-nine-sports/homepage.png",
+      "hero": "/brands/level-nine-sports/hero.jpg",
+      "feature": "/brands/level-nine-sports/feature.jpg",
+      "detailAssets": {},
+      "colors": [
+        {
+          "name": "primary",
+          "value": "#003ACD",
+          "confidence": "verified"
+        },
+        {
+          "name": "secondary",
+          "value": "#000000",
+          "confidence": "verified"
+        },
+        {
+          "name": "accent",
+          "value": "#F9AE50",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.primary",
+          "value": "#FFFFFF",
+          "confidence": "verified"
+        },
+        {
+          "name": "error",
+          "value": "#B30000",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "headline.display": {
+          "fontFamily": "Poppins, Helvetica, Arial, sans-serif",
+          "fontSize": "48px",
+          "fontWeight": 700,
+          "lineHeight": 1.05,
+          "letterSpacing": "-0.02em",
+          "confidence": "verified"
+        },
+        "headline.lg": {
+          "fontFamily": "Poppins, Helvetica, Arial, sans-serif",
+          "fontSize": "36px",
+          "fontWeight": 700,
+          "lineHeight": 1.1,
+          "letterSpacing": "-0.01em",
+          "confidence": "verified"
+        },
+        "headline.md": {
+          "fontFamily": "Poppins, Helvetica, Arial, sans-serif",
+          "fontSize": "28px",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.lg": {
+          "fontFamily": "Poppins, Helvetica, Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.md": {
+          "fontFamily": "Poppins, Helvetica, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "label.sm": {
+          "fontFamily": "Poppins, Helvetica, Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": 600,
+          "lineHeight": 1.25,
+          "letterSpacing": "0.04em",
+          "confidence": "verified"
+        }
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "sm": {
+            "value": 4,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "md": {
+            "value": 8,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "lg": {
+            "value": 12,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "full": {
+            "value": 9999,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          }
+        },
+        "defaultRadiusRef": "shape.radius.md"
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "columns": {
+          "expanded": 12,
+          "medium": 8,
+          "compact": 4
+        },
+        "gutters": {
+          "expanded": 24,
+          "medium": 20,
+          "compact": 16,
+          "unit": "px"
+        }
+      },
+      "counts": {
+        "rules": 21,
+        "recipes": 12,
+        "modules": 10,
+        "sources": 10,
+        "assets": 8
+      },
+      "packagePath": "brand-packages/level-nine-sports"
+    },
+    {
+      "slug": "motosport",
+      "name": "MotoSport",
+      "description": "High-energy powersports commerce combining blue fitment utility, red racing signals, and condensed Saira headlines.",
+      "proposition": "Parts, gear, tires, OEM components, and fitment guidance for dirt bike, motorcycle, ATV, and UTV riders.",
+      "signature": "Ride-specific selection",
+      "voiceSummary": "Direct powersports expertise. Lead with machine, fitment, part, safety, and riding outcome.",
+      "audiences": [
+        "Dirt bike and motocross riders",
+        "Street motorcycle riders",
+        "ATV and UTV owners",
+        "Customers maintaining or upgrading specific vehicles"
+      ],
+      "traits": [
+        "fast",
+        "mechanical",
+        "confident",
+        "fitment-led",
+        "racing",
+        "serviceable"
+      ],
+      "category": "Moto",
+      "status": "Not Active",
+      "logo": "/brands/motosport/logo.svg",
+      "homepage": "/brands/motosport/homepage.png",
+      "hero": "/brands/motosport/hero.jpg",
+      "feature": "/brands/motosport/feature.jpg",
+      "detailAssets": {},
+      "colors": [
+        {
+          "name": "primary",
+          "value": "#006BB8",
+          "confidence": "verified"
+        },
+        {
+          "name": "primary.bright",
+          "value": "#0088CC",
+          "confidence": "verified"
+        },
+        {
+          "name": "secondary",
+          "value": "#CE160F",
+          "confidence": "verified"
+        },
+        {
+          "name": "accent",
+          "value": "#41B1F9",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.primary",
+          "value": "#FFFFFF",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "headline.display": {
+          "fontFamily": "Saira, Helvetica, Arial, sans-serif",
+          "fontSize": "40px",
+          "fontWeight": 700,
+          "lineHeight": 1.05,
+          "letterSpacing": "-0.01em",
+          "confidence": "verified"
+        },
+        "headline.lg": {
+          "fontFamily": "Saira, Helvetica, Arial, sans-serif",
+          "fontSize": "30px",
+          "fontWeight": 700,
+          "lineHeight": 1.15,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "headline.md": {
+          "fontFamily": "Saira, Helvetica, Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": 700,
+          "lineHeight": 1.2,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.lg": {
+          "fontFamily": "Poppins, Helvetica, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.45,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.md": {
+          "fontFamily": "Poppins, Helvetica, Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "lineHeight": 1.45,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "label.sm": {
+          "fontFamily": "Poppins, Helvetica, Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "letterSpacing": "0.03em",
+          "confidence": "verified"
+        }
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "sm": {
+            "value": 4,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "md": {
+            "value": 4,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "lg": {
+            "value": 8,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "full": {
+            "value": 9999,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          }
+        },
+        "defaultRadiusRef": "shape.radius.md"
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "columns": {
+          "expanded": 12,
+          "medium": 8,
+          "compact": 4
+        },
+        "gutters": {
+          "expanded": 24,
+          "medium": 20,
+          "compact": 16,
+          "unit": "px"
+        }
+      },
+      "counts": {
+        "rules": 21,
+        "recipes": 12,
+        "modules": 10,
+        "sources": 11,
+        "assets": 8
+      },
+      "packagePath": "brand-packages/motosport"
+    },
+    {
+      "slug": "seattle-coffee-gear",
+      "name": "Seattle Coffee Gear",
+      "description": "Friendly specialty-coffee commerce with raspberry red, ocean blue, warm yellow, and condensed merchandising headlines.",
+      "proposition": "Coffee equipment, beans, and practical education that help people make better coffee at home or work.",
+      "signature": "Make coffee you love",
+      "voiceSummary": "Warm coffee-nerd expertise. Explain technique and equipment clearly without gatekeeping.",
+      "audiences": [
+        "Home espresso customers",
+        "Coffee enthusiasts comparing equipment",
+        "Beginners learning brewing",
+        "Customers maintaining grinders and machines"
+      ],
+      "traits": [
+        "knowledgeable",
+        "friendly",
+        "curious",
+        "hands-on",
+        "precise",
+        "unpretentious"
+      ],
+      "category": "Kitchen",
+      "status": "Not Active",
+      "logo": "/brands/seattle-coffee-gear/logo.svg",
+      "homepage": "/brands/seattle-coffee-gear/homepage.png",
+      "hero": "/brands/seattle-coffee-gear/hero.png",
+      "feature": "/brands/seattle-coffee-gear/feature.jpg",
+      "detailAssets": {},
+      "colors": [
+        {
+          "name": "primary",
+          "value": "#D2324C",
+          "confidence": "verified"
+        },
+        {
+          "name": "primary.dark",
+          "value": "#962134",
+          "confidence": "verified"
+        },
+        {
+          "name": "secondary",
+          "value": "#217A97",
+          "confidence": "verified"
+        },
+        {
+          "name": "accent",
+          "value": "#EDAF44",
+          "confidence": "verified"
+        },
+        {
+          "name": "success",
+          "value": "#218368",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "headline.display": {
+          "fontFamily": "proxima-nova-condensed, Helvetica, Arial, sans-serif",
+          "fontSize": "60px",
+          "fontWeight": 800,
+          "lineHeight": 1,
+          "letterSpacing": "-0.01em",
+          "confidence": "verified"
+        },
+        "headline.lg": {
+          "fontFamily": "proxima-nova-condensed, Helvetica, Arial, sans-serif",
+          "fontSize": "36px",
+          "fontWeight": 700,
+          "lineHeight": 1.1,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "headline.md": {
+          "fontFamily": "proxima-nova, Helvetica, Arial, sans-serif",
+          "fontSize": "30px",
+          "fontWeight": 700,
+          "lineHeight": 1.2,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.lg": {
+          "fontFamily": "proxima-nova, Helvetica, Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.md": {
+          "fontFamily": "proxima-nova, Helvetica, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "label.sm": {
+          "fontFamily": "proxima-nova, Helvetica, Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "letterSpacing": "0.04em",
+          "confidence": "verified"
+        }
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "sm": {
+            "value": 2,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "md": {
+            "value": 5,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "lg": {
+            "value": 8,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "xl": {
+            "value": 12,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "full": {
+            "value": 9999,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          }
+        },
+        "defaultRadiusRef": "shape.radius.md"
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "columns": {
+          "expanded": 12,
+          "medium": 8,
+          "compact": 4
+        },
+        "gutters": {
+          "expanded": 24,
+          "medium": 20,
+          "compact": 16,
+          "unit": "px"
+        }
+      },
+      "counts": {
+        "rules": 21,
+        "recipes": 12,
+        "modules": 10,
+        "sources": 18,
+        "assets": 8
+      },
+      "packagePath": "brand-packages/seattle-coffee-gear"
+    },
+    {
+      "slug": "steep-and-cheap",
+      "name": "Steep & Cheap",
+      "description": "Deal-driven outdoor retail with a bright green action system, Sofia Pro, and compact urgency.",
+      "proposition": "Fast access to notable outdoor-brand deals and past-season gear for value-driven customers.",
+      "signature": "The deal is the point",
+      "voiceSummary": "Fast, candid value language that states the product and verified savings without manufactured drama.",
+      "audiences": [
+        "Deal-seeking outdoor customers",
+        "Experienced shoppers who know product categories",
+        "Seasonal gear buyers",
+        "Customers willing to act on limited inventory"
+      ],
+      "traits": [
+        "scrappy",
+        "immediate",
+        "clear",
+        "outdoorsy",
+        "value-led",
+        "trustworthy"
+      ],
+      "category": "Outdoor",
+      "status": "Not Active",
+      "logo": "/brands/steep-and-cheap/logo.png",
+      "homepage": "/brands/steep-and-cheap/homepage.png",
+      "hero": "/brands/steep-and-cheap/hero.jpg",
+      "feature": "/brands/steep-and-cheap/feature.jpg",
+      "detailAssets": {},
+      "colors": [
+        {
+          "name": "primary",
+          "value": "#72A022",
+          "confidence": "verified"
+        },
+        {
+          "name": "secondary",
+          "value": "#333333",
+          "confidence": "verified"
+        },
+        {
+          "name": "accent",
+          "value": "#556F7C",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.primary",
+          "value": "#000000",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.secondary",
+          "value": "#FFFFFF",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "headline.display": {
+          "fontFamily": "sofia-pro, Helvetica, Arial, sans-serif",
+          "fontSize": "30px",
+          "fontWeight": 700,
+          "lineHeight": 1.05,
+          "letterSpacing": "-0.01em",
+          "confidence": "verified"
+        },
+        "headline.lg": {
+          "fontFamily": "sofia-pro, Helvetica, Arial, sans-serif",
+          "fontSize": "28px",
+          "fontWeight": 700,
+          "lineHeight": 1.1,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "headline.md": {
+          "fontFamily": "sofia-pro, Helvetica, Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.lg": {
+          "fontFamily": "sofia-pro, Helvetica, Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": 500,
+          "lineHeight": 1.5,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.md": {
+          "fontFamily": "sofia-pro, Helvetica, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 500,
+          "lineHeight": 1.5,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "label.sm": {
+          "fontFamily": "sofia-pro, Helvetica, Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "letterSpacing": "0.04em",
+          "confidence": "verified"
+        }
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "sm": {
+            "value": 2,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "md": {
+            "value": 4,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "lg": {
+            "value": 8,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "full": {
+            "value": 9999,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          }
+        },
+        "defaultRadiusRef": "shape.radius.md"
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "columns": {
+          "expanded": 12,
+          "medium": 8,
+          "compact": 4
+        },
+        "gutters": {
+          "expanded": 24,
+          "medium": 20,
+          "compact": 16,
+          "unit": "px"
+        }
+      },
+      "counts": {
+        "rules": 21,
+        "recipes": 12,
+        "modules": 10,
+        "sources": 13,
+        "assets": 8
+      },
+      "packagePath": "brand-packages/steep-and-cheap"
+    },
+    {
+      "slug": "sur-la-table",
+      "name": "Sur La Table",
+      "description": "Culinary authority with black-and-white retail discipline, cranberry actions, and expressive seasonal food color.",
+      "proposition": "Quality cookware, tools, ingredients, and cooking experiences that make the kitchen more capable and enjoyable.",
+      "signature": "Make more of the kitchen",
+      "voiceSummary": "Appetizing culinary expertise with specific technique, material, occasion, and gifting language.",
+      "audiences": [
+        "Home cooks",
+        "Gift shoppers",
+        "Cooking-class participants",
+        "Customers comparing premium kitchen tools and cookware"
+      ],
+      "traits": [
+        "culinary",
+        "warm",
+        "expert",
+        "celebratory",
+        "tactile",
+        "inviting"
+      ],
+      "category": "Kitchen",
+      "status": "Not Active",
+      "logo": "/brands/sur-la-table/logo.png",
+      "homepage": "/brands/sur-la-table/homepage.png",
+      "hero": "/brands/sur-la-table/hero.png",
+      "feature": "/brands/sur-la-table/feature.jpg",
+      "detailAssets": {},
+      "colors": [
+        {
+          "name": "primary",
+          "value": "#C51A36",
+          "confidence": "verified"
+        },
+        {
+          "name": "secondary",
+          "value": "#1E1E1E",
+          "confidence": "verified"
+        },
+        {
+          "name": "accent",
+          "value": "#B85D0A",
+          "confidence": "verified"
+        },
+        {
+          "name": "seasonal.olive",
+          "value": "#323C06",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.primary",
+          "value": "#FFFFFF",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "headline.display": {
+          "fontFamily": "Scotch Deck, Georgia, serif",
+          "fontSize": "44px",
+          "fontWeight": 500,
+          "lineHeight": 1.05,
+          "letterSpacing": "-0.01em",
+          "confidence": "verified"
+        },
+        "headline.lg": {
+          "fontFamily": "TT Norms Pro, Lato, Helvetica, Arial, sans-serif",
+          "fontSize": "36px",
+          "fontWeight": 600,
+          "lineHeight": 1.15,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "headline.md": {
+          "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+          "fontSize": "28px",
+          "fontWeight": 700,
+          "lineHeight": 1.2,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.lg": {
+          "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.55,
+          "letterSpacing": "0.03em",
+          "confidence": "verified"
+        },
+        "body.md": {
+          "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "lineHeight": 1.5,
+          "letterSpacing": "0.03em",
+          "confidence": "verified"
+        },
+        "label.sm": {
+          "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": 700,
+          "lineHeight": 1.2,
+          "letterSpacing": "0.06em",
+          "confidence": "verified"
+        }
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "sm": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "md": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "lg": {
+            "value": 4,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "full": {
+            "value": 9999,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          }
+        },
+        "defaultRadiusRef": "shape.radius.md"
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "columns": {
+          "expanded": 12,
+          "medium": 8,
+          "compact": 4
+        },
+        "gutters": {
+          "expanded": 24,
+          "medium": 20,
+          "compact": 16,
+          "unit": "px"
+        }
+      },
+      "counts": {
+        "rules": 21,
+        "recipes": 12,
+        "modules": 10,
+        "sources": 14,
+        "assets": 8
+      },
+      "packagePath": "brand-packages/sur-la-table"
+    },
+    {
+      "slug": "trisports",
+      "name": "TriSports",
+      "description": "Legacy triathlon specialty commerce with magenta-red urgency, endurance blue, orange accents, and compact Open Sans UI.",
+      "proposition": "A historically specialist triathlon identity spanning swim, bike, run, endurance equipment, and athlete guidance.",
+      "signature": "Swim. Bike. Run.",
+      "voiceSummary": "Supportive endurance expertise that connects equipment decisions across all three disciplines.",
+      "audiences": [
+        "Triathletes",
+        "Endurance athletes",
+        "First-time race participants",
+        "Customers comparing multi-discipline equipment"
+      ],
+      "traits": [
+        "endurance-led",
+        "technical",
+        "focused",
+        "supportive",
+        "multidiscipline",
+        "performance-minded"
+      ],
+      "category": "Cycling",
+      "status": "Not Active",
+      "logo": "/brands/trisports/logo.svg",
+      "homepage": "/brands/trisports/homepage.png",
+      "hero": "/brands/trisports/hero.jpg",
+      "feature": "/brands/trisports/feature.jpg",
+      "detailAssets": {},
+      "colors": [
+        {
+          "name": "primary",
+          "value": "#DD1242",
+          "confidence": "verified"
+        },
+        {
+          "name": "secondary",
+          "value": "#005CAB",
+          "confidence": "verified"
+        },
+        {
+          "name": "accent",
+          "value": "#F58427",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.primary",
+          "value": "#FFFFFF",
+          "confidence": "verified"
+        },
+        {
+          "name": "error",
+          "value": "#CC181E",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "headline.display": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": 700,
+          "lineHeight": 1.05,
+          "letterSpacing": "-0.01em",
+          "confidence": "verified"
+        },
+        "headline.lg": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "33px",
+          "fontWeight": 700,
+          "lineHeight": 1.1,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "headline.md": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.lg": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.45,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.md": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "lineHeight": 1.45,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "label.sm": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": 700,
+          "lineHeight": 1.2,
+          "letterSpacing": "0.03em",
+          "confidence": "verified"
+        }
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "sm": {
+            "value": 3,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "md": {
+            "value": 5,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "lg": {
+            "value": 10,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "full": {
+            "value": 9999,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          }
+        },
+        "defaultRadiusRef": "shape.radius.md"
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "columns": {
+          "expanded": 12,
+          "medium": 8,
+          "compact": 4
+        },
+        "gutters": {
+          "expanded": 24,
+          "medium": 20,
+          "compact": 16,
+          "unit": "px"
+        }
+      },
+      "counts": {
+        "rules": 21,
+        "recipes": 12,
+        "modules": 10,
+        "sources": 13,
+        "assets": 9
+      },
+      "packagePath": "brand-packages/trisports"
+    },
+    {
+      "slug": "western-bikeworks",
+      "name": "Western Bikeworks",
+      "description": "Legacy enthusiast cycling retail with red, Portland teal, orange value accents, and compact Open Sans UI.",
+      "proposition": "A historically local, practical cycling-retail identity centered on dependable gear, service, and ride utility.",
+      "signature": "Local ride utility",
+      "voiceSummary": "Straightforward local cycling help with product, route, weather, and maintenance context.",
+      "audiences": [
+        "Pacific Northwest riders",
+        "Commuters and recreational cyclists",
+        "Cycling customers seeking local service",
+        "Value-conscious component shoppers"
+      ],
+      "traits": [
+        "local",
+        "practical",
+        "dependable",
+        "cycling-led",
+        "service-minded",
+        "unfussy"
+      ],
+      "category": "Cycling",
+      "status": "Not Active",
+      "logo": "/brands/western-bikeworks/logo.svg",
+      "homepage": "/brands/western-bikeworks/homepage.png",
+      "hero": "/brands/western-bikeworks/hero.jpg",
+      "feature": "/brands/western-bikeworks/feature.jpg",
+      "detailAssets": {},
+      "colors": [
+        {
+          "name": "primary",
+          "value": "#C41230",
+          "confidence": "verified"
+        },
+        {
+          "name": "secondary",
+          "value": "#008FB1",
+          "confidence": "verified"
+        },
+        {
+          "name": "accent",
+          "value": "#F78429",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.primary",
+          "value": "#FFFFFF",
+          "confidence": "verified"
+        },
+        {
+          "name": "on.secondary",
+          "value": "#000000",
+          "confidence": "verified"
+        }
+      ],
+      "typography": {
+        "headline.display": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "42px",
+          "fontWeight": 700,
+          "lineHeight": 1.05,
+          "letterSpacing": "-0.01em",
+          "confidence": "verified"
+        },
+        "headline.lg": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "34px",
+          "fontWeight": 700,
+          "lineHeight": 1.1,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "headline.md": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.lg": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.45,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "body.md": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "lineHeight": 1.45,
+          "letterSpacing": "0em",
+          "confidence": "verified"
+        },
+        "label.sm": {
+          "fontFamily": "Open Sans, Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": 700,
+          "lineHeight": 1.2,
+          "letterSpacing": "0.03em",
+          "confidence": "verified"
+        }
+      },
+      "shape": {
+        "radius": {
+          "none": {
+            "value": 0,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "sm": {
+            "value": 3,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "md": {
+            "value": 5,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "lg": {
+            "value": 10,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          },
+          "full": {
+            "value": 9999,
+            "unit": "px",
+            "type": "dimension",
+            "confidence": "verified"
+          }
+        },
+        "defaultRadiusRef": "shape.radius.md"
+      },
+      "layout": {
+        "contentMax": {
+          "value": 1280,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "pageMax": {
+          "value": 1440,
+          "unit": "px",
+          "confidence": "inferred"
+        },
+        "columns": {
+          "expanded": 12,
+          "medium": 8,
+          "compact": 4
+        },
+        "gutters": {
+          "expanded": 24,
+          "medium": 20,
+          "compact": 16,
+          "unit": "px"
+        }
+      },
+      "counts": {
+        "rules": 21,
+        "recipes": 12,
+        "modules": 10,
+        "sources": 13,
+        "assets": 8
+      },
+      "packagePath": "brand-packages/western-bikeworks"
+    }
+  ]
+}

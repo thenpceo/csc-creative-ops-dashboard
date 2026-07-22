@@ -1,0 +1,269 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/rules.schema.json",
+  "schemaVersion": "1.0.0",
+  "rules": [
+    {
+      "id": "logo.official-artwork-only",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use only verified official identity artwork. Preserve proportions and internal spacing. Never redraw, synthesize, distort, outline, bevel, shadow, pattern-fill, or deform the mark.",
+      "sourceIds": [
+        "asset.logo.primary"
+      ]
+    },
+    {
+      "id": "logo.authorization",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Publicly observable identity artwork is reference evidence. Production use requires brand authorization and an approved source file.",
+      "sourceIds": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "color.primary-role",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use #003ACD as the primary brand or action anchor in the role documented here. Seasonal imagery does not redefine the durable palette.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "color.support-restraint",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use #000000 and #F9AE50 as bounded supporting signals. Keep one dominant action color in a decision area.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "typography.role-separation",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Poppins creates a friendly technical voice. Use bold, compact headlines and straightforward sentence-case body copy; handwritten display styles belong only inside campaign artwork.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "typography.readability",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Do not use spaced uppercase or display styling for paragraphs, specifications, instructions, prices, or form content. Preserve readable size, line length, contrast, and hold time.",
+      "sourceIds": []
+    },
+    {
+      "id": "shape.character",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "A 4–8px radius is appropriate for controls and cards. Keep action geometry compact; reserve full pills for filters, tags, and size/activity chips.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "layout.character",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use responsive product and activity grids with broad hero modules. Desktop content should remain within a wide max-width shell; 16–24px gutters and 8px control spacing keep the experience approachable.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "depth.character",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use light gray layers, small shadows on menus, and crisp card boundaries. Avoid deep or diffuse shadows on the product catalog.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "action.one-primary",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use no more than one visually dominant action in a decision area. Secondary actions remain visibly subordinate and unambiguous.",
+      "sourceIds": [
+        "source.audit.home.desktop"
+      ]
+    },
+    {
+      "id": "action.concrete-copy",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Use short, concrete actions connected to activity, ability, size, fit, compatibility, season, condition, price, and service support. Avoid generic prestige or engagement language.",
+      "sourceIds": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "voice.core",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Friendly shop-floor expertise with direct value language and activity-specific help.",
+      "sourceIds": [
+        "source.site.home",
+        "source.site.evidence"
+      ]
+    },
+    {
+      "id": "voice.specificity",
+      "authority": "preferred",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Prefer specific language about activity, ability, size, fit, compatibility, season, condition, price, and service support. Explain why the product, service, or story matters.",
+      "sourceIds": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "claims.runtime-truth",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Prices, offers, inventory, dates, delivery, eligibility, availability, ratings, popularity, results, and urgency are runtime facts with an authoritative source and expiration.",
+      "sourceIds": []
+    },
+    {
+      "id": "product.truth",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Represent ski, snowboard, bike, camp, apparel, and outdoor equipment using current authorized data. Preserve countable features, dimensions, materials, finish, compatibility, condition, and safety context.",
+      "sourceIds": [
+        "source.site.home"
+      ]
+    },
+    {
+      "id": "rights.record",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Every external asset record includes source, capture date, rights status, allowed uses, model-upload permission, redistribution permission, and required review.",
+      "sourceIds": []
+    },
+    {
+      "id": "people.permission",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "imagery",
+        "motion",
+        "marketing"
+      ],
+      "statement": "Require likeness, creator, location, and music permissions appropriate to the intended media, channels, term, geography, and edit scope.",
+      "sourceIds": []
+    },
+    {
+      "id": "accessibility.contrast",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Provide readable contrast for text, controls, captions, and information graphics. Do not place critical copy over uncontrolled image detail.",
+      "sourceIds": []
+    },
+    {
+      "id": "accessibility.non-color",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "Do not rely on color alone for selection, errors, discounts, fitment, inventory, progress, or status.",
+      "sourceIds": []
+    },
+    {
+      "id": "accessibility.motion",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "inferred",
+      "appliesTo": [
+        "interactive",
+        "motion"
+      ],
+      "statement": "Provide reduced-motion behavior and remove nonessential parallax, auto-travel, flashes, and looping while preserving message and hierarchy.",
+      "sourceIds": []
+    },
+    {
+      "id": "history.scope",
+      "authority": "required",
+      "lifecycle": "active",
+      "confidence": "verified",
+      "appliesTo": [
+        "all"
+      ],
+      "statement": "This package preserves a historical standalone identity. Never imply that the legacy storefront, inventory, services, prices, locations, or operations are currently active without a current authoritative source.",
+      "sourceIds": [
+        "source.site.evidence"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "one-kings-lane.sequential",
+  "capability": "sequential",
+  "version": "1.0.0",
+  "evidenceStatus": "inferred",
+  "extends": {
+    "tokens": {
+      "storyFunctions": ["hook", "establish", "curate", "detail", "contextualize", "assist", "invite"],
+      "shotFields": ["id", "storyFunction", "duration", "visualIntent", "composition", "camera", "action", "lighting", "copy", "audioIntent", "continuity", "assetSelectors", "rightsStatus", "evaluationRefs"],
+      "continuityLedger": ["hero product identity", "room geometry", "prop placement", "material palette", "light direction", "time of day", "wardrobe if present", "copy and offer version"]
+    },
+    "rules": [
+      { "id": "sequential.intent-before-shot", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["sequential"], "statement": "Every shot declares a story function and advances one idea; remove shots that only repeat visual mood.", "sourceIds": ["source.site.about"] },
+      { "id": "sequential.establish-detail-resolve", "authority": "preferred", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["sequential"], "statement": "Move from room or lifestyle context to product and material specificity, then resolve with helpful expertise or a clear invitation.", "sourceIds": ["source.audit.home.desktop", "source.site.design-services"] },
+      { "id": "sequential.continuity-ledger", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["sequential", "generative-video"], "statement": "Lock product, room, material, lighting, people, offer, and copy facts in a shared continuity ledger before individual shots are generated or rendered.", "sourceIds": ["asset.product.austin-lifestyle", "asset.product.austin-detail"] },
+      { "id": "sequential.source-per-shot", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["sequential"], "statement": "Attach asset selectors, source facts, rights status, and evaluation references to each shot so unsupported visuals or claims cannot enter downstream production silently.", "sourceIds": ["source.site.product"] },
+      { "id": "sequential.copy-is-overlay", "authority": "required", "lifecycle": "active", "confidence": "inferred", "appliesTo": ["sequential", "generative-video", "motion"], "statement": "Plan headline, product data, offer copy, captions, and logo as controlled overlays separate from generated plates.", "sourceIds": ["asset.logo.primary"] }
+    ],
+    "recipes": [
+      { "id": "sequential.editorial-commerce-15", "authority": "preferred", "appliesTo": ["sequential"], "inputs": ["storyPremise", "roomContext", "heroProduct", "materialDetail", "currentAction"], "composition": { "durationSeconds": 15, "beats": [ { "time": "0-3", "function": "hook and establish", "visual": "A distinctive room or outdoor reveal." }, { "time": "3-7", "function": "curate", "visual": "Hero product anchors a designed vignette." }, { "time": "7-10", "function": "detail", "visual": "Craft, material, or functional close-up." }, { "time": "10-13", "function": "contextualize", "visual": "Return to product in the lived setting with one specific message." }, { "time": "13-15", "function": "invite", "visual": "Clean brand resolve with verified action." } ], "constraint": "Each beat has one camera intent and one copy purpose." }, "ruleRefs": ["composition.room-to-detail-story", "sequential.establish-detail-resolve", "sequential.copy-is-overlay"] },
+      { "id": "sequential.design-help-20", "authority": "preferred", "appliesTo": ["sequential"], "inputs": ["customerNeed", "designApproach", "roomProgression", "serviceFact", "action"], "composition": { "durationSeconds": 20, "beats": [ { "function": "hook", "visual": "A relatable room decision or unfinished composition." }, { "function": "assist", "visual": "Material, proportion, and layout choices shown clearly." }, { "function": "reveal", "visual": "Finished room feels personal, collected, and livable." }, { "function": "proof", "visual": "One current, sourced design-service fact." }, { "function": "invite", "visual": "Simple consultation action and brand resolve." } ], "constraint": "Do not imply service scope, price, location, or turnaround without current source data." }, "ruleRefs": ["identity.live-your-style", "voice.warm-expertise", "claims.runtime-truth"] },
+      { "id": "sequential.product-craft-10", "authority": "preferred", "appliesTo": ["sequential", "commerce"], "inputs": ["verifiedProduct", "materialDetails", "specificFeature", "currentAction"], "composition": { "durationSeconds": 10, "beats": [ { "function": "establish", "visual": "Verified whole product." }, { "function": "detail", "visual": "Two material or construction details." }, { "function": "contextualize", "visual": "Product at truthful scale in a room." }, { "function": "invite", "visual": "Verified name and current action." } ], "constraint": "Every depicted product detail and claim must be verified." }, "ruleRefs": ["imagery.product-truth", "imagery.material-specificity", "sequential.source-per-shot"] },
+      { "id": "sequential.shot-record", "authority": "required", "appliesTo": ["sequential"], "inputs": ["storyFunction", "duration", "visualIntent", "composition", "camera", "action", "lighting", "copy", "audioIntent", "continuity", "assetSelectors", "rightsStatus", "evaluationRefs"], "composition": { "output": "One structured shot record using all declared shot fields.", "copyRule": "Copy text is exact and separately composited; generated plate instruction contains no typography.", "approval": "Shot cannot advance when rights are unknown, required sources are missing, or a hard evaluation gate fails." }, "ruleRefs": ["sequential.intent-before-shot", "sequential.continuity-ledger", "sequential.source-per-shot", "sequential.copy-is-overlay"] }
+    ],
+    "evaluation": [
+      { "id": "sequential.arc", "question": "Does the sequence move from a compelling design premise through useful specificity to a clear invitation?" },
+      { "id": "sequential.economy", "question": "Does every shot add a new story function, fact, or visual scale?" },
+      { "id": "sequential.continuity", "question": "Are locked product, room, material, lighting, people, copy, and offer details consistent across all shots?" },
+      { "id": "sequential.production-ready", "question": "Does every shot include its required inputs, asset selectors, rights status, copy treatment, and evaluation references?" }
+    ],
+    "mediaSelectors": ["asset.logo.primary", "asset.hero.summer-escape", "asset.editorial.new-arrivals", "asset.editorial.design-services", "asset.product.austin-lifestyle", "asset.product.austin-detail"]
+  }
+}

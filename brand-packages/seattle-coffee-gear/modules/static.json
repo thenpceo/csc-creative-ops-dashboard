@@ -1,0 +1,187 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "seattle-coffee-gear.static",
+  "capability": "static",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "formats": {
+        "square": "1:1",
+        "portrait": "4:5",
+        "vertical": "9:16",
+        "landscape": "1.91:1",
+        "printCard": "3.5:2"
+      },
+      "safeAreaPercent": 6
+    },
+    "rules": [
+      {
+        "id": "static.one-idea",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "static"
+        ],
+        "statement": "Use one dominant visual idea, one message hierarchy, and no more than one primary action.",
+        "sourceIds": [
+          "source.audit.home.desktop"
+        ]
+      },
+      {
+        "id": "static.recompose",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "static"
+        ],
+        "statement": "Recompose imagery, title, proof, and action for every ratio. Do not center-crop one master and assume the hierarchy survives.",
+        "sourceIds": []
+      },
+      {
+        "id": "static.logo-restraint",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "static"
+        ],
+        "statement": "Use one deliberate official identity instance. Do not repeat the logo as a watermark pattern or substitute logo size for a clear message.",
+        "sourceIds": [
+          "asset.logo.primary"
+        ]
+      },
+      {
+        "id": "static.production-inputs",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "static"
+        ],
+        "statement": "Bleed, trim, resolution, color profile, stock, finishing, legal, and export requirements are destination inputs verified before production.",
+        "sourceIds": []
+      }
+    ],
+    "recipes": [
+      {
+        "id": "static.editorial-ad",
+        "authority": "preferred",
+        "appliesTo": [
+          "static"
+        ],
+        "inputs": [
+          "approvedImage",
+          "headline",
+          "proof",
+          "action",
+          "officialIdentity"
+        ],
+        "structure": [
+          "dominant image",
+          "protected copy",
+          "specific proof",
+          "single action",
+          "restrained identity"
+        ],
+        "ruleRefs": [
+          "static.one-idea",
+          "accessibility.contrast"
+        ]
+      },
+      {
+        "id": "static.product-feature",
+        "authority": "preferred",
+        "appliesTo": [
+          "static",
+          "commerce"
+        ],
+        "inputs": [
+          "verifiedProduct",
+          "specificBenefit",
+          "currentFact",
+          "action"
+        ],
+        "structure": [
+          "product",
+          "specific benefit",
+          "current fact",
+          "action"
+        ],
+        "ruleRefs": [
+          "product.truth",
+          "static.recompose"
+        ]
+      },
+      {
+        "id": "static.guide-card",
+        "authority": "preferred",
+        "appliesTo": [
+          "static"
+        ],
+        "inputs": [
+          "question",
+          "threeOrFewerSteps",
+          "illustrativeMedia",
+          "nextStep"
+        ],
+        "structure": [
+          "question",
+          "ordered steps",
+          "example",
+          "next step"
+        ],
+        "ruleRefs": [
+          "voice.specificity",
+          "accessibility.contrast"
+        ]
+      },
+      {
+        "id": "static.business-card",
+        "authority": "permitted",
+        "appliesTo": [
+          "static"
+        ],
+        "inputs": [
+          "officialIdentity",
+          "name",
+          "role",
+          "verifiedContact",
+          "productionSpecs"
+        ],
+        "structure": [
+          "identity field",
+          "name and role",
+          "verified contact",
+          "safe margins"
+        ],
+        "ruleRefs": [
+          "logo.official-artwork-only",
+          "static.production-inputs"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "static.glance",
+        "question": "Is one specific idea understandable in under two seconds at intended size?"
+      },
+      {
+        "id": "static.ratio",
+        "question": "Was the composition intentionally rebuilt for the destination ratio?"
+      },
+      {
+        "id": "static.output",
+        "question": "Are physical or digital production specifications verified?"
+      }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "source.audit.home.desktop",
+      "source.site.home"
+    ]
+  }
+}

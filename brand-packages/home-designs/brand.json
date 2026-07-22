@@ -1,0 +1,93 @@
+{
+  "$schema": "../../brand-system-spec/v1/schemas/brand.schema.json",
+  "schemaVersion": "1.0.0",
+  "packageVersion": "1.0.0",
+  "brand": {
+    "id": "home-designs",
+    "name": "Home Designs",
+    "description": "Residential design services grounded in architectural imagery, heritage serif headlines, maroon, and gold.",
+    "proposition": "Local residential design and cabinetry expertise that turns material choices and practical needs into enduring finished rooms.",
+    "audiences": [
+      "Homeowners planning kitchens and built-ins",
+      "Renovation clients",
+      "Residential builders and remodelers",
+      "Customers seeking consultation-led material decisions"
+    ],
+    "traits": [
+      "established",
+      "craft-led",
+      "consultative",
+      "local",
+      "material",
+      "reassuring"
+    ],
+    "signature": "Designed for how the home is lived",
+    "voiceSummary": "Calm craft expertise. Explain scope, material, process, and next steps in plain language."
+  },
+  "files": {
+    "tokens": "tokens.json",
+    "rules": "rules.json",
+    "recipes": "recipes.json",
+    "media": "media.json",
+    "evaluation": "evaluation.json",
+    "humanGuide": "DESIGN.md"
+  },
+  "modules": [
+    {
+      "capability": "interactive",
+      "path": "modules/interactive.json"
+    },
+    {
+      "capability": "static",
+      "path": "modules/static.json"
+    },
+    {
+      "capability": "imagery",
+      "path": "modules/imagery.json"
+    },
+    {
+      "capability": "commerce",
+      "path": "modules/commerce.json"
+    },
+    {
+      "capability": "marketing",
+      "path": "modules/marketing.json"
+    },
+    {
+      "capability": "motion",
+      "path": "modules/motion.json"
+    },
+    {
+      "capability": "generative-image",
+      "path": "modules/generative-image.json"
+    },
+    {
+      "capability": "generative-video",
+      "path": "modules/generative-video.json"
+    },
+    {
+      "capability": "spatial",
+      "path": "modules/spatial.json"
+    },
+    {
+      "capability": "sequential",
+      "path": "modules/sequential.json"
+    }
+  ],
+  "provenance": {
+    "researchedAt": "2026-07-21",
+    "method": "First-party live or archived surface review, computed-style sampling, visible component inspection, and official or public asset capture.",
+    "evidenceStatus": "mixed",
+    "verifiedSurfaces": [
+      "current-homepage",
+      "first-party-linked-social-profiles"
+    ],
+    "sourceAudit": "../../research/portfolio-live-evidence.json",
+    "historicalStandaloneIdentity": false,
+    "notes": [
+      "CSC publishes a Home Designs logo without a consumer URL. The file combines that logo tile with the live Cabinetry Unlimited surface used by CSC's Home Designs hiring organization.",
+      "Current offers, inventory, prices, availability, service scope, and campaign copy are runtime data.",
+      "The package is output-neutral; provider and renderer adapters belong outside it."
+    ]
+  }
+}

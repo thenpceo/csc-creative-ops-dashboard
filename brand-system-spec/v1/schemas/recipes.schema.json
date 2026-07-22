@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cscgeneration.local/brand-system/v1/recipes.schema.json",
+  "title": "Brand recipes",
+  "type": "object",
+  "required": ["schemaVersion", "recipes"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string" },
+    "recipes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "authority", "appliesTo", "inputs", "composition", "ruleRefs"],
+        "properties": {
+          "id": { "type": "string" },
+          "authority": { "enum": ["required", "preferred", "permitted", "prohibited", "reference-only"] },
+          "appliesTo": { "type": "array", "items": { "type": "string" } },
+          "inputs": { "type": "array", "items": { "type": "string" } },
+          "composition": { "type": "object" },
+          "ruleRefs": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

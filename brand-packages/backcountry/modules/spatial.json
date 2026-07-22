@@ -1,0 +1,155 @@
+{
+  "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "backcountry.spatial",
+  "capability": "spatial",
+  "version": "1.0.0",
+  "evidenceStatus": "mixed",
+  "extends": {
+    "tokens": {
+      "materialWorld": "topographic relief, weather layers, technical textile response, and physically credible terrain scale",
+      "environment": "real alpine, trail, camp, snow, water, and desert locations with credible weather and terrain",
+      "lighting": "natural directional daylight that preserves terrain, weather, and product detail"
+    },
+    "rules": [
+      {
+        "id": "spatial.material",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "spatial"
+        ],
+        "statement": "Build dimensional work around topographic relief, weather layers, technical textile response, and physically credible terrain scale. Materials respond to light, scale, wear, and contact credibly.",
+        "sourceIds": [
+          "source.site.home"
+        ]
+      },
+      {
+        "id": "spatial.scale",
+        "authority": "required",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "spatial"
+        ],
+        "statement": "Use verified dimensions or declared scale references. Never alter product or environment scale merely to improve composition.",
+        "sourceIds": []
+      },
+      {
+        "id": "spatial.camera",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "spatial"
+        ],
+        "statement": "Use wide environmental frames paired with honest medium action and material-detail coverage. Preserve readable silhouettes and avoid extreme distortion.",
+        "sourceIds": []
+      },
+      {
+        "id": "spatial.effects",
+        "authority": "preferred",
+        "lifecycle": "active",
+        "confidence": "inferred",
+        "appliesTo": [
+          "spatial"
+        ],
+        "statement": "Use atmospheric, particle, reflection, deformation, or lighting effects only when they clarify real material, environment, function, or story.",
+        "sourceIds": []
+      }
+    ],
+    "recipes": [
+      {
+        "id": "spatial.product-pedestal",
+        "authority": "preferred",
+        "appliesTo": [
+          "spatial",
+          "motion"
+        ],
+        "inputs": [
+          "verifiedProductModel",
+          "materialLocks",
+          "camera",
+          "light"
+        ],
+        "structure": [
+          "verified model",
+          "material world",
+          "controlled camera",
+          "brand resolve"
+        ],
+        "ruleRefs": [
+          "spatial.material",
+          "spatial.scale"
+        ]
+      },
+      {
+        "id": "spatial.environment-layer",
+        "authority": "preferred",
+        "appliesTo": [
+          "spatial",
+          "motion"
+        ],
+        "inputs": [
+          "environment",
+          "depthLayers",
+          "cameraPath",
+          "copyPlane"
+        ],
+        "structure": [
+          "foreground",
+          "subject plane",
+          "environment",
+          "copy plane"
+        ],
+        "ruleRefs": [
+          "spatial.camera",
+          "spatial.effects"
+        ]
+      },
+      {
+        "id": "spatial.material-transition",
+        "authority": "preferred",
+        "appliesTo": [
+          "spatial",
+          "motion"
+        ],
+        "inputs": [
+          "sourceMaterial",
+          "functionalStory",
+          "destinationState"
+        ],
+        "structure": [
+          "source material",
+          "functional change",
+          "preserved object identity",
+          "resolved state"
+        ],
+        "ruleRefs": [
+          "spatial.material",
+          "motion.product-continuity"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "spatial.truth",
+        "question": "Are scale, geometry, material response, contact, reflection, and light credible?"
+      },
+      {
+        "id": "spatial.purpose",
+        "question": "Does dimensional treatment clarify a real brand, product, material, or environment idea?"
+      },
+      {
+        "id": "spatial.identity",
+        "question": "Does the scene remain recognizable without relying on effects or a logo?"
+      }
+    ],
+    "mediaSelectors": [
+      "asset.logo.primary",
+      "source.audit.home.desktop",
+      "source.site.home"
+    ]
+  }
+}
