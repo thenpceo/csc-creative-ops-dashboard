@@ -267,6 +267,17 @@ function OneKingsLaneDetail({ brand, navigate }) {
     finalHold: "one second",
   });
   const assets = brand.detailAssets;
+  useEffect(() => {
+    const previousTitle = document.title;
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    const previousTheme = themeColor?.getAttribute("content");
+    document.title = "One Kings Lane Brand System | CSC Creative Ops";
+    themeColor?.setAttribute("content", "#06312B");
+    return () => {
+      document.title = previousTitle;
+      if (previousTheme) themeColor?.setAttribute("content", previousTheme);
+    };
+  }, []);
   useEffect(() => () => productPreview && URL.revokeObjectURL(productPreview), [productPreview]);
 
   const imagePrompt = [
@@ -297,9 +308,14 @@ function OneKingsLaneDetail({ brand, navigate }) {
   return (
     <div className="app-shell detail-shell okl-theme">
       <ShellHeader onHome={() => navigate("/")} detailBrand={brand} />
+      <div className="okl-masthead" aria-label="One Kings Lane design system">
+        <span>CSC CREATIVE OPS / ACTIVE SYSTEM</span>
+        <img src={assets["logo-primary"] ?? brand.logo} alt="One Kings Lane" />
+        <span>BRAND SYSTEM 1.2 / LIVING SPECIFICATION</span>
+      </div>
       <main>
         <section className="brand-detail-hero">
-          <img className="detail-hero-image" src={assets["design-services-banner"] ?? brand.hero} alt="One Kings Lane material and design-services reference" />
+          <img className="detail-hero-image" src={assets["environment-room-clean-demo"] ?? brand.hero} alt="Layered One Kings Lane living room environment" />
           <div className="detail-hero-overlay">
             <button className="back-link" onClick={() => navigate("/")}><ArrowLeft size={17} /> Portfolio index</button>
             <div className="detail-hero-copy">
