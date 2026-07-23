@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-22T23:53:32.445Z",
+  "generatedAt": "2026-07-23T04:40:18.452Z",
   "packages": [
     {
       "slug": "backcountry",
@@ -25294,7 +25294,7 @@
       "brand": {
         "$schema": "../../brand-system-spec/v1/schemas/brand.schema.json",
         "schemaVersion": "1.0.0",
-        "packageVersion": "1.2.0",
+        "packageVersion": "1.3.0",
         "brand": {
           "id": "one-kings-lane",
           "name": "One Kings Lane",
@@ -25635,6 +25635,42 @@
               "letterSpacingEm": 0.08,
               "case": "uppercase"
             }
+          },
+          "motionResolution": {
+            "licensedFamilies": {
+              "display": {
+                "observedFamily": "Chronicle Display",
+                "licensedAssetRequired": true,
+                "assetStatus": "runtime-check-required"
+              },
+              "support": {
+                "observedFamily": "Sofia Pro",
+                "licensedAssetRequired": true,
+                "assetStatus": "runtime-check-required"
+              }
+            },
+            "renderSafeFamilies": {
+              "display": {
+                "family": "EB Garamond",
+                "sourceRole": "deterministic render-safe substitute for the observed editorial display family",
+                "weight": 400,
+                "case": "uppercase",
+                "letterSpacingEm": 0.06
+              },
+              "support": {
+                "family": "Inter",
+                "sourceRole": "deterministic render-safe substitute for the observed interface family",
+                "weight": 400,
+                "sizeCqw": 1.4,
+                "letterSpacingEm": 0.06
+              }
+            },
+            "inverseTextColorRef": "color.text.inverse",
+            "contrastTreatment": {
+              "preferred": "soft heritage-green edge-to-transparent scrim",
+              "solidPanel": "use only when negative space, shadow, and a soft scrim cannot pass contrast"
+            },
+            "resolutionPolicy": "Use legally supplied brand font files when present. Otherwise resolve the render-safe families before preview and keep the same resolved families through final rendering."
           },
           "licensing": "Chronicle Display, Sofia Pro, and Lato were observed on the live site. Consumers must supply legally licensed font files or use the documented fallbacks."
         },
@@ -28491,6 +28527,31 @@
             "id": "gate.accessibility",
             "pass": "The output meets the accessibility requirements applicable to its medium.",
             "onFail": "human-review"
+          },
+          {
+            "id": "gate.generated-keyframe-product-fidelity",
+            "pass": "Every cinematic product keyframe matches its authorized reference for silhouette, proportions, construction, materials, finish, hardware, seams, countable details, scale, and support contact.",
+            "onFail": "reject"
+          },
+          {
+            "id": "gate.temporal-product-continuity",
+            "pass": "Start, midpoint, and end samples from every generated clip preserve the approved keyframe's product identity, geometry, material behavior, support contact, object placement, and light direction.",
+            "onFail": "reject"
+          },
+          {
+            "id": "gate.cross-shot-product-continuity",
+            "pass": "The same product identity and recorded product-specific invariants remain consistent across every shot in the sequence.",
+            "onFail": "reject"
+          },
+          {
+            "id": "gate.deterministic-typography",
+            "pass": "Licensed brand families and render-safe fallbacks are recorded separately, preview and render resolve the same explicit families, support copy stays consistent, and the logo remains supplied artwork.",
+            "onFail": "reject"
+          },
+          {
+            "id": "gate.media-presence",
+            "pass": "Every approved media plate remains present, playable, ordered, and synchronized with its scene wrapper after repeated assembly.",
+            "onFail": "reject"
           }
         ],
         "dimensions": [
@@ -28547,7 +28608,7 @@
           "scoring": "Score each dimension from 0 to 1, multiply by weight, and sum. Record evidence and uncertainty, not just a number."
         }
       },
-      "humanGuide": "# One Kings Lane Design System\n\nPackage version: **1.2.0**  \nResearch snapshot: **July 21, 2026**  \nEvidence status: **Mixed — observed brand behavior plus clearly labeled inferred production guidance**\n\nThis is the human-readable view of the canonical files beside it. Systems should load `brand.json`, then resolve the core files and only the capability modules required for the job. Provider, renderer, framework, export, and workflow adapters belong outside this package.\n\n## Brand in one sentence\n\nOne Kings Lane is a design-led home destination that pairs collected, livable editorial inspiration with curated products and warm expert help so customers can **Live Your Style**.\n\n## The durable idea\n\n- Cultivated, not aloof.\n- Personal, not prescriptive.\n- Material-rich, not flashy.\n- Editorial, but still useful and shoppable.\n- Timeless, but not frozen in one decorating era.\n- Spacious, structured, and square-edged.\n\nThe current summer campaign, pale botanical art, promotion codes, and sale messages are seasonal inputs. They are not permanent identity rules.\n\n## How to load the package\n\n1. Read `brand.json` for package identity, paths, modules, and provenance.\n2. Load `tokens.json`, `rules.json`, `recipes.json`, `media.json`, and `evaluation.json`.\n3. Load only the modules needed for the output, such as `interactive`, `static`, `motion`, or `sequential`.\n4. Resolve references by ID. Required rules and hard gates override preferred recipes.\n5. Supply job-specific facts separately: dimensions, channel, audience, product data, offer data, rights, accessibility target, and delivery constraints.\n6. Translate semantic values into the destination through an external adapter.\n7. Score the result and stop on any reject gate.\n\n## Identity\n\n### Signature\n\n“Live Your Style” is a behavioral principle, not merely a tagline. The work should help someone recognize and express their taste rather than tell them there is one correct way to live.\n\n### Logo\n\n- Primary wordmark: `media/official/logo-primary.webp`\n- Compact elephant mark: `media/official/logo-compact.webp`\n- Use only the supplied official wordmark or compact elephant artwork.\n- Preserve artwork proportions and internal spacing.\n- Keep at least one compact-mark height of clear space as an inferred working minimum.\n- Prefer white, heritage green, or a quiet neutral field.\n- Never redraw, synthesize, distort, bevel, pattern-fill, shadow, or animate the mark by deformation.\n- Publicly captured logo files still require authorization for production use.\n\nEvery local asset, including both logos, is indexed in `media.json` with dimensions, source URL, capture date, checksum, permitted reference uses, and review requirements. Social and advertising references are stored separately under `media/marketing-reference/`; they are not alternate logo or production-asset folders.\n\n## Core palette\n\n| Role | Value | Use |\n|---|---:|---|\n| Heritage deep | `#06312B` | Major brand fields and deep promotional surfaces |\n| Heritage green | `#3B5F58` | Primary actions, service fields, key anchors |\n| Heritage bright | `#1E5F53` | Selected headings and active green emphasis |\n| Powder | `#C6D0DC` | Supporting badges and calm secondary fields |\n| Sale | `#CA3B4C` | Verified markdown and time-sensitive transaction states only |\n| Ink | `#000000` | Primary commerce and interface text |\n| Editorial ink | `#323232` | Editorial headings and supporting copy |\n| White | `#FFFFFF` | Primary surface and inverse text |\n| Muted surface | `#F5F5F5` | Product cutout ground and quiet grouping |\n| Cool surface | `#F5F7F7` | Secondary calm surface |\n| Subtle border | `#E5E7EB` | Dividers and quiet control boundaries |\n\nNatural wood, warm white, linen, brass, raffia, ceramic, moss, sage, and stone belong primarily inside photography and rendered material systems. They do not need to become extra interface accents.\n\n## Typography\n\n| Role | Family | Typical size | Treatment |\n|---|---|---:|---|\n| Editorial display | Chronicle Display | 48 / 40 / 34 | Regular, sentence case, tight but comfortable |\n| Editorial heading | Chronicle Display | 30 / 26 | Regular, sentence case |\n| Section heading | Sofia Pro | 30 / 25 | Regular, uppercase, wide tracking |\n| Product title | Sofia Pro | 20 / 18 | Heavy, title case |\n| Body | Lato | 16 | Regular, `1.55` line height |\n| Small body | Lato | 14 | Regular, `1.5` line height |\n| Navigation | Sofia Pro | 14 | Medium, title case |\n| Action | Sofia Pro | 12 | Heavy, uppercase, `0.145em` tracking |\n| Label | Sofia Pro | 12 | Heavy, uppercase, restrained tracking |\n\nUse the serif for emotional and editorial storytelling, the interface sans for navigation and decisions, and the reading sans for paragraphs. Do not set long headlines or paragraphs in spaced uppercase. Consumers must provide licensed font files or use the documented fallbacks.\n\n## Spacing, shape, and layout\n\n- Base spacing scale: `4, 8, 12, 16, 24, 32, 48, 64, 80, 96` pixels.\n- Default corner radius: `0`.\n- A `2px` radius is permitted for small status chips only.\n- Circles are reserved for icon controls and avatars.\n- Controls are generally `44–52px` tall, with a `44px` minimum touch target.\n- Use a 12-column expanded grid, 8-column medium grid, and 4-column compact grid.\n- Working content maximum: `1280px`; page maximum: `1440px`.\n- Gutters: `32px` expanded, `24px` medium, `16px` compact.\n- Prefer clear section breaks and generous breathing room to dense card stacks.\n\nThese layout measurements are inferred working tokens from the current site, not an official published specification.\n\n## Buttons and actions\n\n### Primary\n\n- Solid heritage green.\n- White Sofia Pro action text.\n- Uppercase with measured tracking.\n- Rectangular with no visible radius.\n- `48–52px` tall with generous inline padding.\n- Use for the single highest-priority action in a decision area.\n\n### Secondary\n\n- Text-led uppercase action, optionally underlined or paired with a simple directional cue.\n- Use inside editorial and service compositions where another filled control would feel heavy.\n\nEvery interactive action needs visible focus, keyboard operation, non-color state cues, and a meaningful accessible label.\n\n## Web and interactive patterns\n\n### Global header\n\nOn expanded screens: optional promotion layer, then logo/utilities, then category navigation. On compact screens: menu, centered wordmark, search, and cart. Promotional content remains removable and must not destabilize the core header.\n\n### Collection page\n\nUse breadcrumb, uppercase tracked title, filter/sort utility row, then a consistent product grid. Cards lead with square product imagery on pale neutral grounds. Badges and sale styling are factual states supplied by current commerce data.\n\n### Product detail\n\nUse a large gallery beside a narrower decision column. Order product identity, price and promotion, availability, options, delivery summary, and primary action before extended content. On compact screens, preserve this same decision sequence.\n\nSupport, consent, and promotion overlays must never cover the product identity, price, options, or primary action.\n\n## Static and graphic design\n\nUse one dominant idea, one clear message hierarchy, and no more than one primary action. Lead with a strong room or product composition instead of a busy collage. Recompose each aspect ratio rather than center-cropping one master.\n\nSupported patterns include:\n\n- Editorial ad: room-led image, protected copy group, small official logo, one action.\n- Product feature: verified product, one specific material or functional point, compact commerce detail.\n- Shoppable assortment: two to four verified products with matched scale and restrained metadata.\n- Business card: centered logo front; left-aligned identity and verified contact block back; heritage green or white field; production specs supplied by the printer.\n\n## Marketing asset system\n\nLoad `modules/marketing.json` whenever the job is an advertisement, social post, creator feature, campaign hero, email feature, promotion, community post, or marketing video. The module holds output-neutral rules, recipes, format guidance, evidence selectors, and checks. It deliberately contains no account credentials, delivery API, renderer instructions, campaign performance, or fixed offer data.\n\n### Required brief\n\nEvery marketing job supplies:\n\n1. Objective and audience.\n2. One proposition and one primary action.\n3. Authorized product, collection, person, or program facts.\n4. Destination and aspect ratio.\n5. Required copy, legal, accessibility, and localization inputs.\n6. Asset source and rights status.\n7. Current offer source and expiration time, if applicable.\n8. Variant axes, approval owner, and destination URL.\n\nThe package provides brand behavior; current prices, inventory, dates, offer terms, targeting, spend, and performance remain runtime inputs.\n\n### Creative families\n\n| Family | Best use | Structure |\n|---|---|---|\n| Curated collection | Awareness and consideration | Room or hero product, one collection idea, one proof point, one action |\n| Dynamic product | Conversion | Verified product image, warm benefit line, product identity, current commerce fact |\n| Maker or designer story | Trust and consideration | Human hook, point of view, material or craft proof, lived result, invitation |\n| Creator room feature | Social proof | Rights-cleared room, creator context, verified product, credit, optional action |\n| Vertical style note | Short-form discovery | Immediate visual, one design observation, one detail, clean resolve |\n| Inspiration pin | Discovery and evergreen traffic | Complete room or vignette, searchable design idea, light identity, destination |\n| Trade/community post | Professional community | Program or event premise, participant proof, value, next step |\n| Campaign hero | Email and site promotion | Editorial image, title group, one current value or offer, one action |\n\nCurrent public advertising shows two useful layers: catalog-style product units with replaceable commerce data, and curated room-led brand units with compact promises such as style, selection, or a more considered home. Keep those layers distinct so a campaign can change without changing the core identity.\n\n### Channel observations\n\n| Surface | What the July 21, 2026 snapshot supports | How to use it |\n|---|---|---|\n| Facebook video | Maker/designer interviews, craft proof, creator room features, seasonal human stories, and short product-led clips | Strong current reference for story families, not a performance claim |\n| Meta public ads | Product catalog cards, room-led collection messages, single actions, and short commerce video | Current creative reference only; no spend, targeting, return, or complete-count inference |\n| Pinterest | Collected rooms, vignettes, materials, seasonal inspiration, and design discovery | Build complete 2:3 compositions and searchable ideas; board covers are reference-only |\n| TikTok | Full-bleed vertical rooms/products with direct headline cards | Historical execution reference; do not make the older white-card treatment mandatory |\n| YouTube | Style shorts, product arrivals, home tours, and designer stories | Low-volume archive; useful for format families, not current cadence |\n| LinkedIn | Trade/community activations, design contests, partnerships, press, and brand-platform stories | Use verified dates, partners, results, eligibility, and permissions |\n| Instagram | Official profile is verified from the site, but the public content surface was blocked during this audit | Refresh through an authorized source before deriving current patterns |\n\n### Variant architecture\n\nUse a controlled matrix of hook, visual, proof, action, and format. Vary one or two named axes at a time. Keep product facts, rights, legal, offer terms, and destination locked. Every derivative retains its parent brief, source IDs, capture date, variant ID, approval state, and expiration conditions.\n\n### Creator and customer content\n\nOne Kings Lane publishes UGC terms and a rights-request process. A production record must still capture the original post, creator handle, explicit permission or applicable rights grant, permitted edits and channels, credit, term, geography, and revocation status. A public post, tag, or hashtag is evidence of availability, not by itself authorization for production reuse.\n\n## Photography and visual references\n\n### Environment\n\n- Light-filled rooms and outdoor settings composed as rooms.\n- Soft directional daylight with believable window falloff.\n- Warm practical lighting only as restrained support.\n- Natural perspective and controlled verticals.\n- Layered objects, art, books, textiles, and crafted materials with one clear anchor.\n- A collected, lived-in feeling without clutter.\n- Calm negative space when copy will be added.\n\n### Product\n\n- Centered straight-on or three-quarter views.\n- White or `#F5F5F5` background.\n- Soft source, natural grounding, honest color, and consistent scale.\n- Context images must preserve geometry, material, finish, and real scale.\n\n### People\n\nPeople are optional and secondary. When used, show candid domestic behavior, hosting, design consultation, or scale. Favor natural posture and timeless styling; avoid fashion-campaign posing or making the model more important than the room.\n\nThe cataloged internal example `example.generated.people-secondary-room` demonstrates the intended hierarchy: one person in the back third performing a believable domestic action while the room, furnishings, and material story remain primary. It is a generated reference, not an approved likeness or catalog asset.\n\n### Avoid\n\nGeneric hotel luxury, sterile minimalism, plastic materials, impossible reflections, neon color casts, ultra-wide distortion, floating furniture, excessive depth blur, symmetry without life, and over-styled clutter.\n\n## Image prompt structures\n\nPrompt instructions live in `modules/generative-image.json`. Each recipe structures intent rather than binding to a model.\n\n### Reference transformation contract\n\nProduct-reference generation is a controlled transformation, not open-ended restyling. A consumer must expose three visibly separate groups:\n\n1. **Reference input:** one or more rights-cleared product images that jointly resolve silhouette, proportions, materials, finish, hardware, seams, and countable details.\n2. **Editable scene variables:** environment, time of day, weather, camera, framing, scale cues, supporting materials, copy-safe region, and aspect ratio.\n3. **Locked invariants:** every product identity detail plus any approved brand marks. These are never user-editable scene variables.\n\nThe consumer assembles those groups with the recipe's semantic prompt blocks, then compares the result side by side with the authorized reference. Any geometry, finish, scale, hardware, seam, or countable-detail mismatch is a rejection and regeneration event. Prompt wording alone is not a fidelity guarantee.\n\n`example.generated.fountain-winter-garden` demonstrates a valid internal workflow: the Austin fountain stays the locked subject while the environment, season, time, camera, and copy-safe region change. It is not a catalog replacement and still requires human fidelity review.\n\n### Wide environment\n\n1. Room purpose and design story.\n2. Hero furnishing and material palette.\n3. Natural wide camera intent with controlled verticals.\n4. Soft directional light and restrained practicals.\n5. Explicit copy-safe side or region.\n6. Physical and stylistic exclusions.\n7. No words, labels, or logos.\n\n### Product studio\n\n1. Authorized product reference and required angle.\n2. Exact geometry, finish, materials, seams, hardware, and countable features.\n3. White or very light gray background.\n4. Large soft source and restrained contact shadow.\n5. Normal perspective and whole product in frame.\n6. No props, text, invented variants, or altered scale.\n\n### Product in room\n\n1. Product remains unchanged and primary.\n2. Name the room context and supporting materials.\n3. Supply believable scale cues.\n4. Match contact, shadow, reflection, and perspective.\n5. Reserve copy space.\n6. Reject generic hotel styling and all product mutations.\n\n### People in room\n\n1. Name the room purpose before the person.\n2. Give one person one believable domestic action.\n3. Place the person in the middle or back third and keep them below one quarter of the frame.\n4. Specify natural posture, timeless styling, no direct gaze, and no fashion pose.\n5. Preserve the room as the visual anchor and reserve any required copy-safe region.\n\n## Motion design\n\nMotion design uses brand typography, layout, product imagery, and controlled dimensional layers. It is distinct from synthesized footage.\n\n- Micro `160ms`, short `240ms`, standard `360ms`, feature `600ms`.\n- Favor fades, small rises, square masks, restrained image drift, and readable holds.\n- Use one movement idea per beat.\n- Composite logos and typography as crisp controlled layers.\n- Subtle depth, material response, or light motion may heighten craft.\n- Avoid bounce, glitch, strobe, rapid spins, aggressive zooms, liquid type, and distorted logos.\n- Provide a reduced-motion treatment that removes parallax, looping, and nonessential travel.\n\nFor full-bleed features, crop an approved image or video to the entire frame, optionally drift from `104%` to `100%`, then introduce the copy field, eyebrow, title, support, action, and official logo in hierarchy order. Stagger levels by `100–180ms`. Use the enter curve for arrivals, the standard curve for image drift, and the exit curve only for elements that leave. Preferred transitions are a direct cut, editorial crossfade, square mask, or measured directional slide. Preserve at least `1.2s` of readable hold.\n\n`example.motion.product-feature` is the cataloged internal six-second example. It keeps the environment full bleed, the identity mark crisp, and the title system editable. Its executable source belongs to an external consuming adapter, not this canonical package.\n\nThe `spatial` module defines output-neutral camera, material, light, and effect behavior so a rendering adapter can implement dimensional scenes without putting renderer-specific instructions in the brand itself.\n\n## Generative video\n\nSynthesized video is primarily visual-plate generation. Brand copy, interface, offers, and logos are composited afterward.\n\nEvery shot prompt should include:\n\n1. One stable subject and room state.\n2. One subtle environmental action.\n3. One camera movement on one axis.\n4. Soft directional light and material palette.\n5. Intended duration and aspect ratio.\n6. Locked product, geometry, object, and lighting continuity.\n7. Explicit exclusions: no morphing furniture, warping architecture, sliding objects, rubbery materials, frantic camera, fake text, or invented identity.\n\nRecommended shot types are a room reveal, product-in-context move, material study, outdoor-living drift, and clean visual plate for a composited brand resolve.\n\n### Image-to-video contract\n\nA consumer begins with an authorized start image and exposes only the subject action, environmental motion, camera move, camera distance, duration, and final hold as editable variables. Product identity, room geometry, object count and placement, material behavior, and light direction remain locked.\n\nUse one continuous shot, one subtle subject or environmental action, and one slow camera move. Sample the first, middle, and final frames against the start image. Reject the full clip if the product changes, architecture warps, objects slide, textures crawl, or the final hold is unusable. Brand copy and the official logo are composited after the visual plate is approved.\n\n`example.video.fountain-winter-garden` is the cataloged internal five-second visual-plate example. It uses a restrained push-in and subtle water motion while keeping the scene stable across sampled early, middle, and late frames. It remains experimental, requires human fidelity review, and contains no brand copy or identity overlay.\n\n## Storyboards and sequential systems\n\nThe `sequential` module is designed to feed any storyboard agent or production orchestrator. Each shot record contains:\n\n- Story function and duration.\n- Visual intent and composition.\n- Camera, action, and lighting.\n- Exact copy and audio intent.\n- Continuity locks.\n- Asset selectors and rights status.\n- Evaluation references.\n\nA useful brand arc is:\n\n1. Establish a distinctive room or lifestyle premise.\n2. Curate around one hero furnishing.\n3. Reveal material, craft, or function.\n4. Return the product to a truthful lived context.\n5. Resolve with helpful expertise or one clear invitation.\n\nEach shot must advance a story function. Product, room, material, light, people, offer, and copy facts are locked in a shared continuity ledger before shots are generated.\n\n## Voice and copy\n\nWrite with warm expertise. Use specific design, material, craft, provenance, room, and function language. Keep actions short and inviting. Respect the customer's own taste.\n\nPrefer:\n\n- “Live Your Style.”\n- “Find the piece that pulls the room together.”\n- “A hand-finished detail with real presence.”\n- “Work with a designer on your space.”\n\nAvoid:\n\n- Empty prestige claims.\n- Snobbery or insider gatekeeping.\n- “Elevate your lifestyle” without a concrete idea.\n- Urgency, scarcity, service scope, or popularity that is not currently sourced.\n\n## Commerce truth\n\nPrices, offers, inventory, shipping, delivery timing, badges, specifications, reviews, and eligibility are runtime facts. The design system defines how to present them, not what they are. A generator must receive these values from a current authoritative source and record that source.\n\n## Rights and asset handling\n\nThe included media was captured from official public One Kings Lane surfaces as design evidence. Its default status is `unverified-public-reference`.\n\n- Analysis and internal storyboard reference are allowed.\n- Production reuse requires independent authorization.\n- Model upload is prohibited unless an authorized reviewer upgrades the rights record.\n- Redistribution is prohibited by default.\n- Generated interpretation cannot stand in for a verified catalog product image.\n\nReference media layout:\n\n- `media/official/` — captured official wordmarks, product imagery, and site campaign/editorial evidence.\n- `media/marketing-reference/` — downloaded social-profile references for internal analysis, each cataloged with source, date, checksum, recency, and restricted rights.\n- `../../research/one-kings-lane/marketing-audit-2026-07-21/` — dated screenshots and the written channel/ad audit.\n\nPublic advertising-library results are not a substitute for access to an authorized advertising account. They do not expose a reliable view of spend, targeting, performance, internal naming, approvals, or complete account structure.\n\n## Evaluation\n\nEvery output passes hard gates for official identity, product truth, rights, offer truth, readability, and medium-appropriate accessibility. Then score:\n\n| Dimension | Weight |\n|---|---:|\n| Visual identity | 20% |\n| Imagery | 20% |\n| Editorial-commerce balance | 15% |\n| Typography | 15% |\n| Composition | 12% |\n| Accessibility | 10% |\n| Voice | 8% |\n\n`0.85+` is approved when all reject gates pass. `0.70–0.849` requires human review. Below `0.70`, or any reject-gate failure, is rejected.\n\n## Evidence limits\n\n- This is an independent synthesis of public current surfaces, not an official internal brand manual.\n- Font families and several core colors were directly observed; some layout dimensions and motion behavior are inferred working guidance.\n- The audit does not prove keyboard support, focus quality, screen-reader behavior, or full WCAG compliance.\n- Current campaign art is retained only as reference evidence and must expire independently of the core system.\n- Social examples are dated evidence; TikTok and YouTube material observed in this audit is substantially historical and must not define current cadence.\n- Direct Instagram review was blocked, LinkedIn introduced an authentication wall, an exact Google Ads Transparency advertiser record was not verified, and no private ad account or analytics export was available.\n- Refresh live surfaces, product truth, offers, rights, and campaign status before production.\n",
+      "humanGuide": "# One Kings Lane Design System\n\nPackage version: **1.3.0**\nResearch snapshot: **July 21, 2026**  \nEvidence status: **Mixed — observed brand behavior plus clearly labeled inferred production guidance**\n\nThis is the human-readable view of the canonical files beside it. Systems should load `brand.json`, then resolve the core files and only the capability modules required for the job. Provider, renderer, framework, export, and workflow adapters belong outside this package.\n\n## Brand in one sentence\n\nOne Kings Lane is a design-led home destination that pairs collected, livable editorial inspiration with curated products and warm expert help so customers can **Live Your Style**.\n\n## The durable idea\n\n- Cultivated, not aloof.\n- Personal, not prescriptive.\n- Material-rich, not flashy.\n- Editorial, but still useful and shoppable.\n- Timeless, but not frozen in one decorating era.\n- Spacious, structured, and square-edged.\n\nThe current summer campaign, pale botanical art, promotion codes, and sale messages are seasonal inputs. They are not permanent identity rules.\n\n## How to load the package\n\n1. Read `brand.json` for package identity, paths, modules, and provenance.\n2. Load `tokens.json`, `rules.json`, `recipes.json`, `media.json`, and `evaluation.json`.\n3. Load only the modules needed for the output, such as `interactive`, `static`, `motion`, or `sequential`.\n4. Resolve references by ID. Required rules and hard gates override preferred recipes.\n5. Supply job-specific facts separately: dimensions, channel, audience, product data, offer data, rights, accessibility target, and delivery constraints.\n6. Translate semantic values into the destination through an external adapter.\n7. Score the result and stop on any reject gate.\n\n## Identity\n\n### Signature\n\n“Live Your Style” is a behavioral principle, not merely a tagline. The work should help someone recognize and express their taste rather than tell them there is one correct way to live.\n\n### Logo\n\n- Primary wordmark: `media/official/logo-primary.webp`\n- Compact elephant mark: `media/official/logo-compact.webp`\n- Use only the supplied official wordmark or compact elephant artwork.\n- Preserve artwork proportions and internal spacing.\n- Keep at least one compact-mark height of clear space as an inferred working minimum.\n- Prefer white, heritage green, or a quiet neutral field.\n- Never redraw, synthesize, distort, bevel, pattern-fill, shadow, or animate the mark by deformation.\n- Publicly captured logo files still require authorization for production use.\n\nEvery local asset, including both logos, is indexed in `media.json` with dimensions, source URL, capture date, checksum, permitted reference uses, and review requirements. Social and advertising references are stored separately under `media/marketing-reference/`; they are not alternate logo or production-asset folders.\n\n## Core palette\n\n| Role | Value | Use |\n|---|---:|---|\n| Heritage deep | `#06312B` | Major brand fields and deep promotional surfaces |\n| Heritage green | `#3B5F58` | Primary actions, service fields, key anchors |\n| Heritage bright | `#1E5F53` | Selected headings and active green emphasis |\n| Powder | `#C6D0DC` | Supporting badges and calm secondary fields |\n| Sale | `#CA3B4C` | Verified markdown and time-sensitive transaction states only |\n| Ink | `#000000` | Primary commerce and interface text |\n| Editorial ink | `#323232` | Editorial headings and supporting copy |\n| White | `#FFFFFF` | Primary surface and inverse text |\n| Muted surface | `#F5F5F5` | Product cutout ground and quiet grouping |\n| Cool surface | `#F5F7F7` | Secondary calm surface |\n| Subtle border | `#E5E7EB` | Dividers and quiet control boundaries |\n\nNatural wood, warm white, linen, brass, raffia, ceramic, moss, sage, and stone belong primarily inside photography and rendered material systems. They do not need to become extra interface accents.\n\n## Typography\n\n| Role | Family | Typical size | Treatment |\n|---|---|---:|---|\n| Editorial display | Chronicle Display | 48 / 40 / 34 | Regular, sentence case, tight but comfortable |\n| Editorial heading | Chronicle Display | 30 / 26 | Regular, sentence case |\n| Section heading | Sofia Pro | 30 / 25 | Regular, uppercase, wide tracking |\n| Product title | Sofia Pro | 20 / 18 | Heavy, title case |\n| Body | Lato | 16 | Regular, `1.55` line height |\n| Small body | Lato | 14 | Regular, `1.5` line height |\n| Navigation | Sofia Pro | 14 | Medium, title case |\n| Action | Sofia Pro | 12 | Heavy, uppercase, `0.145em` tracking |\n| Label | Sofia Pro | 12 | Heavy, uppercase, restrained tracking |\n\nUse the serif for emotional and editorial storytelling, the interface sans for navigation and decisions, and the reading sans for paragraphs. Do not set long headlines or paragraphs in spaced uppercase. Consumers must provide licensed font files or use the documented fallbacks.\n\n## Spacing, shape, and layout\n\n- Base spacing scale: `4, 8, 12, 16, 24, 32, 48, 64, 80, 96` pixels.\n- Default corner radius: `0`.\n- A `2px` radius is permitted for small status chips only.\n- Circles are reserved for icon controls and avatars.\n- Controls are generally `44–52px` tall, with a `44px` minimum touch target.\n- Use a 12-column expanded grid, 8-column medium grid, and 4-column compact grid.\n- Working content maximum: `1280px`; page maximum: `1440px`.\n- Gutters: `32px` expanded, `24px` medium, `16px` compact.\n- Prefer clear section breaks and generous breathing room to dense card stacks.\n\nThese layout measurements are inferred working tokens from the current site, not an official published specification.\n\n## Buttons and actions\n\n### Primary\n\n- Solid heritage green.\n- White Sofia Pro action text.\n- Uppercase with measured tracking.\n- Rectangular with no visible radius.\n- `48–52px` tall with generous inline padding.\n- Use for the single highest-priority action in a decision area.\n\n### Secondary\n\n- Text-led uppercase action, optionally underlined or paired with a simple directional cue.\n- Use inside editorial and service compositions where another filled control would feel heavy.\n\nEvery interactive action needs visible focus, keyboard operation, non-color state cues, and a meaningful accessible label.\n\n## Web and interactive patterns\n\n### Global header\n\nOn expanded screens: optional promotion layer, then logo/utilities, then category navigation. On compact screens: menu, centered wordmark, search, and cart. Promotional content remains removable and must not destabilize the core header.\n\n### Collection page\n\nUse breadcrumb, uppercase tracked title, filter/sort utility row, then a consistent product grid. Cards lead with square product imagery on pale neutral grounds. Badges and sale styling are factual states supplied by current commerce data.\n\n### Product detail\n\nUse a large gallery beside a narrower decision column. Order product identity, price and promotion, availability, options, delivery summary, and primary action before extended content. On compact screens, preserve this same decision sequence.\n\nSupport, consent, and promotion overlays must never cover the product identity, price, options, or primary action.\n\n## Static and graphic design\n\nUse one dominant idea, one clear message hierarchy, and no more than one primary action. Lead with a strong room or product composition instead of a busy collage. Recompose each aspect ratio rather than center-cropping one master.\n\nSupported patterns include:\n\n- Editorial ad: room-led image, protected copy group, small official logo, one action.\n- Product feature: verified product, one specific material or functional point, compact commerce detail.\n- Shoppable assortment: two to four verified products with matched scale and restrained metadata.\n- Business card: centered logo front; left-aligned identity and verified contact block back; heritage green or white field; production specs supplied by the printer.\n\n## Marketing asset system\n\nLoad `modules/marketing.json` whenever the job is an advertisement, social post, creator feature, campaign hero, email feature, promotion, community post, or marketing video. The module holds output-neutral rules, recipes, format guidance, evidence selectors, and checks. It deliberately contains no account credentials, delivery API, renderer instructions, campaign performance, or fixed offer data.\n\n### Required brief\n\nEvery marketing job supplies:\n\n1. Objective and audience.\n2. One proposition and one primary action.\n3. Authorized product, collection, person, or program facts.\n4. Destination and aspect ratio.\n5. Required copy, legal, accessibility, and localization inputs.\n6. Asset source and rights status.\n7. Current offer source and expiration time, if applicable.\n8. Variant axes, approval owner, and destination URL.\n\nThe package provides brand behavior; current prices, inventory, dates, offer terms, targeting, spend, and performance remain runtime inputs.\n\n### Creative families\n\n| Family | Best use | Structure |\n|---|---|---|\n| Curated collection | Awareness and consideration | Room or hero product, one collection idea, one proof point, one action |\n| Dynamic product | Conversion | Verified product image, warm benefit line, product identity, current commerce fact |\n| Maker or designer story | Trust and consideration | Human hook, point of view, material or craft proof, lived result, invitation |\n| Creator room feature | Social proof | Rights-cleared room, creator context, verified product, credit, optional action |\n| Vertical style note | Short-form discovery | Immediate visual, one design observation, one detail, clean resolve |\n| Inspiration pin | Discovery and evergreen traffic | Complete room or vignette, searchable design idea, light identity, destination |\n| Trade/community post | Professional community | Program or event premise, participant proof, value, next step |\n| Campaign hero | Email and site promotion | Editorial image, title group, one current value or offer, one action |\n\nCurrent public advertising shows two useful layers: catalog-style product units with replaceable commerce data, and curated room-led brand units with compact promises such as style, selection, or a more considered home. Keep those layers distinct so a campaign can change without changing the core identity.\n\n### Channel observations\n\n| Surface | What the July 21, 2026 snapshot supports | How to use it |\n|---|---|---|\n| Facebook video | Maker/designer interviews, craft proof, creator room features, seasonal human stories, and short product-led clips | Strong current reference for story families, not a performance claim |\n| Meta public ads | Product catalog cards, room-led collection messages, single actions, and short commerce video | Current creative reference only; no spend, targeting, return, or complete-count inference |\n| Pinterest | Collected rooms, vignettes, materials, seasonal inspiration, and design discovery | Build complete 2:3 compositions and searchable ideas; board covers are reference-only |\n| TikTok | Full-bleed vertical rooms/products with direct headline cards | Historical execution reference; do not make the older white-card treatment mandatory |\n| YouTube | Style shorts, product arrivals, home tours, and designer stories | Low-volume archive; useful for format families, not current cadence |\n| LinkedIn | Trade/community activations, design contests, partnerships, press, and brand-platform stories | Use verified dates, partners, results, eligibility, and permissions |\n| Instagram | Official profile is verified from the site, but the public content surface was blocked during this audit | Refresh through an authorized source before deriving current patterns |\n\n### Variant architecture\n\nUse a controlled matrix of hook, visual, proof, action, and format. Vary one or two named axes at a time. Keep product facts, rights, legal, offer terms, and destination locked. Every derivative retains its parent brief, source IDs, capture date, variant ID, approval state, and expiration conditions.\n\n### Creator and customer content\n\nOne Kings Lane publishes UGC terms and a rights-request process. A production record must still capture the original post, creator handle, explicit permission or applicable rights grant, permitted edits and channels, credit, term, geography, and revocation status. A public post, tag, or hashtag is evidence of availability, not by itself authorization for production reuse.\n\n## Photography and visual references\n\n### Environment\n\n- Light-filled rooms and outdoor settings composed as rooms.\n- Soft directional daylight with believable window falloff.\n- Warm practical lighting only as restrained support.\n- Natural perspective and controlled verticals.\n- Layered objects, art, books, textiles, and crafted materials with one clear anchor.\n- A collected, lived-in feeling without clutter.\n- Calm negative space when copy will be added.\n\n### Product\n\n- Centered straight-on or three-quarter views.\n- White or `#F5F5F5` background.\n- Soft source, natural grounding, honest color, and consistent scale.\n- Context images must preserve geometry, material, finish, and real scale.\n\n### People\n\nPeople are optional and secondary. When used, show candid domestic behavior, hosting, design consultation, or scale. Favor natural posture and timeless styling; avoid fashion-campaign posing or making the model more important than the room.\n\nThe cataloged internal example `example.generated.people-secondary-room` demonstrates the intended hierarchy: one person in the back third performing a believable domestic action while the room, furnishings, and material story remain primary. It is a generated reference, not an approved likeness or catalog asset.\n\n### Avoid\n\nGeneric hotel luxury, sterile minimalism, plastic materials, impossible reflections, neon color casts, ultra-wide distortion, floating furniture, excessive depth blur, symmetry without life, and over-styled clutter.\n\n## Image prompt structures\n\nPrompt instructions live in `modules/generative-image.json`. Each recipe structures intent rather than binding to a model.\n\n### Reference transformation contract\n\nProduct-reference generation is a controlled transformation, not open-ended restyling. A consumer must expose three visibly separate groups:\n\n1. **Reference input:** one or more rights-cleared product images that jointly resolve silhouette, proportions, materials, finish, hardware, seams, and countable details.\n2. **Editable scene variables:** environment, time of day, weather, camera, framing, scale cues, supporting materials, copy-safe region, and aspect ratio.\n3. **Locked invariants:** every product identity detail plus any approved brand marks. These are never user-editable scene variables.\n\nThe consumer assembles those groups with the recipe's semantic prompt blocks, then compares the result side by side with the authorized reference. Any geometry, finish, scale, hardware, seam, or countable-detail mismatch is a rejection and regeneration event. Prompt wording alone is not a fidelity guarantee.\n\n`example.generated.fountain-winter-garden` demonstrates a valid internal workflow: the Austin fountain stays the locked subject while the environment, season, time, camera, and copy-safe region change. It is not a catalog replacement and still requires human fidelity review.\n\n### Wide environment\n\n1. Room purpose and design story.\n2. Hero furnishing and material palette.\n3. Natural wide camera intent with controlled verticals.\n4. Soft directional light and restrained practicals.\n5. Explicit copy-safe side or region.\n6. Physical and stylistic exclusions.\n7. No words, labels, or logos.\n\n### Product studio\n\n1. Authorized product reference and required angle.\n2. Exact geometry, finish, materials, seams, hardware, and countable features.\n3. White or very light gray background.\n4. Large soft source and restrained contact shadow.\n5. Normal perspective and whole product in frame.\n6. No props, text, invented variants, or altered scale.\n\n### Product in room\n\n1. Product remains unchanged and primary.\n2. Name the room context and supporting materials.\n3. Supply believable scale cues.\n4. Match contact, shadow, reflection, and perspective.\n5. Reserve copy space.\n6. Reject generic hotel styling and all product mutations.\n\n### People in room\n\n1. Name the room purpose before the person.\n2. Give one person one believable domestic action.\n3. Place the person in the middle or back third and keep them below one quarter of the frame.\n4. Specify natural posture, timeless styling, no direct gaze, and no fashion pose.\n5. Preserve the room as the visual anchor and reserve any required copy-safe region.\n\n## Motion design\n\nMotion design uses brand typography, layout, product imagery, and controlled dimensional layers. It is distinct from synthesized footage.\n\n- Micro `160ms`, short `240ms`, standard `360ms`, feature `600ms`.\n- Favor fades, small rises, square masks, restrained image drift, and readable holds.\n- Use one movement idea per beat.\n- Composite logos and typography as crisp controlled layers.\n- Subtle depth, material response, or light motion may heighten craft.\n- Avoid bounce, glitch, strobe, rapid spins, aggressive zooms, liquid type, and distorted logos.\n- Provide a reduced-motion treatment that removes parallax, looping, and nonessential travel.\n\nFor full-bleed features, crop an approved image or video to the entire frame, optionally drift from `104%` to `100%`, then introduce the copy field, eyebrow, title, support, action, and official logo in hierarchy order. Stagger levels by `100–180ms`. Use the enter curve for arrivals, the standard curve for image drift, and the exit curve only for elements that leave. Preferred transitions are a direct cut, editorial crossfade, square mask, or measured directional slide. Preserve at least `1.2s` of readable hold.\n\n`example.motion.product-feature` is the cataloged internal six-second example. It keeps the environment full bleed, the identity mark crisp, and the title system editable. Its executable source belongs to an external consuming adapter, not this canonical package.\n\nThe `spatial` module defines output-neutral camera, material, light, and effect behavior so a rendering adapter can implement dimensional scenes without putting renderer-specific instructions in the brand itself.\n\n## Generative video\n\nSynthesized video is primarily visual-plate generation. Brand copy, interface, offers, and logos are composited afterward.\n\nEvery shot prompt should include:\n\n1. One stable subject and room state.\n2. One subtle environmental action.\n3. One camera movement on one axis.\n4. Soft directional light and material palette.\n5. Intended duration and aspect ratio.\n6. Locked product, geometry, object, and lighting continuity.\n7. Explicit exclusions: no morphing furniture, warping architecture, sliding objects, rubbery materials, frantic camera, fake text, or invented identity.\n\nRecommended shot types are a room reveal, product-in-context move, material study, outdoor-living drift, and clean visual plate for a composited brand resolve.\n\n### Image-to-video contract\n\nA consumer begins with an authorized start image and exposes only the subject action, environmental motion, camera move, camera distance, duration, and final hold as editable variables. Product identity, room geometry, object count and placement, material behavior, and light direction remain locked.\n\nUse one continuous shot, one subtle subject or environmental action, and one slow camera move. Sample the first, middle, and final frames against the start image. Reject the full clip if the product changes, architecture warps, objects slide, textures crawl, or the final hold is unusable. Brand copy and the official logo are composited after the visual plate is approved.\n\n`example.video.fountain-winter-garden` is the cataloged internal five-second visual-plate example. It uses a restrained push-in and subtle water motion while keeping the scene stable across sampled early, middle, and late frames. It remains experimental, requires human fidelity review, and contains no brand copy or identity overlay.\n\n## Product-highlight motion video\n\nUse the product-highlight template for a short cinematic introduction built around one verified product. The reusable production method is a progression from distinction to benefit, proof, and whole-product context; it is not a license to invent unsupported product features or repeat the exact visual styling of one prior project.\n\nThe default 18-second arc is:\n\n1. `0–4s` — a macro distinction in silhouette, profile, or material.\n2. `4–8s` — a medium-detail aesthetic or functional benefit.\n3. `8–12s` — a macro proof of finish, construction, craft, or a countable feature.\n4. `12–18s` — the whole product at believable scale in a collected environment, followed by an official identity resolve.\n\nGenerate one unified product-and-environment keyframe for every scene from the authorized product reference that best supports that angle or feature. Do not default to placing a product cutout over a separately created room for cinematic work. A cutout remains acceptable for intentionally graphic catalog layouts, annotations, and price or UI treatments.\n\nBefore animation, compare each keyframe beside its authorized reference. Lock silhouette, proportions, construction, materials, finish, hardware, seams, countable details, scale, and support contact. Record at least one product-specific ratio or countable invariant when the reference supports it. Reject and regenerate the entire still if any locked detail is invented, removed, or changed.\n\nAnimate each approved keyframe as a moving photograph. Use one restrained camera move on no more than one primary axis and, at most, one low-amplitude environmental cue such as daylight, sheer fabric, foliage, reflection, flame, or water. The product itself is not the motion source. Review start, midpoint, and end samples; any product, texture, contact, lighting, object-placement, or room-geometry drift rejects the whole clip.\n\nResolve motion typography separately from web typography:\n\n- Chronicle Display and Sofia Pro remain the observed brand families and require legally supplied files.\n- When those files are unavailable, use deterministic EB Garamond for primary display lines and deterministic Inter for support copy.\n- Primary product-highlight lines are white, uppercase, regular weight, and tracked at `0.06em`.\n- Support copy uses one family consistently across all scenes at the documented motion support scale.\n- Preview and render must resolve the same families.\n- The One Kings Lane wordmark always remains supplied official artwork, never a font approximation.\n\nOn quiet dark material photography, prefer borderless white editorial type and a restrained white hairline directly on the plate. On pale or visually active footage, first place copy in negative space, then add a soft heritage-green edge-to-transparent scrim. Use a hard rectangular panel only when softer deterministic treatments cannot meet contrast.\n\nKeep scene-wrapper and media-plate transitions synchronized. Approved media declarations must remain reconstructable so repeated assembly cannot remove, duplicate, or reorder footage. The final scene shows the product at useful scale, resolves to official artwork on a controlled heritage field, and holds for at least `1.2s`.\n\nRequired review evidence includes:\n\n- authorized reference and generated keyframe comparisons;\n- start, midpoint, and end samples for every animated plate;\n- a cross-shot continuity ledger;\n- fixed-time timeline snapshots and a contact sheet;\n- a live preview;\n- media-presence, runtime, layout, motion, contrast, and font-resolution checks;\n- a structured revision ledger;\n- explicit preview approval before final rendering.\n\nReject examples include a pasted-looking product cutout, invented hardware, changed major proportions, missing countable parts, animated product geometry, texture crawl, unsynchronized media and copy transitions, missing video plates after reassembly, inconsistent support typography, recreated logo type, or a final render made before approval.\n\n## Storyboards and sequential systems\n\nThe `sequential` module is designed to feed any storyboard agent or production orchestrator. Each shot record contains:\n\n- Story function and duration.\n- Visual intent and composition.\n- Camera, action, and lighting.\n- Exact copy and audio intent.\n- Continuity locks.\n- Asset selectors and rights status.\n- Evaluation references.\n\nA useful brand arc is:\n\n1. Establish a distinctive room or lifestyle premise.\n2. Curate around one hero furnishing.\n3. Reveal material, craft, or function.\n4. Return the product to a truthful lived context.\n5. Resolve with helpful expertise or one clear invitation.\n\nEach shot must advance a story function. Product, room, material, light, people, offer, and copy facts are locked in a shared continuity ledger before shots are generated.\n\n## Voice and copy\n\nWrite with warm expertise. Use specific design, material, craft, provenance, room, and function language. Keep actions short and inviting. Respect the customer's own taste.\n\nPrefer:\n\n- “Live Your Style.”\n- “Find the piece that pulls the room together.”\n- “A hand-finished detail with real presence.”\n- “Work with a designer on your space.”\n\nAvoid:\n\n- Empty prestige claims.\n- Snobbery or insider gatekeeping.\n- “Elevate your lifestyle” without a concrete idea.\n- Urgency, scarcity, service scope, or popularity that is not currently sourced.\n\n## Commerce truth\n\nPrices, offers, inventory, shipping, delivery timing, badges, specifications, reviews, and eligibility are runtime facts. The design system defines how to present them, not what they are. A generator must receive these values from a current authoritative source and record that source.\n\n## Rights and asset handling\n\nThe included media was captured from official public One Kings Lane surfaces as design evidence. Its default status is `unverified-public-reference`.\n\n- Analysis and internal storyboard reference are allowed.\n- Production reuse requires independent authorization.\n- Model upload is prohibited unless an authorized reviewer upgrades the rights record.\n- Redistribution is prohibited by default.\n- Generated interpretation cannot stand in for a verified catalog product image.\n\nReference media layout:\n\n- `media/official/` — captured official wordmarks, product imagery, and site campaign/editorial evidence.\n- `media/marketing-reference/` — downloaded social-profile references for internal analysis, each cataloged with source, date, checksum, recency, and restricted rights.\n- `../../research/one-kings-lane/marketing-audit-2026-07-21/` — dated screenshots and the written channel/ad audit.\n\nPublic advertising-library results are not a substitute for access to an authorized advertising account. They do not expose a reliable view of spend, targeting, performance, internal naming, approvals, or complete account structure.\n\n## Evaluation\n\nEvery output passes hard gates for official identity, product truth, rights, offer truth, readability, and medium-appropriate accessibility. Then score:\n\n| Dimension | Weight |\n|---|---:|\n| Visual identity | 20% |\n| Imagery | 20% |\n| Editorial-commerce balance | 15% |\n| Typography | 15% |\n| Composition | 12% |\n| Accessibility | 10% |\n| Voice | 8% |\n\n`0.85+` is approved when all reject gates pass. `0.70–0.849` requires human review. Below `0.70`, or any reject-gate failure, is rejected.\n\n## Evidence limits\n\n- This is an independent synthesis of public current surfaces, not an official internal brand manual.\n- Font families and several core colors were directly observed; some layout dimensions and motion behavior are inferred working guidance.\n- The audit does not prove keyboard support, focus quality, screen-reader behavior, or full WCAG compliance.\n- Current campaign art is retained only as reference evidence and must expire independently of the core system.\n- Social examples are dated evidence; TikTok and YouTube material observed in this audit is substantially historical and must not define current cadence.\n- Direct Instagram review was blocked, LinkedIn introduced an authentication wall, an exact Google Ads Transparency advertiser record was not verified, and no private ad account or analytics export was available.\n- Refresh live surfaces, product truth, offers, rights, and campaign status before production.\n",
       "modules": {
         "interactive": {
           "$schema": "../../../brand-system-spec/v1/schemas/module.schema.json",
@@ -30109,6 +30170,50 @@
                 "sourceIds": [
                   "asset.product.austin-detail"
                 ]
+              },
+              {
+                "id": "motion.product-highlight-typography",
+                "authority": "required",
+                "lifecycle": "active",
+                "confidence": "inferred",
+                "appliesTo": [
+                  "motion",
+                  "sequential"
+                ],
+                "statement": "For product-highlight video, use inverse white uppercase editorial primary lines with visibly generous tracking and one consistent support family across scenes. Resolve licensed and render-safe families before preview.",
+                "sourceIds": [
+                  "asset.logo.primary",
+                  "asset.product.austin-detail"
+                ]
+              },
+              {
+                "id": "motion.soft-contrast-repair",
+                "authority": "preferred",
+                "lifecycle": "active",
+                "confidence": "inferred",
+                "appliesTo": [
+                  "motion",
+                  "static"
+                ],
+                "statement": "When inverse copy lacks contrast, first choose negative space or add a spatially soft heritage-green scrim that fades into the plate; introduce a hard card only when softer deterministic treatments cannot pass.",
+                "sourceIds": [
+                  "asset.hero.summer-escape",
+                  "asset.editorial.new-arrivals"
+                ]
+              },
+              {
+                "id": "motion.media-transition-sync",
+                "authority": "required",
+                "lifecycle": "active",
+                "confidence": "inferred",
+                "appliesTo": [
+                  "motion",
+                  "sequential"
+                ],
+                "statement": "Transition the media plate and its scene wrapper on the same timing contract, and keep approved media declarations reconstructable so repeated assembly cannot delete, duplicate, or reorder footage.",
+                "sourceIds": [
+                  "asset.logo.primary"
+                ]
               }
             ],
             "recipes": [
@@ -30207,6 +30312,49 @@
                 ]
               },
               {
+                "id": "motion.product-highlight-overlay",
+                "authority": "required",
+                "appliesTo": [
+                  "motion",
+                  "commerce",
+                  "sequential"
+                ],
+                "inputs": [
+                  "approvedVideoPlates",
+                  "verifiedSceneCopy",
+                  "resolvedDisplayFamily",
+                  "resolvedSupportFamily",
+                  "officialLogo",
+                  "contrastEvidence"
+                ],
+                "composition": {
+                  "background": "Use approved cinematic plates full bleed and keep product visibility primary.",
+                  "primaryType": "Use inverse white uppercase editorial lines at regular weight with 0.06em tracking.",
+                  "supportType": "Use one consistent resolved interface support family across every scene at the motion support scale.",
+                  "materialField": "On quiet dark material photography, prefer borderless white type and a restrained white hairline directly on the plate.",
+                  "contrastRepair": "On pale or active footage, use negative space first, then a soft heritage-green edge-to-transparent scrim. Use a hard panel only when necessary to pass.",
+                  "sequence": [
+                    "media plate settles",
+                    "primary line arrives",
+                    "support line follows",
+                    "verified action follows when needed",
+                    "official brand artwork resolves on a controlled heritage field"
+                  ],
+                  "transitions": "Apply the same transition timing to the media plate and scene wrapper.",
+                  "finalResolve": "Use official supplied artwork, preserve clear space, and hold for at least 1.2 seconds.",
+                  "assembly": "Approved media declarations must remain reconstructable and repeated assembly must preserve source count, order, and timing.",
+                  "reducedMotion": "Remove drift and travel while preserving scene order, copy hierarchy, contrast, and final resolve."
+                },
+                "ruleRefs": [
+                  "motion.product-highlight-typography",
+                  "motion.soft-contrast-repair",
+                  "motion.media-transition-sync",
+                  "motion.type-stays-crisp",
+                  "motion.reduced-motion",
+                  "composition.brand-end-frame"
+                ]
+              },
+              {
                 "id": "motion.room-collage",
                 "authority": "permitted",
                 "appliesTo": [
@@ -30269,6 +30417,14 @@
               {
                 "id": "motion.continuity",
                 "question": "Are scale, direction, lighting, and object identity coherent across the full sequence?"
+              },
+              {
+                "id": "motion.font-resolution",
+                "question": "Do preview and render resolve the same explicit display and support families, with licensed asset availability recorded?"
+              },
+              {
+                "id": "motion.media-presence",
+                "question": "Does every expected media plate remain present, playable, ordered, and synchronized after repeated assembly?"
               }
             ],
             "mediaSelectors": [
@@ -30394,6 +30550,37 @@
                   "commerce"
                 ],
                 "statement": "A generated scene containing a real product must be checked against authorized references and rejected for altered geometry, finish, scale, hardware, or countable details.",
+                "sourceIds": [
+                  "asset.product.austin-lifestyle",
+                  "asset.product.austin-detail"
+                ]
+              },
+              {
+                "id": "gen-image.unified-cinematic-plate",
+                "authority": "required",
+                "lifecycle": "active",
+                "confidence": "inferred",
+                "appliesTo": [
+                  "generative-image",
+                  "generative-video",
+                  "sequential"
+                ],
+                "statement": "For a cinematic product-highlight shot, generate one optically unified product-and-environment keyframe from an authorized product reference. Do not default to placing a product cutout over a separately generated room.",
+                "sourceIds": [
+                  "asset.product.austin-lifestyle",
+                  "asset.product.austin-detail"
+                ]
+              },
+              {
+                "id": "gen-image.proportion-and-count-check",
+                "authority": "required",
+                "lifecycle": "active",
+                "confidence": "inferred",
+                "appliesTo": [
+                  "generative-image",
+                  "commerce"
+                ],
+                "statement": "Record at least one product-specific ratio, countable structural feature, or other objective invariant when the reference supports it, and reject a generated keyframe that fails the check.",
                 "sourceIds": [
                   "asset.product.austin-lifestyle",
                   "asset.product.austin-detail"
@@ -30538,6 +30725,74 @@
                   "imagery.product-in-room",
                   "gen-image.product-fidelity",
                   "imagery.reserved-copy-space"
+                ]
+              },
+              {
+                "id": "gen-image.product-highlight-keyframe",
+                "authority": "required",
+                "appliesTo": [
+                  "generative-image",
+                  "generative-video",
+                  "sequential",
+                  "commerce"
+                ],
+                "inputs": [
+                  "authorizedProductReference",
+                  "storyFunction",
+                  "verifiedClaim",
+                  "productSpecificInvariants",
+                  "environment",
+                  "lightingIntent",
+                  "camera",
+                  "copySide",
+                  "aspectRatio"
+                ],
+                "composition": {
+                  "inputSlots": {
+                    "reference": "Choose one authorized image per shot that most clearly resolves the depicted feature or whole-product proportion.",
+                    "editable": [
+                      "storyFunction",
+                      "environment",
+                      "lightingIntent",
+                      "camera",
+                      "framing",
+                      "copySide",
+                      "aspectRatio"
+                    ],
+                    "locked": [
+                      "silhouette",
+                      "proportions",
+                      "construction",
+                      "materials",
+                      "finish",
+                      "hardware",
+                      "seams",
+                      "countable details"
+                    ]
+                  },
+                  "promptStructure": [
+                    "Use the supplied product reference as the non-negotiable identity source for one cinematic {storyFunction} keyframe.",
+                    "Create one unified product-and-environment photograph; integrate perspective, scale, support contact, shadow, reflection, and {lightingIntent} optically across the full scene.",
+                    "Preserve {productSpecificInvariants} exactly and do not reveal or invent components that the authorized reference does not support.",
+                    "Frame with {camera}, reserve {copySide} as calm negative space, and compose for {aspectRatio}.",
+                    "The result is a clean visual plate: no words, logo, price, offer, UI, callout, or synthetic label.",
+                    "Reject product cutout compositing, altered geometry, changed material or finish, duplicated parts, generic hotel styling, and impossible contact or lighting."
+                  ],
+                  "qualityChecks": [
+                    "reference and keyframe compared side by side",
+                    "silhouette and major proportions match",
+                    "product-specific ratio or countable feature passes",
+                    "materials, finish, hardware, seams, and contact match",
+                    "product and room feel optically unified",
+                    "copy region remains usable"
+                  ],
+                  "failureAction": "Reject the complete keyframe and regenerate from the authorized reference before any image-to-video work."
+                },
+                "ruleRefs": [
+                  "gen-image.unified-cinematic-plate",
+                  "gen-image.product-fidelity",
+                  "gen-image.proportion-and-count-check",
+                  "gen-image.no-text-or-logo"
                 ]
               },
               {
@@ -30785,6 +31040,36 @@
                 "sourceIds": [
                   "source.site.home"
                 ]
+              },
+              {
+                "id": "gen-video.moving-photograph",
+                "authority": "required",
+                "lifecycle": "active",
+                "confidence": "inferred",
+                "appliesTo": [
+                  "generative-video",
+                  "sequential"
+                ],
+                "statement": "Animate an approved product-highlight keyframe as a moving photograph: the product remains stable while one restrained camera move or one low-amplitude environmental cue supplies motion.",
+                "sourceIds": [
+                  "asset.product.austin-lifestyle",
+                  "asset.product.austin-detail"
+                ]
+              },
+              {
+                "id": "gen-video.sampled-continuity",
+                "authority": "required",
+                "lifecycle": "active",
+                "confidence": "inferred",
+                "appliesTo": [
+                  "generative-video",
+                  "commerce"
+                ],
+                "statement": "Compare the start, midpoint, and end of every generated product clip to the approved keyframe and reject the whole clip when any sampled frame changes the product, support contact, room geometry, materials, object placement, or light direction.",
+                "sourceIds": [
+                  "asset.product.austin-lifestyle",
+                  "asset.product.austin-detail"
+                ]
               }
             ],
             "recipes": [
@@ -30916,6 +31201,76 @@
                 "ruleRefs": [
                   "gen-video.product-continuity",
                   "imagery.product-truth",
+                  "gen-video.no-generated-copy"
+                ]
+              },
+              {
+                "id": "gen-video.product-highlight-shot",
+                "authority": "required",
+                "appliesTo": [
+                  "generative-video",
+                  "commerce",
+                  "sequential"
+                ],
+                "inputs": [
+                  "approvedKeyframe",
+                  "lockedProductInvariants",
+                  "cameraMove",
+                  "environmentalMotion",
+                  "duration",
+                  "finalHold"
+                ],
+                "composition": {
+                  "inputSlots": {
+                    "reference": "One human-approved unified product-and-environment keyframe for this shot.",
+                    "editable": [
+                      "cameraMove",
+                      "environmentalMotion",
+                      "tempo",
+                      "duration",
+                      "finalHold"
+                    ],
+                    "locked": [
+                      "product silhouette",
+                      "proportions",
+                      "construction",
+                      "materials",
+                      "finish",
+                      "hardware",
+                      "seams",
+                      "countable details",
+                      "support contact",
+                      "room geometry",
+                      "object placement",
+                      "light direction"
+                    ]
+                  },
+                  "promptStructure": [
+                    "Animate the supplied approved keyframe as a restrained moving photograph.",
+                    "Keep the product and supporting furniture completely stable; the product is not the motion source.",
+                    "Use one slow {cameraMove} on no more than one primary axis and one low-amplitude {environmentalMotion} cue for {duration} seconds.",
+                    "Preserve every locked product invariant, support contact, room geometry, object placement, material texture, and light direction from start through end.",
+                    "Finish with {finalHold} seconds of calm footage for separately composited copy or identity.",
+                    "No product movement, morphing, new hardware, changed proportion, texture crawl, sliding object, warped architecture, focus pumping, speed ramp, words, logo, price, offer, or claim."
+                  ],
+                  "continuityChecks": [
+                    "start frame matches approved keyframe",
+                    "midpoint product and geometry match",
+                    "end frame product and geometry match",
+                    "cross-shot product identity remains consistent",
+                    "final hold is visually calm"
+                  ],
+                  "sampleTimes": [
+                    "start",
+                    "midpoint",
+                    "end"
+                  ],
+                  "failureAction": "Reject the complete clip on any sampled drift and regenerate from the approved keyframe."
+                },
+                "ruleRefs": [
+                  "gen-video.moving-photograph",
+                  "gen-video.sampled-continuity",
+                  "gen-video.product-continuity",
                   "gen-video.no-generated-copy"
                 ]
               },
@@ -31337,6 +31692,22 @@
                 "sourceIds": [
                   "asset.logo.primary"
                 ]
+              },
+              {
+                "id": "sequential.keyframe-per-product-beat",
+                "authority": "required",
+                "lifecycle": "active",
+                "confidence": "inferred",
+                "appliesTo": [
+                  "sequential",
+                  "generative-image",
+                  "generative-video"
+                ],
+                "statement": "Create and approve a distinct product-reference keyframe for each product-highlight beat unless the brief explicitly selects a continuous-scene variant.",
+                "sourceIds": [
+                  "asset.product.austin-lifestyle",
+                  "asset.product.austin-detail"
+                ]
               }
             ],
             "recipes": [
@@ -31474,6 +31845,65 @@
                   "imagery.product-truth",
                   "imagery.material-specificity",
                   "sequential.source-per-shot"
+                ]
+              },
+              {
+                "id": "sequential.product-highlight-18",
+                "authority": "preferred",
+                "appliesTo": [
+                  "sequential",
+                  "commerce",
+                  "generative-image",
+                  "generative-video",
+                  "motion"
+                ],
+                "inputs": [
+                  "verifiedProduct",
+                  "authorizedReferences",
+                  "distinctionClaim",
+                  "benefitClaim",
+                  "proofClaim",
+                  "contextClaim",
+                  "officialLogo"
+                ],
+                "composition": {
+                  "durationSeconds": 18,
+                  "beats": [
+                    {
+                      "time": "0-4",
+                      "function": "distinction",
+                      "visualScale": "macro",
+                      "visual": "Distinctive silhouette, profile, or material cue from its own approved keyframe."
+                    },
+                    {
+                      "time": "4-8",
+                      "function": "benefit",
+                      "visualScale": "medium-detail",
+                      "visual": "Relationship between major materials, form, or function from a second approved keyframe."
+                    },
+                    {
+                      "time": "8-12",
+                      "function": "proof",
+                      "visualScale": "macro-detail",
+                      "visual": "Craft, finish, construction, or countable detail from a third approved keyframe."
+                    },
+                    {
+                      "time": "12-18",
+                      "function": "contextualize-and-invite",
+                      "visualScale": "wide",
+                      "visual": "Whole product at believable scale in a collected environment, then official identity resolve."
+                    }
+                  ],
+                  "scaleProgression": "Move from distinction through benefit and proof to whole-product context.",
+                  "claimRule": "Use no more than one currently sourced claim per feature shot.",
+                  "referenceRule": "Choose and approve one authorized reference-derived keyframe per beat.",
+                  "finalResolve": "Hold official identity on a controlled field for at least 1.2 seconds."
+                },
+                "ruleRefs": [
+                  "sequential.keyframe-per-product-beat",
+                  "sequential.source-per-shot",
+                  "sequential.copy-is-overlay",
+                  "sequential.continuity-ledger"
                 ]
               },
               {

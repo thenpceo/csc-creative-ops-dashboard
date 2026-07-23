@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectId": "okl-eldin-product-introduction",
+  "brandId": "one-kings-lane",
+  "productUrl": "https://www.onekingslane.com/p-eldin-table-lamp-smoked-P112835756?sku=112835756",
+  "artifact": {
+    "type": "product-highlight-video",
+    "durationSeconds": 18,
+    "width": 1920,
+    "height": 1080,
+    "reviewState": "approved-internal-creative",
+    "renderState": "preview-approved-final-mp4-not-requested"
+  },
+  "runtime": {
+    "stillGeneration": "GPT Image 2",
+    "videoGeneration": "fal-ai/kling-video/v3/turbo/pro/image-to-video",
+    "motionComposition": "HyperFrames 0.7.68",
+    "finalPrimaryFont": "EB Garamond",
+    "finalSupportFont": "Inter"
+  },
+  "revisions": [
+    {
+      "revisionId": "eldin-r01",
+      "trigger": "user-feedback",
+      "observation": "The product looked composited rather than naturally present in the room.",
+      "rejectedState": "Deterministic product cutout placed over a separately generated or animated room.",
+      "acceptedChange": "Generate one unified product-and-environment still from the official product reference, then animate the unified plate.",
+      "promotionScope": ["generic-template", "brand-recipe"],
+      "affectedCapabilities": ["generative-image", "generative-video", "motion"],
+      "evidence": ["User explicitly rejected the compositing approach."],
+      "verification": ["Unified generated room plate reviewed before animation."],
+      "status": "accepted"
+    },
+    {
+      "revisionId": "eldin-r02",
+      "trigger": "user-feedback",
+      "observation": "One generated still was not sufficient for a four-scene product introduction.",
+      "rejectedState": "Reuse one generated cinematic image while changing motion or crop.",
+      "acceptedChange": "Generate a dedicated GPT Image 2 keyframe from a product reference and scene prompt for every scene.",
+      "promotionScope": ["generic-template"],
+      "affectedCapabilities": ["generative-image", "sequential"],
+      "evidence": ["User required a new cinematic image for each scene."],
+      "verification": [
+        "01-distinction-gpt.png",
+        "02-casual-elegance-gpt.png",
+        "03-craftsmanship-gpt.png",
+        "04-environment-gpt.png"
+      ],
+      "status": "accepted"
+    },
+    {
+      "revisionId": "eldin-r03",
+      "trigger": "human-fidelity-review",
+      "observation": "The first Scene 2 generation invented exposed upper hardware.",
+      "rejectedState": "Generated product assembly that did not match the official brass-and-shade reference.",
+      "acceptedChange": "Regenerate from one correct reference image and reject the mutated result rather than cropping or covering it.",
+      "promotionScope": ["evaluation-gate", "generic-template"],
+      "affectedCapabilities": ["generative-image", "commerce"],
+      "evidence": ["First Scene 2 generation rejected during visual review."],
+      "verification": ["Corrected Scene 2 still retained the pale linen shade, simple brass neck, and smoked base."],
+      "status": "accepted"
+    },
+    {
+      "revisionId": "eldin-r04",
+      "trigger": "human-fidelity-review",
+      "observation": "The first final-room image made the lamp shade too narrow relative to the base.",
+      "rejectedState": "Whole-product room image with incorrect major proportion.",
+      "acceptedChange": "Regenerate with the shade approximately 1.7 times the base width and preserve three sculptural body sections.",
+      "promotionScope": ["evaluation-gate", "brand-recipe"],
+      "affectedCapabilities": ["generative-image", "commerce"],
+      "evidence": ["First room integration rejected."],
+      "verification": ["Corrected 04-environment-gpt.png passed whole-product review."],
+      "status": "accepted"
+    },
+    {
+      "revisionId": "eldin-r05",
+      "trigger": "production-choice",
+      "observation": "Large or complex motion increased risk of temporal product drift.",
+      "rejectedState": "Product-driven movement or aggressive camera choreography.",
+      "acceptedChange": "Animate each still as a moving photograph with one subtle camera move and minimal environmental motion.",
+      "promotionScope": ["generic-template", "brand-recipe"],
+      "affectedCapabilities": ["generative-video"],
+      "evidence": [
+        "Fal request 019f8d10-0392-78d0-a170-d7991fd72878",
+        "Fal request 019f8d10-0038-7ad0-a173-18b7d27b1ccd",
+        "Fal request 019f8d0f-fe77-7d93-aba5-45b35706beaf",
+        "Fal request 019f8d10-0002-7c41-9309-f4910bf302e3"
+      ],
+      "verification": ["Start, midpoint, and end frames reviewed for all four clips."],
+      "status": "accepted"
+    },
+    {
+      "revisionId": "eldin-r06",
+      "trigger": "visual-review",
+      "observation": "Scene 3's white panel read like a card over the footage and weakened the material study.",
+      "rejectedState": "Opaque white rectangular copy panel with a border.",
+      "acceptedChange": "Remove the panel and border; place white headline, support copy, and hairline directly over the dark amber product plate.",
+      "promotionScope": ["brand-recipe"],
+      "affectedCapabilities": ["motion", "static"],
+      "evidence": ["Scene 3 before-and-after contact sheets."],
+      "verification": ["Final Scene 3 snapshot remained legible without obscuring the product."],
+      "status": "accepted"
+    },
+    {
+      "revisionId": "eldin-r07",
+      "trigger": "user-feedback",
+      "observation": "Dark copy and sentence-case headers did not feel strong enough over the cinematic footage.",
+      "rejectedState": "Black primary copy and sentence-case display lines.",
+      "acceptedChange": "Use white copy throughout and uppercase primary scene lines.",
+      "promotionScope": ["brand-token", "brand-recipe"],
+      "affectedCapabilities": ["motion", "typography"],
+      "evidence": ["User requested white text and all-caps headers."],
+      "verification": ["Updated full-timeline contact sheet."],
+      "status": "accepted"
+    },
+    {
+      "revisionId": "eldin-r08",
+      "trigger": "automated-contrast-review",
+      "observation": "White Scene 2 copy failed contrast over the pale wall.",
+      "rejectedState": "White text with text shadow only.",
+      "acceptedChange": "Add a soft heritage-green edge-to-transparent scrim behind the right-side copy area.",
+      "promotionScope": ["generic-template", "brand-recipe", "evaluation-gate"],
+      "affectedCapabilities": ["motion", "accessibility"],
+      "evidence": ["Initial contrast sample failed at 1.75:1 and later 4.15:1."],
+      "verification": ["Final 3/3 sampled text checks passed WCAG AA."],
+      "status": "accepted"
+    },
+    {
+      "revisionId": "eldin-r09",
+      "trigger": "user-feedback",
+      "observation": "The header font was too tightly spaced relative to the official One Kings Lane wordmark, and support type varied by scene.",
+      "rejectedState": "Generic serif with negative tracking and mixed serif/sans support copy.",
+      "acceptedChange": "Use deterministic EB Garamond for primary lines at 0.06em tracking and deterministic Inter at 1.4cqw for every supporting line.",
+      "promotionScope": ["brand-token", "adapter-runtime", "evaluation-gate"],
+      "affectedCapabilities": ["motion", "typography"],
+      "evidence": ["User requested wider header tracking and persistent subtext type."],
+      "verification": [
+        "HyperFrames loaded only EB Garamond and Inter deterministic font faces.",
+        "Preview and render font families now resolve identically."
+      ],
+      "status": "accepted"
+    },
+    {
+      "revisionId": "eldin-r10",
+      "trigger": "runtime-qa",
+      "observation": "Reassembly removed previously hoisted video plates and left typography over empty backgrounds.",
+      "rejectedState": "Destructive frame-video hoisting that was not idempotent.",
+      "acceptedChange": "Restore approved video declarations, reassemble, restore media transitions, and require an idempotent media manifest or reconstructable declaration.",
+      "promotionScope": ["adapter-runtime", "evaluation-gate"],
+      "affectedCapabilities": ["motion", "runtime"],
+      "evidence": ["Contact sheet captured empty product scenes after reassembly."],
+      "verification": [
+        "Four host video elements restored.",
+        "Full contact sheet showed all four moving plates.",
+        "Runtime, layout, motion, and contrast checks passed."
+      ],
+      "status": "accepted"
+    },
+    {
+      "revisionId": "eldin-r11",
+      "trigger": "workflow-policy",
+      "observation": "A render can make an unapproved state look final and incur avoidable work.",
+      "rejectedState": "Automatic MP4 render before the user reviewed the Studio preview.",
+      "acceptedChange": "Keep final rendering approval-gated after contact-sheet and live-preview review.",
+      "promotionScope": ["generic-template"],
+      "affectedCapabilities": ["motion", "delivery"],
+      "evidence": ["HyperFrames product-launch workflow approval gate."],
+      "verification": ["Project marked approved in preview; final MP4 remains unrendered until separately requested."],
+      "status": "accepted"
+    }
+  ]
+}

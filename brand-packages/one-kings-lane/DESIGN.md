@@ -1,6 +1,6 @@
 # One Kings Lane Design System
 
-Package version: **1.2.0**  
+Package version: **1.3.0**
 Research snapshot: **July 21, 2026**  
 Evidence status: **Mixed — observed brand behavior plus clearly labeled inferred production guidance**
 
@@ -319,6 +319,49 @@ A consumer begins with an authorized start image and exposes only the subject ac
 Use one continuous shot, one subtle subject or environmental action, and one slow camera move. Sample the first, middle, and final frames against the start image. Reject the full clip if the product changes, architecture warps, objects slide, textures crawl, or the final hold is unusable. Brand copy and the official logo are composited after the visual plate is approved.
 
 `example.video.fountain-winter-garden` is the cataloged internal five-second visual-plate example. It uses a restrained push-in and subtle water motion while keeping the scene stable across sampled early, middle, and late frames. It remains experimental, requires human fidelity review, and contains no brand copy or identity overlay.
+
+## Product-highlight motion video
+
+Use the product-highlight template for a short cinematic introduction built around one verified product. The reusable production method is a progression from distinction to benefit, proof, and whole-product context; it is not a license to invent unsupported product features or repeat the exact visual styling of one prior project.
+
+The default 18-second arc is:
+
+1. `0–4s` — a macro distinction in silhouette, profile, or material.
+2. `4–8s` — a medium-detail aesthetic or functional benefit.
+3. `8–12s` — a macro proof of finish, construction, craft, or a countable feature.
+4. `12–18s` — the whole product at believable scale in a collected environment, followed by an official identity resolve.
+
+Generate one unified product-and-environment keyframe for every scene from the authorized product reference that best supports that angle or feature. Do not default to placing a product cutout over a separately created room for cinematic work. A cutout remains acceptable for intentionally graphic catalog layouts, annotations, and price or UI treatments.
+
+Before animation, compare each keyframe beside its authorized reference. Lock silhouette, proportions, construction, materials, finish, hardware, seams, countable details, scale, and support contact. Record at least one product-specific ratio or countable invariant when the reference supports it. Reject and regenerate the entire still if any locked detail is invented, removed, or changed.
+
+Animate each approved keyframe as a moving photograph. Use one restrained camera move on no more than one primary axis and, at most, one low-amplitude environmental cue such as daylight, sheer fabric, foliage, reflection, flame, or water. The product itself is not the motion source. Review start, midpoint, and end samples; any product, texture, contact, lighting, object-placement, or room-geometry drift rejects the whole clip.
+
+Resolve motion typography separately from web typography:
+
+- Chronicle Display and Sofia Pro remain the observed brand families and require legally supplied files.
+- When those files are unavailable, use deterministic EB Garamond for primary display lines and deterministic Inter for support copy.
+- Primary product-highlight lines are white, uppercase, regular weight, and tracked at `0.06em`.
+- Support copy uses one family consistently across all scenes at the documented motion support scale.
+- Preview and render must resolve the same families.
+- The One Kings Lane wordmark always remains supplied official artwork, never a font approximation.
+
+On quiet dark material photography, prefer borderless white editorial type and a restrained white hairline directly on the plate. On pale or visually active footage, first place copy in negative space, then add a soft heritage-green edge-to-transparent scrim. Use a hard rectangular panel only when softer deterministic treatments cannot meet contrast.
+
+Keep scene-wrapper and media-plate transitions synchronized. Approved media declarations must remain reconstructable so repeated assembly cannot remove, duplicate, or reorder footage. The final scene shows the product at useful scale, resolves to official artwork on a controlled heritage field, and holds for at least `1.2s`.
+
+Required review evidence includes:
+
+- authorized reference and generated keyframe comparisons;
+- start, midpoint, and end samples for every animated plate;
+- a cross-shot continuity ledger;
+- fixed-time timeline snapshots and a contact sheet;
+- a live preview;
+- media-presence, runtime, layout, motion, contrast, and font-resolution checks;
+- a structured revision ledger;
+- explicit preview approval before final rendering.
+
+Reject examples include a pasted-looking product cutout, invented hardware, changed major proportions, missing countable parts, animated product geometry, texture crawl, unsynchronized media and copy transitions, missing video plates after reassembly, inconsistent support typography, recreated logo type, or a final render made before approval.
 
 ## Storyboards and sequential systems
 

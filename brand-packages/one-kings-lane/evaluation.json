@@ -7,7 +7,12 @@
     { "id": "gate.rights", "pass": "Every used asset and model input is permitted by its rights record.", "onFail": "reject" },
     { "id": "gate.offer-truth", "pass": "Prices, discounts, dates, inventory, and delivery claims are current and sourced.", "onFail": "reject" },
     { "id": "gate.readability", "pass": "Essential content is legible, contrast-safe, and available outside baked image text.", "onFail": "reject" },
-    { "id": "gate.accessibility", "pass": "The output meets the accessibility requirements applicable to its medium.", "onFail": "human-review" }
+    { "id": "gate.accessibility", "pass": "The output meets the accessibility requirements applicable to its medium.", "onFail": "human-review" },
+    { "id": "gate.generated-keyframe-product-fidelity", "pass": "Every cinematic product keyframe matches its authorized reference for silhouette, proportions, construction, materials, finish, hardware, seams, countable details, scale, and support contact.", "onFail": "reject" },
+    { "id": "gate.temporal-product-continuity", "pass": "Start, midpoint, and end samples from every generated clip preserve the approved keyframe's product identity, geometry, material behavior, support contact, object placement, and light direction.", "onFail": "reject" },
+    { "id": "gate.cross-shot-product-continuity", "pass": "The same product identity and recorded product-specific invariants remain consistent across every shot in the sequence.", "onFail": "reject" },
+    { "id": "gate.deterministic-typography", "pass": "Licensed brand families and render-safe fallbacks are recorded separately, preview and render resolve the same explicit families, support copy stays consistent, and the logo remains supplied artwork.", "onFail": "reject" },
+    { "id": "gate.media-presence", "pass": "Every approved media plate remains present, playable, ordered, and synchronized with its scene wrapper after repeated assembly.", "onFail": "reject" }
   ],
   "dimensions": [
     { "id": "visual-identity", "weight": 0.2, "question": "Does the work clearly belong to One Kings Lane without relying on a logo alone?" },

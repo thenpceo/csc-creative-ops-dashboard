@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "product-highlight-video.v1",
+  "name": "Product highlight video",
+  "status": "proposed",
+  "purpose": "Create a short cinematic product introduction from authorized product references using one generated keyframe per shot, restrained image-to-video motion, and deterministic brand composition.",
+  "supportedDurationsSeconds": [10, 15, 18, 20, 30],
+  "defaultDurationSeconds": 18,
+  "requiredCapabilities": [
+    "generative-image",
+    "generative-video",
+    "motion",
+    "sequential",
+    "imagery",
+    "commerce",
+    "marketing"
+  ],
+  "requiredInputs": [
+    "brandId",
+    "productUrls",
+    "objective",
+    "audience",
+    "channel",
+    "aspectRatio",
+    "durationSeconds",
+    "featureClaims",
+    "rightsDecision",
+    "approvalMode"
+  ],
+  "runtimeCapabilityPreferences": {
+    "referenceImageGeneration": ["gpt-image", "equivalent reference-edit model"],
+    "imageToVideo": ["fal-compatible provider", "equivalent image-to-video provider"],
+    "motionComposition": ["hyperframes", "equivalent deterministic motion renderer"]
+  },
+  "providerPolicy": "Providers are runtime choices, not brand rules. Record the selected endpoint and version in production metadata.",
+  "generationPolicy": {
+    "oneGeneratedKeyframePerShot": true,
+    "unifiedProductEnvironmentPlate": "required for cinematic scenes",
+    "cutoutCompositeDefault": false,
+    "generatedTextAllowed": false,
+    "generatedLogoAllowed": false,
+    "generatedPriceOrOfferAllowed": false,
+    "repairMutatedProductWithOverlayAllowed": false
+  },
+  "defaultBeats": [
+    {
+      "id": "distinction",
+      "time": "0-4",
+      "storyFunction": "hook",
+      "visualScale": "macro",
+      "visualIntent": "Distinctive silhouette, profile, or material cue.",
+      "lightingIntent": "Warm directional or raking light.",
+      "copyRole": "One sourced distinction statement."
+    },
+    {
+      "id": "benefit",
+      "time": "4-8",
+      "storyFunction": "benefit",
+      "visualScale": "medium-detail",
+      "visualIntent": "Show the relationship between major materials, form, or functional parts.",
+      "lightingIntent": "Cool or open directional light distinct from the hook.",
+      "copyRole": "One sourced aesthetic or functional benefit."
+    },
+    {
+      "id": "proof",
+      "time": "8-12",
+      "storyFunction": "proof",
+      "visualScale": "macro-detail",
+      "visualIntent": "Make craft, finish, construction, or a countable feature tangible.",
+      "lightingIntent": "Low, warm, or gallery-like light distinct from the prior beat.",
+      "copyRole": "One sourced proof statement."
+    },
+    {
+      "id": "context-resolve",
+      "time": "12-18",
+      "storyFunction": "contextualize-and-invite",
+      "visualScale": "wide",
+      "visualIntent": "Show the whole product at believable scale in a cinematic environment, then resolve to official identity.",
+      "lightingIntent": "Natural context lighting consistent with the intended room story.",
+      "copyRole": "One sourced contextual benefit plus official brand resolve."
+    }
+  ],
+  "shotContract": {
+    "requiredFields": [
+      "id",
+      "storyFunction",
+      "duration",
+      "verifiedClaim",
+      "authorizedReferenceSelectors",
+      "referenceChoiceReason",
+      "lockedProductInvariants",
+      "editableSceneVariables",
+      "stillPrompt",
+      "stillNegativeIntent",
+      "stillFidelityDecision",
+      "videoPrompt",
+      "cameraMove",
+      "environmentalMotion",
+      "finalHold",
+      "sampleTimes",
+      "temporalFidelityDecision",
+      "overlaySpec",
+      "transition",
+      "rightsStatus",
+      "evaluationRefs"
+    ],
+    "defaultSampleTimes": ["start", "midpoint", "end"],
+    "cameraConstraint": "One restrained move on no more than one primary axis.",
+    "motionConstraint": "The product and supporting furniture remain stable. Motion comes from camera or low-amplitude environmental behavior.",
+    "failureAction": "Reject the shot and regenerate from the authorized product reference."
+  },
+  "continuityLedger": {
+    "required": true,
+    "fields": [
+      "productSilhouette",
+      "productProportions",
+      "materials",
+      "finish",
+      "hardware",
+      "seams",
+      "countableDetails",
+      "productScale",
+      "productContact",
+      "roomGeometry",
+      "objectPlacement",
+      "lightDirection",
+      "copyVersion",
+      "logoAssetId"
+    ]
+  },
+  "compositionPolicy": {
+    "copyIsDeterministic": true,
+    "logoIsOfficialArtwork": true,
+    "copyColor": "brand resolved",
+    "contrastRepairOrder": [
+      "choose negative space",
+      "add text shadow if appropriate",
+      "add soft deterministic scrim",
+      "use a solid field or panel only when required"
+    ],
+    "finalResolveHoldMinimumSeconds": 1.2,
+    "reducedMotionRequired": true
+  },
+  "reviewPlan": {
+    "stillReview": ["reference and generated keyframe side by side"],
+    "videoReview": ["start frame", "midpoint frame", "end frame"],
+    "timelineReview": ["fixed-time snapshots", "contact sheet", "live preview"],
+    "runtimeReview": ["media presence", "runtime", "layout", "motion", "contrast", "font resolution"],
+    "renderApprovalRequired": true
+  },
+  "hardGates": [
+    "reference rights",
+    "generated keyframe product fidelity",
+    "temporal product continuity",
+    "cross-shot product continuity",
+    "verified claims",
+    "official identity asset",
+    "deterministic typography",
+    "media presence",
+    "readable timing",
+    "contrast",
+    "final render check"
+  ],
+  "deliveryEvidence": [
+    "production plan",
+    "continuity ledger",
+    "generated still decisions",
+    "sampled video-frame decisions",
+    "contact sheet",
+    "runtime QA report",
+    "revision ledger",
+    "provider and model metadata"
+  ]
+}

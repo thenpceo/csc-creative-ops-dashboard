@@ -1,6 +1,6 @@
 # Brand production router
 
-This is the proposed orchestration contract for the future MCP. It is documentation and data only; no MCP server is implemented in this pass.
+This directory holds provider-neutral production routes and reusable template contracts consumed by the CSC Creative Ops MCP.
 
 ## Plain-language request flow
 
@@ -34,3 +34,9 @@ The clean scene is generated first from the authorized product reference and the
 ## Motion product explainer
 
 The generated-video adapter creates clean, continuity-checked background plates. HyperFrames then uses the brand's static, motion, sequential, and commerce guidance to add crisp benefit copy, official identity, transitions, timing, and the final end frame. Generated footage never owns brand typography or claims.
+
+## Product highlight video
+
+`templates/product-highlight-video.v1.json` is the reusable contract for short cinematic product introductions. It requires one distinct, approved unified keyframe per shot, restrained image-to-video motion, start/midpoint/end temporal review, cross-shot continuity, deterministic copy and identity, idempotent media assembly, and explicit preview approval before rendering.
+
+The default 18-second arc is distinction, benefit, proof, then whole-product context and brand resolve. Brand packages specialize typography, color, layout, motion, imagery, and evaluation behavior without naming providers. Product URLs, facts, claims, reference images, rights, product-specific invariants, and approval state remain job inputs.

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "0.1.0",
+  "schemaVersion": "0.2.0",
   "purpose": "Map a plain-language brand request to canonical brand context, production skills, provider adapters, and evaluation gates.",
   "brandSource": "../../brand-packages/{brandId}/brand.json",
   "routes": {
@@ -41,6 +41,31 @@
         { "id": "evaluate-brand", "input": "render and evaluation.json", "output": "scored output or revision list" }
       ],
       "hardGates": ["reference rights", "product continuity", "room geometry", "verified product benefits", "official identity asset", "readable timing", "final render check"]
+    },
+    "product-highlight-video": {
+      "templateIds": ["product-highlight-video.v1"],
+      "templatePath": "templates/product-highlight-video.v1.json",
+      "intentExamples": [
+        "Create an 18-second product highlight video from this product link.",
+        "Show this product's distinction, benefit, craft proof, and room context in a cinematic launch video."
+      ],
+      "capabilities": ["generative-image", "generative-video", "motion", "sequential", "imagery", "commerce", "marketing"],
+      "skills": ["reference-aware image generation", "deterministic motion composition"],
+      "adapters": ["reference-image-edit", "image-to-video", "deterministic-motion"],
+      "providerPolicy": "Resolve providers at runtime and record their versions. Do not promote provider names into a brand package.",
+      "stages": [
+        { "id": "load-brand", "input": "brandId and templateId", "output": "validated brand package, template contract, and selected capability modules" },
+        { "id": "resolve-product", "input": "product URLs and current product data", "output": "verified facts, authorized references, product invariants, and rights decision" },
+        { "id": "compile-shots", "input": "template beats, feature claims, brand guidance, and output constraints", "output": "shot plan, continuity ledger, exact copy, and evidence requirements" },
+        { "id": "generate-keyframes", "input": "one authorized product reference and one scene prompt per shot", "output": "one unified product-environment keyframe per shot" },
+        { "id": "gate-keyframes", "input": "authorized references and generated keyframes", "output": "approved stills or rejected-shot decisions" },
+        { "id": "animate-keyframes", "input": "approved keyframes and moving-photograph motion contracts", "output": "clean generated video plates without copy or identity" },
+        { "id": "gate-temporal-continuity", "input": "start, midpoint, and end samples for every plate", "output": "approved plates or rejected-shot decisions" },
+        { "id": "compose-motion", "input": "approved plates, deterministic typography, official identity, and verified copy", "output": "idempotent editable motion composition" },
+        { "id": "review-preview", "input": "fixed-time snapshots, contact sheet, live preview, continuity evidence, and QA report", "output": "explicit approval or revision ledger entries" },
+        { "id": "render-and-check", "input": "explicitly approved composition", "output": "checked render and delivery evidence" }
+      ],
+      "hardGates": ["reference rights", "model-upload permission", "generated keyframe product fidelity", "temporal product continuity", "cross-shot product continuity", "verified claims", "official identity asset", "deterministic typography", "media presence", "readable timing", "contrast", "final render check"]
     }
   }
 }

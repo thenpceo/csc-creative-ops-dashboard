@@ -11,8 +11,9 @@
     "build:vercel": "vite build",
     "preview": "vite preview",
     "test:sites": "node --test tests/sites-worker.test.mjs",
+    "test:adapters": "node --test tests/hyperframes-media-manifest.test.mjs",
     "test:mcp": "npm run sync:mcp && node --test tests/mcp-server.test.mjs",
-    "test": "npm run test:sites && npm run test:mcp"
+    "test": "npm run test:sites && npm run test:adapters && npm run test:mcp"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",

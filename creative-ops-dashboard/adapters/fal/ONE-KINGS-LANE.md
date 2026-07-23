@@ -1,6 +1,6 @@
 # One Kings Lane → fal.ai image-to-video
 
-This adapter serializes the provider-neutral `gen-video.product-in-context` recipe for the current Kling V3 Turbo Pro image-to-video endpoint.
+This adapter serializes the provider-neutral `gen-video.product-in-context` and `gen-video.product-highlight-shot` recipes for a selected fal.ai image-to-video endpoint. The endpoint is runtime metadata, not a permanent One Kings Lane rule.
 
 ## Required input boundary
 
@@ -9,6 +9,19 @@ This adapter serializes the provider-neutral `gen-video.product-in-context` reci
 - Let the user change only the subject action, environmental motion, camera move, camera distance, duration, and final hold.
 - Generate only the clean visual plate. Composite official identity and copy afterward.
 - Compare first, middle, and final frames to the start image. Reject the entire clip on product mutation, geometry drift, object sliding, or texture crawl.
+
+## Product-highlight shot contract
+
+- Begin each shot with its own human-approved unified product-and-environment keyframe.
+- Do not animate a keyframe whose product-fidelity decision is pending or failed.
+- Use one restrained camera move on no more than one primary axis.
+- Use at most one low-amplitude environmental action.
+- Keep the product and supporting furniture stable; the product is not the motion source.
+- End on a calm frame that can support a deterministic copy or identity layer.
+- Sample the start, midpoint, and end of every result.
+- Reject the whole clip when any sample changes silhouette, proportion, construction, material, finish, hardware, seams, countable details, scale, support contact, room geometry, object placement, or light direction.
+- Record provider, endpoint, model version, request ID, source keyframe ID, output URI, checksum, sample evidence, and review decision in project metadata.
+- Never infer that general internal-reference use also permits model upload. Record model-upload authorization independently.
 
 ## Demonstration request
 
