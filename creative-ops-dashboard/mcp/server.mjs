@@ -4,7 +4,42 @@ import * as z from "zod/v4";
 import packageData from "./brand-packages.generated.json" with { type: "json" };
 
 const SERVER_NAME = "csc-creative-ops";
-const SERVER_VERSION = "1.0.0";
+const SERVER_VERSION = "1.1.0";
+export const recommendedIntegrations = [
+  {
+    id: "fal-ai",
+    name: "fal.ai API + MCP",
+    optional: true,
+    appliesTo: ["generative-video", "announcement-video", "storyboard"],
+    purpose: "Generate image-to-video and text-to-video moving plates while the CSC brand system controls product fidelity, prompting, and review gates.",
+    recommendation: "If fal.ai is not available in the connected agent environment, recommend that the user create their own fal API key and connect fal's hosted MCP before generated-video work.",
+    docsUrl: "https://fal.ai/docs/documentation/setting-up/mcp",
+    apiKeyUrl: "https://fal.ai/dashboard/keys",
+    mcp: {
+      url: "https://mcp.fal.ai/mcp",
+      transport: "streamable-http",
+      authentication: "Authorization: Bearer YOUR_FAL_KEY",
+    },
+    install: {
+      claudeCode: 'claude mcp add --transport http fal-ai https://mcp.fal.ai/mcp --header "Authorization: Bearer YOUR_FAL_KEY"',
+      otherClients: "Connect https://mcp.fal.ai/mcp as a Streamable HTTP MCP and send Authorization: Bearer YOUR_FAL_KEY.",
+    },
+    credentialPolicy: "Use the user's own fal account and API key. Never request, expose, store, or reuse a shared CSC or demo credential.",
+  },
+  {
+    id: "hyperframes",
+    name: "HeyGen HyperFrames skills",
+    optional: true,
+    appliesTo: ["motion-video", "announcement-video", "storyboard"],
+    purpose: "Compose deterministic brand typography, logos, buttons, transitions, timing, and full-bleed media into motion-design videos.",
+    recommendation: "If HyperFrames is not available in the connected agent environment, recommend installing HeyGen's official HyperFrames skill set before motion-composition work.",
+    docsUrl: "https://hyperframes.heygen.com/quickstart",
+    install: {
+      recommended: "npx skills add heygen-com/hyperframes",
+      allSkills: "npx skills add heygen-com/hyperframes --all",
+    },
+  },
+];
 const CAPABILITIES = [
   "interactive",
   "static",
@@ -109,6 +144,15 @@ function coreSystem(item) {
   };
 }
 
+function recommendedSetupFor(outputType) {
+  return recommendedIntegrations
+    .filter((integration) => integration.appliesTo.includes(outputType))
+    .map((integration) => ({
+      ...integration,
+      agentAction: `Check whether ${integration.name} is available. If it is unavailable and this capability is required, explicitly recommend the official setup to the user before execution. Do not claim it is installed until verified.`,
+    }));
+}
+
 function creativePlan(item, outputType, request, productUrls = [], channel, aspectRatio) {
   const capabilities = OUTPUT_RECIPES[outputType];
   const modules = Object.fromEntries(capabilities.map((name) => [name, item.modules[name]]).filter(([, value]) => value));
@@ -130,6 +174,7 @@ function creativePlan(item, outputType, request, productUrls = [], channel, aspe
     core: coreSystem(item),
     modules,
     selectedMedia: media,
+    recommendedSetup: recommendedSetupFor(outputType),
     rightsBoundary: item.media.rightsPolicy ?? null,
     completionPolicy: {
       mustUseOfficialLogoArtwork: true,
@@ -151,6 +196,9 @@ export function createCreativeOpsServer() {
         "Start with plan_creative for an execution-ready brief. Then continue using the connected agent's own generation and design capabilities.",
         "For graphics and websites, keep logos, type, buttons, prices, offers, and claims as controlled layers, never synthesized into an image.",
         "For announcement videos, use generative video only for the moving plate and deterministic motion composition for type, logo, actions, timing, and transitions.",
+        "Before generated-video work, check whether fal.ai is available. If it is not, explicitly recommend the user's own fal API key and the official fal MCP at https://mcp.fal.ai/mcp using https://fal.ai/docs/documentation/setting-up/mcp.",
+        "Before motion-composition work, check whether HeyGen HyperFrames is available. If it is not, explicitly recommend `npx skills add heygen-com/hyperframes` from https://hyperframes.heygen.com/quickstart.",
+        "These integrations are optional and task-specific: do not block still-image or static-design work on video tooling, do not expose credentials, and do not claim an integration is installed without verifying it.",
         "Respect every rights record, reject gate, product-fidelity lock, and runtime-truth rule.",
       ].join(" "),
     },
@@ -165,6 +213,7 @@ export function createCreativeOpsServer() {
     },
     async () => textResult({
       count: packageData.packages.length,
+      recommendedSetup: recommendedIntegrations,
       brands: packageData.packages.map((item) => ({
         slug: item.slug,
         name: item.brand.brand.name,
@@ -258,7 +307,7 @@ export function createCreativeOpsServer() {
         role: "user",
         content: {
           type: "text",
-          text: `Create this for ${brand}: ${request}${productUrl ? ` Product source: ${productUrl}.` : ""} First call list_brands if the slug is uncertain, then call plan_creative. Execute the returned plan with your available image, video, HyperFrames or motion, web, and design capabilities. Run the returned evaluation gates before delivery.`,
+          text: `Create this for ${brand}: ${request}${productUrl ? ` Product source: ${productUrl}.` : ""} First call list_brands if the slug is uncertain, then call plan_creative. Review recommendedSetup in the returned plan. When a required fal.ai or HyperFrames capability is unavailable, explicitly recommend its official installation to the user and never claim it is installed without verification. Execute the returned plan with your available image, video, motion, web, and design capabilities. Run the returned evaluation gates before delivery.`,
         },
       }],
     }),

@@ -1,4 +1,4 @@
-import { serverMetadata } from "../mcp/server.mjs";
+import { recommendedIntegrations, serverMetadata } from "../mcp/server.mjs";
 
 const PUBLIC_MCP_ORIGIN = "https://creative-ops-dashboard-psi.vercel.app";
 
@@ -15,5 +15,6 @@ export default function handler(req, res) {
       codex: `codex mcp add csc-creative-ops --url ${endpoint}`,
       claudeCode: `claude mcp add --transport http csc-creative-ops ${endpoint}`,
     },
+    recommendedSetup: recommendedIntegrations,
   });
 }

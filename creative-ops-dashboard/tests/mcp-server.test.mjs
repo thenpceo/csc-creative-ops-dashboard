@@ -45,6 +45,16 @@ test("lists all 13 brands", async () => {
     const payload = JSON.parse(result.content[0].text);
     assert.equal(payload.count, 13);
     assert(payload.brands.some((brand) => brand.slug === "one-kings-lane"));
+    assert(payload.recommendedSetup.some((integration) =>
+      integration.id === "fal-ai"
+      && integration.mcp.url === "https://mcp.fal.ai/mcp"
+      && integration.optional === true
+    ));
+    assert(payload.recommendedSetup.some((integration) =>
+      integration.id === "hyperframes"
+      && integration.install.recommended === "npx skills add heygen-com/hyperframes"
+      && integration.optional === true
+    ));
   });
 });
 
@@ -67,7 +77,24 @@ test("announcement plans route through image, Fal-compatible video, and determin
     assert(payload.capabilityOrder.includes("motion"));
     assert(payload.executionStages.some((stage) => stage.includes("Fal")));
     assert(payload.executionStages.some((stage) => stage.includes("HyperFrames")));
+    assert.deepEqual(payload.recommendedSetup.map((integration) => integration.id), ["fal-ai", "hyperframes"]);
+    assert(payload.recommendedSetup.every((integration) => integration.agentAction.includes("explicitly recommend")));
     assert.equal(payload.completionPolicy.rejectOnProductIdentityDrift, true);
+  });
+});
+
+test("static graphics do not require video integrations", async () => {
+  await withClient(async (client) => {
+    const result = await client.callTool({
+      name: "plan_creative",
+      arguments: {
+        brand: "one-kings-lane",
+        outputType: "graphic",
+        request: "Create a static product launch graphic.",
+      },
+    });
+    const payload = JSON.parse(result.content[0].text);
+    assert.deepEqual(payload.recommendedSetup, []);
   });
 });
 
@@ -83,6 +110,10 @@ test("public install metadata never derives the MCP URL from a local or protecte
   manifestModule.default({ headers: { host: "localhost:4173" } }, response);
   assert.equal(response.payload.endpoint, "https://creative-ops-dashboard-psi.vercel.app/api/mcp");
   assert(response.payload.install.codex.includes(response.payload.endpoint));
+  assert.deepEqual(response.payload.recommendedSetup.map((integration) => integration.id), ["fal-ai", "hyperframes"]);
+  assert.equal(response.payload.recommendedSetup[0].apiKeyUrl, "https://fal.ai/dashboard/keys");
+  assert.equal(response.payload.recommendedSetup[1].docsUrl, "https://hyperframes.heygen.com/quickstart");
+  assert(!JSON.stringify(response.payload).includes("Personal API Keys"));
   assert(!JSON.stringify(response.payload).includes("localhost"));
   assert(!JSON.stringify(response.payload).includes("csc-creative-ops.vercel.app"));
 });
