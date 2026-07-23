@@ -4,4 +4,4 @@
 **/dist/
 **/.vercel/
 creative-ops-dashboard/qa-*.png
-
+.gstack/
