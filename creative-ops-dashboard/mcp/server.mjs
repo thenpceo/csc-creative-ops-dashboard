@@ -5,7 +5,7 @@ import packageData from "./brand-packages.generated.json" with { type: "json" };
 import productHighlightTemplate from "../orchestration/templates/product-highlight-video.v1.json" with { type: "json" };
 
 const SERVER_NAME = "csc-creative-ops";
-const SERVER_VERSION = "1.2.0";
+const SERVER_VERSION = "1.2.1";
 const TEMPLATE_BY_ID = new Map([[productHighlightTemplate.id, productHighlightTemplate]]);
 const DECISION_VALUES = ["pending", "pass", "fail"];
 export const recommendedIntegrations = [
@@ -38,8 +38,8 @@ export const recommendedIntegrations = [
     recommendation: "If HyperFrames is not available in the connected agent environment, recommend installing HeyGen's official HyperFrames skill set before motion-composition work.",
     docsUrl: "https://hyperframes.heygen.com/quickstart",
     install: {
-      recommended: "npx skills add heygen-com/hyperframes",
-      allSkills: "npx skills add heygen-com/hyperframes --all",
+      recommended: "npx skills add heygen-com/hyperframes --full-depth",
+      refresh: "npx hyperframes skills update",
     },
   },
 ];
@@ -502,7 +502,7 @@ export function createCreativeOpsServer() {
         "For announcement videos, use generative video only for the moving plate and deterministic motion composition for type, logo, actions, timing, and transitions.",
         "For product-highlight videos, generate and approve one unified product-and-environment keyframe per shot, animate each as a moving photograph, review start/midpoint/end samples, keep copy and identity deterministic, and require explicit preview approval before rendering.",
         "Before generated-video work, check whether fal.ai is available. If it is not, explicitly recommend the user's own fal API key and the official fal MCP at https://mcp.fal.ai/mcp using https://fal.ai/docs/documentation/setting-up/mcp.",
-        "Before motion-composition work, check whether HeyGen HyperFrames is available. If it is not, explicitly recommend `npx skills add heygen-com/hyperframes` from https://hyperframes.heygen.com/quickstart.",
+        "Before motion-composition work, check whether HeyGen HyperFrames is available. If it is not, explicitly recommend `npx skills add heygen-com/hyperframes --full-depth` from https://hyperframes.heygen.com/quickstart.",
         "These integrations are optional and task-specific: do not block still-image or static-design work on video tooling, do not expose credentials, and do not claim an integration is installed without verifying it.",
         "Respect every rights record, reject gate, product-fidelity lock, and runtime-truth rule.",
       ].join(" "),

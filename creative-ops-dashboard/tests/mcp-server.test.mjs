@@ -54,7 +54,8 @@ test("lists all 13 brands", async () => {
     ));
     assert(payload.recommendedSetup.some((integration) =>
       integration.id === "hyperframes"
-      && integration.install.recommended === "npx skills add heygen-com/hyperframes"
+      && integration.install.recommended === "npx skills add heygen-com/hyperframes --full-depth"
+      && integration.install.refresh === "npx hyperframes skills update"
       && integration.optional === true
     ));
   });
@@ -300,7 +301,7 @@ test("public install metadata never derives the MCP URL from a local or protecte
 
   manifestModule.default({ headers: { host: "localhost:4173" } }, response);
   assert.equal(response.payload.endpoint, "https://creative-ops-dashboard-psi.vercel.app/api/mcp");
-  assert.equal(response.payload.version, "1.2.0");
+  assert.equal(response.payload.version, "1.2.1");
   assert(response.payload.templates.includes("product-highlight-video.v1"));
   assert(response.payload.install.codex.includes(response.payload.endpoint));
   assert.deepEqual(response.payload.recommendedSetup.map((integration) => integration.id), ["fal-ai", "hyperframes"]);
